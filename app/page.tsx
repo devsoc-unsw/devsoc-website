@@ -16,13 +16,13 @@ export default function Home() {
       icon: (<Terminal color="error" sx={{ fontSize: '6rem' }} />),
       title: "Our Projects",
       content: "Explore the variety of different projects developed by DevSoc for UNSW students!",
-      href: "/about-us"
+      href: "/our-projects"
     },
     {
       icon: (<People color="error" sx={{ fontSize: '6rem' }} />),
       title: "Get Involved",
       content: "Got big ideas? Tell us here, or find out how to join DevSoc and make your mark!",
-      href: "/about-us"
+      href: "/get-involved"
     }
   ];
 
