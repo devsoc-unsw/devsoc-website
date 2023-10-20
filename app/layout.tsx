@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import React from 'react';
 
+import ClientLayout from './clientLayout';
+
 const ttCommonsPro = localFont({ src: './TT_Commons_Pro_Variable.woff2'})
 
 export const metadata: Metadata = {
@@ -16,7 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={ttCommonsPro.className}>{children}</body>
+      <body className={ttCommonsPro.className}>
+        <ClientLayout>
+          {children}
+        </ClientLayout>
+      </body>
     </html>
   )
 }
