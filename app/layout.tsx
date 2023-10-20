@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import React from 'react';
 
+import './globals.css';
 import ClientLayout from './clientLayout';
 
 const ttCommonsPro = localFont({ src: './TT_Commons_Pro_Variable.woff2'})
