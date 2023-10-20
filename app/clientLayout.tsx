@@ -9,8 +9,8 @@ const ClientLayout: React.FC<{
   children: React.ReactNode;
 }> = ({ children }) => {
   return (
-    <CssVarsProvider>
-      <CssBaseline />
+    <CssVarsProvider defaultMode='dark'>
+      <CssBaseline/>
       <App>
         {children}
       </App>
