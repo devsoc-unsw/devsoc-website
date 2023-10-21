@@ -1,31 +1,31 @@
 import Image from 'next/image';
 import { AspectRatio, Card, CardContent, Link, Stack, Typography } from '@mui/joy';
-import { Info, People, Terminal } from '@mui/icons-material';
-import React, { ReactNode } from 'react';
+import { Info, People, SvgIconComponent, Terminal } from '@mui/icons-material';
+import React from 'react';
 import NextLink from 'next/link';
 
-export default function Home() {
-  const cardContent: LinkCardProps[] = [
-    {
-      icon: (<Info color="error" sx={{ fontSize: '6rem' }} />),
-      title: "About Us",
-      content: "Learn what the UNSW Software Development Society is all about!",
-      href: "/about-us"
-    },
-    {
-      icon: (<Terminal color="error" sx={{ fontSize: '6rem' }} />),
-      title: "Our Projects",
-      content: "Explore the variety of different projects developed by DevSoc for UNSW students!",
-      href: "/our-projects"
-    },
-    {
-      icon: (<People color="error" sx={{ fontSize: '6rem' }} />),
-      title: "Get Involved",
-      content: "Got big ideas? Tell us here, or find out how to join DevSoc and make your mark!",
-      href: "/get-involved"
-    }
-  ];
+const cardContent: LinkCardProps[] = [
+  {
+    Icon: Info,
+    title: "About Us",
+    content: "Learn what the UNSW Software Development Society is all about!",
+    href: "/about-us"
+  },
+  {
+    Icon: Terminal,
+    title: "Our Projects",
+    content: "Explore the variety of different projects developed by DevSoc for UNSW students!",
+    href: "/our-projects"
+  },
+  {
+    Icon: People,
+    title: "Get Involved",
+    content: "Got big ideas? Tell us here, or find out how to join DevSoc and make your mark!",
+    href: "/get-involved"
+  }
+];
 
+export default function Home() {
   return (
     <Stack justifyContent="space-evenly" alignItems="center" width="100%" height="100%" margin="auto">
       <Stack alignItems="center" width="70%">
@@ -44,14 +44,14 @@ export default function Home() {
 }
 
 interface LinkCardProps {
-  icon: ReactNode;
+  Icon: SvgIconComponent;
   content: string;
   title: string;
   href: string;
 }
 
 const LinkCard: React.FC<LinkCardProps> = ({
-  icon,
+  Icon,
   content,
   title,
   href
@@ -77,7 +77,7 @@ const LinkCard: React.FC<LinkCardProps> = ({
         }}
       >
         <div>
-          {icon}
+          <Icon color="error" sx={{ fontSize: '6rem' }} />
         </div>
       </AspectRatio>
       <Typography level="h2">

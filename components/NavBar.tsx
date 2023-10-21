@@ -3,6 +3,19 @@ import Image from 'next/image';
 import NextLink from 'next/link';
 import { Facebook, GitHub, Instagram, LinkedIn } from '@mui/icons-material';
 
+const navData = [
+  { text: 'About Us', href: '/about-us' },
+  { text: 'Our Projects', href: '/our-projects' },
+  { text: 'Get Involved', href: '/get-involved' },
+];
+
+const socialsData = [
+  { Icon: GitHub, href: "https://github.com/devsoc-unsw" },
+  { Icon: Facebook, href: "https://www.facebook.com/devsocUNSW/" },
+  { Icon: Instagram, href: "https://www.instagram.com/devsoc_unsw/" },
+  { Icon: LinkedIn, href: "https://www.linkedin.com/company/97436660/" },
+];
+
 const NavBar = () => {
   return (
     <Sheet variant="soft" sx={{ boxShadow: 'xs', height: 75 }}>
@@ -14,12 +27,8 @@ const NavBar = () => {
             </AspectRatio>
           </Link>
           <Stack direction='row' spacing={3}>
-            {[
-              { text: 'About Us', href: '/about-us' },
-              { text: 'Our Projects', href: '/our-projects' },
-              { text: 'Get Involved', href: '/get-involved' },
-            ].map(({ text, href }) => (
-              <Typography key={href} level='title-lg'>
+            {navData.map(({ text, href }, idx) => (
+              <Typography key={idx} level='title-lg'>
                 <Link
                   component={NextLink}
                   sx={{
@@ -32,22 +41,14 @@ const NavBar = () => {
                 </Link>
               </Typography>
             ))}
-
           </Stack>
         </Stack>
         <Stack direction='row' mr={2} spacing={2} alignItems='center'>
-          <Link href="https://github.com/devsoc-unsw" target="_blank" sx={{ color: 'var(--joy-palette-text-primary)' }}>
-            <GitHub sx={{ fontSize: '1.8rem' }}/>
-          </Link>
-          <Link href="https://www.facebook.com/devsocUNSW/" target="_blank" sx={{ color: 'var(--joy-palette-text-primary)' }}>
-            <Facebook sx={{ fontSize: '1.8rem' }}/>
-          </Link>
-          <Link href="https://www.instagram.com/devsoc_unsw/" target="_blank" sx={{ color: 'var(--joy-palette-text-primary)' }}>
-            <Instagram sx={{ fontSize: '1.8rem' }}/>
-          </Link>
-          <Link href="https://www.linkedin.com/company/97436660/" target="_blank" sx={{ color: 'var(--joy-palette-text-primary)' }}>
-            <LinkedIn sx={{ fontSize: '1.8rem' }}/>
-          </Link>
+          {socialsData.map(({ Icon, href }, idx) => (
+            <Link key={idx} href={href} target="_blank" sx={{ color: 'var(--joy-palette-text-primary)' }}>
+              <Icon sx={{ fontSize: '1.8rem' }}/>
+            </Link>
+          ))}
         </Stack>
       </Stack>
     </Sheet>
