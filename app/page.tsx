@@ -30,10 +30,10 @@ export default function Home() {
     <Stack justifyContent="space-evenly" alignItems="center" width="100%" height="100%" margin="auto">
       <Stack alignItems="center" width="70%">
         <AspectRatio variant="plain" ratio="15/4" objectFit="contain" sx={{ width: '100%' }}>
-          <Image src='/assets/logo/full.svg' alt='DevSoc logo' fill priority/>
+          <Image src='/assets/logo/fullInvertTransparent.svg' alt='DevSoc logo' fill priority/>
         </AspectRatio>
-        <Typography fontWeight="600" fontSize="xxx-large" mt={-7}>
-          Some catchy tagline goes here!
+        <Typography fontWeight="600" fontSize="xxx-large" mt={-7} >
+          Some kind of tagline goes here
         </Typography>
       </Stack>
       <Stack direction="row" spacing={3}>

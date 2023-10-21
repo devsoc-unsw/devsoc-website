@@ -35,7 +35,7 @@ const NavBar = () => {
 
           </Stack>
         </Stack>
-        <Stack direction='row' mr={2} spacing={2}>
+        <Stack direction='row' mr={2} spacing={2} alignItems='center'>
           <Link href="https://github.com/devsoc-unsw" target="_blank" sx={{ color: 'var(--joy-palette-text-primary)' }}>
             <GitHub sx={{ fontSize: '1.8rem' }}/>
           </Link>
