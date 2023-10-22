@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { AspectRatio, Card, CardContent, Link, Stack, Typography } from '@mui/joy';
+import { AspectRatio, Box, Card, CardContent, Link, Stack, Typography } from '@mui/joy';
 import { Info, People, SvgIconComponent, Terminal } from '@mui/icons-material';
 import React from 'react';
 import NextLink from 'next/link';
@@ -29,14 +29,27 @@ export default function Home() {
   return (
     <Stack justifyContent="space-evenly" alignItems="center" width="100%" height="100%" margin="auto">
       <Stack alignItems="center" width="70%">
-        <AspectRatio variant="plain" ratio="15/4" objectFit="contain" sx={{ width: '100%' }}>
+        <AspectRatio
+          variant="plain"
+          ratio="15/4"
+          objectFit="contain"
+          sx={{ width: '100%', mb: { xs: -2, sm: -4, md: -7 } }}
+        >
           <Image src='/assets/logo/fullInvertTransparent.svg' alt='DevSoc logo' fill priority/>
         </AspectRatio>
-        <Typography fontWeight="600" fontSize="xxx-large" mt={-7} >
-          Some kind of tagline goes here
+        <Typography
+          fontWeight="600"
+          fontSize={{ xs: "small", sm: "x-large", md: "xx-large", lg: "xxx-large" }}
+        >
+          UNSW Software Development Society
         </Typography>
       </Stack>
-      <Stack direction="row" spacing={3}>
+      <Stack
+        direction={{ xs: "column", md: "row" }}
+        spacing={3}
+        width={{ xs: '80%', sm: '60%', md: '80%' }}
+        alignItems='center'
+      >
         {cardContent.map((props, idx) => <LinkCard key={idx} {...props} />)}
       </Stack>
     </Stack>
@@ -59,41 +72,45 @@ const LinkCard: React.FC<LinkCardProps> = ({
   return (
     <Card
       sx={{
-        textAlign: 'center',
-        alignItems: 'center',
         bgcolor: 'neutral.softBg',
-        width: 340,
-        '--icon-size': '100px',
+        width: { xs: "100%", md: "30%" },
+        height: { xs: "30%", md: "100%" },
         transition: 'all .2s ease-in-out',
         '&:hover': { transform: 'scale(1.05)' }
       }}
     >
-      <AspectRatio
-        ratio="1"
-        sx={{
-          borderRadius: '50%',
-          width: 'var(--icon-size)',
-          bgcolor: 'neutral.softBg',
-        }}
+      <Stack
+        direction={{ xs: 'row', md: 'column' }}
+        alignItems='center'
+        spacing={2}
+        textAlign={{ md: 'center' }}
       >
-        <div>
-          <Icon color="error" sx={{ fontSize: '6rem' }} />
-        </div>
-      </AspectRatio>
-      <Typography level="h2">
-          <Link
-            overlay
-            component={NextLink}
-            href={href}
-            underline="none"
-            sx={{ color: "inherit" }}
-          >
-            {title}
-          </Link>
-      </Typography>
-      <CardContent sx={{ maxWidth: '40ch' }}>
-        {content}
-      </CardContent>
+        <AspectRatio ratio="1" sx={{ width: { xs: 100, sm: 150, md: 100 } }}>
+          <div>
+            <Icon
+              sx={{ fontSize: { xs: '3rem', sm: '5rem', md: '6rem' }}}
+            />
+          </div>
+        </AspectRatio>
+        <Box>
+          <Typography fontWeight="bold" fontSize={{ sm: "large", md: "x-large", lg: "xx-large" }}>
+              <Link
+                overlay
+                component={NextLink}
+                href={href}
+                underline="none"
+                sx={{ color: "inherit" }}
+              >
+                {title}
+              </Link>
+          </Typography>
+          <CardContent>
+            <Typography fontSize={{ xs: "small", sm: "medium" }}>
+              {content}
+            </Typography>
+          </CardContent>
+        </Box>
+      </Stack>
   </Card>
   )
 }

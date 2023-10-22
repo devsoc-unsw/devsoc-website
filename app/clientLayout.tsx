@@ -2,6 +2,9 @@
 
 import { CssBaseline, CssVarsProvider, extendTheme } from '@mui/joy';
 import localFont from 'next/font/local';
+import { usePathname } from 'next/navigation';
+import MobileNavBar from '../components/nav/MobileNavBar';
+import NavBar from '../components/nav/NavBar';
 
 const ttCommonsPro = localFont({ src: './TT_Commons_Pro_Variable.woff2'})
 
@@ -34,8 +37,16 @@ const ClientLayout: React.FC<{
 const App: React.FC<{
   children: React.ReactNode;
 }> = ({ children }) => {
+  const path = usePathname();
+
   return (
     <>
+      {path != "/" && (
+        <>
+          <MobileNavBar/>
+          <NavBar/>
+        </>
+      )}
       {children}
     </>
   )
