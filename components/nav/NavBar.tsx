@@ -1,3 +1,5 @@
+'use client';
+
 import { AspectRatio, Link, Sheet, Stack, Typography } from '@mui/joy';
 import Image from 'next/image';
 import NextLink from 'next/link';

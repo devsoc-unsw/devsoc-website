@@ -1,3 +1,5 @@
+'use client';
+
 import {
   AspectRatio,
   Divider,
@@ -24,8 +26,8 @@ const NavBar = () => {
       <Sheet variant="soft" sx={{ boxShadow: 'xs', height: 54, display: { md: 'none' } }}>
         <Stack direction='row' height='100%' width='100%' p={2} justifyContent='space-between' alignItems='center'>
           <Link component={NextLink} href="/">
-            <AspectRatio variant="plain" ratio="1" objectFit="contain" sx={{ width: 100 }}>
-              <Image fill src='/assets/logo/brandmarkInvertTransparent.svg' alt='DevSoc logo'/>
+            <AspectRatio variant="plain" ratio="15/4" objectFit="contain" sx={{ width: 150 }}>
+              <Image fill src='/assets/logo/fullInvertTransparent.svg' alt='DevSoc logo'/>
             </AspectRatio>
           </Link>
           <IconButton variant="plain" sx={{ color: '#fff' }} onClick={() => setOpen(true)}>

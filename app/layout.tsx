@@ -1,3 +1,8 @@
+/**
+ * This is the 'server layout' which is server-rendered so that we can use the
+ * Metadata API - actual layout stuff happens in ClientLayout
+ */
+
 import type { Metadata } from 'next';
 import React from 'react';
 
@@ -9,7 +14,7 @@ export const metadata: Metadata = {
   description: 'Official website of the UNSW Software Development Society',
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
