@@ -13,7 +13,7 @@ const NavBar = () => {
         <Stack direction='row' height='100%' alignItems='center' spacing={2}>
           <Link component={NextLink} href="/">
             <AspectRatio variant="plain" ratio="15/4" objectFit="contain" sx={{ width: 180 }}>
-              <Image fill src='/assets/logo/fullInvertTransparent.svg' alt='DevSoc logo'/>
+              <Image fill src='/logo/fullInvertTransparent.svg' alt='DevSoc logo'/>
             </AspectRatio>
           </Link>
           <Stack component='nav' direction='row' spacing={3}>

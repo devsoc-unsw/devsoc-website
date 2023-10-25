@@ -6,29 +6,38 @@ import { Typography } from '@mui/material';
 
 export default function AboutUsPage() {
   const teamData: PersonProps[] = [
-    { name: "Bob Chen", title: "President" },
+    { name: "Bob Chen", title: "President", imgUrl: '/people/pres.png' },
     { name: "Jeremy Le", title: "Admin Officer" },
-    { name: "Michael Girikallo", title: "GEDI" },
-    { name: "Alex Chen", title: "VP Internals" },
-    { name: "Henry Guo", title: "VP Operations" },
-    { name: "Manhua Lu", title: "VP Course Projects" },
-    { name: "Franco Reyes", title: "VP Standalone Projects" },
+    { name: "Michael Girikallo", title: "GEDI Officer", imgUrl: '/people/gedi.jpeg' },
+    { name: "Alex Chen", title: "VP Internals", imgUrl: '/people/vpi.jpeg' },
+    { name: "Henry Guo", title: "VP Operations", imgUrl: '/people/vpo.jpeg' },
+    { name: "Manhua Lu", title: "VP Course Projects", imgUrl: '/people/vpc.jpeg' },
+    { name: "Franco Reyes", title: "VP Standalone Projects", imgUrl: '/people/vps.jpeg' },
   ];
 
   return (
     <>
-      {/*TODO: About us, objectives, constitution, meet the team*/}
       <PageSection title="Who We Are">
-        Dev is really cool, we have a lot of cool people and we do a lot of cool stuff.
-        Dev is really cool, we have a lot of cool people and we do a lot of cool stuff.
-        Dev is really cool, we have a lot of cool people and we do a lot of cool stuff.
-        Dev is really cool, we have a lot of cool people and we do a lot of cool stuff.
+        <Typography textAlign='justify'>
+          We are the Software Development Society, a place for imaginative and inventive students
+          dedicated to crafting exceptional products for the benefit of the community! Within our
+          society, you&apos;ll find over five teams of enthusiastic students diligently working on
+          a wide array of web apps, ranging from academic degree planners to platforms that display
+          available campus facilities.
+        </Typography>
       </PageSection>
       <PageSection title="Our Mission">
-        Dev is really cool, we have a lot of cool people and we do a lot of cool stuff.
-        Dev is really cool, we have a lot of cool people and we do a lot of cool stuff.
-        Dev is really cool, we have a lot of cool people and we do a lot of cool stuff.
-        Dev is really cool, we have a lot of cool people and we do a lot of cool stuff.
+        <Typography textAlign='justify' mb={2}>
+          Our primary goal is to develop solutions that enhance the lives of university students in their
+          daily routines. Whether it&apos;s simplifying class scheduling with tools like Notangles and Unilectives
+          or aiding student organizations in recruiting new members through Chaos, our mission is to contribute to
+          the betterment of people&apos;s lives while enjoying the process.
+        </Typography>
+        <Typography textAlign='justify'>
+          We&apos;re also committed to fostering the next generation of skilled software developers and engineers
+          through a comprehensive training program, preparing them for the professional world and empowering them
+          to unleash their innovative ideas.
+        </Typography>
       </PageSection>
       <PageSection title="Our Constitution">
         You can find our constitution <Link>here</Link>.
@@ -57,13 +66,23 @@ const Person: React.FC<PersonProps> = ({ name, title, imgUrl }) => {
       textAlign="center"
     >
       <AspectRatio ratio="1" sx={{ width: { xs: "50%", sm: "80%"}, borderRadius: "50%", mb: 1 }}>
-        <Skeleton variant="overlay">
-          <Image
-            fill
-            alt=""
-            src={imgUrl ?? "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="}
-          />
-        </Skeleton>
+        {imgUrl
+          ? (
+            <Image
+              fill
+              alt={`Photo of ${name}`}
+              src={imgUrl}
+            />
+          ) : (
+            <Skeleton variant="overlay">
+              <Image
+                fill
+                alt={`Placeholder for photo of ${name}`}
+                src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+              />
+            </Skeleton>
+          )
+        }
       </AspectRatio>
       <Typography level="title-lg">
         {name}

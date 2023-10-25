@@ -27,7 +27,7 @@ const NavBar = () => {
         <Stack direction='row' height='100%' width='100%' p={2} justifyContent='space-between' alignItems='center'>
           <Link component={NextLink} href="/">
             <AspectRatio variant="plain" ratio="15/4" objectFit="contain" sx={{ width: 150 }}>
-              <Image fill src='/assets/logo/fullInvertTransparent.svg' alt='DevSoc logo'/>
+              <Image fill src='/logo/fullInvertTransparent.svg' alt='DevSoc logo'/>
             </AspectRatio>
           </Link>
           <IconButton variant="plain" sx={{ color: '#fff' }} onClick={() => setOpen(true)}>
@@ -50,7 +50,7 @@ const MenuDrawer: React.FC<MenuDrawerProps> = ({ open, setOpen }) => {
     <Drawer anchor='right' open={open} onClose={() => setOpen(false)}>
       <Link component={NextLink} href="/" mx='auto' my={2}>
         <AspectRatio variant="plain" ratio="15/4" objectFit="contain" sx={{ width: 200 }}>
-          <Image fill src='/assets/logo/fullInvertTransparent.svg' alt='DevSoc logo'/>
+          <Image fill src='/logo/fullInvertTransparent.svg' alt='DevSoc logo'/>
         </AspectRatio>
       </Link>
       <Divider/>

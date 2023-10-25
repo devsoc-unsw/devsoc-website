@@ -35,7 +35,7 @@ export default function Home() {
           objectFit="contain"
           sx={{ width: '100%', mb: { xs: -2, sm: -4, md: -7 } }}
         >
-          <Image src='/assets/logo/fullInvertTransparent.svg' alt='DevSoc logo' fill priority/>
+          <Image src='/logo/fullInvertTransparent.svg' alt='DevSoc logo' fill priority/>
         </AspectRatio>
         <Typography
           fontWeight="600"
