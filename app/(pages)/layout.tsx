@@ -19,7 +19,6 @@ const Layout: React.FC<{
           mx: 'auto',
           maxWidth: 900,
           my: { md: 3 },
-          height: 1000, // TODO: Remove this when we have actual content
           borderRadius: { md: '2%' },
           p: 4
         }}

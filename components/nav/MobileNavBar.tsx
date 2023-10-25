@@ -23,7 +23,7 @@ const NavBar = () => {
 
   return (
     <>
-      <Sheet variant="soft" sx={{ height: 54, display: { md: 'none' }, borderBottom: '2px solid var(--joy-palette-neutral-outlinedBorder)' }}>
+      <Sheet variant="soft" sx={{ boxShadow: 'xs', height: 54, display: { md: 'none' }, borderBottom: '2px solid var(--joy-palette-neutral-outlinedBorder)' }}>
         <Stack direction='row' height='100%' width='100%' p={2} justifyContent='space-between' alignItems='center'>
           <Link component={NextLink} href="/">
             <AspectRatio variant="plain" ratio="15/4" objectFit="contain" sx={{ width: 150 }}>
