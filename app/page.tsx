@@ -27,7 +27,7 @@ const cardContent: LinkCardProps[] = [
 
 export default function Home() {
   return (
-    <Stack justifyContent="space-evenly" alignItems="center" width="100%" height="100%" margin="auto">
+    <Stack justifyContent="space-evenly" alignItems="center" width="100%" height="100%" bgcolor="neutral.softBg">
       <Stack alignItems="center" width="70%">
         <AspectRatio
           variant="plain"
@@ -73,7 +73,6 @@ const LinkCard: React.FC<LinkCardProps> = ({
   return (
     <Card
       sx={{
-        bgcolor: 'neutral.softBg',
         width: { xs: "100%", md: "30%" },
         height: { xs: "30%", md: "100%" },
         transition: 'all .2s ease-in-out',
@@ -86,7 +85,7 @@ const LinkCard: React.FC<LinkCardProps> = ({
         spacing={2}
         textAlign={{ md: 'center' }}
       >
-        <AspectRatio ratio="1" sx={{ width: { xs: 100, sm: 150, md: 100 } }}>
+        <AspectRatio variant="plain" ratio="1" sx={{ width: { xs: 100, sm: 150, md: 100 } }}>
           <div>
             <Icon
               sx={{ fontSize: { xs: '3rem', sm: '5rem', md: '6rem' }}}
