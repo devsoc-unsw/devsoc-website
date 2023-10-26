@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { AspectRatio, Box, Card, CardContent, Link, Stack, Typography } from '@mui/joy';
+import { AspectRatio, Card, CardContent, Link, Stack, Typography } from '@mui/joy';
 import { Info, People, SvgIconComponent, Terminal } from '@mui/icons-material';
 import React from 'react';
 import NextLink from 'next/link';
@@ -93,31 +93,29 @@ const LinkCard: React.FC<LinkCardProps> = ({
         spacing={2}
         textAlign={{ md: 'center' }}
       >
-        <AspectRatio variant="plain" ratio="1" sx={{ width: { xs: 100, sm: 150, md: 100 } }}>
+        <AspectRatio variant="plain" ratio="1" sx={{ width: { xs: 50, sm: 100, md: 100 } }}>
           <div>
             <Icon
               sx={{ fontSize: { xs: '3rem', sm: '5rem', md: '6rem' }}}
             />
           </div>
         </AspectRatio>
-        <Box>
+        <CardContent>
           <Typography fontWeight="bold" fontSize={{ sm: "large", md: "x-large", lg: "xx-large" }}>
-              <Link
-                overlay
-                component={NextLink}
-                href={href}
-                underline="none"
-                sx={{ color: "inherit" }}
-              >
-                {title}
-              </Link>
+            <Link
+              overlay
+              component={NextLink}
+              href={href}
+              underline="none"
+              sx={{ color: "inherit" }}
+            >
+              {title}
+            </Link>
           </Typography>
-          <CardContent>
-            <Typography fontSize={{ xs: "small", sm: "medium" }}>
-              {content}
-            </Typography>
-          </CardContent>
-        </Box>
+          <Typography fontSize={{ xs: "small", sm: "medium" }}>
+            {content}
+          </Typography>
+        </CardContent>
       </Stack>
   </Card>
   )
