@@ -49,6 +49,7 @@ export default function Home() {
         spacing={3}
         width={{ xs: '80%', sm: '60%', md: '80%' }}
         alignItems='center'
+        justifyContent='center'
       >
         {cardContent.map((props, idx) => <LinkCard key={idx} {...props} />)}
       </Stack>
