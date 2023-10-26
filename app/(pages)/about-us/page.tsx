@@ -40,7 +40,7 @@ export default function AboutUsPage() {
         </Typography>
       </PageSection>
       <PageSection title="Our Constitution">
-        You can find our constitution <Link>here</Link>.
+        You can find our constitution <Link target="_blank" href="https://drive.google.com/file/d/1vz-NuOY6ympFkq80s4GPnV5HrvKuaA1K/view?usp=sharing">here</Link>.
       </PageSection>
       <PageSection title="Meet The Team">
         <Stack direction='row' spacing={2} rowGap={3} flexWrap="wrap" justifyContent="center">
