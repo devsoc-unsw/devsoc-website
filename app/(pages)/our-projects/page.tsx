@@ -52,7 +52,7 @@ const projectData: ProjectCardProps[] = [
     name: "Jobsboard",
     desc: "The go-to place for CSE students to find student jobs and internships.",
     logoUrl: "/projects/jobsboard/logo.png",
-    thumbnailUrl: "/projects/notangles/thumbnail.png",
+    thumbnailUrl: "/projects/jobsboard/thumbnail.png",
     projectUrl: "https://jobsboard.csesoc.unsw.edu.au/"
   },
   {
@@ -87,7 +87,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <Card variant="outlined" sx={{ width: { xs: "100%", md: "45%" } }}>
       <CardOverflow>
-        <AspectRatio ratio="5/2" objectFit="fill">
+        <AspectRatio ratio="5/2" objectFit="cover">
           <Image
             fill
             src={thumbnailUrl}
