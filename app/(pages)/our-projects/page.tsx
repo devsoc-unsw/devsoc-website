@@ -6,10 +6,9 @@ import Card from '@mui/joy/Card';
 import CardContent from '@mui/joy/CardContent';
 import CardOverflow from '@mui/joy/CardOverflow';
 import Typography from '@mui/joy/Typography';
-import Stack from '@mui/joy/Stack';
 import Image from 'next/image';
 import PageSection from '../../../components/PageSection';
-import { Button, CardActions, Sheet } from '@mui/joy';
+import { Button, CardActions, Grid, Sheet } from '@mui/joy';
 import { OpenInNew } from '@mui/icons-material';
 
 const projectData: ProjectCardProps[] = [
@@ -66,9 +65,13 @@ const projectData: ProjectCardProps[] = [
 export default function OurProjectsPage() {
   return (
     <PageSection title="Our Projects">
-      <Stack direction="row" flexWrap="wrap" rowGap={3} justifyContent="space-evenly">
-        {projectData.map((props, idx) => <ProjectCard {...props} key={idx} />)}
-      </Stack>
+      <Grid container flexGrow={1} rowSpacing={3}>
+        {projectData.map((props, idx) =>
+          <Grid xs={12} md={6} key={idx}>
+            <ProjectCard {...props}/>
+          </Grid>
+        )}
+      </Grid>
     </PageSection>
   )
 }
@@ -85,7 +88,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   name, desc, logoUrl, thumbnailUrl, projectUrl
 }) => {
   return (
-    <Card variant="outlined" sx={{ width: { xs: "100%", md: "45%" } }}>
+    <Card variant="outlined" sx={{ width: { xs: "100%", md: "95%" }, height: "100%", mx: 'auto' }}>
       <CardOverflow>
         <AspectRatio ratio="5/2" objectFit="cover">
           <Image
