@@ -63,7 +63,7 @@ export const projectData: ProjectCardProps[] = [
   },
   {
     name: "Jobsboard",
-    desc: "The go-to place for CSE students to find student jobs and internships.",
+    desc: "A portal for students to explore job openings offered by our sponsors and other tech companies.",
     logoUrl: "/projects/jobsboard/logo.png",
     thumbnailUrl: "/projects/jobsboard/thumbnail.png",
     projectUrl: "https://jobsboard.csesoc.unsw.edu.au/"
