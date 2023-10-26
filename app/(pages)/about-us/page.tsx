@@ -6,7 +6,7 @@ import { Typography } from '@mui/material';
 
 const teamData: PersonProps[] = [
   { name: "Bob Chen", title: "President", imgUrl: '/people/pres.jpeg' },
-  { name: "Jeremy Le", title: "Admin Officer" },
+  { name: "Jeremy Le", title: "Administrative Officer", imgUrl: '/people/admin.jpg' },
   { name: "Michael Girikallo", title: "GEDI Officer", imgUrl: '/people/gedi.jpeg' },
   { name: "Alex Chen", title: "VP Internals", imgUrl: '/people/vpi.jpeg' },
   { name: "Henry Guo", title: "VP Operations", imgUrl: '/people/vpo.jpeg' },
