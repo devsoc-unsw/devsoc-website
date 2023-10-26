@@ -4,17 +4,17 @@ import PageSection from '../../../components/PageSection';
 import Image from 'next/image';
 import { Typography } from '@mui/material';
 
-export default function AboutUsPage() {
-  const teamData: PersonProps[] = [
-    { name: "Bob Chen", title: "President", imgUrl: '/people/pres.png' },
-    { name: "Jeremy Le", title: "Admin Officer" },
-    { name: "Michael Girikallo", title: "GEDI Officer", imgUrl: '/people/gedi.jpeg' },
-    { name: "Alex Chen", title: "VP Internals", imgUrl: '/people/vpi.jpeg' },
-    { name: "Henry Guo", title: "VP Operations", imgUrl: '/people/vpo.jpeg' },
-    { name: "Manhua Lu", title: "VP Course Projects", imgUrl: '/people/vpc.jpeg' },
-    { name: "Franco Reyes", title: "VP Standalone Projects", imgUrl: '/people/vps.jpeg' },
-  ];
+const teamData: PersonProps[] = [
+  { name: "Bob Chen", title: "President", imgUrl: '/people/pres.jpeg' },
+  { name: "Jeremy Le", title: "Admin Officer" },
+  { name: "Michael Girikallo", title: "GEDI Officer", imgUrl: '/people/gedi.jpeg' },
+  { name: "Alex Chen", title: "VP Internals", imgUrl: '/people/vpi.jpeg' },
+  { name: "Henry Guo", title: "VP Operations", imgUrl: '/people/vpo.jpeg' },
+  { name: "Manhua Lu", title: "VP Course Projects", imgUrl: '/people/vpc.jpeg' },
+  { name: "Franco Reyes", title: "VP Standalone Projects", imgUrl: '/people/vps.jpeg' },
+];
 
+export default function AboutUsPage() {
   return (
     <>
       <PageSection title="Who We Are">
