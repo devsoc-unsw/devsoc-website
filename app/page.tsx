@@ -27,7 +27,15 @@ const cardContent: LinkCardProps[] = [
 
 export default function Home() {
   return (
-    <Stack justifyContent="space-evenly" alignItems="center" width="100%" height="100%" bgcolor="neutral.softBg">
+    <Stack
+      justifyContent={{ md: "space-evenly" }}
+      pt={10}
+      spacing={10}
+      alignItems="center"
+      width="100%"
+      height="100%"
+      bgcolor="neutral.softBg"
+    >
       <Stack alignItems="center" width="70%">
         <AspectRatio
           variant="plain"
@@ -47,7 +55,7 @@ export default function Home() {
       <Stack
         direction={{ xs: "column", md: "row" }}
         spacing={3}
-        width={{ xs: '80%', sm: '60%', md: '80%' }}
+        width={{ xs: '80%', sm: '80%', md: '80%' }}
         alignItems='center'
         justifyContent='center'
       >
