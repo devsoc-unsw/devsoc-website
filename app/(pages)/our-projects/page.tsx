@@ -10,57 +10,7 @@ import Image from 'next/image';
 import PageSection from '../../../components/PageSection';
 import { Button, CardActions, Grid, Sheet } from '@mui/joy';
 import { OpenInNew } from '@mui/icons-material';
-
-const projectData: ProjectCardProps[] = [
-  {
-    name: "Notangles",
-    desc: "An interactive drag-and-drop timetable planner designed to help UNSW students plan their ideal weekly timetable.",
-    logoUrl: "/projects/notangles/logo.png",
-    thumbnailUrl: "/projects/notangles/thumbnail.png",
-    projectUrl: "https://notangles.csesoc.app/"
-  },
-  {
-    name: "Circles",
-    desc: "A UNSW degree planner where you can explore and validate your degree structure.",
-    logoUrl: "/projects/circles/logo.png",
-    thumbnailUrl: "/projects/circles/thumbnail.png",
-    projectUrl: "https://circles.csesoc.app/"
-  },
-  {
-    name: "Unilectives",
-    desc: "Your one-stop shop for UNSW course and elective reviews.",
-    logoUrl: "/projects/unilectives/logo.png",
-    thumbnailUrl: "/projects/unilectives/thumbnail.png",
-    projectUrl: "https://unilectives.csesoc.app/"
-  },
-  {
-    name: "Structs.sh",
-    desc: "An interactive data structure and algorithm visualiser and educational platform for computer science students.",
-    logoUrl: "/projects/structs/logo.png",
-    thumbnailUrl: "/projects/structs/thumbnail.png",
-    projectUrl: "https://structs.sh/"
-  },
-  {
-    name: "Freerooms",
-    desc: "A tool to view the timetable of any room on campus, and find an available room that suits all your needs.",
-    logoUrl: "/projects/freerooms/logo.png",
-    thumbnailUrl: "/projects/freerooms/thumbnail.png",
-    projectUrl: "https://freerooms.csesoc.app/"
-  },
-  {
-    name: "Jobsboard",
-    desc: "The go-to place for CSE students to find student jobs and internships.",
-    logoUrl: "/projects/jobsboard/logo.png",
-    thumbnailUrl: "/projects/jobsboard/thumbnail.png",
-    projectUrl: "https://jobsboard.csesoc.unsw.edu.au/"
-  },
-  {
-    name: "Chaos",
-    desc: "A platform for simplifying applying and recruiting for student society subcommittees at UNSW.",
-    logoUrl: "/projects/chaos/logo.png",
-    thumbnailUrl: "/projects/chaos/thumbnail.png",
-  },
-];
+import { projectData } from '../../../data';
 
 export default function OurProjectsPage() {
   return (
@@ -76,7 +26,7 @@ export default function OurProjectsPage() {
   )
 }
 
-interface ProjectCardProps {
+export interface ProjectCardProps {
   name: string;
   desc: string;
   logoUrl: string;

@@ -1,16 +1,9 @@
 import React from 'react';
 import PageSection from '../../../components/PageSection';
 import { Button, Link, Sheet, Stack, Typography } from '@mui/joy';
-import { EmojiObjects as Lightbulb, Person, School, SvgIconComponent } from '@mui/icons-material';
+import { SvgIconComponent } from '@mui/icons-material';
 import { Divider } from '@mui/material';
-
-const recruitmentData: RecruitmentProps[] = [
-  { position: "Directors", Icon: Lightbulb, applicationUrl: "https://www.google.com/" },
-  { position: "Subcom", Icon: Person },
-  { position: "Trainees", Icon: School },
-];
-
-const feedbackFormUrl = "https://forms.gle/TjHcB9MHf6AwojiE8";
+import { feedbackFormUrl, recruitmentData } from '../../../data';
 
 export default function GetInvolvedPage() {
   return (
@@ -58,7 +51,7 @@ export default function GetInvolvedPage() {
   )
 }
 
-interface RecruitmentProps {
+export interface RecruitmentProps {
   position: string;
   Icon: SvgIconComponent;
   applicationUrl?: string;

@@ -3,16 +3,7 @@ import { AspectRatio, Link, Skeleton, Stack } from '@mui/joy';
 import PageSection from '../../../components/PageSection';
 import Image from 'next/image';
 import { Typography } from '@mui/material';
-
-const teamData: PersonProps[] = [
-  { name: "Bob Chen", title: "President", imgUrl: '/people/pres.jpeg' },
-  { name: "Jeremy Le", title: "Administrative Officer", imgUrl: '/people/admin.jpg' },
-  { name: "Michael Girikallo", title: "GEDI Officer", imgUrl: '/people/gedi.jpeg' },
-  { name: "Alex Chen", title: "VP Internals", imgUrl: '/people/vpi.jpeg' },
-  { name: "Henry Guo", title: "VP Operations", imgUrl: '/people/vpo.jpeg' },
-  { name: "Manhua Lu", title: "VP Course Projects", imgUrl: '/people/vpc.jpeg' },
-  { name: "Franco Reyes", title: "VP Standalone Projects", imgUrl: '/people/vps.jpeg' },
-];
+import { teamData } from '../../../data';
 
 export default function AboutUsPage() {
   return (
@@ -51,7 +42,7 @@ export default function AboutUsPage() {
   )
 }
 
-interface PersonProps {
+export interface PersonProps {
   name: string;
   title: string;
   imgUrl?: string;

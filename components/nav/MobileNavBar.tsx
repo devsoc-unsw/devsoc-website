@@ -14,7 +14,7 @@ import {
 import Image from 'next/image';
 import NextLink from 'next/link';
 
-import { navData, socialsData } from './data';
+import { navData, socialsData } from '../../data';
 import React from 'react';
 import { Menu as MenuIcon } from '@mui/icons-material';
 
