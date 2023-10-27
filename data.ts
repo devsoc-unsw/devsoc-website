@@ -2,9 +2,9 @@ import {
   EmojiObjects as Lightbulb,
   Facebook,
   GitHub,
-  Group, Groups,
+  Groups,
   Instagram,
-  LinkedIn, People,
+  LinkedIn,
   School
 } from '@mui/icons-material';
 import { ProjectCardProps } from './app/(pages)/our-projects/page';
