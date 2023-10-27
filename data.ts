@@ -1,4 +1,12 @@
-import { EmojiObjects as Lightbulb, Facebook, GitHub, Instagram, LinkedIn, Person, School } from '@mui/icons-material';
+import {
+  EmojiObjects as Lightbulb,
+  Facebook,
+  GitHub,
+  Group, Groups,
+  Instagram,
+  LinkedIn, People,
+  School
+} from '@mui/icons-material';
 import { ProjectCardProps } from './app/(pages)/our-projects/page';
 import { PersonProps } from './app/(pages)/about-us/page';
 import { RecruitmentProps } from './app/(pages)/get-involved/page';
@@ -92,7 +100,7 @@ export const teamData: PersonProps[] = [
 // Should set/unset applicationUrl to mark recruitment as open/closed
 export const recruitmentData: RecruitmentProps[] = [
   { position: "Directors", Icon: Lightbulb, /* applicationUrl: "" */ },
-  { position: "Subcom", Icon: Person },
+  { position: "Subcom", Icon: Groups },
   { position: "Trainees", Icon: School },
 ];
 
