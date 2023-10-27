@@ -14,7 +14,7 @@ export default function GetInvolvedPage() {
           enthusiastic and creative students to hop on board, learn, and help us make uni life a bit easier for
           everyone. Click the links below to get involved today!
         </Typography>
-        <Stack width="100%" direction={{ xs: "column", md: "row" }}>
+        <Stack width="100%" spacing={{ xs: 3, md: 0 }} direction={{ xs: "column", md: "row" }}>
           {recruitmentData.flatMap((props, idx) => {
             const elements = [<Recruitment key={2*idx} {...props}/>];
             if (idx != recruitmentData.length - 1) {
