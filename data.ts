@@ -91,7 +91,7 @@ export const teamData: PersonProps[] = [
 // Data for the "Join DevSoc" section
 // Should set/unset applicationUrl to mark recruitment as open/closed
 export const recruitmentData: RecruitmentProps[] = [
-  { position: "Directors", Icon: Lightbulb, /* applicationUrl: "" */ },
+  { position: "Directors", Icon: Lightbulb, applicationUrl: "https://forms.gle/cTGDVTce9yVFe32H8" },
   { position: "Subcom", Icon: Person },
   { position: "Trainees", Icon: School },
 ];
