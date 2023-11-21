@@ -87,13 +87,14 @@ export const projectData: ProjectCardProps[] = [
 // People displayed in the "Meet the Team" section of "About Us"
 // If no image set, an animated gray circle appears
 export const teamData: PersonProps[] = [
-  { name: "Bob Chen", title: "President", imgUrl: '/people/pres.jpeg' },
+  { name: "Bob Chen", title: "Co-President", imgUrl: '/people/pres-nf.jpeg' },
+  { name: "Sally Sun", title: "Co-President", imgUrl: '/people/pres-nm.png' },
   { name: "Jeremy Le", title: "Administrative Officer", imgUrl: '/people/admin.jpg' },
   { name: "Michael Girikallo", title: "GEDI Officer", imgUrl: '/people/gedi.jpeg' },
-  { name: "Alex Chen", title: "VP Internals", imgUrl: '/people/vpi.jpeg' },
-  { name: "Henry Guo", title: "VP Operations", imgUrl: '/people/vpo.jpeg' },
-  { name: "Manhua Lu", title: "VP Course Projects", imgUrl: '/people/vpc.jpeg' },
-  { name: "Franco Reyes", title: "VP Standalone Projects", imgUrl: '/people/vps.jpeg' },
+  { name: "Audrey Tanama", title: "VP (Internals)", imgUrl: '/people/vpi.jpeg' },
+  { name: "Henry Guo", title: "VP (Operations)", imgUrl: '/people/vpo.jpeg' },
+  { name: "Manhua Lu", title: "VP (Course Projects)", imgUrl: '/people/vpc.jpeg' },
+  { name: "Franco Reyes", title: "VP (Standalone Projects)", imgUrl: '/people/vps.jpeg' },
 ];
 
 // Data for the "Join DevSoc" section
