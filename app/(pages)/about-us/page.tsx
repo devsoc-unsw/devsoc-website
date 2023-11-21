@@ -34,7 +34,7 @@ export default function AboutUsPage() {
         You can find our constitution <Link target="_blank" href="https://drive.google.com/file/d/1vz-NuOY6ympFkq80s4GPnV5HrvKuaA1K/view?usp=sharing">here</Link>.
       </PageSection>
       <PageSection title="Meet The Team">
-        <Stack direction='row' spacing={2} rowGap={3} flexWrap="wrap" justifyContent="center">
+        <Stack direction='row' columnGap={2} rowGap={3} flexWrap="wrap" justifyContent="center">
           {teamData.map((props, idx) => <Person {...props} key={idx}/>)}
         </Stack>
       </PageSection>
