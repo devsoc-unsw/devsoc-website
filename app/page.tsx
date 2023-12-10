@@ -53,7 +53,7 @@ export default function Home() {
             <Box width={{xs: '80%', sm: '80%', md: '75%'}} sx={{display: "flex", flexDirection: "column-reverse"}}>
                 <Box sx={{width: "100vw"}}>
                     <h2 style={{fontSize: "3.4rem", fontWeight: 600, marginTop: "2rem"}}>
-                        A dedicated<br/> student community of <br/>
+                        A dedicated student community of
                         <TextTransition className={styles.rainbow}
                                         springConfig={presets.gentle}>{texts[index % texts.length]}</TextTransition>
                     </h2>
