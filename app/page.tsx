@@ -43,28 +43,35 @@ export default function Home() {
     return (
         <Stack
             justifyContent={{md: "space-evenly"}}
-            pt={10}
-            spacing={10}
+            pt={4}
+            spacing={4}
             alignItems="center"
             width="100%"
-            height="115%"
+            height="100%"
             bgcolor="neutral.softBg"
         >
-            <Box width={{xs: '80%', sm: '80%', md: '75%'}} sx={{display: "flex", flexDirection: "column-reverse"}}>
-                <Box sx={{width: "100vw"}}>
-                    <h2 style={{fontSize: "3.4rem", fontWeight: 600, marginTop: "2rem"}}>
+            <Stack width="75%" direction="column-reverse">
+                <Box sx={{width: "100%"}}>
+                    <Typography mt={3} fontSize={{ xs: "1.8rem", sm: "2.6rem", md: "3.4rem" }} fontWeight={600}>
                         A dedicated student community of
                         <TextTransition className={styles.rainbow}
                                         springConfig={presets.gentle}>{texts[index % texts.length]}</TextTransition>
-                    </h2>
+                    </Typography>
                 </Box>
-                <Typography sx={{fontSize: "2rem"}}>Software Development Society</Typography>
-                <Image src='/logo/fullInvertTransparent.svg' alt='DevSoc logo' width={360} height={100}/>
-            </Box>
+                <Typography fontSize={{ xs: "1.1rem", sm: "2rem" }}>Software Development Society</Typography>
+                <AspectRatio
+                  variant="plain"
+                  ratio="15/4"
+                  objectFit="contain"
+                  sx={{ width: {xs: 250, sm: 360} }}
+                >
+                    <Image src='/logo/fullInvertTransparent.svg' alt='DevSoc logo' fill priority/>
+                </AspectRatio>
+            </Stack>
             <Stack
                 direction={{xs: "column", md: "row"}}
                 spacing={3}
-                width={{xs: '80%', sm: '80%', md: '80%'}}
+                width="80%"
                 alignItems='center'
                 justifyContent='center'
             >
