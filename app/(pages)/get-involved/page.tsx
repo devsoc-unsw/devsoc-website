@@ -1,8 +1,7 @@
 import React from 'react';
 import PageSection from '../../../components/PageSection';
-import { Button, Link, Sheet, Stack, Typography } from '@mui/joy';
+import { Button, Grid, Link, Sheet, Stack, Typography } from '@mui/joy';
 import { SvgIconComponent } from '@mui/icons-material';
-import { Divider } from '@mui/material';
 import { feedbackFormUrl, recruitmentData } from '../../../data';
 
 export default function GetInvolvedPage() {
@@ -14,21 +13,13 @@ export default function GetInvolvedPage() {
           enthusiastic and creative students to hop on board, learn, and help us make uni life a bit easier for
           everyone. Click the links below to get involved today!
         </Typography>
-        <Stack width="100%" spacing={{ xs: 3, md: 0 }} direction={{ xs: "column", md: "row" }}>
-          {recruitmentData.flatMap((props, idx) => {
-            const elements = [<Recruitment key={2*idx} {...props}/>];
-            if (idx != recruitmentData.length - 1) {
-              elements.push(<Divider
-                key={2*idx + 1}
-                orientation="vertical"
-                sx={{
-                  display: { xs: 'none', md: 'block' },
-              }}
-              />);
-            }
-            return elements;
-          })}
-        </Stack>
+        <Grid container rowSpacing={6} columnSpacing={1}>
+          {recruitmentData.map((props, idx) =>
+            <Grid key={idx} xs={12} md={6}>
+              <Recruitment {...props}/>
+            </Grid>
+          )}
+        </Grid>
       </PageSection>
       <PageSection title="Open Source">
         <Typography textAlign='justify' mb={2}>

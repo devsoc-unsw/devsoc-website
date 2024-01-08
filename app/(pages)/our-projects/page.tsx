@@ -10,19 +10,30 @@ import Image from 'next/image';
 import PageSection from '../../../components/PageSection';
 import { Button, CardActions, Grid, Sheet } from '@mui/joy';
 import { OpenInNew } from '@mui/icons-material';
-import { projectData } from '../../../data';
+import { projectData, traineeProjectData } from '../../../data';
 
 export default function OurProjectsPage() {
   return (
-    <PageSection title="Our Projects">
-      <Grid container flexGrow={1} rowSpacing={3}>
-        {projectData.map((props, idx) =>
-          <Grid xs={12} md={6} key={idx}>
-            <ProjectCard {...props}/>
-          </Grid>
-        )}
-      </Grid>
-    </PageSection>
+    <>
+      <PageSection title="Flagship Projects">
+        <Grid container flexGrow={1} rowSpacing={3}>
+          {projectData.map((props, idx) =>
+            <Grid xs={12} md={6} key={idx}>
+              <ProjectCard {...props} trainee={false}/>
+            </Grid>
+          )}
+        </Grid>
+      </PageSection>
+      {traineeProjectData.length > 0 && <PageSection title="Training Program Projects">
+        <Grid container flexGrow={1} rowSpacing={3}>
+          {traineeProjectData.map((props, idx) =>
+            <Grid xs={12} md={6} key={idx}>
+              <ProjectCard {...props} trainee={true}/>
+            </Grid>
+          )}
+        </Grid>
+      </PageSection>}
+    </>
   )
 }
 
@@ -32,6 +43,7 @@ export interface ProjectCardProps {
   logoUrl: string;
   thumbnailUrl: string;
   projectUrl?: string;
+  trainee: boolean;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({

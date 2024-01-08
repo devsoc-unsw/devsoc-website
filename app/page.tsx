@@ -1,12 +1,13 @@
 'use client'
 import Image from 'next/image';
-import {AspectRatio, Card, CardContent, Link, Stack, Typography} from '@mui/joy';
+import {AspectRatio, Card, CardContent, Chip, Link, Stack, Typography} from '@mui/joy';
 import {Info, People, SvgIconComponent, Terminal} from '@mui/icons-material';
 import React, {useState} from 'react';
 import NextLink from 'next/link';
 import TextTransition, {presets} from 'react-text-transition'
 import styles from './styles.module.css'
 import {Box} from "@mui/material";
+import { recruitmentData } from '../data';
 
 const cardContent: LinkCardProps[] = [
     {
@@ -25,7 +26,8 @@ const cardContent: LinkCardProps[] = [
         Icon: People,
         title: "Get Involved",
         content: "Got big ideas? Tell us here, or find out how to join DevSoc and make your mark!",
-        href: "/get-involved"
+        href: "/get-involved",
+        chip: recruitmentData.some(data => !!data.applicationUrl) ? "Applications open now!" : undefined
     }
 ];
 
@@ -42,12 +44,11 @@ export default function Home() {
     const texts = ['Developers', 'Enthusiasts', 'Change makers', 'Engineers', 'Creators', 'Mathematicians']
     return (
         <Stack
-            justifyContent={{md: "space-evenly"}}
-            pt={4}
-            spacing={4}
+            pt={10}
+            spacing={{ xs: 4, sm: 10 }}
             alignItems="center"
             width="100%"
-            height="100%"
+            height="125%"
             bgcolor="neutral.softBg"
         >
             <Stack width="75%" direction="column-reverse">
@@ -86,14 +87,16 @@ interface LinkCardProps {
     content: string;
     title: string;
     href: string;
+    chip?: string;
 }
 
 const LinkCard: React.FC<LinkCardProps> = ({
-                                               Icon,
-                                               content,
-                                               title,
-                                               href
-                                           }) => {
+    Icon,
+    content,
+    title,
+    href,
+    chip
+}) => {
     return (
         <Card
             sx={{
@@ -103,6 +106,14 @@ const LinkCard: React.FC<LinkCardProps> = ({
                 '&:hover': {transform: 'scale(1.05)'}
             }}
         >
+            {chip && <Chip
+              size="md"
+              sx={{ position: "absolute", top: -12, right: -10 }}
+              color="primary"
+              variant="solid"
+            >
+                {chip}
+            </Chip>}
             <Stack
                 direction={{xs: 'row', md: 'column'}}
                 alignItems='center'

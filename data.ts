@@ -5,7 +5,8 @@ import {
   Groups,
   Instagram,
   LinkedIn,
-  School
+  School,
+  CoPresent
 } from '@mui/icons-material';
 import { ProjectCardProps } from './app/(pages)/our-projects/page';
 import { PersonProps } from './app/(pages)/about-us/page';
@@ -84,6 +85,8 @@ export const projectData: ProjectCardProps[] = [
   },
 ];
 
+export const traineeProjectData: ProjectCardProps[] = [];
+
 // People displayed in the "Meet the Team" section of "About Us"
 // If no image set, an animated gray circle appears
 export const teamData: PersonProps[] = [
@@ -101,7 +104,8 @@ export const teamData: PersonProps[] = [
 // Should set/unset applicationUrl to mark recruitment as open/closed
 export const recruitmentData: RecruitmentProps[] = [
   { position: "Directors", Icon: Lightbulb },
-  { position: "Subcom", Icon: Groups },
+  { position: "Subcommittee", Icon: Groups },
+  { position: "Training Leads", Icon: CoPresent },
   { position: "Trainees", Icon: School },
 ];
 
