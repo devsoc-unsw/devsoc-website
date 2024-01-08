@@ -1,0 +1,6 @@
+.rainbow > div {
+    font-weight: 800;
+    background-clip: text;
+    background-image: linear-gradient(90deg, oklch(0.6971 0.329 342.55) 4%, oklch(0.70735 0.275 2.3649902) 22%, oklch(65.33% 0.2822 279) 45%, oklch(0.6294 0.2468 229.68) 67%, oklch(0.7676 0.184 183.61) 100.2%);
+    -webkit-text-fill-color: transparent;
+}
