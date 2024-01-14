@@ -48,7 +48,7 @@ export default function Home() {
             spacing={{ xs: 4, sm: 10 }}
             alignItems="center"
             width="100%"
-            height="125%"
+            height={{ xs: "100%", sm: "115%", md: "100%" }}
             bgcolor="neutral.softBg"
         >
             <Stack width="75%" direction="column-reverse">
