@@ -5,7 +5,8 @@ import {
   Groups,
   Instagram,
   LinkedIn,
-  School
+  School,
+  CoPresent
 } from '@mui/icons-material';
 import { ProjectCardProps } from './app/(pages)/our-projects/page';
 import { PersonProps } from './app/(pages)/about-us/page';
@@ -33,7 +34,7 @@ export const socialsData = [
 
 // Data displayed on the cards of the "Our Projects" page
 // If "projectUrl" is not set, then the card will say 'Coming soon!'
-export const projectData: ProjectCardProps[] = [
+export const projectData: Omit<ProjectCardProps, 'trainee'>[] = [
   {
     name: "Notangles",
     desc: "An interactive drag-and-drop timetable planner designed to help UNSW students plan their ideal weekly timetable.",
@@ -84,6 +85,27 @@ export const projectData: ProjectCardProps[] = [
   },
 ];
 
+export const traineeProjectData: Omit<ProjectCardProps, 'trainee'>[] = [
+  {
+    name: "Moodify (23T3)",
+    desc: "Discover the power of personalized playlists tailored to your mood and activities with Moodify!",
+    projectUrl: "https://github.com/csesoc/trainee-3-23t3",
+    thumbnailUrl: "/traineeProjects/moodify.png",
+  },
+  {
+    name: "Waves (23T1)",
+    desc: "An app to help coordinate and arrange the 'when' and the 'where' of meetings.",
+    projectUrl: "https://github.com/csesoc/trainee-2-23t1",
+    thumbnailUrl: "/traineeProjects/waves.png",
+  },
+  {
+    name: "Loft (22T3)",
+    desc: "A customisable productivity app with multiple widgets such as a pomodoro timer, YouTube player and notepad.",
+    projectUrl: "https://github.com/csesoc/trainee-3-22t3",
+    thumbnailUrl: "/traineeProjects/loft.png"
+  },
+];
+
 // People displayed in the "Meet the Team" section of "About Us"
 // If no image set, an animated gray circle appears
 export const teamData: PersonProps[] = [
@@ -101,8 +123,9 @@ export const teamData: PersonProps[] = [
 // Should set/unset applicationUrl to mark recruitment as open/closed
 export const recruitmentData: RecruitmentProps[] = [
   { position: "Directors", Icon: Lightbulb },
-  { position: "Subcom", Icon: Groups },
-  { position: "Trainees", Icon: School },
+  { position: "Subcommittee", Icon: Groups },
+  { position: "Training Leads", Icon: CoPresent, applicationUrl: "https://forms.gle/fovtvb5sGzYgrxia7" },
+  { position: "Trainees", Icon: School, applicationUrl: "https://forms.gle/sLvmCnendB5YdyiTA" },
 ];
 
 export const feedbackFormUrl = "https://forms.gle/TjHcB9MHf6AwojiE8";

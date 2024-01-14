@@ -10,32 +10,44 @@ import Image from 'next/image';
 import PageSection from '../../../components/PageSection';
 import { Button, CardActions, Grid, Sheet } from '@mui/joy';
 import { OpenInNew } from '@mui/icons-material';
-import { projectData } from '../../../data';
+import { projectData, traineeProjectData } from '../../../data';
 
 export default function OurProjectsPage() {
   return (
-    <PageSection title="Our Projects">
-      <Grid container flexGrow={1} rowSpacing={3}>
-        {projectData.map((props, idx) =>
-          <Grid xs={12} md={6} key={idx}>
-            <ProjectCard {...props}/>
-          </Grid>
-        )}
-      </Grid>
-    </PageSection>
+    <>
+      <PageSection title="Flagship Projects">
+        <Grid container flexGrow={1} rowSpacing={3}>
+          {projectData.map((props, idx) =>
+            <Grid xs={12} md={6} key={idx}>
+              <ProjectCard {...props} trainee={false}/>
+            </Grid>
+          )}
+        </Grid>
+      </PageSection>
+      {traineeProjectData.length > 0 && <PageSection title="Past Trainee Projects">
+        <Grid container flexGrow={1} rowSpacing={3}>
+          {traineeProjectData.map((props, idx) =>
+            <Grid xs={12} md={6} key={idx}>
+              <ProjectCard {...props} trainee={true}/>
+            </Grid>
+          )}
+        </Grid>
+      </PageSection>}
+    </>
   )
 }
 
 export interface ProjectCardProps {
   name: string;
   desc: string;
-  logoUrl: string;
+  logoUrl?: string;
   thumbnailUrl: string;
   projectUrl?: string;
+  trainee: boolean;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
-  name, desc, logoUrl, thumbnailUrl, projectUrl
+  name, desc, logoUrl, thumbnailUrl, projectUrl, trainee
 }) => {
   return (
     <Card variant="outlined" sx={{ width: { xs: "100%", md: "95%" }, height: "100%", mx: 'auto' }}>
@@ -47,7 +59,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             alt=""
           />
         </AspectRatio>
-        <Sheet
+        {logoUrl && <Sheet
           variant="soft"
           sx={{
             boxShadow: "sm",
@@ -68,7 +80,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           }}>
             <Image fill src={logoUrl} alt=""/>
           </AspectRatio>
-        </Sheet>
+        </Sheet>}
       </CardOverflow>
       <CardContent>
         <Typography level="title-lg">
@@ -79,9 +91,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </Typography>
       </CardContent>
       <CardActions buttonFlex="1">
-        {/*<Button variant="outlined" color="neutral">*/}
-        {/*  See more*/}
-        {/*</Button>*/}
         <Button
           component="a"
           disabled={!projectUrl}
@@ -89,7 +98,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           target="_blank"
           startDecorator={projectUrl && <OpenInNew/>}
         >
-          {projectUrl ? "Visit now" : "Coming soon!"}
+          {projectUrl ? (trainee ? "Check it out" : "Visit now") : "Coming soon!"}
         </Button>
       </CardActions>
     </Card>
