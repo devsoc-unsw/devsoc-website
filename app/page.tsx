@@ -48,12 +48,11 @@ export default function Home() {
             spacing={{ xs: 4, sm: 10 }}
             alignItems="center"
             width="100%"
-            height={{ xs: "100%", sm: "115%", md: "100%" }}
-            bgcolor="neutral.softBg"
+            height="100%"
         >
             <Stack width="75%" direction="column-reverse">
                 <Box sx={{width: "100%"}}>
-                    <Typography mt={3} fontSize={{ xs: "1.8rem", sm: "2.6rem", md: "3.4rem" }} fontWeight={600}>
+                    <Typography mt={3} fontSize={{ xs: "1.6rem", sm: "2.6rem", md: "3.4rem" }} fontWeight={600}>
                         A dedicated student community of
                         <TextTransition className={styles.rainbow}
                                         springConfig={presets.gentle}>{texts[index % texts.length]}</TextTransition>
