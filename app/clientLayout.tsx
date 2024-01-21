@@ -29,7 +29,7 @@ const ClientLayout: React.FC<{
       dark: {
         palette: {
           background: {
-            body: path === "/" && "var(--joy-palette-neutral-800, #171A1C)"
+            body: path === "/" ? "var(--joy-palette-neutral-800, #171A1C)" : undefined
           }
         }
       }
