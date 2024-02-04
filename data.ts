@@ -11,6 +11,7 @@ import {
 import { ProjectCardProps } from './app/(pages)/our-projects/page';
 import { PersonProps } from './app/(pages)/about-us/page';
 import { RecruitmentProps } from './app/(pages)/get-involved/page';
+import DiscordIcon from './components/nav/DiscordIcon';
 
 // General stuff:
 // - All images need to go somewhere in /public, and the links are rooted at the /public folder
@@ -30,6 +31,7 @@ export const socialsData = [
   { Icon: Facebook, href: "https://www.facebook.com/devsocUNSW/" },
   { Icon: Instagram, href: "https://www.instagram.com/devsoc_unsw/" },
   { Icon: LinkedIn, href: "https://www.linkedin.com/company/97436660/" },
+  { Icon: DiscordIcon, href: "https://discord.com/invite/u9p34WUTcs" },
 ];
 
 // Data displayed on the cards of the "Our Projects" page
