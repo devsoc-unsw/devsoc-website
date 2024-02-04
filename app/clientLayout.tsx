@@ -9,6 +9,7 @@ import {CssBaseline, CssVarsProvider, extendTheme} from '@mui/joy';
 import localFont from 'next/font/local';
 import {usePathname} from 'next/navigation';
 import {Box} from "@mui/material";
+import Link from "next/link";
 
 const ttCommonsPro = localFont({src: './TT_Commons_Pro_Variable.woff2'})
 
@@ -41,7 +42,7 @@ const ClientLayout: React.FC<{
             <CssBaseline/>
             <App>
                 <Box sx={{backgroundColor: "#ed6c02", color: "white", padding: "1rem", font: "Roboto"}}>
-                    Our teams are currently working to resolve some issues with accessing the projects.
+                    Our teams are currently working to resolve some issues with accessing the projects. View system status <Link styles={{color:"black"}} href={"/status"}>here</Link>.
                 </Box>
                 {children}
             </App>
