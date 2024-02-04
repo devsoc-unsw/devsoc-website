@@ -4,6 +4,7 @@ import PageSection from '../../../components/PageSection';
 import Image from 'next/image';
 import {Box, Typography} from '@mui/material';
 import Notangles from "../../../public/projects/notangles/logo.png"
+import Circles from "../../../public/projects/circles/logo.png"
 import Unilectives from "../../../public/projects/unilectives/logo.png"
 import Freerooms from "../../../public/projects/freerooms/logo.png"
 import Structs from "../../../public/projects/structs/logo.png"
@@ -22,18 +23,20 @@ export default function AboutUsPage() {
                     marginBottom: "2rem"
                 }}>
                     <Box sx={{display: "flex", flexDirection: "row", alignItems: "center", gap: "2rem"}}>
-                        <Image src={Notangles} alt="Notangles" width={50} height={50}/>
+                        <Box sx={{width: "3rem"}}>
+                            <Image src={Notangles} alt="Notangles" width={35} height={50}/>
+                        </Box>
                         <Typography sx={{fontWeight: 700}}>
                             Notangles
                         </Typography>
                     </Box>
                     <Box sx={{
-                        backgroundColor: "#FDFD96",
+                        backgroundColor: "rgb(253, 237, 237)",
                         color: "black",
                         padding: "0.3rem 0.7rem",
                         borderRadius: "2rem"
                     }}>
-                        Non-Operational
+                        Unavailable
                     </Box>
                 </Box>
                 <Box sx={{
@@ -44,15 +47,17 @@ export default function AboutUsPage() {
                     marginBottom: "2rem"
                 }}>
                     <Box sx={{display: "flex", flexDirection: "row", alignItems: "center", gap: "2rem"}}>
-                        <Image src="https://circles.csesoc.app/assets/circlesLogo-f32e25a3.svg" alt="Notangles"
-                               width={50} height={65}/>
+                        <Box sx={{width: "3rem"}}>
+                            <Image src={Circles} alt="Circles"
+                                   width={35} height={50}/>
+                        </Box>
                         <Typography sx={{fontWeight: 700}}>
                             Circles
                         </Typography>
                     </Box>
                     <Box sx={{
-                        backgroundColor: "#77DD77",
-                        color: "black",
+                        backgroundColor: "#2e7d32",
+                        color: "white",
                         padding: "0.3rem 0.7rem",
                         borderRadius: "2rem"
                     }}>
@@ -68,18 +73,20 @@ export default function AboutUsPage() {
                     marginBottom: "2rem"
                 }}>
                     <Box sx={{display: "flex", flexDirection: "row", alignItems: "center", gap: "2rem"}}>
-                        <Image src={Unilectives} alt="Notangles" width={50} height={50}/>
+                        <Box sx={{width: "3rem"}}>
+                            <Image src={Unilectives} alt="Unilectives" width={40} height={40}/>
+                        </Box>
                         <Typography sx={{fontWeight: 700}}>
                             Unilectives
                         </Typography>
                     </Box>
                     <Box sx={{
-                        backgroundColor: "#FDFD96",
+                        backgroundColor: "rgb(253, 237, 237)",
                         color: "black",
                         padding: "0.3rem 0.7rem",
                         borderRadius: "2rem"
                     }}>
-                        Non-Operational
+                        Unavailable
                     </Box>
                 </Box>
 
@@ -91,18 +98,20 @@ export default function AboutUsPage() {
                     marginBottom: "2rem"
                 }}>
                     <Box sx={{display: "flex", flexDirection: "row", alignItems: "center", gap: "2rem"}}>
-                        <Image src={Freerooms} alt="Notangles" width={50} height={50}/>
+                        <Box sx={{width: "3rem"}}>
+                            <Image src={Freerooms} alt="Freerooms" width={40} height={50}/>
+                        </Box>
                         <Typography sx={{fontWeight: 700}}>
                             Freerooms
                         </Typography>
                     </Box>
                     <Box sx={{
-                        backgroundColor: "#FDFD96",
+                        backgroundColor: "rgb(253, 237, 237)",
                         color: "black",
                         padding: "0.3rem 0.7rem",
                         borderRadius: "2rem"
                     }}>
-                        Non-Operational
+                        Unavailable
                     </Box>
                 </Box>
 
@@ -114,18 +123,20 @@ export default function AboutUsPage() {
                     marginBottom: "2rem"
                 }}>
                     <Box sx={{display: "flex", flexDirection: "row", alignItems: "center", gap: "2rem"}}>
-                        <Image src={Structs} alt="Notangles" width={70} height={70}/>
+                        <Box sx={{width: "3rem"}}>
+                            <Image src={Structs} alt="Structs" width={45} height={50}/>
+                        </Box>
                         <Typography sx={{fontWeight: 700}}>
                             Structs.sh
                         </Typography>
                     </Box>
                     <Box sx={{
-                        backgroundColor: "#FDFD96",
+                        backgroundColor: "rgb(253, 237, 237)",
                         color: "black",
                         padding: "0.3rem 0.7rem",
                         borderRadius: "2rem"
                     }}>
-                        Non-Operational
+                        Unavailable
                     </Box>
                 </Box>
 
@@ -137,18 +148,20 @@ export default function AboutUsPage() {
                     marginBottom: "2rem"
                 }}>
                     <Box sx={{display: "flex", flexDirection: "row", alignItems: "center", gap: "2rem"}}>
-                        <Image src={Jobsboard} alt="Notangles" width={70} height={70}/>
+                        <Box sx={{width: "3rem"}}>
+                            <Image src={Jobsboard} alt="Jobsboard" width={40} height={50}/>
+                        </Box>
                         <Typography sx={{fontWeight: 700}}>
                             Jobsboard
                         </Typography>
                     </Box>
                     <Box sx={{
-                        backgroundColor: "#FDFD96",
+                        backgroundColor: "rgb(253, 237, 237)",
                         color: "black",
                         padding: "0.3rem 0.7rem",
                         borderRadius: "2rem"
                     }}>
-                        Non-Operational
+                        Unavailable
                     </Box>
                 </Box>
 
@@ -160,18 +173,20 @@ export default function AboutUsPage() {
                     marginBottom: "2rem"
                 }}>
                     <Box sx={{display: "flex", flexDirection: "row", alignItems: "center", gap: "2rem"}}>
-                        <Image src={Chaos} alt="Notangles" width={70} height={70}/>
+                        <Box sx={{width: "3rem"}}>
+                            <Image src={Chaos} alt="Chaos" width={50} height={40}/>
+                        </Box>
                         <Typography sx={{fontWeight: 700}}>
                             Chaos
                         </Typography>
                     </Box>
                     <Box sx={{
-                        backgroundColor: "#FDFD96",
+                        backgroundColor: "rgb(253, 237, 237)",
                         color: "black",
                         padding: "0.3rem 0.7rem",
                         borderRadius: "2rem"
                     }}>
-                        Non-Operational
+                        Unavailable
                     </Box>
                 </Box>
             </PageSection>
