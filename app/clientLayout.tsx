@@ -8,7 +8,7 @@ import { CssBaseline, CssVarsProvider, extendTheme } from '@mui/joy';
 import localFont from 'next/font/local';
 import { usePathname } from 'next/navigation';
 import React from 'react';
-import {Alert} from "@mui/material";
+import Alert from "@mui/material/Alert";
 
 const ttCommonsPro = localFont({ src: './TT_Commons_Pro_Variable.woff2'})
 
