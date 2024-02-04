@@ -8,6 +8,7 @@ import { CssBaseline, CssVarsProvider, extendTheme } from '@mui/joy';
 import localFont from 'next/font/local';
 import { usePathname } from 'next/navigation';
 import React from 'react';
+import {Alert} from "@mui/material";
 
 const ttCommonsPro = localFont({ src: './TT_Commons_Pro_Variable.woff2'})
 
@@ -40,6 +41,9 @@ const ClientLayout: React.FC<{
       <CssVarsProvider defaultMode='dark' theme={theme}>
         <CssBaseline/>
         <App>
+          <Alert variant="filled" severity="warning" color="warning" sx={{backgroundColor: "#ed6c02", color: "white"}} onClose={() => {}}>
+            Our teams are currently working to resolve some issues with accessing the projects.
+          </Alert>
           {children}
         </App>
       </CssVarsProvider>
