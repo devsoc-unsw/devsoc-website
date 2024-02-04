@@ -4,63 +4,62 @@
  * rendered lives
  */
 
-import { CssBaseline, CssVarsProvider, extendTheme } from '@mui/joy';
+import * as React from 'react';
+import {CssBaseline, CssVarsProvider, extendTheme} from '@mui/joy';
 import localFont from 'next/font/local';
-import { usePathname } from 'next/navigation';
-import React from 'react';
-import Alert from "@mui/material/Alert";
+import {usePathname} from 'next/navigation';
+import {Box} from "@mui/material";
 
-const ttCommonsPro = localFont({ src: './TT_Commons_Pro_Variable.woff2'})
-
+const ttCommonsPro = localFont({src: './TT_Commons_Pro_Variable.woff2'})
 
 
 /**
  * Any global components like providers or configs should go here
  */
 const ClientLayout: React.FC<{
-  children: React.ReactNode;
-}> = ({ children }) => {
-  const path = usePathname();
-  const theme = extendTheme({
-    fontFamily: {
-      display: ttCommonsPro.style.fontFamily,
-      body: ttCommonsPro.style.fontFamily,
-    },
-    colorSchemes: {
-      dark: {
-        palette: {
-          background: {
-            body: path === "/" ? "var(--joy-palette-neutral-800, #171A1C)" : undefined
-          }
+    children: React.ReactNode;
+}> = ({children}) => {
+    const path = usePathname();
+    const theme = extendTheme({
+        fontFamily: {
+            display: ttCommonsPro.style.fontFamily,
+            body: ttCommonsPro.style.fontFamily,
+        },
+        colorSchemes: {
+            dark: {
+                palette: {
+                    background: {
+                        body: path === "/" ? "var(--joy-palette-neutral-800, #171A1C)" : undefined
+                    }
+                }
+            }
         }
-      }
-    }
-  });
+    });
 
-  return (
-      <CssVarsProvider defaultMode='dark' theme={theme}>
-        <CssBaseline/>
-        <App>
-          <Alert variant="filled" severity="warning" color="warning" sx={{backgroundColor: "#ed6c02", color: "white"}} onClose={() => {}}>
-            Our teams are currently working to resolve some issues with accessing the projects.
-          </Alert>
-          {children}
-        </App>
-      </CssVarsProvider>
-  )
+    return (
+        <CssVarsProvider defaultMode='dark' theme={theme}>
+            <CssBaseline/>
+            <App>
+                <Box sx={{backgroundColor: "#ed6c02", color: "white", padding: "1rem", font: "Roboto"}}>
+                    Our teams are currently working to resolve some issues with accessing the projects.
+                </Box>
+                {children}
+            </App>
+        </CssVarsProvider>
+    )
 }
 
 /**
  * Actual layout is here, so we can make use of the providers in ClientLayout
  */
 const App: React.FC<{
-  children: React.ReactNode;
-}> = ({ children }) => {
-  return (
-    <>
-      {children}
-    </>
-  )
+    children: React.ReactNode;
+}> = ({children}) => {
+    return (
+        <>
+            {children}
+        </>
+    )
 }
 
 export default ClientLayout;
