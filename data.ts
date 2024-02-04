@@ -23,6 +23,7 @@ export const navData = [
   { text: 'About Us', href: '/about-us' },
   { text: 'Our Projects', href: '/our-projects' },
   { text: 'Get Involved', href: '/get-involved' },
+  { text: 'Status', href: '/status' },
 ];
 
 // Links to socials on nav
