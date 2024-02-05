@@ -1,6 +1,6 @@
 import React from 'react';
 import PageSection from '../../../components/PageSection';
-import { Button, Grid, Link, Sheet, Stack, Typography } from '@mui/joy';
+import { Button, Grid, Link, List, ListItem, Sheet, Stack, Typography } from '@mui/joy';
 import { SvgIconComponent } from '@mui/icons-material';
 import { feedbackFormUrl, recruitmentData } from '../../../data';
 import type { Metadata } from 'next';
@@ -29,12 +29,22 @@ export default function GetInvolvedPage() {
       </PageSection>
       <PageSection title="Open Source">
         <Typography textAlign='justify' mb={2}>
-          Missed out on the chance to join DevSoc? As all our projects are open source, there will still be plenty of
+          Missed out on the chance to join DevSoc? As all our projects are open source, there are still plenty of
           opportunities to contribute. Keep an eye on each project&apos;s GitHub Issues board for any tasks that might
-          interest you.
+          interest you. Be sure to open your own issues if you have any ideas on how to improve the projects!
+        </Typography>
+        <Typography textAlign='justify' mb={2}>
+          To contribute, look for issues on GitHub tagged as <b>help wanted</b> - these are the issues our project
+          directors are seeking help with from outside contributors. In particular, those also tagged as <b>good first
+          issue</b> are suited for anyone less familiar with the codebase or tech stack.
         </Typography>
         <Typography textAlign='justify'>
-          Stay tuned for more in-depth guidelines and instructions for open source contribution!
+          If one of these issues catches your eye, you should:
+          <List marker="disc">
+            <ListItem>Make sure you have all the information you need, and if not, ask for clarification in a comment</ListItem>
+            <ListItem>Add a comment to request the project directors to assign the issue to you</ListItem>
+            <ListItem>If it is assigned to you, fork the repository, implement the change and open a pull request</ListItem>
+          </List>
         </Typography>
       </PageSection>
       <PageSection title="Feedback">
