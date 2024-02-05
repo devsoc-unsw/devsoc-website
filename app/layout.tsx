@@ -7,7 +7,8 @@ import type { Metadata } from 'next';
 import React from 'react';
 
 import './globals.css';
-import ClientLayout from './clientLayout';
+import ThemeRegistry from '../components/ThemeRegistry';
+import Box from '@mui/joy/Box';
 
 export const metadata: Metadata = {
   title: 'DevSoc UNSW',
@@ -22,9 +23,13 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ClientLayout>
+        <ThemeRegistry>
+          {/*TODO: Make this conditionally render if there are any non-operational projects*/}
+          {/*<Box p={1.5} sx={{ backgroundColor: "#ed6c02", color: "white" }}>*/}
+          {/*  Our teams are currently working to resolve some issues with accessing the projects.*/}
+          {/*</Box>*/}
           {children}
-        </ClientLayout>
+        </ThemeRegistry>
       </body>
     </html>
   )

@@ -8,10 +8,10 @@ import {
   School,
   CoPresent
 } from '@mui/icons-material';
-import { ProjectCardProps } from './app/(pages)/our-projects/page';
 import { PersonProps } from './app/(pages)/about-us/page';
 import { RecruitmentProps } from './app/(pages)/get-involved/page';
 import DiscordIcon from './components/nav/DiscordIcon';
+import { ProjectCardProps } from './components/ProjectCard';
 
 // General stuff:
 // - All images need to go somewhere in /public, and the links are rooted at the /public folder

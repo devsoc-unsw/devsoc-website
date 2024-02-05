@@ -4,6 +4,12 @@ import PageSection from '../../../components/PageSection';
 import Image from 'next/image';
 import { Typography } from '@mui/material';
 import { teamData } from '../../../data';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Us | DevSoc UNSW',
+  description: 'Learn all about the UNSW Software Development Society!',
+}
 
 export default function AboutUsPage() {
   return (
@@ -35,7 +41,7 @@ export default function AboutUsPage() {
       </PageSection>
       <PageSection title="Meet The Team">
         <Stack direction='row' columnGap={2} rowGap={3} flexWrap="wrap" justifyContent="center">
-          {teamData.map((props, idx) => <Person {...props} key={idx}/>)}
+          {teamData.map((props) => <Person {...props} key={props.title}/>)}
         </Stack>
       </PageSection>
     </>

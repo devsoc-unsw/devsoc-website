@@ -10,6 +10,12 @@ import Freerooms from "../../../public/projects/freerooms/logo.png"
 import Structs from "../../../public/projects/structs/logo.png"
 import Jobsboard from "../../../public/projects/jobsboard/logo.png"
 import Chaos from "../../../public/projects/chaos/logo.png"
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Status | DevSoc UNSW',
+    description: 'Real-time status information on DevSoc\'s apps',
+}
 
 export default function AboutUsPage() {
     return (

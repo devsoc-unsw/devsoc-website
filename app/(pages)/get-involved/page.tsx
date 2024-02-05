@@ -3,6 +3,12 @@ import PageSection from '../../../components/PageSection';
 import { Button, Grid, Link, Sheet, Stack, Typography } from '@mui/joy';
 import { SvgIconComponent } from '@mui/icons-material';
 import { feedbackFormUrl, recruitmentData } from '../../../data';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Get Involved | DevSoc UNSW',
+  description: 'Find out how you can get involved with DevSoc or our projects',
+}
 
 export default function GetInvolvedPage() {
   return (
@@ -14,8 +20,8 @@ export default function GetInvolvedPage() {
           everyone. Click the links below to get involved today!
         </Typography>
         <Grid container rowSpacing={6} columnSpacing={1}>
-          {recruitmentData.map((props, idx) =>
-            <Grid key={idx} xs={12} md={6}>
+          {recruitmentData.map((props) =>
+            <Grid key={props.position} xs={12} md={6}>
               <Recruitment {...props}/>
             </Grid>
           )}
