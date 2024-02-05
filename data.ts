@@ -43,21 +43,21 @@ export const projectData: Omit<ProjectCardProps, 'trainee'>[] = [
     desc: "An interactive drag-and-drop timetable planner designed to help UNSW students plan their ideal weekly timetable.",
     logoUrl: "/projects/notangles/logo.png",
     thumbnailUrl: "/projects/notangles/thumbnail.png",
-    projectUrl: "https://notangles.csesoc.app/"
+    projectUrl: "https://notangles.devsoc.app/"
   },
   {
     name: "Circles",
     desc: "A UNSW degree planner where you can explore and validate your degree structure.",
     logoUrl: "/projects/circles/logo.png",
     thumbnailUrl: "/projects/circles/thumbnail.png",
-    projectUrl: "https://circles.csesoc.app/"
+    projectUrl: "https://circles.devsoc.app/"
   },
   {
     name: "Unilectives",
     desc: "Your one-stop shop for UNSW course and elective reviews.",
     logoUrl: "/projects/unilectives/logo.png",
     thumbnailUrl: "/projects/unilectives/thumbnail.png",
-    projectUrl: "https://unilectives.csesoc.app/"
+    projectUrl: "https://unilectives.devsoc.app/"
   },
   {
     name: "Structs.sh",
@@ -71,7 +71,7 @@ export const projectData: Omit<ProjectCardProps, 'trainee'>[] = [
     desc: "A tool to view the timetable of any room on campus, and find an available room that suits all your needs.",
     logoUrl: "/projects/freerooms/logo.png",
     thumbnailUrl: "/projects/freerooms/thumbnail.png",
-    projectUrl: "https://freerooms.csesoc.app/"
+    projectUrl: "https://freerooms.devsoc.app/"
   },
   {
     name: "Jobsboard",
