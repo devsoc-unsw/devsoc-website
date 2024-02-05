@@ -106,12 +106,12 @@ export default function AboutUsPage() {
                         </Typography>
                     </Box>
                     <Box sx={{
-                        backgroundColor: "rgb(253, 237, 237)",
-                        color: "black",
+                        backgroundColor: "#2e7d32",
+                        color: "white",
                         padding: "0.3rem 0.7rem",
                         borderRadius: "2rem"
                     }}>
-                        Unavailable
+                        Operational
                     </Box>
                 </Box>
 
