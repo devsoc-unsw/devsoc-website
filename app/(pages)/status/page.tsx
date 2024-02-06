@@ -32,7 +32,7 @@ export default function StatusPage() {
                 {
                     Statuses.map((item, idx) => {
                         return (
-                            <Box sx={{
+                            <Box key={idx} sx={{
                                 display: "flex",
                                 flexDirection: "row",
                                 justifyContent: "space-between",
