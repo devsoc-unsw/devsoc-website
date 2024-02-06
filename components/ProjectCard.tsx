@@ -17,6 +17,7 @@ export interface ProjectCardProps {
   thumbnailUrl: string;
   projectUrl?: string;
   trainee: boolean;
+  status?: "Operational" | "Unavailable"
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({

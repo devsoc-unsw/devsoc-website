@@ -4,7 +4,7 @@ import PageSection from '../../../components/PageSection';
 import Image from 'next/image';
 import {Box, Typography} from '@mui/material';
 import type {Metadata} from 'next'
-import Statuses from "./status.json"
+import {projectData} from "../../../data";
 
 import Notangles from "../../../public/projects/notangles/logo.png"
 import Circles from "../../../public/projects/circles/logo.png"
@@ -18,8 +18,6 @@ interface StatusBubbleProps {
     status: boolean;
 }
 
-type ProjectNames = "Notangles" | "Circles" | "Unilectives" | "Freerooms" | "Structs" | "Jobsboard" | "Chaos"
-
 export const metadata: Metadata = {
     title: 'Status | DevSoc UNSW',
     description: 'Real-time status information on DevSoc\'s apps',
@@ -30,7 +28,7 @@ export default function StatusPage() {
         <>
             <PageSection title="System Status">
                 {
-                    Statuses.map((item, idx) => {
+                    projectData.map((item, idx) => {
                         return (
                             <Box key={idx} sx={{
                                 display: "flex",
@@ -40,11 +38,9 @@ export default function StatusPage() {
                                 marginBottom: "2rem"
                             }}>
                                 <Box sx={{display: "flex", flexDirection: "row", alignItems: "center", gap: "2rem"}}>
-                                    {
-                                        renderProjectLogo(item.project)
-                                    }
+                                    {renderProjectLogo(item.name)}
                                     <Typography sx={{fontWeight: 700}}>
-                                        {item.project}
+                                        {item.name}
                                     </Typography>
                                 </Box>
                                 <StatusBubble status={item.status == "Operational"}/>
@@ -84,7 +80,7 @@ const StatusBubble = (props: StatusBubbleProps) => {
     }
 }
 
-function renderProjectLogo(name: ProjectNames) {
+function renderProjectLogo(name: string) {
     switch (name) {
         case "Notangles":
             return <AspectRatio
@@ -93,5 +89,52 @@ function renderProjectLogo(name: ProjectNames) {
             }}>
                 <Image src={Notangles} alt={name} fill/>
             </AspectRatio>
+        case "Freerooms":
+            return <AspectRatio
+                ratio="1" variant="plain" objectFit="contain" sx={{
+                width: "3rem"
+            }}>
+                <Image src={Freerooms} alt={name} fill/>
+            </AspectRatio>
+        case "Chaos":
+            return <AspectRatio
+                ratio="1" variant="plain" objectFit="contain" sx={{
+                width: "3rem"
+            }}>
+                <Image src={Chaos} alt={name} fill/>
+            </AspectRatio>
+        case "Circles":
+            return <AspectRatio
+                ratio="1" variant="plain" objectFit="contain" sx={{
+                width: "3rem"
+            }}>
+                <Image src={Circles} alt={name} fill/>
+            </AspectRatio>
+        case "Unilectives":
+            return <AspectRatio
+                ratio="1" variant="plain" objectFit="contain" sx={{
+                width: "3rem"
+            }}>
+                <Image src={Unilectives} alt={name} fill/>
+            </AspectRatio>
+        case "Structs.sh":
+            return <AspectRatio
+                ratio="1" variant="plain" objectFit="contain" sx={{
+                width: "3rem"
+            }}>
+                <Image src={Structs} alt={name} fill/>
+            </AspectRatio>
+        case "Jobsboard":
+            return <AspectRatio
+                ratio="1" variant="plain" objectFit="contain" sx={{
+                width: "3rem"
+            }}>
+                <Image src={Jobsboard} alt={name} fill/>
+            </AspectRatio>
+        default:
+            return <AspectRatio
+                ratio="1" variant="plain" objectFit="contain" sx={{
+                width: "3rem"
+            }}></AspectRatio>
     }
 }
