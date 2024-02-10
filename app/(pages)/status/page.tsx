@@ -1,14 +1,9 @@
 import React from 'react';
-import {AspectRatio} from '@mui/joy';
+import {AspectRatio, Chip, Stack, Typography} from '@mui/joy';
 import PageSection from '../../../components/PageSection';
 import Image from 'next/image';
-import {Box, Typography} from '@mui/material';
 import type {Metadata} from 'next'
 import {projectData} from "../../../data";
-
-interface StatusBubbleProps {
-  status: boolean;
-}
 
 export const metadata: Metadata = {
   title: 'Status | DevSoc UNSW',
@@ -17,62 +12,42 @@ export const metadata: Metadata = {
 
 export default function StatusPage() {
   return (
-    <>
-      <PageSection title="System Status">
+    <PageSection title="System Status">
+      <Stack spacing="2rem">
         {
           projectData.map((item, idx) => {
             return (
-              <Box key={idx} sx={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "space-between",
-                alignItems: "center",
-                marginBottom: "2rem"
-              }}>
-                <Box sx={{display: "flex", flexDirection: "row", alignItems: "center", gap: "2rem"}}>
+              <Stack key={idx} direction="row" alignItems="center" justifyContent="space-between">
+                <Stack direction="row" alignItems="center" gap="2rem">
                   <AspectRatio
                     ratio="1" variant="plain" objectFit="contain" sx={{
                     width: "3rem"
                   }}>
-                    <Image src={item.logoUrl} alt={item.name} fill/>
+                    <Image src={item.logoUrl ?? ""} alt={item.name} fill/>
                   </AspectRatio>
-                  <Typography sx={{fontWeight: 700}}>
+                  <Typography fontWeight={700}>
                     {item.name}
                   </Typography>
-                </Box>
+                </Stack>
                 <StatusBubble status={item.status == "Operational"}/>
-              </Box>
+              </Stack>
             )
           })
         }
-      </PageSection>
-    </>
+      </Stack>
+    </PageSection>
   )
+}
+
+interface StatusBubbleProps {
+  status: boolean;
 }
 
 const StatusBubble = (props: StatusBubbleProps) => {
   const {status} = props
-  if (status) {
-    return (
-      <Box sx={{
-        backgroundColor: "#2e7d32",
-        color: "white",
-        padding: "0.3rem 0.7rem",
-        borderRadius: "2rem"
-      }}>
-        Operational
-      </Box>
-    )
-  } else {
-    return (
-      <Box sx={{
-        backgroundColor: "rgb(253, 237, 237)",
-        color: "black",
-        padding: "0.3rem 0.7rem",
-        borderRadius: "2rem"
-      }}>
-        Unavailable
-      </Box>
-    )
-  }
+  return (
+    <Chip color={status ? "success" : "danger"}>
+      {status ? "Operational" : "Unavailable"}
+    </Chip>
+  )
 }
