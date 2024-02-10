@@ -13,12 +13,12 @@ export const metadata: Metadata = {
 export default function StatusPage() {
   return (
     <PageSection title="System Status">
-      <Stack spacing="2rem">
+      <Stack spacing={4}>
         {
           projectData.map((item, idx) => {
             return (
               <Stack key={idx} direction="row" alignItems="center" justifyContent="space-between">
-                <Stack direction="row" alignItems="center" gap="2rem">
+                <Stack direction="row" alignItems="center" gap={4}>
                   <AspectRatio
                     ratio="1" variant="plain" objectFit="contain" sx={{
                     width: "3rem"

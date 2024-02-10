@@ -17,35 +17,25 @@ export const metadata: Metadata = {
 }
 
 export default async function RootLayout({
-                                           children,
-                                         }: {
+  children,
+}: {
   children: React.ReactNode
 }) {
-  const projectIssues = checkForIssues(projectData)
+  const issue = (item: Omit<ProjectCardProps, 'trainee'>) => item.status === "Unavailable"
+  const projectIssues = projectData.some(issue)
   return (
     <html lang="en">
     <body>
     <ThemeRegistry>
       {
-        projectIssues ?
-          <Box p={1.5} sx={{backgroundColor: "#ed6c02", color: "white"}}>
+        projectIssues &&
+          <Box p={1.5} bgcolor="#ed6c02" color="white">
             Our teams are currently working to resolve some issues with accessing the projects.
           </Box>
-          : null
       }
       {children}
     </ThemeRegistry>
     </body>
     </html>
   )
-}
-
-function checkForIssues(data: Omit<ProjectCardProps, 'trainee'>[]): boolean {
-  let issues = false
-  data.forEach((i) => {
-    if (i.status === "Unavailable") {
-      issues = true
-    }
-  })
-  return issues
 }
