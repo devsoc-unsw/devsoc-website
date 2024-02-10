@@ -21,14 +21,12 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const issue = (item: Omit<ProjectCardProps, 'trainee'>) => item.status === "Unavailable"
-  const projectIssues = projectData.some(issue)
   return (
     <html lang="en">
     <body>
     <ThemeRegistry>
       {
-        projectIssues &&
+        projectData.some((project) => project.status === "Unavailable") &&
           <Box p={1.5} bgcolor="#ed6c02" color="white">
             Our teams are currently working to resolve some issues with accessing the projects.
           </Box>
