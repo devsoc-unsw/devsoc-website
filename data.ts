@@ -1,17 +1,17 @@
 import {
+  CoPresent,
   EmojiObjects as Lightbulb,
   Facebook,
   GitHub,
   Groups,
   Instagram,
   LinkedIn,
-  School,
-  CoPresent
+  School
 } from '@mui/icons-material';
-import { PersonProps } from './app/(pages)/about-us/page';
-import { RecruitmentProps } from './app/(pages)/get-involved/page';
+import {PersonProps} from './app/(pages)/about-us/page';
+import {RecruitmentProps} from './app/(pages)/get-involved/page';
 import DiscordIcon from './components/nav/DiscordIcon';
-import { ProjectCardProps } from './components/ProjectCard';
+import {ProjectCardProps} from './components/ProjectCard';
 
 // General stuff:
 // - All images need to go somewhere in /public, and the links are rooted at the /public folder
@@ -20,19 +20,19 @@ import { ProjectCardProps } from './components/ProjectCard';
 // Pages and links displayed on nav
 // Probably shouldn't be touched
 export const navData = [
-  { text: 'About Us', href: '/about-us' },
-  { text: 'Our Projects', href: '/our-projects' },
-  { text: 'Get Involved', href: '/get-involved' },
-  { text: 'Status', href: '/status' },
+  {text: 'About Us', href: '/about-us'},
+  {text: 'Our Projects', href: '/our-projects'},
+  {text: 'Get Involved', href: '/get-involved'},
+  {text: 'Status', href: '/status'},
 ];
 
 // Links to socials on nav
 export const socialsData = [
-  { Icon: GitHub, href: "https://github.com/devsoc-unsw" },
-  { Icon: Facebook, href: "https://www.facebook.com/devsocUNSW/" },
-  { Icon: Instagram, href: "https://www.instagram.com/devsoc_unsw/" },
-  { Icon: LinkedIn, href: "https://www.linkedin.com/company/97436660/" },
-  { Icon: DiscordIcon, href: "https://discord.com/invite/u9p34WUTcs" },
+  {Icon: GitHub, href: "https://github.com/devsoc-unsw"},
+  {Icon: Facebook, href: "https://www.facebook.com/devsocUNSW/"},
+  {Icon: Instagram, href: "https://www.instagram.com/devsoc_unsw/"},
+  {Icon: LinkedIn, href: "https://www.linkedin.com/company/97436660/"},
+  {Icon: DiscordIcon, href: "https://discord.com/invite/u9p34WUTcs"},
 ];
 
 // Data displayed on the cards of the "Our Projects" page
@@ -43,48 +43,55 @@ export const projectData: Omit<ProjectCardProps, 'trainee'>[] = [
     desc: "An interactive drag-and-drop timetable planner designed to help UNSW students plan their ideal weekly timetable.",
     logoUrl: "/projects/notangles/logo.png",
     thumbnailUrl: "/projects/notangles/thumbnail.png",
-    projectUrl: "https://notangles.devsoc.app/"
+    projectUrl: "https://notangles.devsoc.app/",
+    status: "Operational"
   },
   {
     name: "Circles",
     desc: "A UNSW degree planner where you can explore and validate your degree structure.",
     logoUrl: "/projects/circles/logo.png",
     thumbnailUrl: "/projects/circles/thumbnail.png",
-    projectUrl: "https://circles.devsoc.app/"
+    projectUrl: "https://circles.devsoc.app/",
+    status: "Operational"
   },
   {
     name: "Unilectives",
     desc: "Your one-stop shop for UNSW course and elective reviews.",
     logoUrl: "/projects/unilectives/logo.png",
     thumbnailUrl: "/projects/unilectives/thumbnail.png",
-    projectUrl: "https://unilectives.devsoc.app/"
+    projectUrl: "https://unilectives.devsoc.app/",
+    status: "Operational"
   },
   {
     name: "Structs.sh",
     desc: "An interactive data structure and algorithm visualiser and educational platform for computer science students.",
     logoUrl: "/projects/structs/logo.png",
     thumbnailUrl: "/projects/structs/thumbnail.png",
-    projectUrl: "https://structs.sh/"
+    projectUrl: "https://structs.sh/",
+    status: "Operational"
   },
   {
     name: "Freerooms",
     desc: "A tool to view the timetable of any room on campus, and find an available room that suits all your needs.",
     logoUrl: "/projects/freerooms/logo.png",
     thumbnailUrl: "/projects/freerooms/thumbnail.png",
-    projectUrl: "https://freerooms.devsoc.app/"
+    projectUrl: "https://freerooms.devsoc.app/",
+    status: "Operational"
   },
   {
     name: "Jobsboard",
     desc: "A portal for students to explore job openings offered by our sponsors and other tech companies.",
     logoUrl: "/projects/jobsboard/logo.png",
     thumbnailUrl: "/projects/jobsboard/thumbnail.png",
-    projectUrl: "https://jobsboard.csesoc.unsw.edu.au/"
+    projectUrl: "https://jobsboard.csesoc.unsw.edu.au/",
+    status: "Operational"
   },
   {
     name: "Chaos",
     desc: "A platform for simplifying applying and recruiting for student society subcommittees at UNSW.",
     logoUrl: "/projects/chaos/logo.png",
     thumbnailUrl: "/projects/chaos/thumbnail.png",
+    status: "Operational"
   },
 ];
 
@@ -112,23 +119,23 @@ export const traineeProjectData: Omit<ProjectCardProps, 'trainee'>[] = [
 // People displayed in the "Meet the Team" section of "About Us"
 // If no image set, an animated gray circle appears
 export const teamData: PersonProps[] = [
-  { name: "Bob Chen", title: "Co-President", imgUrl: '/people/pres-nf.jpeg' },
-  { name: "Sally Sun", title: "Co-President", imgUrl: '/people/pres-nm.png' },
-  { name: "Jeremy Le", title: "Administrative Officer", imgUrl: '/people/admin.jpg' },
-  { name: "Michael Girikallo", title: "GEDI Officer", imgUrl: '/people/gedi.jpeg' },
-  { name: "Audrey Tanama", title: "VP (Internals)", imgUrl: '/people/vpi.jpeg' },
-  { name: "Henry Guo", title: "VP (Operations)", imgUrl: '/people/vpo.jpeg' },
-  { name: "Manhua Lu", title: "VP (Course Projects)", imgUrl: '/people/vpc.jpeg' },
-  { name: "Franco Reyes", title: "VP (Standalone Projects)", imgUrl: '/people/vps.jpeg' },
+  {name: "Bob Chen", title: "Co-President", imgUrl: '/people/pres-nf.jpeg'},
+  {name: "Sally Sun", title: "Co-President", imgUrl: '/people/pres-nm.png'},
+  {name: "Jeremy Le", title: "Administrative Officer", imgUrl: '/people/admin.jpg'},
+  {name: "Michael Girikallo", title: "GEDI Officer", imgUrl: '/people/gedi.jpeg'},
+  {name: "Audrey Tanama", title: "VP (Internals)", imgUrl: '/people/vpi.jpeg'},
+  {name: "Henry Guo", title: "VP (Operations)", imgUrl: '/people/vpo.jpeg'},
+  {name: "Manhua Lu", title: "VP (Course Projects)", imgUrl: '/people/vpc.jpeg'},
+  {name: "Franco Reyes", title: "VP (Standalone Projects)", imgUrl: '/people/vps.jpeg'},
 ];
 
 // Data for the "Join DevSoc" section
 // Should set/unset applicationUrl to mark recruitment as open/closed
 export const recruitmentData: RecruitmentProps[] = [
-  { position: "Directors", Icon: Lightbulb },
-  { position: "Subcommittee", Icon: Groups, applicationUrl: "https://forms.gle/Dz3fbk1NMJNJYtFu7" },
-  { position: "Training Leads", Icon: CoPresent, applicationUrl: "https://forms.gle/fovtvb5sGzYgrxia7" },
-  { position: "Trainees", Icon: School, applicationUrl: "https://forms.gle/sLvmCnendB5YdyiTA" },
+  {position: "Directors", Icon: Lightbulb},
+  {position: "Subcommittee", Icon: Groups, applicationUrl: "https://forms.gle/Dz3fbk1NMJNJYtFu7"},
+  {position: "Training Leads", Icon: CoPresent, applicationUrl: "https://forms.gle/fovtvb5sGzYgrxia7"},
+  {position: "Trainees", Icon: School, applicationUrl: "https://forms.gle/sLvmCnendB5YdyiTA"},
 ];
 
 export const feedbackFormUrl = "https://forms.gle/TjHcB9MHf6AwojiE8";
