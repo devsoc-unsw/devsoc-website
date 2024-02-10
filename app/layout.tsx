@@ -3,12 +3,13 @@
  * Metadata API - actual layout stuff happens in ClientLayout
  */
 
-import type { Metadata } from 'next';
+import type {Metadata} from 'next';
 import React from 'react';
-
 import './globals.css';
 import ThemeRegistry from '../components/ThemeRegistry';
 import Box from '@mui/joy/Box';
+import {ProjectCardProps} from "../components/ProjectCard";
+import {projectData} from "../data";
 
 export const metadata: Metadata = {
   title: 'DevSoc UNSW',
@@ -16,21 +17,36 @@ export const metadata: Metadata = {
 }
 
 export default async function RootLayout({
-  children,
-}: {
+                                           children,
+                                         }: {
   children: React.ReactNode
 }) {
+  const projectIssues = checkForIssues(projectData)
+  console.log(projectIssues)
   return (
     <html lang="en">
-      <body>
-        <ThemeRegistry>
-          {/*TODO: Make this conditionally render if there are any non-operational projects*/}
-          {/*<Box p={1.5} sx={{ backgroundColor: "#ed6c02", color: "white" }}>*/}
-          {/*  Our teams are currently working to resolve some issues with accessing the projects.*/}
-          {/*</Box>*/}
-          {children}
-        </ThemeRegistry>
-      </body>
+    <body>
+    <ThemeRegistry>
+      {
+        projectIssues ?
+          <Box p={1.5} sx={{backgroundColor: "#ed6c02", color: "white"}}>
+            Our teams are currently working to resolve some issues with accessing the projects.
+          </Box>
+          : null
+      }
+      {children}
+    </ThemeRegistry>
+    </body>
     </html>
   )
+}
+
+function checkForIssues(data: Omit<ProjectCardProps, 'trainee'>[]): boolean {
+  let issues = false
+  data.forEach((i) => {
+    if (i.status === "Unavailable") {
+      issues = true
+    }
+  })
+  return issues
 }
