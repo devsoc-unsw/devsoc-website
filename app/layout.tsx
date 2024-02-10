@@ -22,7 +22,6 @@ export default async function RootLayout({
   children: React.ReactNode
 }) {
   const projectIssues = checkForIssues(projectData)
-  console.log(projectIssues)
   return (
     <html lang="en">
     <body>
