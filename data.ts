@@ -134,8 +134,8 @@ export const teamData: PersonProps[] = [
 export const recruitmentData: RecruitmentProps[] = [
   {position: "Directors", Icon: Lightbulb},
   {position: "Subcommittee", Icon: Groups, applicationUrl: "https://forms.gle/Dz3fbk1NMJNJYtFu7"},
-  {position: "Training Leads", Icon: CoPresent, applicationUrl: "https://forms.gle/fovtvb5sGzYgrxia7"},
-  {position: "Trainees", Icon: School, applicationUrl: "https://forms.gle/sLvmCnendB5YdyiTA"},
+  {position: "Training Leads", Icon: CoPresent},
+  {position: "Trainees", Icon: School},
 ];
 
 export const feedbackFormUrl = "https://forms.gle/TjHcB9MHf6AwojiE8";
