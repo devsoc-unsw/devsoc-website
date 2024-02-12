@@ -145,7 +145,7 @@ export const projectSponsorData: SponsorInfo[] = [
   {
     name: "Jane Street",
     logoUrl: "https://opensource.janestreet.com/assets/JS_logo-d7838b558a1de6c51553426ab5a2bba474510c41c6a5e910a9e30524a32dec27.png",
-    url: "https://www.tiktok.com"
+    url: "https://www.janestreet.com/"
   },
   {
     name: "TikTok",
