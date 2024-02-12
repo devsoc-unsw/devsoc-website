@@ -1,13 +1,13 @@
 'use client'
 import Image from 'next/image';
-import {AspectRatio, Card, CardContent, Chip, Link, Stack, Typography} from '@mui/joy';
-import {Info, People, SvgIconComponent, Terminal} from '@mui/icons-material';
-import React, {useState} from 'react';
+import { AspectRatio, Card, CardContent, Chip, Link, Stack, Typography } from '@mui/joy';
+import { Info, People, SvgIconComponent, Terminal } from '@mui/icons-material';
+import React, { useState } from 'react';
 import NextLink from 'next/link';
-import TextTransition, {presets} from 'react-text-transition'
+import TextTransition, { presets } from 'react-text-transition'
 import styles from './styles.module.css'
-import {Box} from "@mui/material";
-import {projectSponsorData, recruitmentData} from '../data';
+import { Box } from "@mui/material";
+import { projectSponsorData, recruitmentData } from '../data';
 
 const cardContent: LinkCardProps[] = [
   {
@@ -45,14 +45,14 @@ export default function Home() {
   return (
     <Stack
       pt={10}
-      spacing={{xs: 4, sm: 10}}
+      spacing={{ xs: 4, sm: 10 }}
       alignItems="center"
       width="100%"
       height="100%"
     >
       <Stack width="75%" direction="column-reverse">
-        <Box sx={{width: "100%"}}>
-          <Typography mt={3} fontSize={{xs: "1.6rem", sm: "2.6rem", md: "3.4rem"}} fontWeight={600}>
+        <Box sx={{ width: "100%" }}>
+          <Typography mt={3} fontSize={{ xs: "1.6rem", sm: "2.6rem", md: "3.4rem" }} fontWeight={600}>
             A dedicated student community of
             <TextTransition
               className={styles.rainbow}
@@ -60,18 +60,18 @@ export default function Home() {
             >{texts[index % texts.length]}</TextTransition>
           </Typography>
         </Box>
-        <Typography fontSize={{xs: "1.1rem", sm: "2rem"}}>Software Development Society</Typography>
+        <Typography fontSize={{ xs: "1.1rem", sm: "2rem" }}>Software Development Society</Typography>
         <AspectRatio
           variant="plain"
           ratio="15/4"
           objectFit="contain"
-          sx={{width: {xs: 250, sm: 360}}}
+          sx={{ width: { xs: 250, sm: 360 } }}
         >
           <Image src='/logo/fullInvertTransparent.svg' alt='DevSoc logo' fill priority/>
         </AspectRatio>
       </Stack>
       <Stack
-        direction={{xs: "column", md: "row"}}
+        direction={{ xs: "column", md: "row" }}
         spacing={3}
         width="80%"
         alignItems='center'
@@ -80,7 +80,7 @@ export default function Home() {
         {cardContent.map((props) => <LinkCard key={props.title} {...props} />)}
       </Stack>
       <Stack alignItems='center'>
-        <Typography padding={5} fontSize={{xs: "1rem", sm: "1.75rem"}}>Our flagship projects are proudly
+        <Typography padding={5} fontSize={{ xs: "1rem", sm: "1.75rem" }}>Our flagship projects are proudly
           supported
           by</Typography>
         <SponsorLogo data={projectSponsorData}/>
@@ -98,55 +98,55 @@ interface LinkCardProps {
 }
 
 const LinkCard: React.FC<LinkCardProps> = ({
- Icon,
- content,
- title,
- href,
- chip
+  Icon,
+  content,
+  title,
+  href,
+  chip
 }) => {
   return (
     <Card
       sx={{
-        width: {xs: "100%", md: "30%"},
-        height: {xs: "30%", md: "100%"},
+        width: { xs: "100%", md: "30%" },
+        height: { xs: "30%", md: "100%" },
         transition: 'all .2s ease-in-out',
-        '&:hover': {transform: 'scale(1.05)'}
+        '&:hover': { transform: 'scale(1.05)' }
       }}
     >
       {chip && <Chip
-          size="md"
-          sx={{position: "absolute", top: -12, right: -10}}
-          color="primary"
-          variant="solid"
+        size="md"
+        sx={{ position: "absolute", top: -12, right: -10 }}
+        color="primary"
+        variant="solid"
       >
         {chip}
       </Chip>}
       <Stack
-        direction={{xs: 'row', md: 'column'}}
+        direction={{ xs: 'row', md: 'column' }}
         alignItems='center'
         spacing={2}
-        textAlign={{md: 'center'}}
+        textAlign={{ md: 'center' }}
       >
-        <AspectRatio variant="plain" ratio="1" sx={{width: {xs: 50, sm: 100, md: 100}}}>
+        <AspectRatio variant="plain" ratio="1" sx={{ width: { xs: 50, sm: 100, md: 100 } }}>
           <div>
             <Icon
-              sx={{fontSize: {xs: '3rem', sm: '5rem', md: '6rem'}}}
+              sx={{ fontSize: { xs: '3rem', sm: '5rem', md: '6rem' } }}
             />
           </div>
         </AspectRatio>
         <CardContent>
-          <Typography fontWeight="bold" fontSize={{sm: "large", md: "x-large", lg: "xx-large"}}>
+          <Typography fontWeight="bold" fontSize={{ sm: "large", md: "x-large", lg: "xx-large" }}>
             <Link
               overlay
               component={NextLink}
               href={href}
               underline="none"
-              sx={{color: "inherit"}}
+              sx={{ color: "inherit" }}
             >
               {title}
             </Link>
           </Typography>
-          <Typography fontSize={{xs: "small", sm: "medium"}}>
+          <Typography fontSize={{ xs: "small", sm: "medium" }}>
             {content}
           </Typography>
         </CardContent>
@@ -166,22 +166,24 @@ interface SponsorLogoProps {
 }
 
 const SponsorLogo = (props: SponsorLogoProps) => {
-  const {data} = props
+  const { data } = props
   return (
-    <Stack flexDirection="row" marginBottom={10} direction={{xs: "column", lg: "row"}} spacing={5}>
+    <Stack flexDirection="row" marginBottom={10} direction={{ xs: "column", lg: "row" }} spacing={5}>
       {
         data.map((sponsor, idx) => {
           return (
-            <AspectRatio key={idx}
-             variant="plain"
-             ratio="15/3"
-             objectFit="contain"
-             sx={{width: {xs: 250, sm: 360}}}
+            <AspectRatio
+              key={idx}
+              variant="plain"
+              ratio="15/3"
+              objectFit="contain"
+              sx={{ width: { xs: 250, sm: 360 } }}
             >
               <Link href={sponsor.url}>
                 <Image
                   src={sponsor.logoUrl}
-                  alt={sponsor.name} fill priority/>
+                  alt={sponsor.name} fill priority
+                />
               </Link>
             </AspectRatio>
           )
