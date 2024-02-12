@@ -149,7 +149,7 @@ export const projectSponsorData: SponsorInfo[] = [
   },
   {
     name: "TikTok",
-    logoUrl: "https://www.edigitalagency.com.au/wp-content/uploads/TikTok-logo-white-horizontal-medium-size.png",
+    logoUrl: "https://raw.githubusercontent.com/devsoc-unsw/notangles/b0811077ba6b7c4657d3479e5d378113cfa864c0/client/src/assets/tiktok_logo_white.svg",
     url: "https://www.tiktok.com"
   },
   {
