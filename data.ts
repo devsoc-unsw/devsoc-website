@@ -12,6 +12,7 @@ import {PersonProps} from './app/(pages)/about-us/page';
 import {RecruitmentProps} from './app/(pages)/get-involved/page';
 import DiscordIcon from './components/nav/DiscordIcon';
 import {ProjectCardProps} from './components/ProjectCard';
+import {SponsorInfo} from "./app/page";
 
 // General stuff:
 // - All images need to go somewhere in /public, and the links are rooted at the /public folder
@@ -139,3 +140,18 @@ export const recruitmentData: RecruitmentProps[] = [
 ];
 
 export const feedbackFormUrl = "https://forms.gle/TjHcB9MHf6AwojiE8";
+
+export const projectSponsorData: SponsorInfo[] = [
+  {
+    name: "TikTok",
+    logoUrl: "https://www.edigitalagency.com.au/wp-content/uploads/TikTok-logo-white-horizontal-medium-size.png",
+  },
+  {
+    name: "Jane Street",
+    logoUrl: "https://opensource.janestreet.com/assets/JS_logo-d7838b558a1de6c51553426ab5a2bba474510c41c6a5e910a9e30524a32dec27.png",
+  },
+  {
+    name: "Macquarie",
+    logoUrl: "https://www.mirafunds.com/assets/mira/site-wide-assets/logos/macquarie%20logo%20corporate_hrz_white.png",
+  }
+];
