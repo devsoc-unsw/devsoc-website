@@ -143,15 +143,18 @@ export const feedbackFormUrl = "https://forms.gle/TjHcB9MHf6AwojiE8";
 
 export const projectSponsorData: SponsorInfo[] = [
   {
-    name: "TikTok",
-    logoUrl: "https://www.edigitalagency.com.au/wp-content/uploads/TikTok-logo-white-horizontal-medium-size.png",
-  },
-  {
     name: "Jane Street",
     logoUrl: "https://opensource.janestreet.com/assets/JS_logo-d7838b558a1de6c51553426ab5a2bba474510c41c6a5e910a9e30524a32dec27.png",
+    url: "https://www.tiktok.com"
+  },
+  {
+    name: "TikTok",
+    logoUrl: "https://www.edigitalagency.com.au/wp-content/uploads/TikTok-logo-white-horizontal-medium-size.png",
+    url: "https://www.tiktok.com"
   },
   {
     name: "Macquarie",
     logoUrl: "https://www.mirafunds.com/assets/mira/site-wide-assets/logos/macquarie%20logo%20corporate_hrz_white.png",
+    url: "https://www.macquarie.com/au/en.html"
   }
 ];
