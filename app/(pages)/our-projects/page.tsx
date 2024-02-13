@@ -22,7 +22,7 @@ export default function OurProjectsPage() {
           )}
         </Grid>
       </PageSection>
-      {traineeProjectData.length > 0 && <PageSection title="Past Trainee Projects">
+      {traineeProjectData.length > 0 && <PageSection title="Trainee Projects">
         <Grid container flexGrow={1} rowSpacing={3}>
           {traineeProjectData.map((props) =>
             <Grid xs={12} md={6} key={props.name}>
