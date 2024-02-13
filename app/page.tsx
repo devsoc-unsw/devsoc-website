@@ -7,7 +7,7 @@ import NextLink from 'next/link';
 import TextTransition, { presets } from 'react-text-transition'
 import styles from './styles.module.css'
 import { Box } from "@mui/material";
-import { recruitmentData } from '../data';
+import { projectSponsorData, recruitmentData } from '../data';
 
 const cardContent: LinkCardProps[] = [
   {
@@ -79,6 +79,12 @@ export default function Home() {
       >
         {cardContent.map((props) => <LinkCard key={props.title} {...props} />)}
       </Stack>
+      <Stack alignItems='center'>
+        <Typography padding={5} fontSize={{ xs: "1rem", sm: "1.75rem" }}>Our flagship projects are proudly
+          supported
+          by</Typography>
+        <SponsorLogo data={projectSponsorData}/>
+      </Stack>
     </Stack>
   )
 }
@@ -146,5 +152,43 @@ const LinkCard: React.FC<LinkCardProps> = ({
         </CardContent>
       </Stack>
     </Card>
+  )
+}
+
+export interface SponsorInfo {
+  name: string;
+  logoUrl: string;
+  url: string;
+}
+
+interface SponsorLogoProps {
+  data: SponsorInfo[];
+}
+
+const SponsorLogo = (props: SponsorLogoProps) => {
+  const { data } = props
+  return (
+    <Stack flexDirection="row" marginBottom={10} direction={{ xs: "column", lg: "row" }} spacing={5}>
+      {
+        data.map((sponsor, idx) => {
+          return (
+            <AspectRatio
+              key={idx}
+              variant="plain"
+              ratio="15/3"
+              objectFit="contain"
+              sx={{ width: { xs: 250, sm: 360 } }}
+            >
+              <Link href={sponsor.url}>
+                <Image
+                  src={sponsor.logoUrl}
+                  alt={sponsor.name} fill priority
+                />
+              </Link>
+            </AspectRatio>
+          )
+        })
+      }
+    </Stack>
   )
 }

@@ -8,10 +8,11 @@ import {
   LinkedIn,
   School
 } from '@mui/icons-material';
-import {PersonProps} from './app/(pages)/about-us/page';
-import {RecruitmentProps} from './app/(pages)/get-involved/page';
+import { PersonProps } from './app/(pages)/about-us/page';
+import { RecruitmentProps } from './app/(pages)/get-involved/page';
 import DiscordIcon from './components/nav/DiscordIcon';
-import {ProjectCardProps} from './components/ProjectCard';
+import { ProjectCardProps } from './components/ProjectCard';
+import { SponsorInfo } from "./app/page";
 
 // General stuff:
 // - All images need to go somewhere in /public, and the links are rooted at the /public folder
@@ -20,19 +21,19 @@ import {ProjectCardProps} from './components/ProjectCard';
 // Pages and links displayed on nav
 // Probably shouldn't be touched
 export const navData = [
-  {text: 'About Us', href: '/about-us'},
-  {text: 'Our Projects', href: '/our-projects'},
-  {text: 'Get Involved', href: '/get-involved'},
-  {text: 'Status', href: '/status'},
+  { text: 'About Us', href: '/about-us' },
+  { text: 'Our Projects', href: '/our-projects' },
+  { text: 'Get Involved', href: '/get-involved' },
+  { text: 'Status', href: '/status' },
 ];
 
 // Links to socials on nav
 export const socialsData = [
-  {Icon: GitHub, href: "https://github.com/devsoc-unsw"},
-  {Icon: Facebook, href: "https://www.facebook.com/devsocUNSW/"},
-  {Icon: Instagram, href: "https://www.instagram.com/devsoc_unsw/"},
-  {Icon: LinkedIn, href: "https://www.linkedin.com/company/97436660/"},
-  {Icon: DiscordIcon, href: "https://discord.com/invite/u9p34WUTcs"},
+  { Icon: GitHub, href: "https://github.com/devsoc-unsw" },
+  { Icon: Facebook, href: "https://www.facebook.com/devsocUNSW/" },
+  { Icon: Instagram, href: "https://www.instagram.com/devsoc_unsw/" },
+  { Icon: LinkedIn, href: "https://www.linkedin.com/company/97436660/" },
+  { Icon: DiscordIcon, href: "https://discord.com/invite/u9p34WUTcs" },
 ];
 
 // Data displayed on the cards of the "Our Projects" page
@@ -119,23 +120,41 @@ export const traineeProjectData: Omit<ProjectCardProps, 'trainee'>[] = [
 // People displayed in the "Meet the Team" section of "About Us"
 // If no image set, an animated gray circle appears
 export const teamData: PersonProps[] = [
-  {name: "Bob Chen", title: "Co-President", imgUrl: '/people/pres-nf.jpeg'},
-  {name: "Sally Sun", title: "Co-President", imgUrl: '/people/pres-nm.png'},
-  {name: "Jeremy Le", title: "Administrative Officer", imgUrl: '/people/admin.jpg'},
-  {name: "Michael Girikallo", title: "GEDI Officer", imgUrl: '/people/gedi.jpeg'},
-  {name: "Audrey Tanama", title: "VP (Internals)", imgUrl: '/people/vpi.jpeg'},
-  {name: "Henry Guo", title: "VP (Operations)", imgUrl: '/people/vpo.jpeg'},
-  {name: "Manhua Lu", title: "VP (Course Projects)", imgUrl: '/people/vpc.jpeg'},
-  {name: "Franco Reyes", title: "VP (Standalone Projects)", imgUrl: '/people/vps.jpeg'},
+  { name: "Bob Chen", title: "Co-President", imgUrl: '/people/pres-nf.jpeg' },
+  { name: "Sally Sun", title: "Co-President", imgUrl: '/people/pres-nm.png' },
+  { name: "Jeremy Le", title: "Administrative Officer", imgUrl: '/people/admin.jpg' },
+  { name: "Michael Girikallo", title: "GEDI Officer", imgUrl: '/people/gedi.jpeg' },
+  { name: "Audrey Tanama", title: "VP (Internals)", imgUrl: '/people/vpi.jpeg' },
+  { name: "Henry Guo", title: "VP (Operations)", imgUrl: '/people/vpo.jpeg' },
+  { name: "Manhua Lu", title: "VP (Course Projects)", imgUrl: '/people/vpc.jpeg' },
+  { name: "Franco Reyes", title: "VP (Standalone Projects)", imgUrl: '/people/vps.jpeg' },
 ];
 
 // Data for the "Join DevSoc" section
 // Should set/unset applicationUrl to mark recruitment as open/closed
 export const recruitmentData: RecruitmentProps[] = [
-  {position: "Directors", Icon: Lightbulb},
-  {position: "Subcommittee", Icon: Groups, applicationUrl: "https://forms.gle/Dz3fbk1NMJNJYtFu7"},
-  {position: "Training Leads", Icon: CoPresent},
-  {position: "Trainees", Icon: School},
+  { position: "Directors", Icon: Lightbulb },
+  { position: "Subcommittee", Icon: Groups, applicationUrl: "https://forms.gle/Dz3fbk1NMJNJYtFu7" },
+  { position: "Training Leads", Icon: CoPresent },
+  { position: "Trainees", Icon: School },
 ];
 
 export const feedbackFormUrl = "https://forms.gle/TjHcB9MHf6AwojiE8";
+
+export const projectSponsorData: SponsorInfo[] = [
+  {
+    name: "Jane Street",
+    logoUrl: "https://opensource.janestreet.com/assets/JS_logo-d7838b558a1de6c51553426ab5a2bba474510c41c6a5e910a9e30524a32dec27.png",
+    url: "https://www.janestreet.com/"
+  },
+  {
+    name: "TikTok",
+    logoUrl: "https://raw.githubusercontent.com/devsoc-unsw/notangles/b0811077ba6b7c4657d3479e5d378113cfa864c0/client/src/assets/tiktok_logo_white.svg",
+    url: "https://www.tiktok.com"
+  },
+  {
+    name: "Macquarie",
+    logoUrl: "https://www.mirafunds.com/assets/mira/site-wide-assets/logos/macquarie%20logo%20corporate_hrz_white.png",
+    url: "https://www.macquarie.com/au/en.html"
+  }
+];
