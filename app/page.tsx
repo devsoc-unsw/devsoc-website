@@ -81,9 +81,9 @@ export default function Home() {
         {cardContent.map((props) => <LinkCard key={props.title} {...props} />)}
       </Stack>
       <Stack alignItems='center'>
-        <Typography padding={5} fontSize={{ xs: "1rem", sm: "1.75rem" }}>Our flagship projects are proudly
-          supported
-          by</Typography>
+        <Typography padding={3} fontSize={{ xs: "1rem", sm: "1.75rem" }}>
+          Our flagship projects are proudly supported by
+        </Typography>
         <SponsorLogo data={projectSponsorData}/>
       </Stack>
     </Stack>
@@ -169,7 +169,7 @@ interface SponsorLogoProps {
 const SponsorLogo = (props: SponsorLogoProps) => {
   const { data } = props
   return (
-    <Stack flexDirection="row" marginBottom={10} direction={{ xs: "column", lg: "row" }} spacing={5}>
+    <Stack flexDirection="row" marginBottom={5} direction={{ xs: "column", lg: "row" }} spacing={5}>
       {
         data.map((sponsor, idx) => {
           return (
