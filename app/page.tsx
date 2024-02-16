@@ -8,6 +8,7 @@ import TextTransition, { presets } from 'react-text-transition'
 import styles from './styles.module.css'
 import { Box } from "@mui/material";
 import { projectSponsorData, recruitmentData } from '../data';
+import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 
 const cardContent: LinkCardProps[] = [
   {
@@ -157,7 +158,7 @@ const LinkCard: React.FC<LinkCardProps> = ({
 
 export interface SponsorInfo {
   name: string;
-  logoUrl: string;
+  logo: StaticImport;
   url: string;
 }
 
@@ -179,9 +180,9 @@ const SponsorLogo = (props: SponsorLogoProps) => {
               objectFit="contain"
               sx={{ width: { xs: 250, sm: 360 } }}
             >
-              <Link href={sponsor.url}>
+              <Link target="_blank" href={sponsor.url}>
                 <Image
-                  src={sponsor.logoUrl}
+                  src={sponsor.logo}
                   alt={sponsor.name} fill priority
                 />
               </Link>
