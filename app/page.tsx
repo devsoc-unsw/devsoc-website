@@ -169,7 +169,7 @@ interface SponsorLogoProps {
 const SponsorLogo = (props: SponsorLogoProps) => {
   const { data } = props
   return (
-    <Stack flexDirection="row" marginBottom={5} direction={{ xs: "column", lg: "row" }} spacing={5}>
+    <Stack flexDirection="row" marginBottom={15} direction={{ xs: "column", lg: "row" }} spacing={5}>
       {
         data.map((sponsor, idx) => {
           return (
