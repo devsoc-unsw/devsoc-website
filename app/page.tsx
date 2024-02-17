@@ -8,6 +8,7 @@ import TextTransition, { presets } from 'react-text-transition'
 import styles from './styles.module.css'
 import { Box } from "@mui/material";
 import { projectSponsorData, recruitmentData } from '../data';
+import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 
 const cardContent: LinkCardProps[] = [
   {
@@ -80,9 +81,9 @@ export default function Home() {
         {cardContent.map((props) => <LinkCard key={props.title} {...props} />)}
       </Stack>
       <Stack alignItems='center'>
-        <Typography padding={5} fontSize={{ xs: "1rem", sm: "1.75rem" }}>Our flagship projects are proudly
-          supported
-          by</Typography>
+        <Typography padding={3} fontSize={{ xs: "1rem", sm: "1.75rem" }}>
+          Our flagship projects are proudly supported by
+        </Typography>
         <SponsorLogo data={projectSponsorData}/>
       </Stack>
     </Stack>
@@ -157,7 +158,7 @@ const LinkCard: React.FC<LinkCardProps> = ({
 
 export interface SponsorInfo {
   name: string;
-  logoUrl: string;
+  logo: StaticImport;
   url: string;
 }
 
@@ -168,7 +169,7 @@ interface SponsorLogoProps {
 const SponsorLogo = (props: SponsorLogoProps) => {
   const { data } = props
   return (
-    <Stack flexDirection="row" marginBottom={10} direction={{ xs: "column", lg: "row" }} spacing={5}>
+    <Stack flexDirection="row" marginBottom={5} direction={{ xs: "column", lg: "row" }} spacing={5}>
       {
         data.map((sponsor, idx) => {
           return (
@@ -179,9 +180,9 @@ const SponsorLogo = (props: SponsorLogoProps) => {
               objectFit="contain"
               sx={{ width: { xs: 250, sm: 360 } }}
             >
-              <Link href={sponsor.url}>
+              <Link target="_blank" href={sponsor.url}>
                 <Image
-                  src={sponsor.logoUrl}
+                  src={sponsor.logo}
                   alt={sponsor.name} fill priority
                 />
               </Link>

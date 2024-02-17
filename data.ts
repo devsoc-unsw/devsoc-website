@@ -14,6 +14,10 @@ import DiscordIcon from './components/nav/DiscordIcon';
 import { ProjectCardProps } from './components/ProjectCard';
 import { SponsorInfo } from "./app/page";
 
+import janeStreet from './assets/jane_street.svg';
+import macquarie from './assets/macquarie.svg';
+import tiktok from './assets/tiktok.svg';
+
 // General stuff:
 // - All images need to go somewhere in /public, and the links are rooted at the /public folder
 // - Available icons can be found here: https://mui.com/material-ui/material-icons/
@@ -144,17 +148,17 @@ export const feedbackFormUrl = "https://forms.gle/TjHcB9MHf6AwojiE8";
 export const projectSponsorData: SponsorInfo[] = [
   {
     name: "Jane Street",
-    logoUrl: "https://opensource.janestreet.com/assets/JS_logo-d7838b558a1de6c51553426ab5a2bba474510c41c6a5e910a9e30524a32dec27.png",
+    logo: janeStreet,
     url: "https://www.janestreet.com/"
   },
   {
     name: "TikTok",
-    logoUrl: "https://raw.githubusercontent.com/devsoc-unsw/notangles/b0811077ba6b7c4657d3479e5d378113cfa864c0/client/src/assets/tiktok_logo_white.svg",
-    url: "https://www.tiktok.com"
+    logo: tiktok,
+    url: "https://careers.tiktok.com/"
   },
   {
     name: "Macquarie",
-    logoUrl: "https://www.mirafunds.com/assets/mira/site-wide-assets/logos/macquarie%20logo%20corporate_hrz_white.png",
-    url: "https://www.macquarie.com/au/en.html"
+    logo: macquarie,
+    url: "https://www.macquarie.com"
   }
 ];
