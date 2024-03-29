@@ -207,32 +207,7 @@ const SponsorLogo = (props: SponsorLogoProps) => {
 
 const HomePageImage = (props: {rand: number}) => {
   const {rand} = props;
-  let displayImage = null;
-  switch (rand) {
-    case 0: {
-      return null;
-    }
-    case 1: {
-      displayImage = Internals;
-      break;
-    }
-    case 2: {
-      displayImage = Operations;
-      break;
-    }
-    case 3: {
-      displayImage = CourseProjects;
-      break;
-    }
-    case 4: {
-      displayImage = StandaloneProjects;
-      break;
-    }
-    default: {
-      displayImage = Execs;
-      break
-    }
-  }
+  const images = [Internals, Operations, CourseProjects, StandaloneProjects, Execs];
   return (
     <AspectRatio
       variant="plain"
@@ -240,7 +215,9 @@ const HomePageImage = (props: {rand: number}) => {
       objectFit="contain"
       sx={{ width: { xs: "80%", md: "75%" }}}
     >
-      <Image src={displayImage} alt={"Team photo"} priority={true}/>
+      {
+        rand != 0 ? <Image src={images[rand-1]} alt={"Team photo"} priority={true}/> : null
+      }
     </AspectRatio>
   )
 }
