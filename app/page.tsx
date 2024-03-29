@@ -240,7 +240,7 @@ const HomePageImage = (props: {rand: number}) => {
       objectFit="contain"
       sx={{ width: { xs: "80%", md: "75%" }}}
     >
-      <Image src={displayImage} alt={""}/>
+      <Image src={displayImage} alt={"Team photo"} priority={true}/>
     </AspectRatio>
   )
 }
