@@ -10,11 +10,11 @@ import { Box } from "@mui/material";
 import { projectSponsorData, recruitmentData } from '../data';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 
-import CourseProjects from '../public/teams/course.jpg';
-import StandaloneProjects from '../public/teams/standalone.jpg';
-import Internals from '../public/teams/internals.jpg';
-import Operations from '../public/teams/operations.jpg';
-import Execs from '../public/teams/execs.jpg';
+import CourseProjects from '../public/teams/course.webp';
+import StandaloneProjects from '../public/teams/standalone.webp';
+import Internals from '../public/teams/internals.webp';
+import Operations from '../public/teams/operations.webp';
+import Execs from '../public/teams/execs.webp';
 
 const cardContent: LinkCardProps[] = [
   {
