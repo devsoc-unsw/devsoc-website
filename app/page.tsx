@@ -10,6 +10,12 @@ import { Box } from "@mui/material";
 import { projectSponsorData, recruitmentData } from '../data';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 
+import CourseProjects from '../public/teams/course.jpg';
+import StandaloneProjects from '../public/teams/standalone.jpg';
+import Internals from '../public/teams/internals.jpg';
+import Operations from '../public/teams/operations.jpg';
+import Execs from '../public/teams/execs.jpg';
+
 const cardContent: LinkCardProps[] = [
   {
     Icon: Info,
@@ -34,8 +40,10 @@ const cardContent: LinkCardProps[] = [
 
 export default function Home() {
   const [index, setIndex] = useState(0);
+  const [randInt, setRandInt] = useState(0);
 
   React.useEffect(() => {
+    setRandInt(Math.floor(Math.random() * 5) + 1);
     const intervalId = setInterval(
       () => setIndex((index) => index + 1),
       3000,
@@ -46,14 +54,16 @@ export default function Home() {
   return (
     <Stack
       pt={10}
-      spacing={{ xs: 4, sm: 10 }}
+      spacing={{ xs: 3, sm: 0 }}
       alignItems="center"
       width="100%"
       height="100%"
+      sx={{maxWidth: "1300px"}}
+      margin="auto"
     >
       <Stack width="75%" direction="column-reverse">
         <Box sx={{ width: "100%" }}>
-          <Typography mt={3} fontSize={{ xs: "1.6rem", sm: "2.6rem", md: "3.4rem" }} fontWeight={600}>
+          <Typography mt={3} fontSize={{ xs: "1.6rem", sm: "2.6rem", md: "3rem" }} fontWeight={500}>
             A dedicated student community of
             <TextTransition
               className={styles.rainbow}
@@ -71,6 +81,7 @@ export default function Home() {
           <Image src='/logo/fullInvertTransparent.svg' alt='DevSoc logo' fill priority/>
         </AspectRatio>
       </Stack>
+      <HomePageImage rand={randInt}/>
       <Stack
         direction={{ xs: "column", md: "row" }}
         spacing={3}
@@ -191,5 +202,45 @@ const SponsorLogo = (props: SponsorLogoProps) => {
         })
       }
     </Stack>
+  )
+}
+
+const HomePageImage = (props: {rand: number}) => {
+  const {rand} = props;
+  let displayImage = null;
+  switch (rand) {
+    case 0: {
+      return null;
+    }
+    case 1: {
+      displayImage = Internals;
+      break;
+    }
+    case 2: {
+      displayImage = Operations;
+      break;
+    }
+    case 3: {
+      displayImage = CourseProjects;
+      break;
+    }
+    case 4: {
+      displayImage = StandaloneProjects;
+      break;
+    }
+    default: {
+      displayImage = Execs;
+      break
+    }
+  }
+  return (
+    <AspectRatio
+      variant="plain"
+      ratio="4/3"
+      objectFit="contain"
+      sx={{ width: { xs: "80%", md: "75%" }}}
+    >
+      <Image src={displayImage} alt={""}/>
+    </AspectRatio>
   )
 }
