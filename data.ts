@@ -12,11 +12,13 @@ import { PersonProps } from './app/(pages)/about-us/page';
 import { RecruitmentProps } from './app/(pages)/get-involved/page';
 import DiscordIcon from './components/nav/DiscordIcon';
 import { ProjectCardProps } from './components/ProjectCard';
-import { SponsorInfo } from "./app/page";
 
 import janeStreet from './assets/jane_street.svg';
 import macquarie from './assets/macquarie.svg';
 import tiktok from './assets/tiktok.svg';
+import acnc from './assets/ACNC-Registered-Charity-Logo_RGB.png';
+import csesoc from './assets/csesocwhite.png';
+import {StaticImport} from "next/dist/shared/lib/get-img-props";
 
 // General stuff:
 // - All images need to go somewhere in /public, and the links are rooted at the /public folder
@@ -28,7 +30,7 @@ export const navData = [
   { text: 'About Us', href: '/about-us' },
   { text: 'Our Projects', href: '/our-projects' },
   { text: 'Get Involved', href: '/get-involved' },
-  { text: 'Status', href: '/status' },
+  { text: 'Supporters', href: '/supporters' },
 ];
 
 // Links to socials on nav
@@ -145,20 +147,165 @@ export const recruitmentData: RecruitmentProps[] = [
 
 export const feedbackFormUrl = "https://forms.gle/TjHcB9MHf6AwojiE8";
 
-export const projectSponsorData: SponsorInfo[] = [
+export interface SponsorInfo {
+  name: string;
+  logo: StaticImport | string;
+  url: string;
+}
+
+export interface SupporterData {
+  title: string;
+  subtitle?: string;
+  logos: SponsorInfo[];
+}
+
+export const projectSupporterData: SupporterData[] = [
   {
-    name: "Jane Street",
-    logo: janeStreet,
-    url: "https://www.janestreet.com/"
+    title: "Affiliations",
+    logos: [
+      {
+        name: "Registered Charity",
+        logo: acnc,
+        url: "https://www.acnc.gov.au/charity/charities/7fa763bf-0876-ee11-8179-00224893b0ed/profile"
+      },
+      {
+        name: "CSESoc",
+        logo: csesoc,
+        url: "https://www.csesoc.unsw.edu.au/"
+      }
+    ]
   },
   {
-    name: "TikTok",
-    logo: tiktok,
-    url: "https://careers.tiktok.com/"
+    title: "Project Sponsors",
+    logos: [
+      {
+        name: "Jane Street",
+        logo: janeStreet,
+        url: "https://www.janestreet.com/"
+      },
+      {
+        name: "TikTok",
+        logo: tiktok,
+        url: "https://careers.tiktok.com/"
+      },
+      {
+        name: "Macquarie",
+        logo: macquarie,
+        url: "https://www.macquarie.com"
+      }
+    ]
   },
   {
-    name: "Macquarie",
-    logo: macquarie,
-    url: "https://www.macquarie.com"
+    title: "Diamond Tier",
+    subtitle: "CSESoc & DevSoc Joint Sponsorship Drive",
+    logos: [
+      {
+        name: "Jane Street",
+        logo: janeStreet,
+        url: "https://www.janestreet.com/"
+      },
+      {
+        name: "TikTok",
+        logo: tiktok,
+        url: "https://careers.tiktok.com/"
+      }
+    ]
+  },
+  {
+    title: "Gold Tier",
+    subtitle: "CSESoc & DevSoc Joint Sponsorship Drive",
+    logos: [
+      {
+        name: "Atlassian",
+        logo: "https://www.skillfinder.com.au/media/wysiwyg/atlassian-logo-gradient-horizontal-white.png",
+        url: "https://www.atlassian.com/"
+      },
+      {
+        name: "Citadel",
+        logo: "https://paragonnational.org/Companies/CitSec.png",
+        url: "https://www.citadelsecurities.com/"
+      },
+      {
+        name: "imc",
+        logo: "https://www.csesoc.unsw.edu.au/img/imc.8b57c3e7.png",
+        url: "https://www.imc.com/"
+      },
+      {
+        name: "neara",
+        logo: "https://neara.com/wp-content/uploads/2023/03/footer-white-logo-with-red-icon.png",
+        url: "https://neara.com/"
+      },
+      {
+        name: "SafetyCulture",
+        logo: "https://help.comtrac.com.au/hs-fs/hubfs/SafetyCulture%20-%20Full%20Logo%20-%20Light-1.png?width=800&height=214&name=SafetyCulture%20-%20Full%20Logo%20-%20Light-1.png",
+        url: "https://safetyculture.com/"
+      },
+      {
+        name: "Zurich",
+        logo: "https://gi.zurich.com.hk/idp/resources/definition/generic/Resources/en/us/logo_zurich_white__1657974027000.png",
+        url: "https://www.zurich.com.au/"
+      }
+    ]
+  },
+  {
+    title: "Silver Tier",
+    subtitle: "CSESoc & DevSoc Joint Sponsorship Drive",
+    logos: [
+      {
+        name: "appian",
+        logo: "https://bitsinglass.com/wp-content/uploads/2021/04/Appian-Logo_White.png",
+        url: "https://appian.com/"
+      },
+      {
+        name: "FlowTraders",
+        logo: "https://paragonnational.org/Companies/flow.png",
+        url: "https://www.flowtraders.com/"
+      },
+      {
+        name: "Macquarie",
+        logo: macquarie,
+        url: "https://www.macquarie.com"
+      },
+      {
+        name: "Optiver",
+        logo: "https://assessment-portal.optiver.com/images/logos/optiver_main_logo_white.png",
+        url: "https://optiver.com/"
+      },
+      {
+        name: "quantium",
+        logo: "https://becarwise.com.au/wp-content/uploads/2022/04/quantium-logo-w.png",
+        url: "https://quantium.com/"
+      },
+      {
+        name: "Quickli",
+        logo: "https://quickli.com.au/_next/image?url=%2Fbrand_logos%2Fquickli-sm.png&w=256&q=75",
+        url: "https://quickli.com.au/"
+      },
+      {
+        name: "revolutioniseSPORT",
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQDYA_qERK_e76kd38L6EFbM1kdOMZyB7-99UlXQDSHA&s",
+        url: "https://www.revolutionise.com.au/"
+      },
+      {
+        name: "RecordPoint",
+        logo: "https://theme.zdassets.com/theme_assets/139762/824b3de04cf1e19ad190af6e4db4aba86773ab66.png",
+        url: "https://www.recordpoint.com/"
+      },
+      {
+        name: "SIG",
+        logo: "https://media.cdn.gradconnection.com/uploads/e0f736e2-e850-44cf-8f24-403715f73268-e0f736e2-e850-44cf-8f24-403715f73268-e0f736_zHHGBsa.png",
+        url: "https://sig.com/"
+      },
+      {
+        name: "ZIP",
+        logo: "https://media.boohoo.com/i/boohooamplience/zippay_new_white_nobg_1309?fmt=webp",
+        url: "https://zip.co/au"
+      },
+      {
+        name: "Canva",
+        logo: "https://www.edigitalagency.com.au/wp-content/uploads/Canva-wordmark-logo-white-font-png.png",
+        url: "https://www.canva.com/"
+      }
+    ]
   }
 ];
