@@ -52,9 +52,9 @@ const DisplayLogo = (props: DisplayLogoProps) => {
             <AspectRatio
               key={idx}
               variant="plain"
-              ratio="12/3"
+              ratio="5/2"
               objectFit="contain"
-              sx={{ width: { xs: 100, sm: 200 }, display: "flex", margin:"auto", height: 100}}
+              sx={{ display: "flex", margin:"auto", height: 50, width: "100%", maxWidth: 170, padding: 0.5}}
             >
               <Link target="_blank" href={sponsor.url}>
                 <Image

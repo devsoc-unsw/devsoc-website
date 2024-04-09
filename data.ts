@@ -14,9 +14,17 @@ import DiscordIcon from './components/nav/DiscordIcon';
 import { ProjectCardProps } from './components/ProjectCard';
 
 import janeStreet from './assets/jane_street.svg';
+import rs from './assets/rs.png';
+import rp from './assets/rp.png';
+import sig from './assets/sig.png';
+import sc from './assets/sc.png';
+import quickli from './assets/quickli.png';
+import zurich from './assets/zurich.png';
+import citadel from './assets/citadel.png';
+import optiver from './assets/optiver.png';
 import macquarie from './assets/macquarie.svg';
 import tiktok from './assets/tiktok.svg';
-import acnc from './assets/ACNC-Registered-Charity-Logo_RGB.png';
+import acnc from './assets/acnc.png';
 import csesoc from './assets/csesocwhite.png';
 import {StaticImport} from "next/dist/shared/lib/get-img-props";
 
@@ -222,7 +230,7 @@ export const projectSupporterData: SupporterData[] = [
       },
       {
         name: "Citadel",
-        logo: "https://paragonnational.org/Companies/CitSec.png",
+        logo: citadel,
         url: "https://www.citadelsecurities.com/"
       },
       {
@@ -237,12 +245,12 @@ export const projectSupporterData: SupporterData[] = [
       },
       {
         name: "SafetyCulture",
-        logo: "https://help.comtrac.com.au/hs-fs/hubfs/SafetyCulture%20-%20Full%20Logo%20-%20Light-1.png?width=800&height=214&name=SafetyCulture%20-%20Full%20Logo%20-%20Light-1.png",
+        logo: sc,
         url: "https://safetyculture.com/"
       },
       {
         name: "Zurich",
-        logo: "https://gi.zurich.com.hk/idp/resources/definition/generic/Resources/en/us/logo_zurich_white__1657974027000.png",
+        logo: zurich,
         url: "https://www.zurich.com.au/"
       }
     ]
@@ -253,7 +261,7 @@ export const projectSupporterData: SupporterData[] = [
     logos: [
       {
         name: "appian",
-        logo: "https://bitsinglass.com/wp-content/uploads/2021/04/Appian-Logo_White.png",
+        logo: "https://www.cds.co.uk/hs-fs/hubfs/Appian-white-logo.png?width=1200&height=627&name=Appian-white-logo.png",
         url: "https://appian.com/"
       },
       {
@@ -268,7 +276,7 @@ export const projectSupporterData: SupporterData[] = [
       },
       {
         name: "Optiver",
-        logo: "https://assessment-portal.optiver.com/images/logos/optiver_main_logo_white.png",
+        logo: optiver,
         url: "https://optiver.com/"
       },
       {
@@ -278,22 +286,22 @@ export const projectSupporterData: SupporterData[] = [
       },
       {
         name: "Quickli",
-        logo: "https://quickli.com.au/_next/image?url=%2Fbrand_logos%2Fquickli-sm.png&w=256&q=75",
+        logo: quickli,
         url: "https://quickli.com.au/"
       },
       {
         name: "revolutioniseSPORT",
-        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQDYA_qERK_e76kd38L6EFbM1kdOMZyB7-99UlXQDSHA&s",
+        logo: rs,
         url: "https://www.revolutionise.com.au/"
       },
       {
         name: "RecordPoint",
-        logo: "https://theme.zdassets.com/theme_assets/139762/824b3de04cf1e19ad190af6e4db4aba86773ab66.png",
+        logo: rp,
         url: "https://www.recordpoint.com/"
       },
       {
         name: "SIG",
-        logo: "https://media.cdn.gradconnection.com/uploads/e0f736e2-e850-44cf-8f24-403715f73268-e0f736e2-e850-44cf-8f24-403715f73268-e0f736_zHHGBsa.png",
+        logo: sig,
         url: "https://sig.com/"
       },
       {
