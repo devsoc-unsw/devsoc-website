@@ -8,7 +8,6 @@ import {
   LinkedIn,
   School,
 } from "@mui/icons-material";
-import { PersonProps } from "./app/(pages)/about-us/page";
 import { RecruitmentProps } from "./app/(pages)/get-involved/page";
 import DiscordIcon from "./components/nav/DiscordIcon";
 import { ProjectCardProps } from "./components/ProjectCard";
@@ -17,6 +16,7 @@ import { SponsorInfo } from "./app/page";
 import janeStreet from "./assets/jane_street.svg";
 import macquarie from "./assets/macquarie.svg";
 import tiktok from "./assets/tiktok.svg";
+import {ExecProps} from "./components/PeopleSection";
 
 // General stuff:
 // - All images need to go somewhere in /public, and the links are rooted at the /public folder
@@ -123,16 +123,75 @@ export const traineeProjectData: Omit<ProjectCardProps, "trainee">[] = [
 
 // People displayed in the "Meet the Team" section of "About Us"
 // If no image set, an animated gray circle appears
-export const teamData: PersonProps[] = [
-  { name: "Bob Chen", title: "Co-President", imgUrl: "/people/pres-nf.jpeg" },
-  { name: "Sally Sun", title: "Co-President", imgUrl: "/people/pres-nm.png" },
-  { name: "Jeremy Le", title: "Administrative Officer", imgUrl: "/people/admin.jpg" },
-  { name: "Michael Girikallo", title: "GEDI Officer", imgUrl: "/people/gedi.jpeg" },
-  { name: "Audrey Tanama", title: "VP (Internals)", imgUrl: "/people/vpi.jpeg" },
-  { name: "Henry Guo", title: "VP (Operations)", imgUrl: "/people/vpo.jpeg" },
-  { name: "Manhua Lu", title: "VP (Course Projects)", imgUrl: "/people/vpc.jpeg" },
-  { name: "Franco Reyes", title: "VP (Standalone Projects)", imgUrl: "/people/vps.jpeg" },
-];
+export const teamData: TeamData = {
+  2022: {
+    executives: [
+      { name: "James Ji", title: "Development Director", imgUrl: "/people/gedi.jpeg" },
+      { name: "Vicky Wu", title: "Development Director", imgUrl: "/people/gedi.jpeg" }
+    ],
+    subcommittees: [
+      {
+        name: "",
+        directors: [],
+        subcommittee: []
+      }
+    ]
+  },
+  2023: {
+    executives: [
+      { name: "Angella Pham", title: "Vice President Development", imgUrl: "/people/gedi.jpeg" },
+      { name: "Hanyuan Li", title: "Vice President Development", imgUrl: "/people/gedi.jpeg" }
+    ],
+    subcommittees: [
+      {
+        name: "",
+        directors: [],
+        subcommittee: []
+      }
+    ]
+  },
+  2024: {
+    executives: [
+      { name: "Bob Chen", title: "Co-President", imgUrl: "/people/pres-nf.jpeg" },
+      { name: "Sally Sun", title: "Co-President", imgUrl: "/people/pres-nm.png" },
+      { name: "Jeremy Le", title: "Administrative Officer", imgUrl: "/people/admin.jpg" },
+      { name: "Michael Girikallo", title: "GEDI Officer", imgUrl: "/people/gedi.jpeg" },
+      { name: "Audrey Tanama", title: "VP (Internals)", imgUrl: "/people/vpi.jpeg" },
+      { name: "Henry Guo", title: "VP (Operations)", imgUrl: "/people/vpo.jpeg" },
+      { name: "Manhua Lu", title: "VP (Course Projects)", imgUrl: "/people/vpc.jpeg" },
+      { name: "Franco Reyes", title: "VP (Standalone Projects)", imgUrl: "/people/vps.jpeg" },
+    ],
+    subcommittees: [
+      {
+        name: "Chaos",
+        directors: [
+          { name: "Kavika Palletenne", imgUrl: undefined},
+          { name: "Peter Haraldur Hamar Osborne", imgUrl: undefined},
+        ],
+        subcommittee: [
+          { name: "Alex Miao", imgUrl: undefined},
+          { name: "Fritz Rehde", imgUrl: undefined},
+          { name: "Skye Blair", imgUrl: undefined},
+          { name: "Zac Ecob", imgUrl: undefined},
+          { name: "Hellen Wang", imgUrl: undefined},
+          { name: "Alexander Lai", imgUrl: undefined},
+          { name: "Yunshu Dai", imgUrl: undefined},
+        ]
+      }
+    ]
+  }
+};
+export type PersonProps = Omit<ExecProps, 'title'>;
+interface TeamData {
+  [key: number]: {
+    executives: ExecProps[];
+    subcommittees: {
+      name: string,
+      directors: PersonProps[],
+      subcommittee: PersonProps[]
+    }[]
+  }
+}
 
 // Data for the "Join DevSoc" section
 // Should set/unset applicationUrl to mark recruitment as open/closed
