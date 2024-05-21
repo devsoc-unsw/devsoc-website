@@ -17,6 +17,7 @@ import janeStreet from './assets/jane_street.svg';
 import rs from './assets/rs.png';
 import rp from './assets/rp.png';
 import sig from './assets/sig.png';
+import imc from './assets/imc.png';
 import sc from './assets/sc.png';
 import quickli from './assets/quickli.png';
 import zurich from './assets/zurich.png';
@@ -235,7 +236,7 @@ export const projectSupporterData: SupporterData[] = [
       },
       {
         name: "imc",
-        logo: "https://www.csesoc.unsw.edu.au/img/imc.8b57c3e7.png",
+        logo: imc,
         url: "https://www.imc.com/"
       },
       {
