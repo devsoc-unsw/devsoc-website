@@ -68,7 +68,7 @@ export const PeopleSection = () => {
         </ButtonGroup>
       </Box>
       {
-        teamData[teamYear].subcommittees.map((props) => <SubcommitteeList {...props}/>)
+        teamData[teamYear].subcommittees.map((props) => <SubcommitteeList {...props} key={props.name}/>)
       }
     </>
   )
@@ -132,7 +132,7 @@ const SubcommitteeList: React.FC<{ name: string, directors: PersonProps[], subco
           {
             directors.map((props) => {
               return (
-                <ListItem>
+                <ListItem key={props.name}>
                   <ListItemDecorator>
                     <Avatar src="/static/images/avatar/1.jpg" />
                   </ListItemDecorator>
@@ -149,7 +149,7 @@ const SubcommitteeList: React.FC<{ name: string, directors: PersonProps[], subco
           {
             subcommittee.map((props) => {
               return (
-                <ListItem>
+                <ListItem key={props.name}>
                   <ListItemDecorator>
                     <Avatar src="/static/images/avatar/1.jpg" />
                   </ListItemDecorator>
