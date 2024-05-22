@@ -137,7 +137,7 @@ export const traineeProjectData: Omit<ProjectCardProps, "trainee">[] = [
 export const teamData: TeamData = {
   2018: {
     executives: [
-      { name: "Amri Chamela", title: "Projects Director", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
+      { name: "Amri Chamela", title: "Projects Director", imgUrl: "https://gc-prod-top100awards-media.cdn.gradconnection.com/images/amri-chamela.2e16d0ba.fill-120x120.jpg" },
     ],
     subcommittees: [
       {
@@ -149,8 +149,8 @@ export const teamData: TeamData = {
   },
   2019: {
     executives: [
-      { name: "Thomas Kunc", title: "Projects Director", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
-      { name: "Shane Kadish", title: "Projects Director", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
+      { name: "Thomas Kunc", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/C5603AQFILnScctz0CQ/profile-displayphoto-shrink_800_800/0/1521010349210?e=1721865600&v=beta&t=Mrf92v2FZgv8n47wotNEy794OwwEqBt_FoPc1lUxmmc" },
+      { name: "Shane Kadish", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/C5603AQENc_UoZObUcw/profile-displayphoto-shrink_800_800/0/1547879297950?e=1721865600&v=beta&t=bDBev-Et52gHRcbbL6PIYKwva6wj-5Gsc-3YoC66ISc" },
     ],
     subcommittees: [
       {
@@ -162,8 +162,8 @@ export const teamData: TeamData = {
   },
   2020: {
     executives: [
-      { name: "Gordon Zhong", title: "Projects Director", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
-      { name: "Leesa Dang", title: "Projects Director", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
+      { name: "Gordon Zhong", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/C4D03AQG-dYRSVdZcow/profile-displayphoto-shrink_800_800/0/1655776311291?e=1721865600&v=beta&t=hPnlermuSGmbDhwQXJBIWWAsAK0aiepWrfuzg6QQI2s" },
+      { name: "Leesa Dang", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/C5603AQHYY9CP2fU67A/profile-displayphoto-shrink_800_800/0/1557634147933?e=1721865600&v=beta&t=yKLSQLcWauAGh5HB2Y17f8IRIn2peUqwHCA0CCX7jl8" },
     ],
     subcommittees: [
       {
@@ -175,10 +175,10 @@ export const teamData: TeamData = {
   },
   2021: {
     executives: [
-      { name: "Esther Wong", title: "Projects Director", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
-      { name: "Zac Kologlu", title: "Projects Director", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
+      { name: "Esther Wong", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/C4D03AQGnqVZp3w7ITw/profile-displayphoto-shrink_800_800/0/1653634901266?e=1721865600&v=beta&t=q78_E16zwnaA8nWxFdZuYLXID5FAF181H_7upfl4FOA" },
+      { name: "Zac Kologlu", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/D5603AQFn-RBTj_zOqQ/profile-displayphoto-shrink_800_800/0/1673959501551?e=1721865600&v=beta&t=ByTFNe9DxG7R1cw3nySUXDOCAoBqYku2ZkLiX1EP7Lw" },
       { name: "Colin Hon", title: "Workshop Director", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
-      { name: "James Davidson", title: "Workshop Director", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
+      { name: "James Davidson", title: "Workshop Director", imgUrl: "https://media.licdn.com/dms/image/C5603AQFolHrzfd7WXg/profile-displayphoto-shrink_800_800/0/1613097453590?e=1721865600&v=beta&t=C4XRzCwbZ-tPiG0uu3Stn-4ECqdVpB1tgP_JuhNbgh8" },
     ],
     subcommittees: [
       {
@@ -192,10 +192,10 @@ export const teamData: TeamData = {
     executives: [
       { name: "James Ji", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/D5603AQGTkMu2h1CoGw/profile-displayphoto-shrink_800_800/0/1671790198748?e=1721865600&v=beta&t=NXeEtcqCq7BNl_yt1wH_uXFp6mQZ3y2lboO29Zd14e4" },
       { name: "Vicky Wu", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/D4E03AQHUzxhp4c_mnQ/profile-displayphoto-shrink_800_800/0/1677625183062?e=1721865600&v=beta&t=yItOAojz--6f35LuEslAdFLYDg0D8waAabGimIjQeoE" },
-      { name: "Abiram Nadarajah", title: "Technical Director", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
+      { name: "Abiram Nadarajah", title: "Technical Director", imgUrl: "https://media.licdn.com/dms/image/C5603AQE3oeVUmozItw/profile-displayphoto-shrink_800_800/0/1619801785542?e=1721865600&v=beta&t=Ia_bthbsPaLnrj6dMghdgAvXoZ31-xa6X1Io18Tyl1Y" },
       { name: "Jared Lohtaja", title: "Technical Director", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
-      { name: "Gordon Huang", title: "Education Director", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
-      { name: "Jasper Di Francesco", title: "Education Director", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
+      { name: "Gordon Huang", title: "Education Director", imgUrl: "https://media.licdn.com/dms/image/D5603AQEhAf1Tr0vBBw/profile-displayphoto-shrink_800_800/0/1666077791086?e=1721865600&v=beta&t=17MDqCwtr_HqNIwD_gAgFPHMZ2OenZU9N9_aqVf98e0" },
+      { name: "Jasper Di Francesco", title: "Education Director", imgUrl: "https://media.licdn.com/dms/image/D5603AQHa57ifDtf0Rw/profile-displayphoto-shrink_800_800/0/1671057372891?e=1721865600&v=beta&t=aPfiRJ5uQzrRWkTexmjTECf13sLF59-7g6ItU742Jl4" },
     ],
     subcommittees: [
       {

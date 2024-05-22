@@ -48,7 +48,7 @@ export const PeopleSection = () => {
       <Typography level="h2" py={4} px={4}>
         {teamYear >= 2024 ? "DevSoc Executives" : null}
         {teamYear == 2023 ? "CSESoc Development Executives" : null}
-        {teamYear == 2022 ? "CSESoc Development Directors" : null}
+        {teamYear <= 2022 ? "CSESoc Development Directors" : null}
       </Typography>
       <Stack direction='row' columnGap={2} rowGap={3} flexWrap="wrap" justifyContent="center">
         {teamData[teamYear].executives.map((props) => <Person {...props} key={props.name}/>)}
