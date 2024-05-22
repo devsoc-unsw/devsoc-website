@@ -34,14 +34,18 @@ export const PeopleSection = () => {
 
   return (
     <>
-      <Box width={200} ml="auto">
+      <Box sx={{width: { xs: '85%', sm: 200}, margin: {xs: "auto", sm: 0}, marginLeft: {sm: "auto"}}}>
         <Select defaultValue="2024" onChange={handleTeamYearChange}>
           <Option value="2024">2024</Option>
           <Option value="2023">2023</Option>
           <Option value="2022">2022</Option>
+          <Option value="2021">2021</Option>
+          <Option value="2020">2020</Option>
+          <Option value="2019">2019</Option>
+          <Option value="2018">2018</Option>
         </Select>
       </Box>
-      <Typography level="h2" pb={4} pt={2} px={4}>
+      <Typography level="h2" py={4} px={4}>
         {teamYear >= 2024 ? "DevSoc Executives" : null}
         {teamYear == 2023 ? "CSESoc Development Executives" : null}
         {teamYear == 2022 ? "CSESoc Development Directors" : null}
@@ -60,9 +64,24 @@ export const PeopleSection = () => {
           <Button color="neutral" variant={subcommittee === 'Jobsboard' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Jobsboard')}>Jobsboard</Button>
           <Button color="neutral" variant={subcommittee === 'Notangles' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Notangles')}>Notangles</Button>
           <Button color="neutral" variant={subcommittee === 'Structs' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Structs')}>Structs</Button>
-          <Button color="neutral" variant={subcommittee === 'Unilectives' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Unilectives')}>Unilectives</Button>
-          <Button color="neutral" variant={subcommittee === 'Marketing' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Marketing')}>Marketing</Button>
-          <Button color="neutral" variant={subcommittee === 'HR' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('HR')}>HR</Button>
+          {
+            teamYear >= 2024 ? <>
+              <Button color="neutral" variant={subcommittee === 'Marketing' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Marketing')}>Marketing</Button>
+              <Button color="neutral" variant={subcommittee === 'HR' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('HR')}>HR</Button>
+              <Button color="neutral" variant={subcommittee === 'Unilectives' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Unilectives')}>Unilectives</Button>
+            </> : null
+          }
+          {
+            teamYear == 2023 ? <>
+              <Button color="neutral" variant={subcommittee === 'CSElectives' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('CSElectives')}>CSElectives</Button>
+              <Button color="neutral" variant={subcommittee === 'Discord Bot' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Discord Bot')}>Discord&nbsp;Bot</Button>
+              <Button color="neutral" variant={subcommittee === 'Website' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Website')}>Website</Button>
+              <Button color="neutral" variant={subcommittee === 'Culture' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Culture')}>Culture</Button>
+              <Button color="neutral" variant={subcommittee === 'Content' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Content')}>Content</Button>
+              <Button color="neutral" variant={subcommittee === 'Education' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Education')}>Education</Button>
+              <Button color="neutral" variant={subcommittee === 'Architects' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Architects')}>Architects</Button>
+            </> : null
+          }
           <Button color="neutral" variant={subcommittee === 'UIUX' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('UIUX')}>UI/UX</Button>
           <Button color="neutral" variant={subcommittee === 'Platform' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Platform')}>Platform</Button>
         </ButtonGroup>
