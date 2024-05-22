@@ -53,14 +53,14 @@ export const socialsData = [
 
 // Data displayed on the cards of the "Our Projects" page
 // If "projectUrl" is not set, then the card will say 'Coming soon!'
-export const projectData: Omit<ProjectCardProps, 'trainee'>[] = [
+export const projectData: Omit<ProjectCardProps, "trainee">[] = [
   {
     name: "Notangles",
     desc: "An interactive drag-and-drop timetable planner designed to help UNSW students plan their ideal weekly timetable.",
     logoUrl: "/projects/notangles/logo.png",
     thumbnailUrl: "/projects/notangles/thumbnail.png",
     projectUrl: "https://notangles.devsoc.app/",
-    status: "Operational"
+    status: "Operational",
   },
   {
     name: "Circles",
@@ -68,7 +68,7 @@ export const projectData: Omit<ProjectCardProps, 'trainee'>[] = [
     logoUrl: "/projects/circles/logo.png",
     thumbnailUrl: "/projects/circles/thumbnail.png",
     projectUrl: "https://circles.devsoc.app/",
-    status: "Operational"
+    status: "Operational",
   },
   {
     name: "Unilectives",
@@ -76,7 +76,7 @@ export const projectData: Omit<ProjectCardProps, 'trainee'>[] = [
     logoUrl: "/projects/unilectives/logo.png",
     thumbnailUrl: "/projects/unilectives/thumbnail.png",
     projectUrl: "https://unilectives.devsoc.app/",
-    status: "Operational"
+    status: "Operational",
   },
   {
     name: "Structs.sh",
@@ -84,7 +84,7 @@ export const projectData: Omit<ProjectCardProps, 'trainee'>[] = [
     logoUrl: "/projects/structs/logo.png",
     thumbnailUrl: "/projects/structs/thumbnail.png",
     projectUrl: "https://structs.sh/",
-    status: "Operational"
+    status: "Operational",
   },
   {
     name: "Freerooms",
@@ -92,7 +92,7 @@ export const projectData: Omit<ProjectCardProps, 'trainee'>[] = [
     logoUrl: "/projects/freerooms/logo.png",
     thumbnailUrl: "/projects/freerooms/thumbnail.png",
     projectUrl: "https://freerooms.devsoc.app/",
-    status: "Operational"
+    status: "Operational",
   },
   {
     name: "Jobsboard",
@@ -100,18 +100,18 @@ export const projectData: Omit<ProjectCardProps, 'trainee'>[] = [
     logoUrl: "/projects/jobsboard/logo.png",
     thumbnailUrl: "/projects/jobsboard/thumbnail.png",
     projectUrl: "https://jobsboard.csesoc.unsw.edu.au/",
-    status: "Operational"
+    status: "Operational",
   },
   {
     name: "Chaos",
     desc: "A platform for simplifying applying and recruiting for student society subcommittees at UNSW.",
     logoUrl: "/projects/chaos/logo.png",
     thumbnailUrl: "/projects/chaos/thumbnail.png",
-    status: "Operational"
+    status: "Operational",
   },
 ];
 
-export const traineeProjectData: Omit<ProjectCardProps, 'trainee'>[] = [
+export const traineeProjectData: Omit<ProjectCardProps, "trainee">[] = [
   {
     name: "Moodify (23T3)",
     desc: "Discover the power of personalized playlists tailored to your mood and activities with Moodify!",
@@ -128,21 +128,21 @@ export const traineeProjectData: Omit<ProjectCardProps, 'trainee'>[] = [
     name: "Loft (22T3)",
     desc: "A customisable productivity app with multiple widgets such as a pomodoro timer, YouTube player and notepad.",
     projectUrl: "https://github.com/csesoc/trainee-3-22t3",
-    thumbnailUrl: "/traineeProjects/loft.png"
+    thumbnailUrl: "/traineeProjects/loft.png",
   },
 ];
 
 // People displayed in the "Meet the Team" section of "About Us"
 // If no image set, an animated gray circle appears
 export const teamData: PersonProps[] = [
-  { name: "Bob Chen", title: "Co-President", imgUrl: '/people/pres-nf.jpeg' },
-  { name: "Sally Sun", title: "Co-President", imgUrl: '/people/pres-nm.png' },
-  { name: "Jeremy Le", title: "Administrative Officer", imgUrl: '/people/admin.jpg' },
-  { name: "Michael Girikallo", title: "GEDI Officer", imgUrl: '/people/gedi.jpeg' },
-  { name: "Audrey Tanama", title: "VP (Internals)", imgUrl: '/people/vpi.jpeg' },
-  { name: "Henry Guo", title: "VP (Operations)", imgUrl: '/people/vpo.jpeg' },
-  { name: "Manhua Lu", title: "VP (Course Projects)", imgUrl: '/people/vpc.jpeg' },
-  { name: "Franco Reyes", title: "VP (Standalone Projects)", imgUrl: '/people/vps.jpeg' },
+  { name: "Bob Chen", title: "Co-President", imgUrl: "/people/pres-nf.jpeg" },
+  { name: "Sally Sun", title: "Co-President", imgUrl: "/people/pres-nm.png" },
+  { name: "Jeremy Le", title: "Administrative Officer", imgUrl: "/people/admin.jpg" },
+  { name: "Michael Girikallo", title: "GEDI Officer", imgUrl: "/people/gedi.jpeg" },
+  { name: "Audrey Tanama", title: "VP (Internals)", imgUrl: "/people/vpi.jpeg" },
+  { name: "Henry Guo", title: "VP (Operations)", imgUrl: "/people/vpo.jpeg" },
+  { name: "Manhua Lu", title: "VP (Course Projects)", imgUrl: "/people/vpc.jpeg" },
+  { name: "Franco Reyes", title: "VP (Standalone Projects)", imgUrl: "/people/vps.jpeg" },
 ];
 
 // Data for the "Join DevSoc" section
@@ -150,8 +150,12 @@ export const teamData: PersonProps[] = [
 export const recruitmentData: RecruitmentProps[] = [
   { position: "Directors", Icon: Lightbulb },
   { position: "Subcommittee", Icon: Groups },
-  { position: "Training Leads", Icon: CoPresent },
-  { position: "Trainees", Icon: School },
+  {
+    position: "Training Leads",
+    Icon: CoPresent,
+    applicationUrl: "https://forms.gle/PyUdngjAfE9oczGT6",
+  },
+  { position: "Trainees", Icon: School, applicationUrl: "https://forms.gle/1JckRMSsLfrY2bi7A" },
 ];
 
 export const feedbackFormUrl = "https://forms.gle/TjHcB9MHf6AwojiE8";
