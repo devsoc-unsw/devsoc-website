@@ -1,13 +1,13 @@
 'use client'
 import Image from 'next/image';
 import { AspectRatio, Card, CardContent, Chip, Link, Stack, Typography } from '@mui/joy';
-import { Info, People, SvgIconComponent, Terminal } from '@mui/icons-material';
+import {Handshake, Info, People, SvgIconComponent, Terminal} from '@mui/icons-material';
 import React, { useState } from 'react';
 import NextLink from 'next/link';
 import TextTransition, { presets } from 'react-text-transition'
 import styles from './styles.module.css'
 import { Box } from "@mui/material";
-import { projectSponsorData, recruitmentData } from '../data';
+import { projectSupporterData, recruitmentData } from '../data';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 
 const cardContent: LinkCardProps[] = [
@@ -29,6 +29,12 @@ const cardContent: LinkCardProps[] = [
     content: "Got big ideas? Tell us here, or find out how to join DevSoc and make your mark!",
     href: "/get-involved",
     chip: recruitmentData.some(data => !!data.applicationUrl) ? "Applications open now!" : undefined
+  },
+  {
+    Icon: Handshake,
+    title: "Supporters",
+    content: "Learn more about the sponsors of our events, opportunities and services.",
+    href: "/supporters"
   }
 ];
 
@@ -77,15 +83,16 @@ export default function Home() {
         width="80%"
         alignItems='center'
         justifyContent='center'
+        paddingBottom='5rem'
       >
         {cardContent.map((props) => <LinkCard key={props.title} {...props} />)}
       </Stack>
-      <Stack alignItems='center'>
-        <Typography padding={3} fontSize={{ xs: "1rem", sm: "1.75rem" }}>
-          Our flagship projects are proudly supported by
-        </Typography>
-        <SponsorLogo data={projectSponsorData}/>
-      </Stack>
+      {/*<Stack alignItems='center'>*/}
+      {/*  <Typography padding={3} fontSize={{ xs: "1rem", sm: "1.75rem" }}>*/}
+      {/*    Our flagship projects are proudly supported by*/}
+      {/*  </Typography>*/}
+      {/*  <SponsorLogo data={projectSponsorData}/>*/}
+      {/*</Stack>*/}
     </Stack>
   )
 }
@@ -153,43 +160,5 @@ const LinkCard: React.FC<LinkCardProps> = ({
         </CardContent>
       </Stack>
     </Card>
-  )
-}
-
-export interface SponsorInfo {
-  name: string;
-  logo: StaticImport;
-  url: string;
-}
-
-interface SponsorLogoProps {
-  data: SponsorInfo[];
-}
-
-const SponsorLogo = (props: SponsorLogoProps) => {
-  const { data } = props
-  return (
-    <Stack flexDirection="row" marginBottom={5} direction={{ xs: "column", lg: "row" }} spacing={5}>
-      {
-        data.map((sponsor, idx) => {
-          return (
-            <AspectRatio
-              key={idx}
-              variant="plain"
-              ratio="15/3"
-              objectFit="contain"
-              sx={{ width: { xs: 250, sm: 360 } }}
-            >
-              <Link target="_blank" href={sponsor.url}>
-                <Image
-                  src={sponsor.logo}
-                  alt={sponsor.name} fill priority
-                />
-              </Link>
-            </AspectRatio>
-          )
-        })
-      }
-    </Stack>
   )
 }
