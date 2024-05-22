@@ -52,7 +52,7 @@ export const PeopleSection = () => {
       <Typography level="h2" pt={4} pb={1} px={4}>
         Teams
       </Typography>
-      <Box mx={4} py={1} sx={{overflowX:"scroll", scrollbarWidth: "none"}}>
+      <Box mx={4} pb={2} pt={1} sx={{overflowX:"scroll", scrollbarWidth: "none"}}>
         <ButtonGroup aria-label="outlined primary button group" buttonFlex={1}>
           <Button color="neutral" variant={subcommittee === 'Chaos' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Chaos')}>Chaos</Button>
           <Button color="neutral" variant={subcommittee === 'Circles' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Circles')}>Circles</Button>
@@ -68,7 +68,7 @@ export const PeopleSection = () => {
         </ButtonGroup>
       </Box>
       {
-        teamData[teamYear].subcommittees.map((props) => <SubcommitteeList {...props} key={props.name}/>)
+        teamData[teamYear].subcommittees.filter(s => s.name == subcommittee).map((props) => <SubcommitteeList {...props} key={props.name}/>)
       }
     </>
   )
@@ -120,12 +120,15 @@ const Person: React.FC<ExecProps> = ({ name, title, imgUrl }) => {
 const SubcommitteeList: React.FC<{ name: string, directors: PersonProps[], subcommittee: PersonProps[] }> = ({name: string, directors, subcommittee}) => {
   return (
     <>
-      <Box px={2}>
+      <Box px={3}>
         <List
           sx={{
             '--ListItemDecorator-size': '56px',
             display: 'grid',
-            gridTemplateColumns: 'repeat(2, 1fr)',
+            gridTemplateColumns: {
+              xs: '1fr',
+              sm: 'repeat(2, 1fr)'
+            },
             gap: 1,
           }}
         >
@@ -134,7 +137,7 @@ const SubcommitteeList: React.FC<{ name: string, directors: PersonProps[], subco
               return (
                 <ListItem key={props.name}>
                   <ListItemDecorator>
-                    <Avatar src="/static/images/avatar/1.jpg" />
+                    <Avatar src={`https://github.com/${props.imgUrl}.png`} />
                   </ListItemDecorator>
                   <ListItemContent>
                     <Typography level="title-sm">{props.name}</Typography>
@@ -151,7 +154,7 @@ const SubcommitteeList: React.FC<{ name: string, directors: PersonProps[], subco
               return (
                 <ListItem key={props.name}>
                   <ListItemDecorator>
-                    <Avatar src="/static/images/avatar/1.jpg" />
+                    <Avatar src={`https://github.com/${props.imgUrl}.png`} />
                   </ListItemDecorator>
                   <ListItemContent>
                     <Typography level="title-sm">{props.name}</Typography>

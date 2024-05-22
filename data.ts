@@ -165,17 +165,49 @@ export const teamData: TeamData = {
       {
         name: "Chaos",
         directors: [
-          { name: "Kavika Palletenne", imgUrl: undefined},
-          { name: "Peter Haraldur Hamar Osborne", imgUrl: undefined},
+          { name: "Kavika Palletenne", imgUrl: "KavikaPalletenne"},
+          { name: "Peter Haraldur Hamar Osborne", imgUrl: "PeterOsborne"},
         ],
         subcommittee: [
-          { name: "Alex Miao", imgUrl: undefined},
-          { name: "Fritz Rehde", imgUrl: undefined},
-          { name: "Skye Blair", imgUrl: undefined},
-          { name: "Zac Ecob", imgUrl: undefined},
-          { name: "Hellen Wang", imgUrl: undefined},
-          { name: "Alexander Lai", imgUrl: undefined},
-          { name: "Yunshu Dai", imgUrl: undefined},
+          { name: "Alex Miao", imgUrl: "alexmiaopu"},
+          { name: "Fritz Rehde", imgUrl: "fritzrehde"},
+          { name: "Skye Blair", imgUrl: "skye-blair"},
+          { name: "Zac Ecob", imgUrl: "ItsIronicIInsist"},
+          { name: "Hellen Wang", imgUrl: "HellenMelon"},
+          { name: "Alexander Lai", imgUrl: "alexlai18"},
+          { name: "Yunshu Dai", imgUrl: "pigeonseverywhere"},
+        ]
+      },
+      {
+        name: "Circles",
+        directors: [
+          { name: "Martin Knezevic", imgUrl: "martanman"},
+          { name: "Oliver Bowers", imgUrl: "ollibowers"},
+        ],
+        subcommittee: [
+          { name: "Lucas Harvey", imgUrl: "lhvy"},
+          { name: "Deki Lhamu", imgUrl: "pikapiku"},
+          { name: "Jackson Wang", imgUrl: "arnold45202"},
+          { name: "Salina Huang", imgUrl: "Salina-H"},
+          { name: "Fai Chan", imgUrl: "chanfaileui"},
+          { name: "Hussain Nawaz", imgUrl: "imaginehussain"},
+          { name: "Joel Jose", imgUrl: "justjo3l"},
+        ]
+      },
+      {
+        name: "Freerooms",
+        directors: [
+          { name: "Jessica Feng", imgUrl: "JessicaF"},
+          { name: "Richard Xue", imgUrl: "Vinegarette"},
+        ],
+        subcommittee: [
+          { name: "Andrew Zhang", imgUrl: "azjy89"},
+          { name: "Cherise Chan", imgUrl: "cherisechan"},
+          { name: "Hung Pham", imgUrl: "SkellyBG"},
+          { name: "Kelly Su", imgUrl: "kellysu1"},
+          { name: "Livia Wang", imgUrl: "liv888"},
+          { name: "Mark Tran", imgUrl: "marktran2"},
+          { name: "Sophia Liu", imgUrl: "sobariu"},
         ]
       }
     ]
