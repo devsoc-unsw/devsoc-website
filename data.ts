@@ -154,10 +154,40 @@ export const teamData: TeamData = {
     ],
     subcommittees: [
       {
-        name: "",
-        directors: [],
+        name: "Plannify",
+        directors: [
+          { name: "Jonathan Charles", imgUrl: ""},
+        ],
         subcommittee: []
-      }
+      },
+      {
+        name: "Notangles",
+        directors: [
+          { name: "Tony Tang", imgUrl: ""},
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Bark",
+        directors: [
+          { name: "Adam Tizzone", imgUrl: ""},
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Jobsboard",
+        directors: [
+          { name: "Adam Tizzone", imgUrl: ""},
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Website",
+        directors: [
+          { name: "Gordon Zhong", imgUrl: ""},
+        ],
+        subcommittee: []
+      },
     ]
   },
   2020: {
@@ -177,8 +207,6 @@ export const teamData: TeamData = {
     executives: [
       { name: "Esther Wong", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/C4D03AQGnqVZp3w7ITw/profile-displayphoto-shrink_800_800/0/1653634901266?e=1721865600&v=beta&t=q78_E16zwnaA8nWxFdZuYLXID5FAF181H_7upfl4FOA" },
       { name: "Zac Kologlu", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/D5603AQFn-RBTj_zOqQ/profile-displayphoto-shrink_800_800/0/1673959501551?e=1721865600&v=beta&t=ByTFNe9DxG7R1cw3nySUXDOCAoBqYku2ZkLiX1EP7Lw" },
-      { name: "Colin Hon", title: "Workshop Director", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
-      { name: "James Davidson", title: "Workshop Director", imgUrl: "https://media.licdn.com/dms/image/C5603AQFolHrzfd7WXg/profile-displayphoto-shrink_800_800/0/1613097453590?e=1721865600&v=beta&t=C4XRzCwbZ-tPiG0uu3Stn-4ECqdVpB1tgP_JuhNbgh8" },
     ],
     subcommittees: [
       {
@@ -192,10 +220,6 @@ export const teamData: TeamData = {
     executives: [
       { name: "James Ji", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/D5603AQGTkMu2h1CoGw/profile-displayphoto-shrink_800_800/0/1671790198748?e=1721865600&v=beta&t=NXeEtcqCq7BNl_yt1wH_uXFp6mQZ3y2lboO29Zd14e4" },
       { name: "Vicky Wu", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/D4E03AQHUzxhp4c_mnQ/profile-displayphoto-shrink_800_800/0/1677625183062?e=1721865600&v=beta&t=yItOAojz--6f35LuEslAdFLYDg0D8waAabGimIjQeoE" },
-      { name: "Abiram Nadarajah", title: "Technical Director", imgUrl: "https://media.licdn.com/dms/image/C5603AQE3oeVUmozItw/profile-displayphoto-shrink_800_800/0/1619801785542?e=1721865600&v=beta&t=Ia_bthbsPaLnrj6dMghdgAvXoZ31-xa6X1Io18Tyl1Y" },
-      { name: "Jared Lohtaja", title: "Technical Director", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
-      { name: "Gordon Huang", title: "Education Director", imgUrl: "https://media.licdn.com/dms/image/D5603AQEhAf1Tr0vBBw/profile-displayphoto-shrink_800_800/0/1666077791086?e=1721865600&v=beta&t=17MDqCwtr_HqNIwD_gAgFPHMZ2OenZU9N9_aqVf98e0" },
-      { name: "Jasper Di Francesco", title: "Education Director", imgUrl: "https://media.licdn.com/dms/image/D5603AQHa57ifDtf0Rw/profile-displayphoto-shrink_800_800/0/1671057372891?e=1721865600&v=beta&t=aPfiRJ5uQzrRWkTexmjTECf13sLF59-7g6ItU742Jl4" },
     ],
     subcommittees: [
       {
@@ -214,6 +238,230 @@ export const teamData: TeamData = {
       { name: "Max Xue", title: "Vice President", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
     ],
     subcommittees: [
+      {
+        name: "Chaos",
+        directors: [
+          { name: "Michael Vo", imgUrl: "zaxutic"},
+          { name: "Alex Miao", imgUrl: "alexmiaopu"},
+          { name: "Henry Wan", imgUrl: "m4ch374"},
+        ],
+        subcommittee: [
+          { name: "Oscar Kologlu", imgUrl: "Oscaz"},
+          { name: "Mohamed Uzman Zawahir", imgUrl: "kappamalone"},
+          { name: "Dane Urban", imgUrl: "Danelegend"},
+          { name: "William Zhang", imgUrl: "dhj03"},
+          { name: "Kavika Palletenne", imgUrl: "KavikaPalletenne"},
+          { name: "Muhammed Kumsuz", imgUrl: "kumsuzM"},
+          { name: "Helen Song", imgUrl: "etyry"},]
+      },
+      {
+        name: "Circles",
+        directors: [
+          { name: "Leonardo Fan", imgUrl: "leonardo-fan"},
+          { name: "Hussain Nawaz", imgUrl: "imagine-hussain"},],
+        subcommittee: [
+          { name: "Christian Lam", imgUrl: "ui-Auxilary"},
+          { name: "Martin Knezevic", imgUrl: "martanman"},
+          { name: "Olli Bowers", imgUrl: "ollibowers"},
+          { name: "Vinayak Fialok (Vinnie)", imgUrl: "VinayakFia"},
+          { name: "Luke Prior", imgUrl: "LukePrior"},
+          { name: "Lucas Harvey", imgUrl: "lhvy"},
+          { name: "Kobi Beckett", imgUrl: "Bahnschrift"},
+          { name: "Sandeep Das", imgUrl: "Dasyure"},
+          { name: "Nyah Inglis", imgUrl: "Basialo"},
+        ]
+      },
+      {
+        name: "CSElectives",
+        directors: [
+          { name: "Joanna He", imgUrl: "joanna209"},
+          { name: "Aimen Hamed", imgUrl: "aimenhamed"},],
+        subcommittee: [
+          { name: "Joel Huang", imgUrl: "jhuang1688"},
+          { name: "Merry Rosalie", imgUrl: "MerryRosalie"},
+          { name: "Vincent Le", imgUrl: "vinsentcs"},
+          { name: "Timmy Huang", imgUrl: "timmy-huang"},
+          { name: "Helen Mai", imgUrl: "Merlte"},
+          { name: "Dylan Wang", imgUrl: "inutuzumab"},
+          { name: "Ahnaf Tazwar", imgUrl: "ahnaftazwar368"},
+          { name: "Edward Lukman", imgUrl: "gudluckman"},]
+      },
+      {
+        name: "Discord Bot",
+        directors: [
+          { name: "Alexander Chen", imgUrl: "zcday1"},
+          { name: "Richard Zhong", imgUrl: "tunedin-ctrl"},],
+        subcommittee: [
+          { name: "Murtaza Pakawala", imgUrl: "MurtazaPakawala"},
+          { name: "Thomas Zhao", imgUrl: "mi-mott"},
+          { name: "Dominic Cheung", imgUrl: "Wolfdragon24"},
+          { name: "Zhitao Chen", imgUrl: "Bigbugman"},
+          { name: "Abraham Assariparambil Earnest", imgUrl: "abe123442"},
+          { name: "Jeffrey Meng", imgUrl: "Meng0o"},
+          { name: "Kaniz Kader", imgUrl: "kaniz3"},
+          { name: "Jessica Xu", imgUrl: "jsxu29"},]
+      },
+      {
+        name: "Freerooms",
+        directors: [
+          { name: "Bob Chen", imgUrl: "3bobchen"},
+          { name: "Franco Reyes", imgUrl: "francojreyes"},
+        ],
+        subcommittee: [
+          { name: "Benjamin Hung", imgUrl: "Benicillin1610"},
+          { name: "William Zhong", imgUrl: "williamyzhong"},
+          { name: "Sean Wibisono", imgUrl: "handsoapgt"},
+          { name: "Harry Zhang", imgUrl: "Chromaggus"},
+          { name: "Agnes Clemente", imgUrl: "agnesclemente"},
+          { name: "Richard Xue", imgUrl: "Vinegarette"},
+          { name: "Jessica Feng", imgUrl: "JessicaF"},
+          { name: "Tommy Truong", imgUrl: "tommydachi"},
+          { name: "Urja Arora", imgUrl: "ur-ja"},
+          { name: "Alec Tan", imgUrl: "alecntan"},
+          { name: "Nicole Chun Wai Yan", imgUrl: "crocyoiin"},]
+      },
+      {
+        name: "Jobsboard",
+        directors: [
+          { name: "Matthew Liu", imgUrl: "matth3wliuu"},
+          { name: "Gabriel Ting", imgUrl: "gtangelo"},
+        ],
+        subcommittee: [
+          { name: "Sunny Wang", imgUrl: "casio987"},
+          { name: "Adrian Tan", imgUrl: "adriantan09"},
+          { name: "Xing He", imgUrl: "xincczn"},
+          { name: "Edwin Lam", imgUrl: "oodwin"},
+          { name: "Richard Bao", imgUrl: "RichardBao1"},
+          { name: "William Owen Setiawan", imgUrl: "william-o-s"},
+          { name: "Derek Xu", imgUrl: "derekxu04"},
+        ]
+      },
+      {
+        name: "Notangles",
+        directors: [
+          { name: "Raiyan Ahmed", imgUrl: "Rayahhhmed"},
+          { name: "Manhua Lu", imgUrl: "manhualu"},],
+        subcommittee: [
+          { name: "Sijin Soon", imgUrl: "sssijin"},
+          { name: "Wanning Cai", imgUrl: "incalescence"},
+          { name: "Sally Sun", imgUrl: "sallyysun"},
+          { name: "Eklavya Joshi", imgUrl: "eklavya-joshi"},
+          { name: "Jasmine Tran", imgUrl: "jasttran"},
+          { name: "Michael Siu", imgUrl: "M7s7"},
+          { name: "Shaam Jevan", imgUrl: "Shzmj"},]
+      },
+      {
+        name: "Structs",
+        directors: [
+          { name: "Edward Qian", imgUrl: "jedwed"},
+          { name: "Luke Fisk-Lennon", imgUrl: "lukefisklennon"},
+          { name: "Gordon Huang", imgUrl: "dqna64"},],
+        subcommittee: [
+          { name: "Jin Sunwoo", imgUrl: "JinTheHuman"},
+          { name: "Justin Yang", imgUrl: "Kluvens"},
+          { name: "Jonah Hopkin", imgUrl: "Keybinder"},
+          { name: "Ben Luke Patel", imgUrl: "ben-patel"},
+          { name: "Sohum Shah", imgUrl: "sohumshah2"},
+          { name: "Fiona Chau", imgUrl: "FireSuperSaurus"},
+          { name: "David Zhou", imgUrl: "Dammshine"},
+          { name: "Shubh Shah", imgUrl: "Shubh141"},
+          { name: "Manav Dodia", imgUrl: "manav1411"},
+          { name: "James Treloar", imgUrl: "JamesTreloar"},
+          { name: "Audrey Tanama", imgUrl: "audtan125"},]
+      },
+      {
+        name: "Website",
+        directors: [
+          { name: "Laura Wen", imgUrl: "lauraw0"},
+          { name: "Mae Vuong", imgUrl: "hdphuong"},
+          { name: "James Teng", imgUrl: "jamest0"},
+          { name: "Thomas Liang", imgUrl: "ShunyaoLiang"},],
+        subcommittee: [
+          { name: "Thomas Qu", imgUrl: "Plisp"},
+          { name: "Winnie Tan", imgUrl: "winnteas"},
+          { name: "Emily Lu", imgUrl: "EmilyyyL"},
+          { name: "Brian Wang", imgUrl: "brian2w"},
+          { name: "Westley Lo", imgUrl: "Expressionless-Ball-Thing"},
+          { name: "Josh Ramos", imgUrl: "josh-ramos-22"},
+          { name: "Brian Zhang", imgUrl: ""},
+          { name: "Derek Tran", imgUrl: "Bandicoon"},
+        ]
+      },
+      {
+        name: "Culture",
+        directors: [
+          { name: "Jane Wang", imgUrl: ""},
+          { name: "Sharon Zhong", imgUrl: ""},],
+        subcommittee: [
+          { name: "Kellie Yau", imgUrl: ""},
+          { name: "Ramanpreet Singh", imgUrl: ""},
+          { name: "William Feng", imgUrl: ""},
+          { name: "Madeline Robinson", imgUrl: ""},
+          { name: "Angeline Tran", imgUrl: ""},
+          { name: "Brandon Tan", imgUrl: ""},
+          { name: "Dylan Zhang", imgUrl: ""},
+          { name: "Ashley Luong", imgUrl: ""},
+          { name: "Rokika Khondaker", imgUrl: ""},]
+      },
+      {
+        name: "Content",
+        directors: [
+          { name: "Rachel Ahn", imgUrl: ""},
+          { name: "Omar Al Zeidat", imgUrl: ""},],
+        subcommittee: [
+          { name: "Jasmin Wu", imgUrl: ""},
+          { name: "Ming Xuan Yong", imgUrl: ""},
+          { name: "Vicky Lee", imgUrl: ""},
+          { name: "Brendan Ngo", imgUrl: ""},
+          { name: "James Kirkpatrick", imgUrl: ""},
+          { name: "Alexandria Fee", imgUrl: ""},
+          { name: "Matthew Lim", imgUrl: ""},
+          { name: "Sophia Zheng", imgUrl: ""},]
+      },
+      {
+        name: "UIUX",
+        directors: [
+          { name: "Darian Lee", imgUrl: "Darianlmj"},
+          { name: "Grace Kan", imgUrl: "gracexkan"},],
+        subcommittee: [
+          { name: "Vivian Wang", imgUrl: "aquivere"},
+          { name: "Daniel Huynh", imgUrl: "huynhdle"},
+          { name: "Lucy Chhuo", imgUrl: "hhuolu"},
+          { name: "Christina Thevasaeyan", imgUrl: "christinat09"},
+          { name: "Brianna Kim", imgUrl: "bribrisleepy"},
+          { name: "Derek Kim", imgUrl: "derekkim02"},]
+      },
+      {
+        name: "Platform",
+        directors: [
+          { name: "Sacha Korban", imgUrl: "sachk"},],
+        subcommittee: []
+      },
+      {
+        name: "Architects",
+        directors: [
+          { name: "Peter Derias", imgUrl: "peedee2002"},
+          { name: "Varun Sethu", imgUrl: "varun-sethu"},],
+        subcommittee: []
+      },
+      {
+        name: "Education",
+        directors: [
+          { name: "Simon Nguyen", imgUrl: "Allynixtor"},
+          { name: "Terence Lau", imgUrl: "Laute"},
+          { name: "Maxwell Phillips", imgUrl: "maxphillipsdev"},
+          { name: "Madhav Kumar", imgUrl: "kumar-ish"},],
+        subcommittee: [
+          { name: "Luke Wang", imgUrl: "lukedwang"},
+          { name: "Gerald Huang", imgUrl: "opengangs"},
+          { name: "Ashley Chan", imgUrl: "ashrchan"},
+          { name: "Tracy Qin", imgUrl: "tracyjqin"},
+          { name: "Morgan Swaak", imgUrl: "morqanic"},
+          { name: "Daniel Xie Chen", imgUrl: "BadAtEveryGame"},
+          { name: "William Huynh", imgUrl: "WilliamHuynh5"},
+          { name: "Parv Rehan", imgUrl: "parvyyy-cse"},
+          { name: "Liam Smith", imgUrl: "BinaryGamer"},]
+      },
       {
         name: "",
         directors: [],
