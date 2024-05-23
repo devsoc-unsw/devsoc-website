@@ -287,7 +287,7 @@ export const teamData: TeamData = {
           { name: "Edward Lukman", imgUrl: "gudluckman"},]
       },
       {
-        name: "Discord Bot",
+        name: "Discord\u00A0Bot",
         directors: [
           { name: "Alexander Chen", imgUrl: "zcday1"},
           { name: "Richard Zhong", imgUrl: "tunedin-ctrl"},],
@@ -419,7 +419,7 @@ export const teamData: TeamData = {
           { name: "Sophia Zheng", imgUrl: ""},]
       },
       {
-        name: "UIUX",
+        name: "UI/UX",
         directors: [
           { name: "Darian Lee", imgUrl: "Darianlmj"},
           { name: "Grace Kan", imgUrl: "gracexkan"},],
@@ -463,8 +463,11 @@ export const teamData: TeamData = {
           { name: "Liam Smith", imgUrl: "BinaryGamer"},]
       },
       {
-        name: "",
-        directors: [],
+        name: "Training\u00A0Program",
+        directors: [
+          { name: "Henry Guo", imgUrl: "Suchpuns"},
+          { name: "Joshi Ha", imgUrl: "joshi-hahahaha"},
+        ],
         subcommittee: []
       }
     ]
@@ -629,7 +632,7 @@ export const teamData: TeamData = {
         ]
       },
       {
-        name: "UIUX",
+        name: "UI/UX",
         directors: [
           { name: "Daniel Huynh", imgUrl: "ledanielhuynh"},
           { name: "Merry Rosalie", imgUrl: "MerryRosalie"},
@@ -656,6 +659,14 @@ export const teamData: TeamData = {
           { name: "Ada Mu", imgUrl: "classmateada"},
           { name: "Ethan Scott", imgUrl: "ChinoGoblino"},
         ]
+      },
+      {
+        name: "Training\u00A0Program",
+        directors: [
+          { name: "Nicole Wai Yan Chun", imgUrl: "crocyoiin"},
+          { name: "Dylan Dinh An Huynh", imgUrl: "TAS-scorchedshadow"}
+        ],
+        subcommittee: []
       }
     ]
   }

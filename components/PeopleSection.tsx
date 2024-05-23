@@ -1,7 +1,7 @@
 'use client'
 
 import {PersonProps, teamData} from "../data";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import Image from "next/image";
 import {
   List,
@@ -16,13 +16,16 @@ import {
   Skeleton,
   Stack,
   Typography,
-  ButtonGroup,
+  ToggleButtonGroup,
   Button
 } from "@mui/joy";
 
 export const PeopleSection = () => {
   const [teamYear, setTeamYear] = useState(2024);
-  const [subcommittee, setSubcommittee] = useState("Chaos");
+  const [subcommittee, setSubcommittee] = useState(teamData[teamYear]["subcommittees"][0].name);
+  useEffect(() => {
+    setSubcommittee(teamData[teamYear]["subcommittees"][0].name);
+  }, [teamYear]);
   const handleTeamYearChange = (
     event: React.SyntheticEvent | null,
     newValue: string | null,
@@ -56,38 +59,23 @@ export const PeopleSection = () => {
       <Typography level="h2" pt={4} pb={1} px={4}>
         Teams
       </Typography>
-      <Box mx={4} pb={2} pt={1} sx={{overflowX:"scroll", scrollbarWidth: "none"}}>
-        <ButtonGroup aria-label="outlined primary button group" buttonFlex={1}>
-          <Button color="neutral" variant={subcommittee === 'Chaos' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Chaos')}>Chaos</Button>
-          <Button color="neutral" variant={subcommittee === 'Circles' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Circles')}>Circles</Button>
-          <Button color="neutral" variant={subcommittee === 'Freerooms' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Freerooms')}>Freerooms</Button>
-          <Button color="neutral" variant={subcommittee === 'Jobsboard' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Jobsboard')}>Jobsboard</Button>
-          <Button color="neutral" variant={subcommittee === 'Notangles' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Notangles')}>Notangles</Button>
-          <Button color="neutral" variant={subcommittee === 'Structs' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Structs')}>Structs</Button>
-          {
-            teamYear >= 2024 ? <>
-              <Button color="neutral" variant={subcommittee === 'Marketing' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Marketing')}>Marketing</Button>
-              <Button color="neutral" variant={subcommittee === 'HR' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('HR')}>HR</Button>
-              <Button color="neutral" variant={subcommittee === 'Unilectives' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Unilectives')}>Unilectives</Button>
-            </> : null
-          }
-          {
-            teamYear == 2023 ? <>
-              <Button color="neutral" variant={subcommittee === 'CSElectives' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('CSElectives')}>CSElectives</Button>
-              <Button color="neutral" variant={subcommittee === 'Discord Bot' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Discord Bot')}>Discord&nbsp;Bot</Button>
-              <Button color="neutral" variant={subcommittee === 'Website' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Website')}>Website</Button>
-              <Button color="neutral" variant={subcommittee === 'Culture' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Culture')}>Culture</Button>
-              <Button color="neutral" variant={subcommittee === 'Content' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Content')}>Content</Button>
-              <Button color="neutral" variant={subcommittee === 'Education' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Education')}>Education</Button>
-              <Button color="neutral" variant={subcommittee === 'Architects' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Architects')}>Architects</Button>
-            </> : null
-          }
-          <Button color="neutral" variant={subcommittee === 'UIUX' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('UIUX')}>UI/UX</Button>
-          <Button color="neutral" variant={subcommittee === 'Platform' ? 'solid' : 'outlined'} onClick={() => setSubcommittee('Platform')}>Platform</Button>
-        </ButtonGroup>
-      </Box>
       {
-        teamData[teamYear].subcommittees.filter(s => s.name == subcommittee).map((props) => <SubcommitteeList {...props} key={props.name}/>)
+        teamData[teamYear]["subcommittees"].length > 0 ? <>
+          <Box mx={4} pb={2} pt={1} sx={{overflowX:"scroll", scrollbarWidth: "none"}}>
+            <ToggleButtonGroup aria-label="outlined primary button group" buttonFlex={1} value={subcommittee} onChange={(event, newValue)=> {
+              newValue ? setSubcommittee(newValue) : null
+            }}>
+              {
+                teamData[teamYear]["subcommittees"].map((s) => {
+                  return <Button value={s.name} key={s.name}>{s.name}</Button>
+                })
+              }
+            </ToggleButtonGroup>
+          </Box>
+          {
+            teamData[teamYear].subcommittees.filter(s => s.name == subcommittee).map((props) => <SubcommitteeList {...props} key={props.name}/>)
+          }
+        </> : null
       }
     </>
   )
