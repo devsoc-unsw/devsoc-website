@@ -22,9 +22,9 @@ import {
 
 export const PeopleSection = () => {
   const [teamYear, setTeamYear] = useState(2024);
-  const [subcommittee, setSubcommittee] = useState(teamData[teamYear]["subcommittees"][0].name);
+  const [subcommittee, setSubcommittee] = useState(teamData[teamYear]["subcommittees"][0]?.name);
   useEffect(() => {
-    setSubcommittee(teamData[teamYear]["subcommittees"][0].name);
+    setSubcommittee(teamData[teamYear]["subcommittees"][0]?.name);
   }, [teamYear]);
   const handleTeamYearChange = (
     event: React.SyntheticEvent | null,
@@ -56,9 +56,13 @@ export const PeopleSection = () => {
       <Stack direction='row' columnGap={2} rowGap={3} flexWrap="wrap" justifyContent="center">
         {teamData[teamYear].executives.map((props) => <Person {...props} key={props.name}/>)}
       </Stack>
-      <Typography level="h2" pt={4} pb={1} px={4}>
-        Teams
-      </Typography>
+      {
+        subcommittee ?
+          <Typography level="h2" pt={4} pb={1} px={4}>
+            Teams
+          </Typography>
+          : null
+      }
       {
         teamData[teamYear]["subcommittees"].length > 0 ? <>
           <Box mx={4} pb={2} pt={1} sx={{overflowX:"scroll", scrollbarWidth: "none"}}>

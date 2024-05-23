@@ -139,13 +139,7 @@ export const teamData: TeamData = {
     executives: [
       { name: "Amri Chamela", title: "Projects Director", imgUrl: "https://gc-prod-top100awards-media.cdn.gradconnection.com/images/amri-chamela.2e16d0ba.fill-120x120.jpg" },
     ],
-    subcommittees: [
-      {
-        name: "",
-        directors: [],
-        subcommittee: []
-      }
-    ]
+    subcommittees: []
   },
   2019: {
     executives: [
@@ -154,7 +148,7 @@ export const teamData: TeamData = {
     ],
     subcommittees: [
       {
-        name: "Plannify",
+        name: "Degree\u00A0Planner",
         directors: [
           { name: "Jonathan Charles", imgUrl: ""},
         ],
@@ -168,9 +162,16 @@ export const teamData: TeamData = {
         subcommittee: []
       },
       {
-        name: "Bark",
+        name: "uBark",
         directors: [
           { name: "Adam Tizzone", imgUrl: ""},
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Freerooms",
+        directors: [
+          { name: "Callum", imgUrl: ""},
         ],
         subcommittee: []
       },
@@ -182,12 +183,40 @@ export const teamData: TeamData = {
         subcommittee: []
       },
       {
-        name: "Website",
+        name: "Website\u00A0(CSESoc)",
         directors: [
           { name: "Gordon Zhong", imgUrl: ""},
         ],
         subcommittee: []
       },
+      {
+        name: "Website\u00A0(CompClub)",
+        directors: [
+          { name: "Thomas", imgUrl: ""},
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Handbook\u00A0API",
+        directors: [
+          { name: "Zac", imgUrl: ""},
+        ],
+        subcommittee: []
+      },
+      {
+        name: "isSocsOpen",
+        directors: [
+          { name: "Inura", imgUrl: ""},
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Payments\u00A0Platform",
+        directors: [
+          { name: "Adam Tizzone", imgUrl: ""},
+        ],
+        subcommittee: []
+      }
     ]
   },
   2020: {
@@ -197,7 +226,37 @@ export const teamData: TeamData = {
     ],
     subcommittees: [
       {
-        name: "",
+        name: "Notangles",
+        directors: [],
+        subcommittee: []
+      },
+      {
+        name: "Degree\u00A0Planner",
+        directors: [],
+        subcommittee: []
+      },
+      {
+        name: "Community\u00A0Slackbot",
+        directors: [],
+        subcommittee: []
+      },
+      {
+        name: "Freerooms",
+        directors: [],
+        subcommittee: []
+      },
+      {
+        name: "Jobsboard",
+        directors: [],
+        subcommittee: []
+      },
+      {
+        name: "Website\u00A0(CSESoc)",
+        directors: [],
+        subcommittee: []
+      },
+      {
+        name: "Attendance\u00A0Tracker",
         directors: [],
         subcommittee: []
       }
@@ -209,11 +268,7 @@ export const teamData: TeamData = {
       { name: "Zac Kologlu", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/D5603AQFn-RBTj_zOqQ/profile-displayphoto-shrink_800_800/0/1673959501551?e=1721865600&v=beta&t=ByTFNe9DxG7R1cw3nySUXDOCAoBqYku2ZkLiX1EP7Lw" },
     ],
     subcommittees: [
-      {
-        name: "",
-        directors: [],
-        subcommittee: []
-      }
+
     ]
   },
   2022: {
@@ -222,11 +277,7 @@ export const teamData: TeamData = {
       { name: "Vicky Wu", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/D4E03AQHUzxhp4c_mnQ/profile-displayphoto-shrink_800_800/0/1677625183062?e=1721865600&v=beta&t=yItOAojz--6f35LuEslAdFLYDg0D8waAabGimIjQeoE" },
     ],
     subcommittees: [
-      {
-        name: "",
-        directors: [],
-        subcommittee: []
-      }
+      
     ]
   },
   2023: {
