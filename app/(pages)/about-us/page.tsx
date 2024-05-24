@@ -37,9 +37,11 @@ export default function AboutUsPage() {
         </Typography>
       </PageSection>
       <PageSection title="Governance">
-        You can find our constitution <Link target="_blank" href="https://drive.google.com/file/d/1vz-NuOY6ympFkq80s4GPnV5HrvKuaA1K/view?usp=sharing">here</Link>.
+        Computer Science Building (K17)<br/>Engineering Road, UNSW Sydney,<br/>Kensington NSW 2052 <br/><br/>
+        DevSoc became an independent university society affiliated with UNSW Arc beginning in October 2023, separating from CSESoc. You can find our latest constitution <Link target="_blank" href="https://drive.google.com/file/d/1vz-NuOY6ympFkq80s4GPnV5HrvKuaA1K/view?usp=sharing">here</Link>.
         <br/>
-        You can find our not-for-profit status <Link target="_blank" href="https://www.acnc.gov.au/charity/charities/7fa763bf-0876-ee11-8179-00224893b0ed/profile">here</Link>.
+        <br/>
+        DevSoc became an ACNC registered not-for-profit organisation in 2024. You can find our not-for-profit status <Link target="_blank" href="https://www.acnc.gov.au/charity/charities/7fa763bf-0876-ee11-8179-00224893b0ed/profile">here</Link>.
       </PageSection>
       <PageSection title="People">
         <PeopleSection/>
