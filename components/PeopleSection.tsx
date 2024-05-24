@@ -17,7 +17,8 @@ import {
   Stack,
   Typography,
   ToggleButtonGroup,
-  Button
+  Button,
+  Slider
 } from "@mui/joy";
 
 export const PeopleSection = () => {
@@ -27,27 +28,58 @@ export const PeopleSection = () => {
     setSubcommittee(teamData[teamYear]["subcommittees"][0]?.name);
   }, [teamYear]);
   const handleTeamYearChange = (
-    event: React.SyntheticEvent | null,
-    newValue: string | null,
+    event: any,
+    newValue: React.SetStateAction<number>,
   ) => {
     if (newValue) {
-      setTeamYear(parseInt(newValue));
+      setTeamYear(newValue);
     }
   };
-
+  const years = [
+    {
+      value: 2024,
+      label: "2024"
+    },
+    {
+      value: 2023,
+      label: "2023"
+    },
+    {
+      value: 2022,
+      label: "2022"
+    },
+    {
+      value: 2021,
+      label: "2021"
+    },
+    {
+      value: 2020,
+      label: "2020"
+    },
+    {
+      value: 2019,
+      label: "2019"
+    },
+    {
+      value: 2018,
+      label: "2018"
+    }
+  ]
+  function valueText(value: number) {
+    return value.toString();
+  }
   return (
     <>
-      <Box sx={{width: { xs: '85%', sm: 200}, margin: {xs: "auto", sm: 0}, marginLeft: {sm: "auto"}}}>
-        <Select defaultValue="2024" onChange={handleTeamYearChange}>
-          <Option value="2024">2024</Option>
-          <Option value="2023">2023</Option>
-          <Option value="2022">2022</Option>
-          <Option value="2021">2021</Option>
-          <Option value="2020">2020</Option>
-          <Option value="2019">2019</Option>
-          <Option value="2018">2018</Option>
-        </Select>
-      </Box>
+      <Slider
+        aria-label="Always visible"
+        defaultValue={2024}
+        getAriaValueText={valueText}
+        step={1}
+        min={2018}
+        max={2024}
+        marks={years}
+        onChange={(e, year) => setTeamYear(!Array.isArray(year) ? year : 2024)}
+      />
       <Typography level="h2" py={4} px={4}>
         {teamYear >= 2024 ? "DevSoc Executives" : null}
         {teamYear == 2023 ? "CSESoc Development Executives" : null}
@@ -65,7 +97,7 @@ export const PeopleSection = () => {
       }
       {
         teamData[teamYear]["subcommittees"].length > 0 ? <>
-          <Box mx={4} pb={2} pt={1} sx={{overflowX:"scroll", scrollbarWidth: "none"}}>
+          <Box mx={4} mb={2} pt={1} sx={{overflowX:"scroll", scrollbarWidth: "thin", scrollbarColor: "#232323 transparent"}}>
             <ToggleButtonGroup aria-label="outlined primary button group" buttonFlex={1} value={subcommittee} onChange={(event, newValue)=> {
               newValue ? setSubcommittee(newValue) : null
             }}>
