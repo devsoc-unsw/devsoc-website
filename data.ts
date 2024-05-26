@@ -422,6 +422,23 @@ export const teamData: TeamData = {
         subcommittee: []
       },
       {
+        name: "Discord\u00A0Bot",
+        directors: [
+          { name: "Emily Lu", imgUrl: ""},
+          { name: "Riz Manter", imgUrl: ""},
+          { name: "Sanyam Jain", imgUrl: ""},
+        ],
+        subcommittee: [
+          { name: "Harry Zhang", imgUrl: ""},
+          { name: "Sam Schreyer", imgUrl: ""},
+          { name: "Jason Gong", imgUrl: ""},
+          { name: "Yuvraj Singh", imgUrl: ""},
+          { name: "Jane Wang", imgUrl: ""},
+          { name: "Dominic Cheung", imgUrl: ""},
+          { name: "Murtaza Pakawala", imgUrl: ""},
+          { name: "Alexander Chen", imgUrl: ""},]
+      },
+      {
         name: "Freerooms",
         directors: [
           { name: "Brittany Li", imgUrl: "Britain1680"},
