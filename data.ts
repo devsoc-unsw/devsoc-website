@@ -625,7 +625,7 @@ export const teamData: TeamData = {
           { name: "Sophia Zheng", imgUrl: ""},]
       },
       {
-        name: "UI/UX",
+        name: "UI\/UX",
         directors: [
           { name: "Darian Lee", imgUrl: "Darianlmj"},
           { name: "Grace Kan", imgUrl: "gracexkan"},],
@@ -838,7 +838,7 @@ export const teamData: TeamData = {
         ]
       },
       {
-        name: "UI/UX",
+        name: "UI\/UX",
         directors: [
           { name: "Daniel Huynh", imgUrl: "ledanielhuynh"},
           { name: "Merry Rosalie", imgUrl: "MerryRosalie"},
