@@ -268,16 +268,171 @@ export const teamData: TeamData = {
       { name: "Zac Kologlu", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/D5603AQFn-RBTj_zOqQ/profile-displayphoto-shrink_800_800/0/1673959501551?e=1721865600&v=beta&t=ByTFNe9DxG7R1cw3nySUXDOCAoBqYku2ZkLiX1EP7Lw" },
     ],
     subcommittees: [
-
+      {
+        name: "Circles",
+        directors: [
+          { name: "James Ji", imgUrl: ""},
+          { name: "Jennifer Xu", imgUrl: ""},
+        ],
+        subcommittee: [
+          { name: "Yiyan Yang", imgUrl: ""},
+          { name: "Adam Brieger", imgUrl: ""},
+          { name: "Vincent Xiao", imgUrl: ""},
+          { name: "Kevin Huang", imgUrl: ""},
+          { name: "Gabriella Hartanto", imgUrl: ""},
+          { name: "Sally Sun", imgUrl: ""},
+          { name: "Sanojan Thiyagaraja", imgUrl: ""},
+        ]
+      },
+      {
+        name: "Discord\u00A0Bot",
+        directors: [
+          { name: "Waleed Shahid", imgUrl: ""},
+        ],
+        subcommittee: [
+          { name: "Jack Li", imgUrl: ""},
+          { name: "Oliver Bowers", imgUrl: ""},
+          { name: "Kamiyu Hijikata", imgUrl: ""},
+          { name: "Sanyam Jain", imgUrl: ""},
+          { name: "Rifa Jamal", imgUrl: ""},
+          { name: "Maria Zhang", imgUrl: ""},
+        ]
+      },
+      {
+        name: "Freerooms",
+        directors: [
+          { name: "Mun Joon Teo", imgUrl: ""},
+        ],
+        subcommittee: [
+          { name: "Keshiga Gopalarajah", imgUrl: ""},
+          { name: "Grace Kan", imgUrl: ""},
+          { name: "Arsham Emad", imgUrl: ""},
+          { name: "Sarah Leung", imgUrl: ""},
+          { name: "Damjan Stevanoski", imgUrl: ""},
+        ]
+      },
+      {
+        name: "Notangles",
+        directors: [
+          { name: "Luke Fisk-Lennon", imgUrl: ""},
+        ],
+        subcommittee: [
+          { name: "Farnaz Tavakol", imgUrl: ""},
+          { name: "Abiram Nadarajah", imgUrl: ""},
+          { name: "Emily Tang", imgUrl: ""},
+          { name: "Andrew Lin", imgUrl: ""},
+          { name: "Oliver Xu", imgUrl: ""},
+          { name: "Mehak Arya", imgUrl: ""},
+          { name: "Martin Knezevic", imgUrl: ""},
+        ]
+      },
+      {
+        name: "Structs",
+        directors: [
+          { name: "Tim Zhang", imgUrl: ""},
+        ],
+        subcommittee: [
+          { name: "Alexander Cunio", imgUrl: ""},
+          { name: "Joanna Lin", imgUrl: ""},
+          { name: "Dominic Allas", imgUrl: ""},
+          { name: "Yunze Shi", imgUrl: ""},
+          { name: "Rachel Yu", imgUrl: ""},
+          { name: "Raghav Lall", imgUrl: ""},
+          { name: "Joseph Xu", imgUrl: ""},
+        ]
+      },
+      {
+        name: "Website",
+        directors: [
+          { name: "Matt Rossouw", imgUrl: ""},
+        ],
+        subcommittee: [
+          { name: "Priscilla Soo", imgUrl: ""},
+          { name: "Jacky Xie", imgUrl: ""},
+          { name: "Nian Li", imgUrl: ""},
+          { name: "Varun Sethu", imgUrl: ""},
+          { name: "Nathan Cao", imgUrl: ""},
+          { name: "Zoe Ramirez", imgUrl: ""},
+        ]
+      },
     ]
   },
   2022: {
     executives: [
       { name: "James Ji", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/D5603AQGTkMu2h1CoGw/profile-displayphoto-shrink_800_800/0/1671790198748?e=1721865600&v=beta&t=NXeEtcqCq7BNl_yt1wH_uXFp6mQZ3y2lboO29Zd14e4" },
       { name: "Vicky Wu", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/D4E03AQHUzxhp4c_mnQ/profile-displayphoto-shrink_800_800/0/1677625183062?e=1721865600&v=beta&t=yItOAojz--6f35LuEslAdFLYDg0D8waAabGimIjQeoE" },
+      { name: "Abiram Nadarajah", title: "Technical Director", imgUrl: "https://media.licdn.com/dms/image/C5603AQE3oeVUmozItw/profile-displayphoto-shrink_800_800/0/1619801785542?e=1721865600&v=beta&t=Ia_bthbsPaLnrj6dMghdgAvXoZ31-xa6X1Io18Tyl1Y"},
+      { name: "Jared Lohtaja", title: "Technical Director", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
+      { name: "Shrey Somaiya", title: "Projects Lead", imgUrl: "https://media.licdn.com/dms/image/C4D03AQHOAs0zYH4KCg/profile-displayphoto-shrink_800_800/0/1653994970103?e=1722470400&v=beta&t=EAfTDqAmqihOqV-xaPzLhM8991xihysmbOcg9sOM2zs" },
+
     ],
     subcommittees: [
-      
+      {
+        name: "Chaos",
+        directors: [
+          { name: "Michael Vo", imgUrl: "zaxutic"},
+          { name: "Lewis Cullen", imgUrl: ""},
+          { name: "Evan Williams", imgUrl: ""},
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Circles",
+        directors: [
+          { name: "Peter Derias", imgUrl: ""},
+          { name: "Leo Sun", imgUrl: ""},
+          { name: "Sanojay Thiagara", imgUrl: ""},
+        ],
+        subcommittee: []
+      },
+      {
+        name: "CSElectives",
+        directors: [
+          { name: "Vivian Wang", imgUrl: ""},
+          { name: "Victoria Vu", imgUrl: ""},
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Freerooms",
+        directors: [
+          { name: "Brittany Li", imgUrl: ""},
+          { name: "Bob Chen", imgUrl: "3bobchen"},
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Jobsboard",
+        directors: [
+          { name: "Darian Lee", imgUrl: ""},
+          { name: "Joanna He", imgUrl: ""},
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Notangles",
+        directors: [
+          { name: "Mun Joon Teo", imgUrl: ""},
+          { name: "Oliver Xu", imgUrl: ""},
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Structs",
+        directors: [
+          { name: "Dominic Atlas", imgUrl: ""},
+          { name: "Joanna Sun", imgUrl: ""},
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Website",
+        directors: [
+          { name: "Varun Sethu", imgUrl: ""},
+          { name: "Jacky Xie", imgUrl: ""},
+        ],
+        subcommittee: []
+      },
     ]
   },
   2023: {
