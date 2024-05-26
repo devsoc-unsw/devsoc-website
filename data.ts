@@ -850,7 +850,7 @@ export const teamData: TeamData = {
       {
         name: "Marketing",
         directors: [
-          { name: "Mai (Angella) Ngoc Pham", imgUrl: "anjerraa"},
+          { name: "Angella Pham", imgUrl: "anjerraa"},
           { name: "Eric Wu", imgUrl: ""},
           { name: "Mark Quach", imgUrl: "markquach12"},
         ],
