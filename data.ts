@@ -362,7 +362,7 @@ export const teamData: TeamData = {
       { name: "James Ji", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/D5603AQGTkMu2h1CoGw/profile-displayphoto-shrink_800_800/0/1671790198748?e=1721865600&v=beta&t=NXeEtcqCq7BNl_yt1wH_uXFp6mQZ3y2lboO29Zd14e4" },
       { name: "Vicky Wu", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/D4E03AQHUzxhp4c_mnQ/profile-displayphoto-shrink_800_800/0/1677625183062?e=1721865600&v=beta&t=yItOAojz--6f35LuEslAdFLYDg0D8waAabGimIjQeoE" },
       { name: "Abiram Nadarajah", title: "Technical Director", imgUrl: "https://media.licdn.com/dms/image/C5603AQE3oeVUmozItw/profile-displayphoto-shrink_800_800/0/1619801785542?e=1721865600&v=beta&t=Ia_bthbsPaLnrj6dMghdgAvXoZ31-xa6X1Io18Tyl1Y"},
-      { name: "Jared Lohtaja", title: "Technical Director", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
+      { name: "Jared L", title: "Technical Director", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
       { name: "Shrey Somaiya", title: "Projects Lead", imgUrl: "https://media.licdn.com/dms/image/C4D03AQHOAs0zYH4KCg/profile-displayphoto-shrink_800_800/0/1653994970103?e=1722470400&v=beta&t=EAfTDqAmqihOqV-xaPzLhM8991xihysmbOcg9sOM2zs" },
 
     ],
@@ -439,9 +439,9 @@ export const teamData: TeamData = {
     executives: [
       { name: "Angella Pham", title: "Vice President Development", imgUrl: "https://media.licdn.com/dms/image/D4D03AQFiN1KH0S9hTA/profile-displayphoto-shrink_800_800/0/1714059532085?e=1721865600&v=beta&t=3DgZTuY5c5zHW40AflT3jP_-oTXSTtp3yXe89ccHgKo" },
       { name: "Hanyuan Li", title: "Vice President Development/Secretary", imgUrl: "https://media.licdn.com/dms/image/D5603AQEcsXuE78Vfeg/profile-displayphoto-shrink_800_800/0/1669526929705?e=1721865600&v=beta&t=uyJo3dG91ocUWoTPrLCMtxpm6P6aO_iiUbmqrbxUaFY" },
-      { name: "Jared Lohtaja", title: "Chief Technology Officer", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
+      { name: "Jared L", title: "Chief Technology Officer", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
       { name: "Winnie Zhang", title: "Treasurer/Arc Delegate/GEDI", imgUrl: "https://media.licdn.com/dms/image/C4D03AQG2ZEafjLJUcQ/profile-displayphoto-shrink_800_800/0/1652866502245?e=1721865600&v=beta&t=y__ANoc8ULvSL8W748CYcKj4QvCqNZZzjhuDE0lHg54" },
-      { name: "Max Xue", title: "Vice President", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
+      { name: "Max Xue", title: "Vice President", imgUrl: "/people/438332823_1121897719091622_159828398805774345_n.jpg" },
     ],
     subcommittees: [
       {
@@ -856,7 +856,7 @@ export const teamData: TeamData = {
       {
         name: "Platform",
         directors: [
-          { name: "Jared Lohtaja", imgUrl: "lhjt"},
+          { name: "Jared L", imgUrl: "lhjt"},
           { name: "Sacha Korban", imgUrl: "sachk"},
         ],
         subcommittee: [
