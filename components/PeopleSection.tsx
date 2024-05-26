@@ -23,7 +23,9 @@ export const PeopleSection = () => {
   const [teamYear, setTeamYear] = useState(2024);
   const [subcommittee, setSubcommittee] = useState(teamData[teamYear]["subcommittees"][0]?.name);
   useEffect(() => {
-    setSubcommittee(teamData[teamYear]["subcommittees"][0]?.name);
+    if (!teamData[teamYear]["subcommittees"].some(s => s.name === subcommittee)){
+      setSubcommittee(teamData[teamYear]["subcommittees"][0]?.name);
+    }
   }, [teamYear]);
   const handleTeamYearChange = (
     event: any,

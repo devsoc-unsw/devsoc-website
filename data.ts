@@ -171,7 +171,7 @@ export const teamData: TeamData = {
       {
         name: "Freerooms",
         directors: [
-          { name: "Callum", imgUrl: ""},
+          { name: "Callum Avery", imgUrl: ""},
         ],
         subcommittee: []
       },
@@ -192,21 +192,21 @@ export const teamData: TeamData = {
       {
         name: "Website\u00A0(CompClub)",
         directors: [
-          { name: "Thomas", imgUrl: ""},
+          { name: "Thomas Lam", imgUrl: ""},
         ],
         subcommittee: []
       },
       {
         name: "Handbook\u00A0API",
         directors: [
-          { name: "Zac", imgUrl: ""},
+          { name: "Zac Kologlu", imgUrl: ""},
         ],
         subcommittee: []
       },
       {
         name: "isSocsOpen",
         directors: [
-          { name: "Inura", imgUrl: ""},
+          { name: "Inura De Zoysa", imgUrl: ""},
         ],
         subcommittee: []
       },
@@ -227,37 +227,65 @@ export const teamData: TeamData = {
     subcommittees: [
       {
         name: "Notangles",
-        directors: [],
+        directors: [
+          { name: "Max Wo", imgUrl: ""},
+        ],
         subcommittee: []
       },
       {
         name: "Degree\u00A0Planner",
-        directors: [],
+        directors: [
+          { name: "Olga Popovic", imgUrl: ""},
+          { name: "Max Wo", imgUrl: ""},
+        ],
         subcommittee: []
       },
       {
-        name: "Community\u00A0Slackbot",
-        directors: [],
+        name: "Slackbot",
+        directors: [
+          { name: "Parviz Ahmadi", imgUrl: ""},
+        ],
         subcommittee: []
       },
       {
         name: "Freerooms",
-        directors: [],
+        directors: [
+          { name: "Callum Avery", imgUrl: ""},
+        ],
         subcommittee: []
       },
       {
         name: "Jobsboard",
-        directors: [],
+        directors: [
+          { name: "Adam Tizzone", imgUrl: ""},
+        ],
         subcommittee: []
       },
       {
         name: "Website\u00A0(CSESoc)",
-        directors: [],
+        directors: [
+          { name: "Tommy Truong", imgUrl: ""},
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Website\u00A0(CompClub)",
+        directors: [
+          { name: "Leesa Dang", imgUrl: ""},
+          { name: "Gordon Zhang", imgUrl: ""},
+        ],
         subcommittee: []
       },
       {
         name: "Attendance\u00A0Tracker",
         directors: [],
+        subcommittee: []
+      },
+      {
+        name: "uBark",
+        directors: [
+          { name: "Adam Tizzone", imgUrl: ""},
+        ],
         subcommittee: []
       }
     ]
@@ -396,7 +424,7 @@ export const teamData: TeamData = {
       {
         name: "Freerooms",
         directors: [
-          { name: "Brittany Li", imgUrl: ""},
+          { name: "Brittany Li", imgUrl: "Britain1680"},
           { name: "Bob Chen", imgUrl: "3bobchen"},
         ],
         subcommittee: []
