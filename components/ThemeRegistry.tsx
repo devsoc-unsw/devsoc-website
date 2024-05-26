@@ -12,6 +12,12 @@ type ThemeRegistryProps = {
   children: React.ReactNode;
 };
 
+declare module '@mui/joy/Slider' {
+  interface SliderPropsColorOverrides {
+    devsoc_red: true;
+  }
+}
+
 // This implementation is suggested by JoyUI for working with App router
 // https://mui.com/joy-ui/integrations/next-js-app-router/
 export default function ThemeRegistry({
@@ -32,7 +38,25 @@ export default function ThemeRegistry({
           }
         }
       }
-    }
+    },
+    components: {
+      JoySlider: {
+        styleOverrides: {
+          track: ({ ownerState, theme }) => ({
+            ...(ownerState.color === 'devsoc_red' && {
+              backgroundColor: "#D9807E",
+            }),
+          }),
+          thumb: ({ ownerState, theme }) => ({
+            ...(ownerState.color === 'devsoc_red' && {
+              backgroundColor: "#FFF",
+              border: "solid #D9807E",
+              boxShadow: "#FFF"
+            }),
+          }),
+        },
+      },
+    },
   });
 
   return (

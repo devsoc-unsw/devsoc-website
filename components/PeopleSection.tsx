@@ -11,8 +11,6 @@ import {
   Avatar,
   AspectRatio,
   Box,
-  Option,
-  Select,
   Skeleton,
   Stack,
   Typography,
@@ -78,6 +76,7 @@ export const PeopleSection = () => {
         min={2018}
         max={2024}
         marks={years}
+        color="devsoc_red"
         onChange={(e, year) => setTeamYear(!Array.isArray(year) ? year : 2024)}
       />
       <Typography level="h2" py={4} px={4}>
