@@ -143,7 +143,7 @@ export const teamData: TeamData = {
   },
   2019: {
     executives: [
-      { name: "Thomas Kunc", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/C5603AQFILnScctz0CQ/profile-displayphoto-shrink_800_800/0/1521010349210?e=1721865600&v=beta&t=Mrf92v2FZgv8n47wotNEy794OwwEqBt_FoPc1lUxmmc" },
+      { name: "Tom Kunc", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/C5603AQFILnScctz0CQ/profile-displayphoto-shrink_800_800/0/1521010349210?e=1721865600&v=beta&t=Mrf92v2FZgv8n47wotNEy794OwwEqBt_FoPc1lUxmmc" },
       { name: "Shane Kadish", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/C5603AQENc_UoZObUcw/profile-displayphoto-shrink_800_800/0/1547879297950?e=1721865600&v=beta&t=bDBev-Et52gHRcbbL6PIYKwva6wj-5Gsc-3YoC66ISc" },
     ],
     subcommittees: [
