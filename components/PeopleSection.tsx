@@ -1,6 +1,6 @@
 'use client'
 
-import {PersonProps, teamData} from "../data";
+import {PersonProps, teamData} from "../teamData";
 import React, {useEffect, useState} from "react";
 import Image from "next/image";
 import {
@@ -27,6 +27,7 @@ export const PeopleSection = () => {
       setSubcommittee(teamData[teamYear]["subcommittees"][0]?.name);
     }
   }, [teamYear]);
+
   const handleTeamYearChange = (
     event: any,
     newValue: React.SetStateAction<number>,
@@ -35,36 +36,9 @@ export const PeopleSection = () => {
       setTeamYear(newValue);
     }
   };
-  const years = [
-    {
-      value: 2024,
-      label: "2024"
-    },
-    {
-      value: 2023,
-      label: "2023"
-    },
-    {
-      value: 2022,
-      label: "2022"
-    },
-    {
-      value: 2021,
-      label: "2021"
-    },
-    {
-      value: 2020,
-      label: "2020"
-    },
-    {
-      value: 2019,
-      label: "2019"
-    },
-    {
-      value: 2018,
-      label: "2018"
-    }
-  ]
+
+  const years = [2024, 2023, 2022, 2021, 2020, 2019, 2018]
+
   function valueText(value: number) {
     return value.toString();
   }
@@ -77,7 +51,7 @@ export const PeopleSection = () => {
         step={1}
         min={2018}
         max={2024}
-        marks={years}
+        marks={years.map(year => ({value: year, label: `${year}`}))}
         color="devsoc_red"
         onChange={(e, year) => setTeamYear(!Array.isArray(year) ? year : 2024)}
       />
@@ -179,39 +153,40 @@ const SubcommitteeList: React.FC<{ name: string, directors: PersonProps[], subco
           {
             directors.map((props) => {
               return (
-                <ListItem key={props.name}>
-                  <ListItemDecorator>
-                    <Avatar src={`https://github.com/${props.imgUrl}.png`} />
-                  </ListItemDecorator>
-                  <ListItemContent>
-                    <Typography level="title-sm">{props.name}</Typography>
-                    <Typography level="body-sm" noWrap>
-                      Director
-                    </Typography>
-                  </ListItemContent>
-                </ListItem>
+                <TeamListItem name={props.name} imgUrl={props.imgUrl} title="Director"/>
               )
             })
           }
           {
             subcommittee.map((props) => {
               return (
-                <ListItem key={props.name}>
-                  <ListItemDecorator>
-                    <Avatar src={`https://github.com/${props.imgUrl}.png`} />
-                  </ListItemDecorator>
-                  <ListItemContent>
-                    <Typography level="title-sm">{props.name}</Typography>
-                    <Typography level="body-sm" noWrap>
-                      Subcommittee
-                    </Typography>
-                  </ListItemContent>
-                </ListItem>
+                <TeamListItem name={props.name} imgUrl={props.imgUrl} title="Subcommittee"/>
               )
             })
           }
         </List>
       </Box>
     </>
+  )
+}
+
+interface TeamListItemProps {
+  name: string;
+  imgUrl: string | undefined;
+  title: string;
+}
+const TeamListItem = (props: TeamListItemProps) => {
+  return (
+    <ListItem key={props.name}>
+      <ListItemDecorator>
+        <Avatar src={`https://github.com/${props.imgUrl}.png`} />
+      </ListItemDecorator>
+      <ListItemContent>
+        <Typography level="title-sm">{props.name}</Typography>
+        <Typography level="body-sm" noWrap>
+          {props.title}
+        </Typography>
+      </ListItemContent>
+    </ListItem>
   )
 }

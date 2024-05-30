@@ -37,6 +37,7 @@ export default function AboutUsPage() {
         </Typography>
       </PageSection>
       <PageSection title="Governance">
+        contact@devsoc.app <br/><br/>
         Computer Science Building (K17)<br/>Engineering Road, UNSW Sydney,<br/>Kensington NSW 2052 <br/><br/>
         DevSoc became an independent university society affiliated with UNSW Arc beginning in October 2023, separating from CSESoc. You can find our latest constitution <Link target="_blank" href="https://drive.google.com/file/d/1vz-NuOY6ympFkq80s4GPnV5HrvKuaA1K/view?usp=sharing">here</Link>.
         <br/>
