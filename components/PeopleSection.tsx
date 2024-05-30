@@ -153,14 +153,14 @@ const SubcommitteeList: React.FC<{ name: string, directors: PersonProps[], subco
           {
             directors.map((props) => {
               return (
-                <TeamListItem name={props.name} imgUrl={props.imgUrl} title="Director"/>
+                <TeamListItem name={props.name} imgUrl={props.imgUrl} title="Director" key={props.name}/>
               )
             })
           }
           {
             subcommittee.map((props) => {
               return (
-                <TeamListItem name={props.name} imgUrl={props.imgUrl} title="Subcommittee"/>
+                <TeamListItem name={props.name} imgUrl={props.imgUrl} title="Subcommittee" key={props.name}/>
               )
             })
           }
@@ -177,7 +177,7 @@ interface TeamListItemProps {
 }
 const TeamListItem = (props: TeamListItemProps) => {
   return (
-    <ListItem key={props.name}>
+    <ListItem>
       <ListItemDecorator>
         <Avatar src={`https://github.com/${props.imgUrl}.png`} />
       </ListItemDecorator>
