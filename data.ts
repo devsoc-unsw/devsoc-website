@@ -8,7 +8,6 @@ import {
   LinkedIn,
   School
 } from '@mui/icons-material';
-import { PersonProps } from './app/(pages)/about-us/page';
 import { RecruitmentProps } from './app/(pages)/get-involved/page';
 import DiscordIcon from './components/nav/DiscordIcon';
 import { ProjectCardProps } from './components/ProjectCard';
@@ -28,6 +27,7 @@ import tiktok from './assets/tiktok.svg';
 import acnc from './assets/acnc.png';
 import csesoc from './assets/csesocwhite.png';
 import {StaticImport} from "next/dist/shared/lib/get-img-props";
+import {ExecProps} from "./components/PeopleSection";
 
 // General stuff:
 // - All images need to go somewhere in /public, and the links are rooted at the /public folder
@@ -136,19 +136,6 @@ export const traineeProjectData: Omit<ProjectCardProps, "trainee">[] = [
     projectUrl: "https://github.com/csesoc/trainee-3-22t3",
     thumbnailUrl: "/traineeProjects/loft.png",
   },
-];
-
-// People displayed in the "Meet the Team" section of "About Us"
-// If no image set, an animated gray circle appears
-export const teamData: PersonProps[] = [
-  { name: "Bob Chen", title: "Co-President", imgUrl: "/people/pres-nf.jpeg" },
-  { name: "Sally Sun", title: "Co-President", imgUrl: "/people/pres-nm.png" },
-  { name: "Jeremy Le", title: "Administrative Officer", imgUrl: "/people/admin.jpg" },
-  { name: "Michael Girikallo", title: "GEDI Officer", imgUrl: "/people/gedi.jpeg" },
-  { name: "Audrey Tanama", title: "VP (Internals)", imgUrl: "/people/vpi.jpeg" },
-  { name: "Henry Guo", title: "VP (Operations)", imgUrl: "/people/vpo.jpeg" },
-  { name: "Manhua Lu", title: "VP (Course Projects)", imgUrl: "/people/vpc.jpeg" },
-  { name: "Franco Reyes", title: "VP (Standalone Projects)", imgUrl: "/people/vps.jpeg" },
 ];
 
 // Data for the "Join DevSoc" section
