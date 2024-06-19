@@ -25,6 +25,7 @@ import optiver from './assets/optiver.png';
 import macquarie from './assets/macquarie.svg';
 import tiktok from './assets/tiktok.svg';
 import acnc from './assets/acnc.png';
+import cse from './assets/CSE.jpeg';
 import csesoc from './assets/csesocwhite.png';
 import {StaticImport} from "next/dist/shared/lib/get-img-props";
 import {ExecProps} from "./components/PeopleSection";
@@ -171,6 +172,11 @@ export const projectSupporterData: SupporterData[] = [
       {
         name: "Registered Charity",
         logo: acnc,
+        url: "https://www.acnc.gov.au/charity/charities/7fa763bf-0876-ee11-8179-00224893b0ed/profile"
+      },
+      {
+        name: "School of CSE",
+        logo: cse,
         url: "https://www.acnc.gov.au/charity/charities/7fa763bf-0876-ee11-8179-00224893b0ed/profile"
       },
       {
