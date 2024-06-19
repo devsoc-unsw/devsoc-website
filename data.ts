@@ -113,6 +113,12 @@ export const projectData: Omit<ProjectCardProps, "trainee">[] = [
 
 export const traineeProjectData: Omit<ProjectCardProps, "trainee">[] = [
   {
+    name: "Unswipe (24T1)",
+    desc: "Find the perfect groupmate for your CSE course with this real-time messaging app.",
+    projectUrl: "https://github.com/devsoc-unsw/trainee-uranus-24t1",
+    thumbnailUrl: "/traineeProjects/unswipe.png"
+  },
+  {
     name: "Moodify (23T3)",
     desc: "Discover the power of personalized playlists tailored to your mood and activities with Moodify!",
     projectUrl: "https://github.com/csesoc/trainee-3-23t3",
@@ -140,9 +146,8 @@ export const recruitmentData: RecruitmentProps[] = [
   {
     position: "Training Leads",
     Icon: CoPresent,
-    applicationUrl: "https://forms.gle/PyUdngjAfE9oczGT6",
   },
-  { position: "Trainees", Icon: School, applicationUrl: "https://forms.gle/1JckRMSsLfrY2bi7A" },
+  { position: "Trainees", Icon: School },
 ];
 
 export const feedbackFormUrl = "https://forms.gle/TjHcB9MHf6AwojiE8";
