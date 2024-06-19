@@ -604,7 +604,7 @@ export const teamData: TeamData = {
           { name: "Angeline Tran", imgUrl: "" },
           { name: "Brandon Tan", imgUrl: "" },
           { name: "Dylan Zhang", imgUrl: "" },
-          { name: "Ashley Luong", imgUrl: "" },
+          { name: "Ashley Luong", imgUrl: "asssssssley" },
           { name: "Rokika Khondaker", imgUrl: "" },
         ]
       },
