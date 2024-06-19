@@ -843,9 +843,10 @@ export const teamData: TeamData = {
           { name: "Angeline Tran", imgUrl: "" },
           { name: "Bryan Zou", imgUrl: "" },
           { name: "Kim Lam", imgUrl: "" },
+          { name: "Edward Zhang", imgUrl: "" },
           { name: "Bella Cu", imgUrl: "" },
           { name: "Brandon Tan", imgUrl: "" },
-          { name: "William Dang", imgUrl: "" },
+          { name: "William Dang", imgUrl: "skrilliam" },
           { name: "Arnold Tan", imgUrl: "" },
         ]
       },
