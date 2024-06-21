@@ -177,7 +177,7 @@ export const projectSupporterData: SupporterData[] = [
       {
         name: "School of CSE",
         logo: cse,
-        url: "https://www.acnc.gov.au/charity/charities/7fa763bf-0876-ee11-8179-00224893b0ed/profile"
+        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering"
       },
       {
         name: "CSESoc",
