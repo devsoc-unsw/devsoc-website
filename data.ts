@@ -39,9 +39,9 @@ import {ExecProps} from "./components/PeopleSection";
 export const navData = [
   { text: 'About Us', href: '/about-us' },
   { text: 'Our Projects', href: '/our-projects' },
+  { text: 'Starlight', href: '/starlight'},
   { text: 'Get Involved', href: '/get-involved' },
   { text: 'Supporters', href: '/supporters' },
-  { text: 'Starlight', href: '/starlight'}
 ];
 
 // Links to socials on nav
@@ -142,16 +142,16 @@ export const traineeProjectData: Omit<ProjectCardProps, "trainee">[] = [
 
 export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
   {
-    name: "Unswipe (24T1)",
-    desc: "Find the perfect groupmate for your CSE course with this real-time messaging app.",
-    projectUrl: "https://github.com/devsoc-unsw/trainee-uranus-24t1",
-    thumbnailUrl: "/traineeProjects/unswipe.png"
+    name: "Generic Assembler",
+    desc: "Convert assembly in a custom MIPS-Like assembly language into binary or hex format!",
+    projectUrl: "https://github.com/JamesTreloar/GenericAssembler",
+    thumbnailUrl: "/starlightProjects/24_01_GenericAssembler.png"
   },
   {
-    name: "Moodify (23T3)",
-    desc: "Discover the power of personalized playlists tailored to your mood and activities with Moodify!",
-    projectUrl: "https://github.com/csesoc/trainee-3-23t3",
-    thumbnailUrl: "/traineeProjects/moodify.png",
+    name: "[ Your Project ]",
+    desc: "Submissions are still open! Take your chance to showcase your favourite project through the link below!",
+    projectUrl: "https://forms.gle/FMGM8YbrhB4kXKUe8",
+    thumbnailUrl: "/starlightProjects/placeholder.jpg"
   },
 ]
 // Data for the "Join DevSoc" section
