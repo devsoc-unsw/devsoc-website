@@ -59,7 +59,7 @@ export default function Home() {
     >
       <Stack width="75%" direction="column-reverse">
         <Box sx={{ width: "100%" }}>
-          <Typography mt={3} fontSize={{ xs: "1.6rem", sm: "2.6rem", md: "3.4rem" }} fontWeight={600}>
+          <Typography mt={3} fontSize={{ xs: "1.6rem", sm: "2.6rem", md: "3.4rem" }} fontWeight={600} component='div'>
             A dedicated student community of
             <TextTransition
               className={styles.rainbow}
