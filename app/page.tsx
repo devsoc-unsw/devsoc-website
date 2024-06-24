@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image';
 import { AspectRatio, Card, CardContent, Chip, Link, Stack, Typography } from '@mui/joy';
-import {Handshake, Info, People, SvgIconComponent, Terminal} from '@mui/icons-material';
+import {AutoAwesome, Handshake, Info, People, Star, SvgIconComponent, Terminal, TipsAndUpdates} from '@mui/icons-material';
 import React, { useState } from 'react';
 import NextLink from 'next/link';
 import TextTransition, { presets } from 'react-text-transition'
@@ -22,6 +22,12 @@ const cardContent: LinkCardProps[] = [
     title: "Our Projects",
     content: "Explore the variety of different projects developed by DevSoc for UNSW students!",
     href: "/our-projects"
+  },
+  {
+    Icon: AutoAwesome,
+    title: "Starlight",
+    content: "Spotlighting the awesome software projects being developed at UNSW!",
+    href: "/starlight"
   },
   {
     Icon: People,
