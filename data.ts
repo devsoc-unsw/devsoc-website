@@ -39,6 +39,7 @@ import {ExecProps} from "./components/PeopleSection";
 export const navData = [
   { text: 'About Us', href: '/about-us' },
   { text: 'Our Projects', href: '/our-projects' },
+  { text: 'Starlight', href: '/starlight'},
   { text: 'Get Involved', href: '/get-involved' },
   { text: 'Supporters', href: '/supporters' },
 ];
@@ -139,6 +140,20 @@ export const traineeProjectData: Omit<ProjectCardProps, "trainee">[] = [
   },
 ];
 
+export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
+  {
+    name: "Your project can be here!",
+    desc: "Submissions are still open! Take your chance to showcase your favourite project through the link below!",
+    projectUrl: "https://forms.gle/FMGM8YbrhB4kXKUe8",
+    thumbnailUrl: "/starlightProjects/placeholder.jpg"
+  },
+  {
+    name: "Generic Assembler",
+    desc: "Convert assembly in a custom MIPS-Like assembly language into binary or hex format!",
+    projectUrl: "https://github.com/JamesTreloar/GenericAssembler",
+    thumbnailUrl: "/starlightProjects/24_01_GenericAssembler.png"
+  },
+]
 // Data for the "Join DevSoc" section
 // Should set/unset applicationUrl to mark recruitment as open/closed
 export const recruitmentData: RecruitmentProps[] = [

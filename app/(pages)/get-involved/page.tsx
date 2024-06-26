@@ -38,7 +38,7 @@ export default function GetInvolvedPage() {
           directors are seeking help with from outside contributors. In particular, those also tagged as <b>good first
           issue</b> are suited for anyone less familiar with the codebase or tech stack.
         </Typography>
-        <Typography textAlign='justify'>
+        <Typography textAlign='justify' component='div'>
           If one of these issues catches your eye, you should:
           <List marker="disc">
             <ListItem>Make sure you have all the information you need, and if not, ask for clarification in a comment</ListItem>
