@@ -148,6 +148,12 @@ export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
     thumbnailUrl: "/starlightProjects/placeholder.jpg"
   },
   {
+    name: "Groveify - 24T1 Trainee Project",
+    desc: "Groveify is a habit tracker and productivity manager that comes with a cute little world to keep you going. AI generated and customisable assets, make each user's experience feel tailored, unique, and engaging!",
+    projectUrl: "https://groveify.com",
+    thumbnailUrl: "/starlightProjects/24_02_Groveify.png"
+  },
+  {
     name: "Generic Assembler",
     desc: "Convert assembly in a custom MIPS-Like assembly language into binary or hex format!",
     projectUrl: "https://github.com/JamesTreloar/GenericAssembler",
