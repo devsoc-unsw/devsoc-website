@@ -148,8 +148,20 @@ export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
     thumbnailUrl: "/starlightProjects/placeholder.jpg"
   },
   {
+    name: "Browoser",
+    desc: "Funni browser app for Apple Watch built in SwiftUI. Also useless AI to comfort you when you're lonely!!",
+    projectUrl: "https://apps.apple.com/us/app/browoser/id6463472872",
+    thumbnailUrl: "/starlightProjects/24_04_Browoser.png"
+  },
+  {
+    name: "Hardstuck Debating Script",
+    desc: "Automatically create debating scrim groups with this python script!",
+    projectUrl: "https://github.com/TAS-scorchedshadow/DebatingAlgorithm",
+    thumbnailUrl: "/starlightProjects/24_03_HardstuckDebating.png"
+  },
+  {
     name: "Groveify - 24T1 Trainee Project",
-    desc: "Groveify is a habit tracker and productivity manager that comes with a cute little world to keep you going. AI generated and customisable assets, make each user's experience feel tailored, unique, and engaging!",
+    desc: "Groveify is a habit tracker and productivity manager that comes with a cute little world to keep you going!",
     projectUrl: "https://groveify.com",
     thumbnailUrl: "/starlightProjects/24_02_Groveify.png"
   },
@@ -158,6 +170,11 @@ export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
     desc: "Convert assembly in a custom MIPS-Like assembly language into binary or hex format!",
     projectUrl: "https://github.com/JamesTreloar/GenericAssembler",
     thumbnailUrl: "/starlightProjects/24_01_GenericAssembler.png"
+  },
+  {
+    name: "Riflelytics",
+    desc: "Data aggregation and visualisation website for rifle shooting. Easily integrates with existing target hardware!",
+    thumbnailUrl:"/starlightProjects/24_05_riflelytics.png"
   },
 ]
 // Data for the "Join DevSoc" section
