@@ -149,7 +149,7 @@ export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
   },
   {
     name: "Browoser",
-    desc: "Funni browser app for Apple Watch built in SwiftUI. Also useless AI to comfort you when you're lonely!!",
+    desc: "Funni browser app for Apple Watch built in SwiftUI. Also contains a useless AI to comfort you when you're lonely!!",
     projectUrl: "https://apps.apple.com/us/app/browoser/id6463472872",
     thumbnailUrl: "/starlightProjects/24_04_Browoser.png"
   },
