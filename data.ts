@@ -6,29 +6,29 @@ import {
   Groups,
   Instagram,
   LinkedIn,
-  School
-} from '@mui/icons-material';
-import { RecruitmentProps } from './app/(pages)/get-involved/page';
-import DiscordIcon from './components/nav/DiscordIcon';
-import { ProjectCardProps } from './components/ProjectCard';
+  School,
+} from "@mui/icons-material";
+import { RecruitmentProps } from "./app/(pages)/get-involved/page";
+import DiscordIcon from "./components/nav/DiscordIcon";
+import { ProjectCardProps } from "./components/ProjectCard";
 
-import janeStreet from './assets/jane_street.svg';
-import rs from './assets/rs.png';
-import rp from './assets/rp.png';
-import sig from './assets/sig.png';
-import imc from './assets/imc.png';
-import sc from './assets/sc.png';
-import quickli from './assets/quickli.png';
-import zurich from './assets/zurich.png';
-import citadel from './assets/citadel.png';
-import optiver from './assets/optiver.png';
-import macquarie from './assets/macquarie.svg';
-import tiktok from './assets/tiktok.svg';
-import acnc from './assets/acnc.png';
-import cse from './assets/CSE.jpeg';
-import csesoc from './assets/csesocwhite.png';
-import {StaticImport} from "next/dist/shared/lib/get-img-props";
-import {ExecProps} from "./components/PeopleSection";
+import janeStreet from "./assets/jane_street.svg";
+import rs from "./assets/rs.png";
+import rp from "./assets/rp.png";
+import sig from "./assets/sig.png";
+import imc from "./assets/imc.png";
+import sc from "./assets/sc.png";
+import quickli from "./assets/quickli.png";
+import zurich from "./assets/zurich.png";
+import citadel from "./assets/citadel.png";
+import optiver from "./assets/optiver.png";
+import macquarie from "./assets/macquarie.svg";
+import tiktok from "./assets/tiktok.svg";
+import acnc from "./assets/acnc.png";
+import cse from "./assets/CSE.jpeg";
+import csesoc from "./assets/csesocwhite.png";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import { ExecProps } from "./components/PeopleSection";
 
 // General stuff:
 // - All images need to go somewhere in /public, and the links are rooted at the /public folder
@@ -37,11 +37,11 @@ import {ExecProps} from "./components/PeopleSection";
 // Pages and links displayed on nav
 // Probably shouldn't be touched
 export const navData = [
-  { text: 'About Us', href: '/about-us' },
-  { text: 'Our Projects', href: '/our-projects' },
-  { text: 'Starlight', href: '/starlight'},
-  { text: 'Get Involved', href: '/get-involved' },
-  { text: 'Supporters', href: '/supporters' },
+  { text: "About Us", href: "/about-us" },
+  { text: "Our Projects", href: "/our-projects" },
+  { text: "Starlight", href: "/starlight" },
+  { text: "Get Involved", href: "/get-involved" },
+  { text: "Supporters", href: "/supporters" },
 ];
 
 // Links to socials on nav
@@ -115,10 +115,10 @@ export const projectData: Omit<ProjectCardProps, "trainee">[] = [
 
 export const traineeProjectData: Omit<ProjectCardProps, "trainee">[] = [
   {
-    name: "Unswipe (24T1)",
+    name: "UNSWswipe (24T1)",
     desc: "Find the perfect groupmate for your CSE course with this real-time messaging app.",
     projectUrl: "https://github.com/devsoc-unsw/trainee-uranus-24t1",
-    thumbnailUrl: "/traineeProjects/unswipe.png"
+    thumbnailUrl: "/traineeProjects/unswipe.png",
   },
   {
     name: "Moodify (23T3)",
@@ -141,42 +141,93 @@ export const traineeProjectData: Omit<ProjectCardProps, "trainee">[] = [
 ];
 
 export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
+  // {
+  //   name: "Your project can be here!",
+  //   desc: "Submissions are still open! Take your chance to showcase your favourite project through the link below!",
+  //   projectUrl: "https://forms.gle/FMGM8YbrhB4kXKUe8",
+  //   thumbnailUrl: "/starlightProjects/placeholder.jpg",
+  // },
   {
-    name: "Your project can be here!",
-    desc: "Submissions are still open! Take your chance to showcase your favourite project through the link below!",
-    projectUrl: "https://forms.gle/FMGM8YbrhB4kXKUe8",
-    thumbnailUrl: "/starlightProjects/placeholder.jpg"
+    name: "Quests - Stamp Rally Management System",
+    desc: "A mobile friendly stamp rally management system equipped with tasks, rooms, societies and a raffle developed for MegaLAN Events!",
+    projectUrl: "https://github.com/megalan-association/quests",
+    thumbnailUrl: "/starlightProjects/24_11_Quests.jpeg",
+  },
+  {
+    name: "Propogate.ink",
+    desc: "The website application for visual learners! Create mind maps with accompanying, details and aesthetic notes for each node!",
+    projectUrl: "https://www.propagate.ink",
+    thumbnailUrl: "/starlightProjects/24_10_Propogate.png",
+  },
+  {
+    name: "Way Home",
+    desc: "WayHome is a cross platform location sharing app. Share your location and memories of your favorite places with your pookies!",
+    projectUrl: "https://github.com/mt-fns/WayHome",
+    thumbnailUrl: "/starlightProjects/24_09_WayHome.png",
+  },
+  {
+    name: "Beem Memo Pay",
+    desc: "Capture memories from group expenses and conclude your trips by sharing your favorite moments. MemoPay enhances the social aspect of money, making group expenses on Beem fun and social!",
+    projectUrl: "https://github.com/AI-Hack-2024/Beem-MemoPay",
+    thumbnailUrl: "/starlightProjects/24_08_BeemMemoPay.png",
+  },
+  {
+    name: "AchieveMint - 24T1 Trainee Project",
+    desc: "Enhance your productivity with this all-in-one organization website, featuring a to-do list, note-taking, reminders and a resting page to help you stay on track and achieve more!",
+    projectUrl: "https://github.com/devsoc-unsw/trainee-saturn-24t1",
+    thumbnailUrl: "/starlightProjects/24_07_AchieveMint.png",
+  },
+  {
+    name: "UNSWipe - 24T1 Trainee Project",
+    desc: "Find the perfect groupmate for your CSE course with this real-time messaging app!",
+    projectUrl: "https://github.com/devsoc-unsw/trainee-uranus-24t1",
+    thumbnailUrl: "/traineeProjects/unswipe.png",
+  },
+  {
+    name: "UNSW Redback Racing - Autonomous Vehicles",
+    desc: "Suite of automated systems to allow an autonomous car to percieve and navigate around a circuit. This includes developing both vehicle simulations alongside hardware.",
+    projectUrl: "https://www.redbackracing.com/",
+    thumbnailUrl:
+      "/starlightProjects/24_05_UNSWRedbackRacingAutonomousVehicles.png",
+  },
+  {
+    name: "UNSW Redback Racing - Data Acquistion",
+    desc: `Redback Racing's Data Acquisition Team focuses on capturing vehicle telemetry data and displaying it in a meaningful way. Check out their vehicle driver display and a live telemetry web app!`,
+    projectUrl: "https://www.redbackracing.com/",
+    thumbnailUrl:
+      "/starlightProjects/24_04_UNSWRedbackRacingDataAcquisition.JPG",
   },
   {
     name: "Browoser",
     desc: "Funni browser app for Apple Watch built in SwiftUI. Also contains a useless AI to comfort you when you're lonely!!",
     projectUrl: "https://apps.apple.com/us/app/browoser/id6463472872",
-    thumbnailUrl: "/starlightProjects/24_04_Browoser.png"
+    thumbnailUrl: "/starlightProjects/24_0B_Browoser.png",
   },
   {
     name: "Hardstuck Debating Script",
     desc: "Automatically create debating scrim groups with this python script!",
     projectUrl: "https://github.com/TAS-scorchedshadow/DebatingAlgorithm",
-    thumbnailUrl: "/starlightProjects/24_03_HardstuckDebating.png"
+    thumbnailUrl: "/starlightProjects/24_03_HardstuckDebating.png",
   },
   {
     name: "Groveify - 24T1 Trainee Project",
     desc: "Groveify is a habit tracker and productivity manager that comes with a cute little world to keep you going!",
     projectUrl: "https://groveify.com",
-    thumbnailUrl: "/starlightProjects/24_02_Groveify.png"
+    thumbnailUrl: "/starlightProjects/24_02_Groveify.png",
   },
   {
     name: "Generic Assembler",
     desc: "Convert assembly in a custom MIPS-Like assembly language into binary or hex format!",
     projectUrl: "https://github.com/JamesTreloar/GenericAssembler",
-    thumbnailUrl: "/starlightProjects/24_01_GenericAssembler.png"
+    thumbnailUrl: "/starlightProjects/24_01_GenericAssembler.png",
   },
   {
     name: "Riflelytics",
     desc: "Data aggregation and visualisation website for rifle shooting. Easily integrates with existing target hardware!",
-    thumbnailUrl:"/starlightProjects/24_05_riflelytics.png"
+    thumbnailUrl: "/starlightProjects/24_0A_riflelytics.png",
+    projectUrl: "https://github.com/TAS-scorchedshadow/Rifle_Shooting_Major",
   },
-]
+];
 // Data for the "Join DevSoc" section
 // Should set/unset applicationUrl to mark recruitment as open/closed
 export const recruitmentData: RecruitmentProps[] = [
@@ -210,19 +261,19 @@ export const projectSupporterData: SupporterData[] = [
       {
         name: "Registered Charity",
         logo: acnc,
-        url: "https://www.acnc.gov.au/charity/charities/7fa763bf-0876-ee11-8179-00224893b0ed/profile"
+        url: "https://www.acnc.gov.au/charity/charities/7fa763bf-0876-ee11-8179-00224893b0ed/profile",
       },
       {
         name: "School of CSE",
         logo: cse,
-        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering"
+        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
       },
       {
         name: "CSESoc",
         logo: csesoc,
-        url: "https://www.csesoc.unsw.edu.au/"
-      }
-    ]
+        url: "https://www.csesoc.unsw.edu.au/",
+      },
+    ],
   },
   {
     title: "Project Sponsors",
@@ -230,19 +281,19 @@ export const projectSupporterData: SupporterData[] = [
       {
         name: "Jane Street",
         logo: janeStreet,
-        url: "https://www.janestreet.com/"
+        url: "https://www.janestreet.com/",
       },
       {
         name: "TikTok",
         logo: tiktok,
-        url: "https://careers.tiktok.com/"
+        url: "https://careers.tiktok.com/",
       },
       {
         name: "Macquarie",
         logo: macquarie,
-        url: "https://www.macquarie.com"
-      }
-    ]
+        url: "https://www.macquarie.com",
+      },
+    ],
   },
   {
     title: "Diamond Tier",
@@ -251,14 +302,14 @@ export const projectSupporterData: SupporterData[] = [
       {
         name: "Jane Street",
         logo: janeStreet,
-        url: "https://www.janestreet.com/"
+        url: "https://www.janestreet.com/",
       },
       {
         name: "TikTok",
         logo: tiktok,
-        url: "https://careers.tiktok.com/"
-      }
-    ]
+        url: "https://careers.tiktok.com/",
+      },
+    ],
   },
   {
     title: "Gold Tier",
@@ -267,34 +318,34 @@ export const projectSupporterData: SupporterData[] = [
       {
         name: "Atlassian",
         logo: "https://www.skillfinder.com.au/media/wysiwyg/atlassian-logo-gradient-horizontal-white.png",
-        url: "https://www.atlassian.com/"
+        url: "https://www.atlassian.com/",
       },
       {
         name: "Citadel",
         logo: citadel,
-        url: "https://www.citadelsecurities.com/"
+        url: "https://www.citadelsecurities.com/",
       },
       {
         name: "imc",
         logo: imc,
-        url: "https://www.imc.com/"
+        url: "https://www.imc.com/",
       },
       {
         name: "neara",
         logo: "https://neara.com/wp-content/uploads/2023/03/footer-white-logo-with-red-icon.png",
-        url: "https://neara.com/"
+        url: "https://neara.com/",
       },
       {
         name: "SafetyCulture",
         logo: sc,
-        url: "https://safetyculture.com/"
+        url: "https://safetyculture.com/",
       },
       {
         name: "Zurich",
         logo: zurich,
-        url: "https://www.zurich.com.au/"
-      }
-    ]
+        url: "https://www.zurich.com.au/",
+      },
+    ],
   },
   {
     title: "Silver Tier",
@@ -303,58 +354,58 @@ export const projectSupporterData: SupporterData[] = [
       {
         name: "appian",
         logo: "https://www.cds.co.uk/hs-fs/hubfs/Appian-white-logo.png?width=1200&height=627&name=Appian-white-logo.png",
-        url: "https://appian.com/"
+        url: "https://appian.com/",
       },
       {
         name: "FlowTraders",
         logo: "https://paragonnational.org/Companies/flow.png",
-        url: "https://www.flowtraders.com/"
+        url: "https://www.flowtraders.com/",
       },
       {
         name: "Macquarie",
         logo: macquarie,
-        url: "https://www.macquarie.com"
+        url: "https://www.macquarie.com",
       },
       {
         name: "Optiver",
         logo: optiver,
-        url: "https://optiver.com/"
+        url: "https://optiver.com/",
       },
       {
         name: "quantium",
         logo: "https://becarwise.com.au/wp-content/uploads/2022/04/quantium-logo-w.png",
-        url: "https://quantium.com/"
+        url: "https://quantium.com/",
       },
       {
         name: "Quickli",
         logo: quickli,
-        url: "https://quickli.com.au/"
+        url: "https://quickli.com.au/",
       },
       {
         name: "revolutioniseSPORT",
         logo: rs,
-        url: "https://www.revolutionise.com.au/"
+        url: "https://www.revolutionise.com.au/",
       },
       {
         name: "RecordPoint",
         logo: rp,
-        url: "https://www.recordpoint.com/"
+        url: "https://www.recordpoint.com/",
       },
       {
         name: "SIG",
         logo: sig,
-        url: "https://sig.com/"
+        url: "https://sig.com/",
       },
       {
         name: "ZIP",
         logo: "https://media.boohoo.com/i/boohooamplience/zippay_new_white_nobg_1309?fmt=webp",
-        url: "https://zip.co/au"
+        url: "https://zip.co/au",
       },
       {
         name: "Canva",
         logo: "https://www.edigitalagency.com.au/wp-content/uploads/Canva-wordmark-logo-white-font-png.png",
-        url: "https://www.canva.com/"
-      }
-    ]
-  }
+        url: "https://www.canva.com/",
+      },
+    ],
+  },
 ];
