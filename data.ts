@@ -167,7 +167,7 @@ export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
   },
   {
     name: "Beem Memo Pay",
-    desc: "Capture memories from group expenses and conclude your trips by sharing your favorite moments. MemoPay enhances the social aspect of money, making group expenses on Beem fun and social!",
+    desc: "Capture memories from group expenses and conclude your trips by sharing your favorite moments. Make group expenses on Beem fun and social!",
     projectUrl: "https://github.com/AI-Hack-2024/Beem-MemoPay",
     thumbnailUrl: "/starlightProjects/24_08_BeemMemoPay.png",
   },
