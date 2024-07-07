@@ -154,7 +154,7 @@ export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
     thumbnailUrl: "/starlightProjects/24_11_Quests.jpeg",
   },
   {
-    name: "Propogate.ink",
+    name: "Propagate.ink",
     desc: "The website application for visual learners! Create mind maps with accompanying, details and aesthetic notes for each node!",
     projectUrl: "https://www.propagate.ink",
     thumbnailUrl: "/starlightProjects/24_10_Propogate.png",
