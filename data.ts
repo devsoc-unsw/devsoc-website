@@ -141,12 +141,12 @@ export const traineeProjectData: Omit<ProjectCardProps, "trainee">[] = [
 ];
 
 export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
-  // {
-  //   name: "Your project can be here!",
-  //   desc: "Submissions are still open! Take your chance to showcase your favourite project through the link below!",
-  //   projectUrl: "https://forms.gle/FMGM8YbrhB4kXKUe8",
-  //   thumbnailUrl: "/starlightProjects/placeholder.jpg",
-  // },
+  {
+    name: "Your project can be here!",
+    desc: "Submissions are still open! Take your chance to showcase your favourite project through the link below!",
+    projectUrl: "https://forms.gle/FMGM8YbrhB4kXKUe8",
+    thumbnailUrl: "/starlightProjects/placeholder.jpg",
+  },
   {
     name: "Quests - Stamp Rally Management System",
     desc: "A mobile friendly stamp rally management system equipped with tasks, rooms, societies and a raffle developed for MegaLAN Events!",
@@ -157,7 +157,7 @@ export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
     name: "Propagate.ink",
     desc: "The website application for visual learners! Create mind maps with accompanying, details and aesthetic notes for each node!",
     projectUrl: "https://www.propagate.ink",
-    thumbnailUrl: "/starlightProjects/24_10_Propogate.png",
+    thumbnailUrl: "/starlightProjects/24_10_Propagate.png",
   },
   {
     name: "Way Home",
