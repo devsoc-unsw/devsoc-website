@@ -148,6 +148,24 @@ export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
     thumbnailUrl: "/starlightProjects/placeholder.jpg",
   },
   {
+    name: "LemonOS",
+    desc: "Hobby operating system written to run on PC hardware. Contains features and software found in many modern operating systems. Can run software common on Linux/unix systems and even games like DOOM!",
+    projectUrl: "https://github.com/LemonOSProject/LemonOS",
+    thumbnailUrl: "/starlightProjects/24_16_LemonOS.png",
+  },
+  {
+    name: "Campus Collab - 24T1 Trainee Project",
+    desc: "The ultimate platform for connecting and collaborating with fellow students. Effortlessly create and manage project listings and discover exciting events on and off campus!",
+    projectUrl: "https://github.com/sohumshah2/campuscollab",
+    thumbnailUrl: "/starlightProjects/24_15_CampusCollab.jpg",
+  },
+  {
+    name: "Discord LeetCode Bot",
+    desc: "Get motivated to LeetCode with this customisable Discord bot!",
+    projectUrl: "https://github.com/Kaiqi-Liang/LeetCode-Daily",
+    thumbnailUrl: "/starlightProjects/24_14_DiscordLeetCodeBot.png",
+  },
+  {
     name: "Quests - Stamp Rally Management System",
     desc: "A mobile friendly stamp rally management system equipped with tasks, rooms, societies and a raffle developed for MegaLAN Events!",
     projectUrl: "https://github.com/megalan-association/quests",
@@ -201,7 +219,7 @@ export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
     name: "Browoser",
     desc: "Funni browser app for Apple Watch built in SwiftUI. Also contains a useless AI to comfort you when you're lonely!!",
     projectUrl: "https://apps.apple.com/us/app/browoser/id6463472872",
-    thumbnailUrl: "/starlightProjects/24_0B_Browoser.png",
+    thumbnailUrl: "/starlightProjects/24_12_Browoser.png",
   },
   {
     name: "Hardstuck Debating Script",
