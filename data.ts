@@ -141,12 +141,12 @@ export const traineeProjectData: Omit<ProjectCardProps, "trainee">[] = [
 ];
 
 export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
-  {
-    name: "Your project can be here!",
-    desc: "Submissions are still open! Take your chance to showcase your favourite project through the link below!",
-    projectUrl: "https://forms.gle/FMGM8YbrhB4kXKUe8",
-    thumbnailUrl: "/starlightProjects/placeholder.jpg",
-  },
+  // {
+  //   name: "Your project can be here!",
+  //   desc: "Submissions are still open! Take your chance to showcase your favourite project through the link below!",
+  //   projectUrl: "https://forms.gle/FMGM8YbrhB4kXKUe8",
+  //   thumbnailUrl: "/starlightProjects/placeholder.jpg",
+  // },
   {
     name: "LemonOS",
     desc: "Hobby operating system written to run on PC hardware. Contains features and software found in many modern operating systems. Can run software common on Linux/unix systems and even games like DOOM!",
