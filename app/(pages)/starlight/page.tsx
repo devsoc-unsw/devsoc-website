@@ -1,15 +1,16 @@
 import React from "react";
 import PageSection from "../../../components/PageSection";
 import { Box, Grid, StepIndicator, stepIndicatorClasses } from "@mui/joy";
-import { starlightProjectData } from "../../../data";
+import {SponsorInfo, starlightProjectData, starlightSupporterData} from "../../../data";
 import { ProjectCard } from "../../../components/ProjectCard";
 import type { Metadata } from "next";
-import { Typography } from "@mui/material";
+import {AspectRatio, Link, Stack, Typography} from "@mui/material";
 import Stepper from "@mui/joy/Stepper";
 import Step, { stepClasses } from "@mui/joy/Step";
 import HailRoundedIcon from "@mui/icons-material/HailRounded";
 import KeyboardVoiceRoundedIcon from "@mui/icons-material/KeyboardVoiceRounded";
 import WavingHandRoundedIcon from "@mui/icons-material/WavingHandRounded";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Starlight | DevSoc UNSW",
@@ -90,8 +91,38 @@ export default function StarlightProjectsPage() {
           Schedule
         </Typography>
         <StarlightStepper />
+        <Typography level="h3" py={2} textAlign={"center"}>
+          Supporters
+        </Typography>
+        <Stack
+          display="grid"
+          gridTemplateColumns={{xs: "repeat(auto-fit, 1fr)", md: "repeat(auto-fit, minmax(200px, 1fr))", xl: "repeat(auto-fit, 1fr)"}}
+          marginBottom={5}
+          sx={{gridGap: "20px"}}
+        >
+          {
+            starlightSupporterData['2024'].supporterLogos.map((sponsor, idx) => {
+              return renderLogoRows(idx, sponsor)
+            })
+          }
+        </Stack>
+        <Typography level="h3" py={2} textAlign={"center"}>
+          Industry Guests
+        </Typography>
+        <Stack
+          display="grid"
+          gridTemplateColumns={{xs: "repeat(auto-fit, 1fr)", md: "repeat(auto-fit, minmax(200px, 1fr))", xl: "repeat(auto-fit, 1fr)"}}
+          marginBottom={5}
+          sx={{gridGap: "20px"}}
+        >
+          {
+            starlightSupporterData['2024'].industryLogos.map((sponsor, idx) => {
+              return renderLogoRows(idx, sponsor)
+            })
+          }
+        </Stack>
       </PageSection>
-      <PageSection title="2024 Submissions">
+      <PageSection title="Submissions">
         <Grid container flexGrow={1} rowSpacing={3}>
           {starlightProjectData.map((props) => (
             <Grid xs={12} md={6} key={props.name}>
@@ -102,4 +133,23 @@ export default function StarlightProjectsPage() {
       </PageSection>
     </>
   );
+}
+
+function renderLogoRows(idx: number, sponsor: SponsorInfo) {
+  return (
+    <AspectRatio
+      key={idx}
+      variant="plain"
+      ratio="6/3"
+      objectFit="contain"
+      sx={{ display: "flex", margin:"auto", height: 50, width: "100%", maxWidth: 170, padding: 0.5}}
+    >
+      <Link target="_blank" href={sponsor.url}>
+        <Image
+          src={sponsor.logo}
+          alt={sponsor.name} fill priority
+        />
+      </Link>
+    </AspectRatio>
+  )
 }
