@@ -26,6 +26,8 @@ import macquarie from "./assets/macquarie.svg";
 import tiktok from "./assets/tiktok.svg";
 import acnc from "./assets/acnc.png";
 import cse from "./assets/CSE.jpeg";
+import unsw from "./assets/unsw.png";
+import arc from "./assets/arc.png";
 import csesoc from "./assets/csesocwhite.png";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { ExecProps } from "./components/PeopleSection";
@@ -264,6 +266,45 @@ export interface SponsorInfo {
   name: string;
   logo: StaticImport | string;
   url: string;
+}
+
+export interface StarlightSupporterData {
+  supporterLogos: SponsorInfo[];
+  industryLogos: SponsorInfo[];
+}
+
+export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
+  2024: {
+    supporterLogos: [
+      {
+        name: "UNSW",
+        logo: unsw,
+        url: "https://www.unsw.edu.au/",
+      },
+      {
+        name: "Arc",
+        logo: arc,
+        url: "https://www.arc.unsw.edu.au/",
+      },
+      {
+        name: "Roundhouse",
+        logo: "https://www.arc.unsw.edu.au/assets/images/roundhouse-header.svg",
+        url: "https://www.arc.unsw.edu.au/roundhouse",
+      },
+    ],
+    industryLogos: [
+      {
+        name: "Macquarie",
+        logo: "https://online.macquarie.com.au/modelmanager/assets/resources/app/macquarie-modelmanager/images/logo-vertical-inverse.png",
+        url: "https://www.macquarie.com/au/en.html",
+      },
+      {
+        name: "Zip Co",
+        logo: "https://media.boohoo.com/i/boohooamplience/zippay_new_white_nobg_1309?fmt=webp",
+        url: "https://zip.co/au",
+      }
+    ]
+  }
 }
 
 export interface SupporterData {
