@@ -1,10 +1,14 @@
 import React from "react";
 import PageSection from "../../../components/PageSection";
 import { Box, Grid, StepIndicator, stepIndicatorClasses } from "@mui/joy";
-import {SponsorInfo, starlightProjectData, starlightSupporterData} from "../../../data";
+import {
+  SponsorInfo,
+  starlightProjectData,
+  starlightSupporterData,
+} from "../../../data";
 import { ProjectCard } from "../../../components/ProjectCard";
 import type { Metadata } from "next";
-import {AspectRatio, Link, Stack, Typography} from "@mui/material";
+import { AspectRatio, Link, Stack, Typography } from "@mui/material";
 import Stepper from "@mui/joy/Stepper";
 import Step, { stepClasses } from "@mui/joy/Step";
 import HailRoundedIcon from "@mui/icons-material/HailRounded";
@@ -85,7 +89,14 @@ export default function StarlightProjectsPage() {
           projects being built by passionate developers at UNSW. Submissions are
           open to everyone that has a project they want to share! Join us on{" "}
           <b>July 19th 4-6:30pm</b> at the <b>Roundhouse</b> to find out more
-          about the projects listed below!
+          about the projects listed below! Voting form avaliable{" "}
+          <a href="https://forms.gle/DxfPzK2woZUxVqWT9">here</a> and questions
+          for QA Panel{" "}
+          <a href="https://app.sli.do/event/8y9xSRYtU3ZAxy4mEssUQa">here</a>.
+        </Typography>
+        <Typography textAlign="justify">
+          If you are also interested in our tshirts our EOI form avaliable{" "}
+          <a href="https://forms.gle/BZ3ZeX9tQJYATrMd6">here</a>!
         </Typography>
         <Typography level="h3" py={2} textAlign={"center"}>
           Schedule
@@ -96,30 +107,34 @@ export default function StarlightProjectsPage() {
         </Typography>
         <Stack
           display="grid"
-          gridTemplateColumns={{xs: "repeat(auto-fit, 1fr)", md: "repeat(auto-fit, minmax(200px, 1fr))", xl: "repeat(auto-fit, 1fr)"}}
+          gridTemplateColumns={{
+            xs: "repeat(auto-fit, 1fr)",
+            md: "repeat(auto-fit, minmax(200px, 1fr))",
+            xl: "repeat(auto-fit, 1fr)",
+          }}
           marginBottom={5}
-          sx={{gridGap: "20px"}}
+          sx={{ gridGap: "20px" }}
         >
-          {
-            starlightSupporterData['2024'].supporterLogos.map((sponsor, idx) => {
-              return renderLogoRows(idx, sponsor)
-            })
-          }
+          {starlightSupporterData["2024"].supporterLogos.map((sponsor, idx) => {
+            return renderLogoRows(idx, sponsor);
+          })}
         </Stack>
         <Typography level="h3" py={2} textAlign={"center"}>
           Industry Guests
         </Typography>
         <Stack
           display="grid"
-          gridTemplateColumns={{xs: "repeat(auto-fit, 1fr)", md: "repeat(auto-fit, minmax(200px, 1fr))", xl: "repeat(auto-fit, 1fr)"}}
+          gridTemplateColumns={{
+            xs: "repeat(auto-fit, 1fr)",
+            md: "repeat(auto-fit, minmax(200px, 1fr))",
+            xl: "repeat(auto-fit, 1fr)",
+          }}
           marginBottom={5}
-          sx={{gridGap: "20px"}}
+          sx={{ gridGap: "20px" }}
         >
-          {
-            starlightSupporterData['2024'].industryLogos.map((sponsor, idx) => {
-              return renderLogoRows(idx, sponsor)
-            })
-          }
+          {starlightSupporterData["2024"].industryLogos.map((sponsor, idx) => {
+            return renderLogoRows(idx, sponsor);
+          })}
         </Stack>
       </PageSection>
       <PageSection title="Submissions">
@@ -142,14 +157,18 @@ function renderLogoRows(idx: number, sponsor: SponsorInfo) {
       variant="plain"
       ratio="6/3"
       objectFit="contain"
-      sx={{ display: "flex", margin:"auto", height: 50, width: "100%", maxWidth: 170, padding: 0.5}}
+      sx={{
+        display: "flex",
+        margin: "auto",
+        height: 50,
+        width: "100%",
+        maxWidth: 170,
+        padding: 0.5,
+      }}
     >
       <Link target="_blank" href={sponsor.url}>
-        <Image
-          src={sponsor.logo}
-          alt={sponsor.name} fill priority
-        />
+        <Image src={sponsor.logo} alt={sponsor.name} fill priority />
       </Link>
     </AspectRatio>
-  )
+  );
 }
