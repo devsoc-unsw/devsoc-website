@@ -162,6 +162,12 @@ export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
     thumbnailUrl: "/starlightProjects/24_15_CampusCollab.jpg",
   },
   {
+    name: "FairShare",
+    desc: "A receipt sharing website aimed at helping making splitting bills easier!",
+    projectUrl: "https://fairshared.me",
+    thumbnailUrl: "starlightProjects/24_17_FairShare.png",
+  },
+  {
     name: "Discord LeetCode Bot",
     desc: "Get motivated to LeetCode with this customisable Discord bot!",
     projectUrl: "https://github.com/Kaiqi-Liang/LeetCode-Daily",
@@ -302,10 +308,10 @@ export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
         name: "Zip Co",
         logo: "https://media.boohoo.com/i/boohooamplience/zippay_new_white_nobg_1309?fmt=webp",
         url: "https://zip.co/au",
-      }
-    ]
-  }
-}
+      },
+    ],
+  },
+};
 
 export interface SupporterData {
   title: string;
