@@ -117,6 +117,12 @@ export const projectData: Omit<ProjectCardProps, "trainee">[] = [
 
 export const traineeProjectData: Omit<ProjectCardProps, "trainee">[] = [
   {
+    name: "Groveify - 24T1 Trainee Project",
+    desc: "Groveify is a habit tracker and productivity manager that comes with a cute little world to keep you going!",
+    projectUrl: "https://groveify.com",
+    thumbnailUrl: "/traineeProjects/groveify.png",
+  },
+  {
     name: "UNSWswipe (24T1)",
     desc: "Find the perfect groupmate for your CSE course with this real-time messaging app.",
     projectUrl: "https://github.com/devsoc-unsw/trainee-uranus-24t1",
@@ -239,7 +245,7 @@ export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
     name: "Groveify - 24T1 Trainee Project",
     desc: "Groveify is a habit tracker and productivity manager that comes with a cute little world to keep you going!",
     projectUrl: "https://groveify.com",
-    thumbnailUrl: "/starlightProjects/24_02_Groveify.png",
+    thumbnailUrl: "/traineeProjects/Groveify.png",
   },
   {
     name: "Generic Assembler",
@@ -262,8 +268,13 @@ export const recruitmentData: RecruitmentProps[] = [
   {
     position: "Training Leads",
     Icon: CoPresent,
+    applicationUrl: "https://forms.gle/xbouRkQYKtZgAYwa7",
   },
-  { position: "Trainees", Icon: School },
+  {
+    position: "Trainees",
+    Icon: School,
+    applicationUrl: "https://forms.gle/XgBHuLxT9tLrfZ8b8",
+  },
 ];
 
 export const feedbackFormUrl = "https://forms.gle/TjHcB9MHf6AwojiE8";
