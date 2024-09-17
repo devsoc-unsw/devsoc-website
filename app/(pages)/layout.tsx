@@ -19,7 +19,7 @@ const Layout: React.FC<{
           mx: 'auto',
           maxWidth: 900,
           my: { md: 3 },
-          borderRadius: { md: '2%' },
+          borderRadius: { md: "xl" },
           p: 4
         }}
       >
