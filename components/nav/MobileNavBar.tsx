@@ -10,7 +10,7 @@ import {
   ListItemButton,
   Sheet,
   Stack,
-} from '@mui/joy';
+} from "@mui/joy";
 import Image from 'next/image';
 import NextLink from 'next/link';
 
@@ -64,11 +64,17 @@ const MenuDrawer: React.FC<MenuDrawerProps> = ({ open, setOpen }) => {
         }}
       >
         {navData.map(({ text, href }, idx) => (
-            <ListItemButton key={idx} onClick={() => setOpen(false)} >
-              <Link component={NextLink} href={href} key={idx} underline='none' sx={{ color: 'inherit', fontSize: 'inherit' }}>
-                {text}
-              </Link>
-            </ListItemButton>
+          <ListItemButton
+            key={idx}
+            component={NextLink}
+            href={href}
+            onClick={() => setOpen(false)}
+            sx={{
+              justifyContent: "center"
+            }}
+          >
+            {text}
+          </ListItemButton>
         ))}
       </List>
       <Divider />

@@ -30,7 +30,6 @@ import unsw from "./assets/unsw.png";
 import arc from "./assets/arc.png";
 import csesoc from "./assets/csesocwhite.png";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
-import { ExecProps } from "./components/PeopleSection";
 
 // General stuff:
 // - All images need to go somewhere in /public, and the links are rooted at the /public folder
@@ -268,12 +267,10 @@ export const recruitmentData: RecruitmentProps[] = [
   {
     position: "Training Leads",
     Icon: CoPresent,
-    applicationUrl: "https://forms.gle/xbouRkQYKtZgAYwa7",
   },
   {
     position: "Trainees",
     Icon: School,
-    applicationUrl: "https://forms.gle/XgBHuLxT9tLrfZ8b8",
   },
 ];
 
