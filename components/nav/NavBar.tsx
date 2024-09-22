@@ -8,7 +8,7 @@ import { navData, socialsData } from '../../data';
 
 const NavBar = () => {
   return (
-    <Sheet variant="soft" sx={{ boxShadow: 'xs', height: 75, display: { xs: 'none', md: 'block' } }}>
+    <Sheet variant="soft" sx={{ height: 75, display: { xs: 'none', md: 'block' } }}>
       <Stack direction='row' height='100%' width='100%' p={2} justifyContent='space-between'>
         <Stack direction='row' height='100%' alignItems='center' spacing={2}>
           <Link component={NextLink} href="/">

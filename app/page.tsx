@@ -1,14 +1,10 @@
 'use client'
-import Image from 'next/image';
 import { AspectRatio, Card, CardContent, Chip, Link, Stack, Typography } from '@mui/joy';
 import {AutoAwesome, Handshake, Info, People, Star, SvgIconComponent, Terminal, TipsAndUpdates} from '@mui/icons-material';
-import React, { useState } from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import NextLink from 'next/link';
-import TextTransition, { presets } from 'react-text-transition'
-import styles from './styles.module.css'
 import { Box } from "@mui/material";
-import { projectSupporterData, recruitmentData } from '../data';
-import { StaticImport } from 'next/dist/shared/lib/get-img-props';
+import { recruitmentData } from '../data';
 
 const cardContent: LinkCardProps[] = [
   {
@@ -45,61 +41,126 @@ const cardContent: LinkCardProps[] = [
 ];
 
 export default function Home() {
-  const [index, setIndex] = useState(0);
+  const scrollRef = useRef<HTMLDivElement | null>(null);
 
-  React.useEffect(() => {
-    const intervalId = setInterval(
-      () => setIndex((index) => index + 1),
-      3000,
-    );
-    return () => clearTimeout(intervalId);
-  }, [])
-  const texts = ['Developers', 'Enthusiasts', 'Change makers', 'Engineers', 'Creators', 'Mathematicians']
+  useEffect(() => {
+    const handleScroll = (e: { deltaY: any; }) => {
+      if (scrollRef.current) {
+        // Adjust the scroll position of the div based on the window's scroll position
+        scrollRef.current.scrollLeft += e.deltaY; // or adjust based on scroll direction
+      }
+    };
+
+    window.addEventListener('wheel', handleScroll, { passive: false });
+
+    return () => {
+      window.removeEventListener('wheel', handleScroll);
+    };
+  }, []);
+
   return (
-    <Stack
-      pt={10}
-      spacing={{ xs: 4, sm: 10 }}
-      alignItems="center"
-      width="100%"
-      height="100%"
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        paddingTop: '2rem',
+        width: '100%',
+        maxWidth: '1200px',
+        margin: 'auto',
+        overflow: 'hidden',
+      }}
     >
-      <Stack width="75%" direction="column-reverse">
+      <Stack direction="column">
         <Box sx={{ width: "100%" }}>
-          <Typography mt={3} fontSize={{ xs: "1.6rem", sm: "2.6rem", md: "3.4rem" }} fontWeight={600} component='div'>
-            A dedicated student community of
-            <TextTransition
-              className={styles.rainbow}
-              springConfig={presets.gentle}
-            >{texts[index % texts.length]}</TextTransition>
+          <Typography className={"heroText"} mt={3} fontSize={{ xs: "1.6rem", sm: "2.3rem", md: "3.2rem" }} fontWeight={400} component='div'>
+            UNSW's student developer society
+          </Typography>
+          <Typography className={"heroText"} mt={0} fontSize={{ xs: "1rem", sm: "2rem", md: "2.5rem" }} fontWeight={200} component='div'>
+            Run by devs, for devs
           </Typography>
         </Box>
-        <Typography fontSize={{ xs: "1.1rem", sm: "2rem" }}>Software Development Society</Typography>
-        <AspectRatio
-          variant="plain"
-          ratio="15/4"
-          objectFit="contain"
-          sx={{ width: { xs: 250, sm: 360 } }}
-        >
-          <Image src='/logo/fullInvertTransparent.svg' alt='DevSoc logo' fill priority/>
-        </AspectRatio>
       </Stack>
-      <Stack
-        direction={{ xs: "column", md: "row" }}
-        spacing={3}
-        width="80%"
-        alignItems='center'
-        justifyContent='center'
-        paddingBottom='5rem'
+      <Box
+        ref={scrollRef}
+        sx={{
+          display: 'flex',
+          marginTop: '3rem',
+          overflowX: 'auto',
+          scrollbarWidth: 'none'
+        }}
       >
-        {cardContent.map((props) => <LinkCard key={props.title} {...props} />)}
-      </Stack>
-      {/*<Stack alignItems='center'>*/}
-      {/*  <Typography padding={3} fontSize={{ xs: "1rem", sm: "1.75rem" }}>*/}
-      {/*    Our flagship projects are proudly supported by*/}
-      {/*  </Typography>*/}
-      {/*  <SponsorLogo data={projectSponsorData}/>*/}
-      {/*</Stack>*/}
-    </Stack>
+        <Stack
+          spacing={5}
+          direction="row"
+        >
+          {cardContent.map((props, idx) => <NewLinkCard key={props.title} {...props} order={idx + 1} />)}
+        </Stack>
+      </Box>
+    </Box>
+  )
+}
+
+const NewLinkCard: React.FC<LinkCardProps> = ({
+ Icon,
+ content,
+ title,
+ href,
+ chip,
+ order
+}) => {
+  let color = "#9cbfe7";
+  switch (order) {
+    case 1:
+      color = "#9cbfe7";
+      break;
+    case 2:
+      color = "#d4ba95";
+      break;
+    case 3:
+      color = "#ecafa2";
+      break;
+    case 4:
+      color = "#c8bfb5";
+      break;
+    case 5:
+      color = "#e09ee2";
+      break;
+    case 6:
+      color = "#9dbdb6";
+      break;
+  }
+  return (
+    <Card
+      sx={{
+        width: { xs: "1.6rem", sm: "2.3rem", md: "400px" },
+        height: { xs: "1.6rem", sm: "2.3rem", md: "350px" },
+        backgroundColor: color,
+        borderRadius: 0,
+        boxShadow: 'lg',
+        padding: '2rem'
+      }}
+    >
+      <Icon
+        sx={{ fontSize: { xs: '2rem', sm: '3rem', md: '4rem' }, color: "#151515" }}
+      />
+      <Typography
+        sx={{
+          color: "#151515",
+          fontSize: { xs: '1.5rem', sm: '1.75rem', md: '2rem' },
+          fontWeight: 500,
+        }}
+      >
+        {title}
+      </Typography>
+      <Typography
+        sx={{
+          color: "#151515",
+          fontSize: { xs: '0.75rem', sm: '1.rem', md: '1.25rem' },
+        }}
+      >
+        {content}
+      </Typography>
+    </Card>
   )
 }
 
@@ -109,6 +170,7 @@ interface LinkCardProps {
   title: string;
   href: string;
   chip?: string;
+  order?: number;
 }
 
 const LinkCard: React.FC<LinkCardProps> = ({
