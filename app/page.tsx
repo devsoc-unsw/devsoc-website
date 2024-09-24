@@ -1,96 +1,69 @@
 'use client'
-import { AspectRatio, Card, CardContent, Chip, Link, Stack, Typography } from '@mui/joy';
-import {AutoAwesome, Handshake, Info, People, Star, SvgIconComponent, Terminal, TipsAndUpdates} from '@mui/icons-material';
-import React, {useEffect, useRef, useState} from 'react';
-import NextLink from 'next/link';
-import {Box, Button} from "@mui/material";
-import { recruitmentData } from '../data';
+import { AspectRatio, Card, Stack, Typography } from '@mui/joy';
+import React, { useEffect, useRef } from 'react';
+import {Box, Button, Link} from "@mui/material";
+import { projectData } from '../data';
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-
-const cardContent: LinkCardProps[] = [
-  {
-    Icon: Info,
-    title: "About Us",
-    content: "Learn what the UNSW Software Development Society is all about!",
-    href: "/about-us"
-  },
-  {
-    Icon: Terminal,
-    title: "Our Projects",
-    content: "Explore the variety of different projects developed by DevSoc for UNSW students!",
-    href: "/our-projects"
-  },
-  {
-    Icon: AutoAwesome,
-    title: "Starlight",
-    content: "Spotlighting the awesome software projects being developed at UNSW!",
-    href: "/starlight"
-  },
-  {
-    Icon: People,
-    title: "Get Involved",
-    content: "Got big ideas? Tell us here, or find out how to join DevSoc and make your mark!",
-    href: "/get-involved",
-    chip: recruitmentData.some(data => !!data.applicationUrl) ? "Applications open now!" : undefined
-  },
-  {
-    Icon: Handshake,
-    title: "Supporters",
-    content: "Learn more about the sponsors of our events, opportunities and services.",
-    href: "/supporters"
-  }
-];
+import { ProjectCardProps } from "../components/ProjectCard";
+import Image from "next/image";
+import { NextButton, PrevButton, usePrevNextButtons } from "../components/embla/EmblaCarouselArrowButtons";
 
 interface EventCardProp {
   title: string;
-  external: boolean;
   href: string;
   dateTime: string;
-  past: Date;
+  thumbnail: string;
+  button: string;
 }
 
 const eventContent: EventCardProp[] = [
   {
     title: "Techspire",
-    external: true,
-    href: "",
+    href: "https://techspire.devsoc.app/",
     dateTime: "3PM November 5th 2024",
-    past: new Date()
+    thumbnail: "",
+    button: "Find out more"
   },
   {
     title: "Starlight",
-    external: false,
     href: "",
     dateTime: "4PM July 19th 2024",
-    past: new Date()
+    thumbnail: "https://scontent.fsyd10-2.fna.fbcdn.net/v/t39.30808-6/450537584_122164728770084186_5143471664708121664_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=75d36f&_nc_ohc=VS3ZyeU4mFsQ7kNvgEImebz&_nc_ht=scontent.fsyd10-2.fna&_nc_gid=AF9I6lbtXbrba9iXodyqkhu&oh=00_AYBQh_N8wIjV_YiH1YkMIw4XfpuOUfHr60Vs_dGTFR6ibQ&oe=66F85975",
+    button: "View pictures"
   },
   {
     title: "T3 O-Week",
-    external: false,
     href: "",
-    dateTime: "September 2-6th",
-    past: new Date()
+    dateTime: "September 2 - 6th",
+    thumbnail: "",
+    button: "Facebook Event"
   },
   {
     title: "T2 O-Week",
-    external: false,
     href: "",
-    dateTime: "May 20-24th",
-    past: new Date()
+    dateTime: "May 20 - 24th",
+    thumbnail: "",
+    button: "Facebook Event"
   },
   {
     title: "T1 O-Week",
-    external: false,
     href: "",
-    dateTime: "February 5-9th",
-    past: new Date()
+    dateTime: "February 5 - 9th",
+    thumbnail: "",
+    button: "Facebook Event"
   }
 ]
 
 export default function Home() {
   const scrollRef = useRef<HTMLDivElement | null>(null);
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, axis: 'y' }, [Autoplay()]);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, axis: 'y', duration: 45 }, [Autoplay({delay: 5000})]);
+  const {
+    prevBtnDisabled,
+    nextBtnDisabled,
+    onPrevButtonClick,
+    onNextButtonClick
+  } = usePrevNextButtons(emblaApi)
 
   useEffect(() => {
     const handleScroll = (e: { deltaY: any; }) => {
@@ -120,31 +93,43 @@ export default function Home() {
       }}
     >
       <Stack direction="column">
-        <Box sx={{ width: "100%" }}>
-          <Typography className={"heroText"} mt={3} fontSize={{ xs: "1.6rem", sm: "2.3rem", md: "3.2rem" }} fontWeight={500} component='div'>
+        <Box sx={{width: "100%"}}>
+          <Typography className={"heroText"} mt={3} fontSize={{xs: "1.6rem", sm: "2.3rem", md: "3.2rem"}}
+                      fontWeight={500} component='div'>
             UNSW's student developer society
           </Typography>
-          <Typography className={"heroText"} mt={0} fontSize={{ xs: "1rem", sm: "2rem", md: "2.5rem" }} fontWeight={200} component='div'>
+          <Typography className={"heroText"} mt={0} fontSize={{xs: "1rem", sm: "2rem", md: "2.5rem"}} fontWeight={200}
+                      component='div'>
             Run by devs, for devs
           </Typography>
         </Box>
       </Stack>
-      <Typography
-        paddingTop={3}
-        paddingBottom={1}
-        fontSize={30}
-        fontWeight={600}
-      >
-        Events
-      </Typography>
-      <Box
+      <Box sx={{display: "flex", flexDirection: "row", gap: "1rem"}}>
+        <Typography
+          paddingTop={3}
+          paddingBottom={3}
+          fontSize={30}
+          fontWeight={600}
+          sx={{alignSelf: 'center'}}
+        >
+          Highlights
+        </Typography>
+        <div className="embla__controls">
+          <div className="embla__buttons">
+            <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled}/>
+            <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled}/>
+          </div>
+        </div>
+      </Box>
+      <Card
         ref={emblaRef}
         className="embla"
+        sx={{padding: 0}}
       >
         <Stack className="embla__container">
-          {eventContent.map((props, idx) => <EventLinkCard key={`event ${props.title}`} {...props} order={idx + 1}/>)}
+          {eventContent.map((props, idx) => <HighlightLinkCard key={`event ${props.title}`} {...props}/>)}
         </Stack>
-      </Box>
+      </Card>
       <Box
         ref={scrollRef}
         sx={{
@@ -158,212 +143,135 @@ export default function Home() {
           spacing={5}
           direction="row"
         >
-          {cardContent.map((props, idx) => <NewLinkCard key={props.title} {...props} order={idx + 1} />)}
+          {projectData.map((props, idx) => <NewLinkCard key={props.name} {...props} order={idx + 1}/>)}
         </Stack>
       </Box>
     </Box>
   )
 }
 
-const EventLinkCard: React.FC<EventCardProp & { order: number }> = ({
-  title,
-  external,
-  href,
-  dateTime,
-  order
-}) => {
-  let color = "#6ecadc";
-  // switch (order) {
-  //   case 1:
-  //     color = "#6ecadc";
-  //     break;
-  //   case 2:
-  //     color = "#e9a820";
-  //     break;
-  //   case 3:
-  //     color = "#e01563";
-  //     break;
-  //   case 4:
-  //     color = "#3eb991";
-  //     break;
-  //   case 5:
-  //     color = "#d0d2d3";
-  //     break;
-  //   case 6:
-  //     color = "#eb5424";
-  //     break;
-  // }
+const HighlightLinkCard: React.FC<EventCardProp> = ({
+                                                      title,
+                                                      href,
+                                                      dateTime,
+                                                      thumbnail,
+                                                      button
+                                                    }) => {
+  let color = "#191919";
   return (
     <Card
       className="embla__slide"
       sx={{
-        height: { xs: "1.6rem", sm: "2.3rem", md: "100px" },
+        height: {xs: "1.6rem", sm: "2.3rem", md: "100px"},
         backgroundColor: color,
         borderRadius: 0,
-        boxShadow: 'md',
-        padding: '2rem',
+        padding: thumbnail === "" ? '2rem' : '2rem 1rem',
         flexDirection: 'row',
         gap: '4rem',
         alignItems: 'center',
         justifyContent: 'space-between',
+        border: 'none'
       }}
     >
-      <Box>
-        <Typography
-          sx={{
-            color: "#151515",
-            fontSize: { xs: '1.5rem', sm: '1.75rem', md: '2rem' },
-            fontWeight: 500,
-            alignSelf: "center"
-          }}
-        >
-          {title}
-        </Typography>
-        <Typography
-          sx={{
-            color: "#151515",
-            alignSelf: "center"
-          }}
-        >
-          {dateTime}
-        </Typography>
+      <Box sx={{display: "flex", flexDirection: "row", gap: "2rem"}}>
+        {
+          thumbnail !== "" ? <Image width={170} height={90} src={thumbnail} alt={title}/> : null
+        }
+        <Box sx={{display: "flex", flexDirection: "column"}}>
+          <Typography
+            sx={{
+              color: "#EDEEF0",
+              fontSize: { xs: '1.5rem', sm: '1.75rem', md: '2rem' },
+              fontWeight: 500,
+              alignSelf: "flex-start",
+              justifySelf: "center"
+            }}
+          >
+            {title}
+          </Typography>
+          <Typography
+            sx={{
+              color: "#EDEEF0",
+              alignSelf: "flex-start",
+              justifySelf: "center"
+            }}
+          >
+            {dateTime}
+          </Typography>
+        </Box>
       </Box>
-      <Button>Find out more</Button>
+      <Link href={href} sx={{ textDecoration: 'none' }}>
+        <Button variant="soft">{button}</Button>
+      </Link>
     </Card>
   )
 }
 
-const NewLinkCard: React.FC<LinkCardProps> = ({
- Icon,
- content,
- title,
- href,
- chip,
- order
+const NewLinkCard: React.FC<Omit<ProjectCardProps, "trainee"> & { order: number }> = ({
+  name,
+  desc,
+  logoUrl,
+  thumbnailUrl,
+  projectUrl,
+  status,
+  order
 }) => {
-  let color = "#9cbfe7";
+  let color = "#212225";
   switch (order) {
     case 1:
-      color = "#9cbfe7";
+      color = "#182449"; // Indigo 3 - Notangles
       break;
     case 2:
-      color = "#d4ba95";
+      color = "#0D2847"; // Blue 3 - Circles
       break;
     case 3:
-      color = "#ecafa2";
+      color = "#202248"; // Iris 3 - Unilectives
       break;
     case 4:
-      color = "#c8bfb5";
+      color = "#351A35"; // Plum 3 - Structs
       break;
     case 5:
-      color = "#e09ee2";
+      color = "#391714"; // Tomato 3 - Freerooms
       break;
     case 6:
-      color = "#9dbdb6";
+      color = "#291F43"; // Violet 3 - Jobsboard
+      break;
+    case 7:
+      color = "#222222"; // Gray 3 - Chaos
       break;
   }
   return (
     <Card
       className="boxBackground"
       sx={{
-        width: { xs: "1.6rem", sm: "2.3rem", md: "350px" },
+        width: { xs: "1.6rem", sm: "2.3rem", md: "250px" },
         height: { xs: "1.6rem", sm: "2.3rem", md: "100px" },
         backgroundColor: color,
-        borderRadius: 0,
-        boxShadow: 'lg',
-        padding: '2rem',
+        boxShadow: 'sm',
+        padding: '1rem',
         flexDirection: 'row',
         gap: '2rem',
-        alignItems: 'center'
+        alignItems: 'center',
       }}
     >
-      <Icon
-        sx={{ fontSize: { xs: '2rem', sm: '3rem', md: '4rem' }, color: "#151515" }}
-      />
+      <AspectRatio objectFit="contain" ratio={1} sx={{ width: "3rem" }}>
+        <Image
+          fill
+          alt={name}
+          src={logoUrl ?? ""}
+          style={{ backgroundColor: color }}
+        />
+      </AspectRatio>
       <Typography
         sx={{
-          color: "#151515",
-          fontSize: { xs: '1.5rem', sm: '1.75rem', md: '2rem' },
+          color: "#EDEEF0",
+          fontSize: {xs: '1.5rem', sm: '1.75rem', md: '1.5rem'},
           fontWeight: 500,
         }}
       >
-        {title}
+        {name}
       </Typography>
-      {/*<Typography*/}
-      {/*  sx={{*/}
-      {/*    color: "#151515",*/}
-      {/*    fontSize: { xs: '0.75rem', sm: '1.rem', md: '1.25rem' },*/}
-      {/*  }}*/}
-      {/*>*/}
-      {/*  {content}*/}
-      {/*</Typography>*/}
     </Card>
   )
 }
 
-interface LinkCardProps {
-  Icon: SvgIconComponent;
-  content: string;
-  title: string;
-  href: string;
-  chip?: string;
-  order?: number;
-}
-
-const LinkCard: React.FC<LinkCardProps> = ({
-  Icon,
-  content,
-  title,
-  href,
-  chip
-}) => {
-  return (
-    <Card
-      sx={{
-        width: { xs: "100%", md: "30%" },
-        height: { xs: "30%", md: "100%" },
-        transition: 'all .2s ease-in-out',
-        '&:hover': { transform: 'scale(1.05)' }
-      }}
-    >
-      {chip && <Chip
-        size="md"
-        sx={{ position: "absolute", top: -12, right: -10 }}
-        color="primary"
-        variant="solid"
-      >
-        {chip}
-      </Chip>}
-      <Stack
-        direction={{ xs: 'row', md: 'column' }}
-        alignItems='center'
-        spacing={2}
-        textAlign={{ md: 'center' }}
-      >
-        <AspectRatio variant="plain" ratio="1" sx={{ width: { xs: 50, sm: 100, md: 100 } }}>
-          <div>
-            <Icon
-              sx={{ fontSize: { xs: '3rem', sm: '5rem', md: '6rem' } }}
-            />
-          </div>
-        </AspectRatio>
-        <CardContent>
-          <Typography fontWeight="bold" fontSize={{ sm: "large", md: "x-large", lg: "xx-large" }}>
-            <Link
-              overlay
-              component={NextLink}
-              href={href}
-              underline="none"
-              sx={{ color: "inherit" }}
-            >
-              {title}
-            </Link>
-          </Typography>
-          <Typography fontSize={{ xs: "small", sm: "medium" }}>
-            {content}
-          </Typography>
-        </CardContent>
-      </Stack>
-    </Card>
-  )
-}
