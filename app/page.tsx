@@ -96,7 +96,7 @@ export default function Home() {
         <Box sx={{width: "100%"}}>
           <Typography className={"heroText"} mt={3} fontSize={{xs: "1.6rem", sm: "2.3rem", md: "3.2rem"}}
                       fontWeight={500} component='div'>
-            UNSW's student developer society
+            UNSW&apos;s student developer society
           </Typography>
           <Typography className={"heroText"} mt={0} fontSize={{xs: "1rem", sm: "2rem", md: "2.5rem"}} fontWeight={200}
                       component='div'>
@@ -241,37 +241,39 @@ const NewLinkCard: React.FC<Omit<ProjectCardProps, "trainee"> & { order: number 
       break;
   }
   return (
-    <Card
-      className="boxBackground"
-      sx={{
-        width: { xs: "1.6rem", sm: "2.3rem", md: "250px" },
-        height: { xs: "1.6rem", sm: "2.3rem", md: "100px" },
-        backgroundColor: color,
-        boxShadow: 'sm',
-        padding: '1rem',
-        flexDirection: 'row',
-        gap: '2rem',
-        alignItems: 'center',
-      }}
-    >
-      <AspectRatio objectFit="contain" ratio={1} sx={{ width: "3rem" }}>
-        <Image
-          fill
-          alt={name}
-          src={logoUrl ?? ""}
-          style={{ backgroundColor: color }}
-        />
-      </AspectRatio>
-      <Typography
+    <Link href={projectUrl}>
+      <Card
+        className="boxBackground"
         sx={{
-          color: "#EDEEF0",
-          fontSize: {xs: '1.5rem', sm: '1.75rem', md: '1.5rem'},
-          fontWeight: 500,
+          width: { xs: "1.6rem", sm: "2.3rem", md: "250px" },
+          height: { xs: "1.6rem", sm: "2.3rem", md: "100px" },
+          backgroundColor: color,
+          boxShadow: 'sm',
+          padding: '1rem',
+          flexDirection: 'row',
+          gap: '2rem',
+          alignItems: 'center',
         }}
       >
-        {name}
-      </Typography>
-    </Card>
+        <AspectRatio objectFit="contain" ratio={1} sx={{ width: "3rem" }}>
+          <Image
+            fill
+            alt={name}
+            src={logoUrl ?? ""}
+            style={{ backgroundColor: color }}
+          />
+        </AspectRatio>
+        <Typography
+          sx={{
+            color: "#EDEEF0",
+            fontSize: {xs: '1.5rem', sm: '1.75rem', md: '1.5rem'},
+            fontWeight: 500,
+          }}
+        >
+          {name}
+        </Typography>
+      </Card>
+    </Link>
   )
 }
 
