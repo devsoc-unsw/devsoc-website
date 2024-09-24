@@ -3,8 +3,10 @@ import { AspectRatio, Card, CardContent, Chip, Link, Stack, Typography } from '@
 import {AutoAwesome, Handshake, Info, People, Star, SvgIconComponent, Terminal, TipsAndUpdates} from '@mui/icons-material';
 import React, {useEffect, useRef, useState} from 'react';
 import NextLink from 'next/link';
-import { Box } from "@mui/material";
+import {Box, Button} from "@mui/material";
 import { recruitmentData } from '../data';
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 
 const cardContent: LinkCardProps[] = [
   {
@@ -40,8 +42,55 @@ const cardContent: LinkCardProps[] = [
   }
 ];
 
+interface EventCardProp {
+  title: string;
+  external: boolean;
+  href: string;
+  dateTime: string;
+  past: Date;
+}
+
+const eventContent: EventCardProp[] = [
+  {
+    title: "Techspire",
+    external: true,
+    href: "",
+    dateTime: "3PM November 5th 2024",
+    past: new Date()
+  },
+  {
+    title: "Starlight",
+    external: false,
+    href: "",
+    dateTime: "4PM July 19th 2024",
+    past: new Date()
+  },
+  {
+    title: "T3 O-Week",
+    external: false,
+    href: "",
+    dateTime: "September 2-6th",
+    past: new Date()
+  },
+  {
+    title: "T2 O-Week",
+    external: false,
+    href: "",
+    dateTime: "May 20-24th",
+    past: new Date()
+  },
+  {
+    title: "T1 O-Week",
+    external: false,
+    href: "",
+    dateTime: "February 5-9th",
+    past: new Date()
+  }
+]
+
 export default function Home() {
   const scrollRef = useRef<HTMLDivElement | null>(null);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, axis: 'y' }, [Autoplay()]);
 
   useEffect(() => {
     const handleScroll = (e: { deltaY: any; }) => {
@@ -72,7 +121,7 @@ export default function Home() {
     >
       <Stack direction="column">
         <Box sx={{ width: "100%" }}>
-          <Typography className={"heroText"} mt={3} fontSize={{ xs: "1.6rem", sm: "2.3rem", md: "3.2rem" }} fontWeight={400} component='div'>
+          <Typography className={"heroText"} mt={3} fontSize={{ xs: "1.6rem", sm: "2.3rem", md: "3.2rem" }} fontWeight={500} component='div'>
             UNSW's student developer society
           </Typography>
           <Typography className={"heroText"} mt={0} fontSize={{ xs: "1rem", sm: "2rem", md: "2.5rem" }} fontWeight={200} component='div'>
@@ -80,6 +129,22 @@ export default function Home() {
           </Typography>
         </Box>
       </Stack>
+      <Typography
+        paddingTop={3}
+        paddingBottom={1}
+        fontSize={30}
+        fontWeight={600}
+      >
+        Events
+      </Typography>
+      <Box
+        ref={emblaRef}
+        className="embla"
+      >
+        <Stack className="embla__container">
+          {eventContent.map((props, idx) => <EventLinkCard key={`event ${props.title}`} {...props} order={idx + 1}/>)}
+        </Stack>
+      </Box>
       <Box
         ref={scrollRef}
         sx={{
@@ -97,6 +162,74 @@ export default function Home() {
         </Stack>
       </Box>
     </Box>
+  )
+}
+
+const EventLinkCard: React.FC<EventCardProp & { order: number }> = ({
+  title,
+  external,
+  href,
+  dateTime,
+  order
+}) => {
+  let color = "#6ecadc";
+  // switch (order) {
+  //   case 1:
+  //     color = "#6ecadc";
+  //     break;
+  //   case 2:
+  //     color = "#e9a820";
+  //     break;
+  //   case 3:
+  //     color = "#e01563";
+  //     break;
+  //   case 4:
+  //     color = "#3eb991";
+  //     break;
+  //   case 5:
+  //     color = "#d0d2d3";
+  //     break;
+  //   case 6:
+  //     color = "#eb5424";
+  //     break;
+  // }
+  return (
+    <Card
+      className="embla__slide"
+      sx={{
+        height: { xs: "1.6rem", sm: "2.3rem", md: "100px" },
+        backgroundColor: color,
+        borderRadius: 0,
+        boxShadow: 'md',
+        padding: '2rem',
+        flexDirection: 'row',
+        gap: '4rem',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+      }}
+    >
+      <Box>
+        <Typography
+          sx={{
+            color: "#151515",
+            fontSize: { xs: '1.5rem', sm: '1.75rem', md: '2rem' },
+            fontWeight: 500,
+            alignSelf: "center"
+          }}
+        >
+          {title}
+        </Typography>
+        <Typography
+          sx={{
+            color: "#151515",
+            alignSelf: "center"
+          }}
+        >
+          {dateTime}
+        </Typography>
+      </Box>
+      <Button>Find out more</Button>
+    </Card>
   )
 }
 
@@ -131,13 +264,17 @@ const NewLinkCard: React.FC<LinkCardProps> = ({
   }
   return (
     <Card
+      className="boxBackground"
       sx={{
-        width: { xs: "1.6rem", sm: "2.3rem", md: "400px" },
-        height: { xs: "1.6rem", sm: "2.3rem", md: "350px" },
+        width: { xs: "1.6rem", sm: "2.3rem", md: "350px" },
+        height: { xs: "1.6rem", sm: "2.3rem", md: "100px" },
         backgroundColor: color,
         borderRadius: 0,
         boxShadow: 'lg',
-        padding: '2rem'
+        padding: '2rem',
+        flexDirection: 'row',
+        gap: '2rem',
+        alignItems: 'center'
       }}
     >
       <Icon
@@ -152,14 +289,14 @@ const NewLinkCard: React.FC<LinkCardProps> = ({
       >
         {title}
       </Typography>
-      <Typography
-        sx={{
-          color: "#151515",
-          fontSize: { xs: '0.75rem', sm: '1.rem', md: '1.25rem' },
-        }}
-      >
-        {content}
-      </Typography>
+      {/*<Typography*/}
+      {/*  sx={{*/}
+      {/*    color: "#151515",*/}
+      {/*    fontSize: { xs: '0.75rem', sm: '1.rem', md: '1.25rem' },*/}
+      {/*  }}*/}
+      {/*>*/}
+      {/*  {content}*/}
+      {/*</Typography>*/}
     </Card>
   )
 }

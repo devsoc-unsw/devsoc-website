@@ -28,3 +28,34 @@ body::before {
 .heroText {
     font-family: 'IBM Plex Mono', monospace;
 }
+
+.boxBackground {
+    position: relative;
+}
+
+.boxBackground::before {
+    content: '""';
+    background-image: url('/graphics/lines.svg');
+    background-repeat: no-repeat;
+    background-size: 120%;
+    opacity: 0.02;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.embla {
+    overflow: hidden;
+    height: 115px;
+}
+.embla__container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+.embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+}
