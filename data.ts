@@ -244,7 +244,7 @@ export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
     name: "Groveify - 24T1 Trainee Project",
     desc: "Groveify is a habit tracker and productivity manager that comes with a cute little world to keep you going!",
     projectUrl: "https://groveify.com",
-    thumbnailUrl: "/traineeProjects/Groveify.png",
+    thumbnailUrl: "/traineeProjects/groveify.png",
   },
   {
     name: "Generic Assembler",
