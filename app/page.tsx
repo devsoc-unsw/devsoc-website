@@ -1,7 +1,7 @@
 'use client'
-import {AspectRatio, Card, Stack, Typography, useTheme} from '@mui/joy';
+import { AspectRatio, Card, Stack, Typography, useTheme } from '@mui/joy';
 import React, { useEffect, useRef } from 'react';
-import {Box, Button, Link} from "@mui/material";
+import { Box, Button, Link } from "@mui/material";
 import { projectData } from '../data';
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
@@ -9,7 +9,7 @@ import { ProjectCardProps } from "../components/ProjectCard";
 import Image from "next/image";
 import { NextButton, PrevButton, usePrevNextButtons } from "../components/embla/EmblaCarouselArrowButtons";
 import "./styles.css"
-import {useMediaQuery} from "@mui/system";
+import { useMediaQuery } from "@mui/system";
 
 interface EventCardProp {
   title: string;
@@ -100,13 +100,12 @@ export default function Home() {
           </Typography>
         </Box>
       </Stack>
-      <Box sx={{display: "flex", flexDirection: "row", gap: "1rem"}}>
+      <Box sx={{display: "flex", flexDirection: "row", gap: "1rem", alignItems: "center"}} mt={{xs: 2, md: 0}}>
         <Typography
-          paddingTop={3}
-          paddingBottom={3}
+          paddingTop={{xs: 1, md: 3}}
+          paddingBottom={{xs: 1, md: 3}}
           fontSize={{xs: 20, md: 30}}
           fontWeight={600}
-          sx={{alignSelf: 'center'}}
         >
           Highlights
         </Typography>
@@ -120,7 +119,7 @@ export default function Home() {
       <Card
         ref={emblaRef}
         className="embla"
-        sx={{padding: 0}}
+        sx={{padding: 0, height: {xs: '90px', md: '115px'}}}
       >
         <Stack className="embla__container">
           {eventContent.map((props, idx) => <HighlightLinkCard key={`event ${props.title}`} {...props}/>)}
@@ -129,9 +128,9 @@ export default function Home() {
       <Box
         ref={scrollRef}
         marginBottom={{xs: "3rem", md: 0}}
+        marginTop={{xs: "2rem", md: "3rem"}}
         sx={{
           display: 'flex',
-          marginTop: '3rem',
           overflowX: 'auto',
           scrollbarWidth: 'none',
         }}
@@ -150,12 +149,12 @@ export default function Home() {
 }
 
 const HighlightLinkCard: React.FC<EventCardProp> = ({
-                                                      title,
-                                                      href,
-                                                      dateTime,
-                                                      thumbnail,
-                                                      button
-                                                    }) => {
+  title,
+  href,
+  dateTime,
+  thumbnail,
+  button
+}) => {
   let color = "#111111";
   const theme = useTheme();
   const isMdUp = useMediaQuery(theme.breakpoints.up('md'));
@@ -163,10 +162,10 @@ const HighlightLinkCard: React.FC<EventCardProp> = ({
     <Card
       className="embla__slide"
       sx={{
-        height: "100px",
+        height: {xs: "90px", md: "100px"},
         backgroundColor: color,
         borderRadius: 0,
-        padding: thumbnail && isMdUp ? '2rem 1rem' : '2rem',
+        padding: thumbnail && isMdUp ? '2rem 1rem' : {xs: '1rem', md: '2rem'},
         flexDirection: 'row',
         gap: '4rem',
         alignItems: 'center',

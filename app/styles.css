@@ -21,7 +21,6 @@
 
 .embla {
     overflow: hidden;
-    height: 115px;
 }
 .embla__container {
     display: flex;
