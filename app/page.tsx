@@ -1,5 +1,5 @@
 'use client'
-import { AspectRatio, Card, Stack, Typography } from '@mui/joy';
+import {AspectRatio, Card, Stack, Typography, useTheme} from '@mui/joy';
 import React, { useEffect, useRef } from 'react';
 import {Box, Button, Link} from "@mui/material";
 import { projectData } from '../data';
@@ -8,6 +8,8 @@ import Autoplay from "embla-carousel-autoplay";
 import { ProjectCardProps } from "../components/ProjectCard";
 import Image from "next/image";
 import { NextButton, PrevButton, usePrevNextButtons } from "../components/embla/EmblaCarouselArrowButtons";
+import "./styles.css"
+import {useMediaQuery} from "@mui/system";
 
 interface EventCardProp {
   title: string;
@@ -19,40 +21,33 @@ interface EventCardProp {
 
 const eventContent: EventCardProp[] = [
   {
+    title: "2025 Exec Election",
+    href: "",
+    dateTime: "Voting period on now",
+    thumbnail: "",
+    button: ""
+  },
+  {
+    title: "2024 AGM",
+    href: "",
+    dateTime: "4:45PM October 2nd 2024",
+    thumbnail: "",
+    button: ""
+  },
+  {
+    title: "Weekly BBQ",
+    href: "",
+    dateTime: "12 - 2PM, Fridays Weekly",
+    thumbnail: "https://scontent.fsyd10-1.fna.fbcdn.net/v/t39.30808-6/460339822_122176606844084186_6742496778709299665_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=75d36f&_nc_ohc=F-tEsbQQzRsQ7kNvgFeKIMk&_nc_ht=scontent.fsyd10-1.fna&_nc_gid=AEidUETEJlE98TVUJJImvur&oh=00_AYB17GXL90BSbE3hvm6vXLuYyVp09K3FwM0fV75ZH0Huhw&oe=66F9ACA9",
+    button: ""
+  },
+  {
     title: "Techspire",
     href: "https://techspire.devsoc.app/",
     dateTime: "3PM November 5th 2024",
     thumbnail: "",
     button: "Find out more"
   },
-  {
-    title: "Starlight",
-    href: "",
-    dateTime: "4PM July 19th 2024",
-    thumbnail: "https://scontent.fsyd10-2.fna.fbcdn.net/v/t39.30808-6/450537584_122164728770084186_5143471664708121664_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=75d36f&_nc_ohc=VS3ZyeU4mFsQ7kNvgEImebz&_nc_ht=scontent.fsyd10-2.fna&_nc_gid=AF9I6lbtXbrba9iXodyqkhu&oh=00_AYBQh_N8wIjV_YiH1YkMIw4XfpuOUfHr60Vs_dGTFR6ibQ&oe=66F85975",
-    button: "View pictures"
-  },
-  {
-    title: "T3 O-Week",
-    href: "",
-    dateTime: "September 2 - 6th",
-    thumbnail: "",
-    button: "Facebook Event"
-  },
-  {
-    title: "T2 O-Week",
-    href: "",
-    dateTime: "May 20 - 24th",
-    thumbnail: "",
-    button: "Facebook Event"
-  },
-  {
-    title: "T1 O-Week",
-    href: "",
-    dateTime: "February 5 - 9th",
-    thumbnail: "",
-    button: "Facebook Event"
-  }
 ]
 
 export default function Home() {
@@ -87,18 +82,19 @@ export default function Home() {
         flexDirection: 'column',
         paddingTop: '2rem',
         width: '100%',
-        maxWidth: '1200px',
+        maxWidth: '1300px',
         margin: 'auto',
+        paddingX: '2rem',
         overflow: 'hidden',
       }}
     >
       <Stack direction="column">
         <Box sx={{width: "100%"}}>
-          <Typography className={"heroText"} mt={3} fontSize={{xs: "1.6rem", sm: "2.3rem", md: "3.2rem"}}
+          <Typography className={"heroText"} mt={3} fontSize={{xs: "2rem", sm: "2.3rem", md: "3.2rem"}}
                       fontWeight={500} component='div'>
             UNSW&apos;s student developer society
           </Typography>
-          <Typography className={"heroText"} mt={0} fontSize={{xs: "1rem", sm: "2rem", md: "2.5rem"}} fontWeight={200}
+          <Typography className={"heroText"} mt={0} fontSize={{xs: "1.5rem", sm: "2rem", md: "2.5rem"}} fontWeight={200}
                       component='div'>
             Run by devs, for devs
           </Typography>
@@ -108,7 +104,7 @@ export default function Home() {
         <Typography
           paddingTop={3}
           paddingBottom={3}
-          fontSize={30}
+          fontSize={{xs: 20, md: 30}}
           fontWeight={600}
           sx={{alignSelf: 'center'}}
         >
@@ -132,18 +128,21 @@ export default function Home() {
       </Card>
       <Box
         ref={scrollRef}
+        marginBottom={{xs: "3rem", md: 0}}
         sx={{
           display: 'flex',
           marginTop: '3rem',
           overflowX: 'auto',
-          scrollbarWidth: 'none'
+          scrollbarWidth: 'none',
         }}
       >
         <Stack
-          spacing={5}
-          direction="row"
+          spacing={{xs: 3, md: 5}}
+          direction={{xs: "column", md: "row"}}
+          sx={{display: "flex", width: '100%'}}
+          flexDirection={{xs: "column", md: "row"}}
         >
-          {projectData.map((props, idx) => <NewLinkCard key={props.name} {...props} order={idx + 1}/>)}
+          {projectData.map((props, idx) => <LinkCard key={props.name} {...props} order={idx}/>)}
         </Stack>
       </Box>
     </Box>
@@ -157,15 +156,17 @@ const HighlightLinkCard: React.FC<EventCardProp> = ({
                                                       thumbnail,
                                                       button
                                                     }) => {
-  let color = "#191919";
+  let color = "#111111";
+  const theme = useTheme();
+  const isMdUp = useMediaQuery(theme.breakpoints.up('md'));
   return (
     <Card
       className="embla__slide"
       sx={{
-        height: {xs: "1.6rem", sm: "2.3rem", md: "100px"},
+        height: "100px",
         backgroundColor: color,
         borderRadius: 0,
-        padding: thumbnail === "" ? '2rem' : '2rem 1rem',
+        padding: thumbnail && isMdUp ? '2rem 1rem' : '2rem',
         flexDirection: 'row',
         gap: '4rem',
         alignItems: 'center',
@@ -175,7 +176,7 @@ const HighlightLinkCard: React.FC<EventCardProp> = ({
     >
       <Box sx={{display: "flex", flexDirection: "row", gap: "2rem"}}>
         {
-          thumbnail !== "" ? <Image width={170} height={90} src={thumbnail} alt={title}/> : null
+          thumbnail && isMdUp ? <Image width={170} height={90} src={thumbnail} alt={title}/> : null
         }
         <Box sx={{display: "flex", flexDirection: "column"}}>
           <Typography
@@ -200,14 +201,17 @@ const HighlightLinkCard: React.FC<EventCardProp> = ({
           </Typography>
         </Box>
       </Box>
-      <Link href={href} sx={{ textDecoration: 'none' }}>
-        <Button variant="soft">{button}</Button>
-      </Link>
+      {
+        button ?
+          <Link href={href} sx={{ textDecoration: 'none' }}>
+            <Button variant="soft">{button}</Button>
+          </Link> : null
+      }
     </Card>
   )
 }
 
-const NewLinkCard: React.FC<Omit<ProjectCardProps, "trainee"> & { order: number }> = ({
+const LinkCard: React.FC<Omit<ProjectCardProps, "trainee"> & { order: number }> = ({
   name,
   desc,
   logoUrl,
@@ -216,38 +220,16 @@ const NewLinkCard: React.FC<Omit<ProjectCardProps, "trainee"> & { order: number 
   status,
   order
 }) => {
-  let color = "#212225";
-  switch (order) {
-    case 1:
-      color = "#182449"; // Indigo 3 - Notangles
-      break;
-    case 2:
-      color = "#0D2847"; // Blue 3 - Circles
-      break;
-    case 3:
-      color = "#202248"; // Iris 3 - Unilectives
-      break;
-    case 4:
-      color = "#351A35"; // Plum 3 - Structs
-      break;
-    case 5:
-      color = "#391714"; // Tomato 3 - Freerooms
-      break;
-    case 6:
-      color = "#291F43"; // Violet 3 - Jobsboard
-      break;
-    case 7:
-      color = "#222222"; // Gray 3 - Chaos
-      break;
-  }
+  // Class 3 colors sourced from https://www.radix-ui.com/colors
+  const colors = ["#182449", "#0D2847", "#202248", "#351A35", "#391714", "#291F43", "#222222"]
   return (
     <Link href={projectUrl}>
       <Card
         className="boxBackground"
         sx={{
-          width: { xs: "1.6rem", sm: "2.3rem", md: "250px" },
-          height: { xs: "1.6rem", sm: "2.3rem", md: "100px" },
-          backgroundColor: color,
+          width: { xs: "100%", md: "250px" },
+          height: { xs: "5rem", md: "100px" },
+          backgroundColor: colors[order],
           boxShadow: 'sm',
           padding: '1rem',
           flexDirection: 'row',
@@ -260,7 +242,7 @@ const NewLinkCard: React.FC<Omit<ProjectCardProps, "trainee"> & { order: number 
             fill
             alt={name}
             src={logoUrl ?? ""}
-            style={{ backgroundColor: color }}
+            style={{ backgroundColor: colors[order] }}
           />
         </AspectRatio>
         <Typography
