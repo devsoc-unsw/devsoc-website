@@ -59,6 +59,7 @@ export default function Home() {
     onPrevButtonClick,
     onNextButtonClick
   } = usePrevNextButtons(emblaApi)
+  const displayProjects = projectData.filter(x => x.name !== "Chaos" && x.name !== "Jobsboard")
 
   useEffect(() => {
     const handleScroll = (e: { deltaY: any; }) => {
@@ -141,7 +142,7 @@ export default function Home() {
           sx={{display: "flex", width: '100%'}}
           flexDirection={{xs: "column", md: "row"}}
         >
-          {projectData.map((props, idx) => <LinkCard key={props.name} {...props} order={idx}/>)}
+          {displayProjects.map((props, idx) => <LinkCard key={props.name} {...props} order={idx}/>)}
         </Stack>
       </Box>
     </Box>
