@@ -78,7 +78,7 @@ export default function Home() {
 
   return (
     <div className="homeContent">
-      <Stack direction="column" pt={2} px={2} width="100%" maxWidth={1300} m="auto" overflow="hidden">
+      <Stack direction="column" pt={2} px={4} width="100%" maxWidth={1300} m="auto" overflow="hidden">
         <Stack direction="column">
           <Box sx={{width: "100%"}}>
             <Typography className={"heroText"} mt={3} fontSize={{xs: "2rem", sm: "2.3rem", md: "3.2rem"}}
