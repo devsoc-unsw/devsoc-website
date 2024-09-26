@@ -25,9 +25,9 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body>
-        <NavBar/>
-        <MobileNavBar/>
         <ThemeRegistry>
+          <NavBar/>
+          <MobileNavBar/>
           {projectData.some((project) => project.status === 'Unavailable') && (
             <Box p={1.5} bgcolor="#ed6c02" color="white">
               Our teams are currently working to resolve some issues with

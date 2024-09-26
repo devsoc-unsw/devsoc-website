@@ -77,73 +77,75 @@ export default function Home() {
   }, []);
 
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        paddingTop: '2rem',
-        width: '100%',
-        maxWidth: '1300px',
-        margin: 'auto',
-        paddingX: '2rem',
-        overflow: 'hidden',
-      }}
-    >
-      <Stack direction="column">
-        <Box sx={{width: "100%"}}>
-          <Typography className={"heroText"} mt={3} fontSize={{xs: "2rem", sm: "2.3rem", md: "3.2rem"}}
-                      fontWeight={500} component='div'>
-            UNSW&apos;s student developer society
-          </Typography>
-          <Typography className={"heroText"} mt={0} fontSize={{xs: "1.5rem", sm: "2rem", md: "2.5rem"}} fontWeight={200}
-                      component='div'>
-            Run by devs, for devs
-          </Typography>
-        </Box>
-      </Stack>
-      <Box sx={{display: "flex", flexDirection: "row", gap: "1rem", alignItems: "center"}} mt={{xs: 2, md: 0}}>
-        <Typography
-          paddingTop={{xs: 1, md: 3}}
-          paddingBottom={{xs: 1, md: 3}}
-          fontSize={{xs: 20, md: 30}}
-          fontWeight={600}
-        >
-          Highlights
-        </Typography>
-        <div className="embla__controls">
-          <div className="embla__buttons">
-            <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled}/>
-            <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled}/>
-          </div>
-        </div>
-      </Box>
-      <Card
-        ref={emblaRef}
-        className="embla"
-        sx={{padding: 0, height: {xs: '90px', md: '115px'}}}
-      >
-        <Stack className="embla__container">
-          {eventContent.map((props, idx) => <HighlightLinkCard key={`event ${props.title}`} {...props}/>)}
-        </Stack>
-      </Card>
+    <Box className="homeContent">
       <Box
-        ref={scrollRef}
-        marginBottom={{xs: "3rem", md: 0}}
-        marginTop={{xs: "2rem", md: "3rem"}}
         sx={{
           display: 'flex',
-          overflowX: 'auto',
-          scrollbarWidth: 'none',
+          flexDirection: 'column',
+          paddingTop: '2rem',
+          width: '100%',
+          maxWidth: '1300px',
+          margin: 'auto',
+          paddingX: '2rem',
+          overflow: 'hidden',
         }}
       >
-        <Stack
-          spacing={{xs: 3, md: 5}}
-          direction={{xs: "column", md: "row"}}
-          sx={{display: "flex", width: '100%'}}
-          flexDirection={{xs: "column", md: "row"}}
-        >
-          {displayProjects.map((props, idx) => <LinkCard key={props.name} {...props} order={idx}/>)}
+        <Stack direction="column">
+          <Box sx={{width: "100%"}}>
+            <Typography className={"heroText"} mt={3} fontSize={{xs: "2rem", sm: "2.3rem", md: "3.2rem"}}
+                        fontWeight={500} component='div'>
+              UNSW&apos;s student developer society
+            </Typography>
+            <Typography className={"heroText"} mt={0} fontSize={{xs: "1.5rem", sm: "2rem", md: "2.5rem"}} fontWeight={200}
+                        component='div'>
+              Run by devs, for devs
+            </Typography>
+          </Box>
         </Stack>
+        <Box sx={{display: "flex", flexDirection: "row", gap: "1rem", alignItems: "center"}} mt={{xs: 2, md: 0}}>
+          <Typography
+            paddingTop={{xs: 1, md: 3}}
+            paddingBottom={{xs: 1, md: 3}}
+            fontSize={{xs: 20, md: 30}}
+            fontWeight={600}
+          >
+            Highlights
+          </Typography>
+          <div className="embla__controls">
+            <div className="embla__buttons">
+              <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled}/>
+              <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled}/>
+            </div>
+          </div>
+        </Box>
+        <Card
+          ref={emblaRef}
+          className="embla"
+          sx={{padding: 0, height: {xs: '90px', md: '115px'}}}
+        >
+          <Stack className="embla__container">
+            {eventContent.map((props, idx) => <HighlightLinkCard key={`event ${props.title}`} {...props}/>)}
+          </Stack>
+        </Card>
+        <Box
+          ref={scrollRef}
+          marginBottom={{xs: "3rem", md: 0}}
+          marginTop={{xs: "2rem", md: "3rem"}}
+          sx={{
+            display: 'flex',
+            overflowX: 'auto',
+            scrollbarWidth: 'none',
+          }}
+        >
+          <Stack
+            spacing={{xs: 3, md: 5}}
+            direction={{xs: "column", md: "row"}}
+            sx={{display: "flex", width: '100%'}}
+            flexDirection={{xs: "column", md: "row"}}
+          >
+            {displayProjects.map((props, idx) => <LinkCard key={props.name} {...props} order={idx}/>)}
+          </Stack>
+        </Box>
       </Box>
     </Box>
   )
