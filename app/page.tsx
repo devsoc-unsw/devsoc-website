@@ -78,18 +78,7 @@ export default function Home() {
 
   return (
     <Box className="homeContent">
-      <Box
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          paddingTop: '2rem',
-          width: '100%',
-          maxWidth: '1300px',
-          margin: 'auto',
-          paddingX: '2rem',
-          overflow: 'hidden',
-        }}
-      >
+      <Stack direction="column" pt={2} px={2} width="100%" maxWidth={1300} m="auto" overflow="hidden">
         <Stack direction="column">
           <Box sx={{width: "100%"}}>
             <Typography className={"heroText"} mt={3} fontSize={{xs: "2rem", sm: "2.3rem", md: "3.2rem"}}
@@ -146,7 +135,7 @@ export default function Home() {
             {displayProjects.map((props, idx) => <LinkCard key={props.name} {...props} order={idx}/>)}
           </Stack>
         </Box>
-      </Box>
+      </Stack>
     </Box>
   )
 }
