@@ -77,7 +77,7 @@ export default function Home() {
   }, []);
 
   return (
-    <Box className="homeContent">
+    <div className="homeContent">
       <Stack direction="column" pt={2} px={2} width="100%" maxWidth={1300} m="auto" overflow="hidden">
         <Stack direction="column">
           <Box sx={{width: "100%"}}>
@@ -136,7 +136,7 @@ export default function Home() {
           </Stack>
         </Box>
       </Stack>
-    </Box>
+    </div>
   )
 }
 
