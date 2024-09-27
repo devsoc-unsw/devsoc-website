@@ -33,26 +33,19 @@
 }
 
 .embla__controls {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    justify-content: space-between;
+    display: flex;
 }
 
 .embla__buttons {
     display: flex;
-    grid-template-columns: repeat(2, 1fr);
     gap: 0.6rem;
     align-items: center;
 }
 .embla__button {
-    background-color: transparent;
-    text-decoration: none;
     margin: 0;
     z-index: 1;
     height: 1.5rem;
     width: 1.5rem;
-    border: solid 1px white;
-    border-radius: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
