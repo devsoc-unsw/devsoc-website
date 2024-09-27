@@ -102,8 +102,8 @@ export default function Home() {
           </Typography>
           <div className="embla__controls">
             <div className="embla__buttons">
-              <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled}/>
-              <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled}/>
+              <PrevButton onClick={onPrevButtonClick} />
+              <NextButton onClick={onNextButtonClick} />
             </div>
           </div>
         </Box>
