@@ -42,11 +42,9 @@
     align-items: center;
 }
 .embla__button {
-    margin: 0;
-    z-index: 1;
-    height: 1.5rem;
-    width: 1.5rem;
     display: flex;
+    height: 25px;
+    width: 25px;
     align-items: center;
     justify-content: center;
 }
