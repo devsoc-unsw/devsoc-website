@@ -41,7 +41,7 @@ export const navData = [
   { text: "About", href: "/about-us" },
   { text: "Projects", href: "/our-projects" },
   { text: "Starlight", href: "/starlight" },
-  { text: "Get involved", href: "/get-involved" },
+  { text: "Get Involved", href: "/get-involved" },
   { text: "Sponsors", href: "/supporters" },
 ];
 
