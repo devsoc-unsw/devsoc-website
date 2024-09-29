@@ -38,11 +38,11 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 // Pages and links displayed on nav
 // Probably shouldn't be touched
 export const navData = [
-  { text: "About Us", href: "/about-us" },
-  { text: "Our Projects", href: "/our-projects" },
+  { text: "About", href: "/about-us" },
+  { text: "Projects", href: "/our-projects" },
   { text: "Starlight", href: "/starlight" },
   { text: "Get Involved", href: "/get-involved" },
-  { text: "Supporters", href: "/supporters" },
+  { text: "Sponsors", href: "/supporters" },
 ];
 
 // Links to socials on nav

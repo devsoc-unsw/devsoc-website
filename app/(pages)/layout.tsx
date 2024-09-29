@@ -1,8 +1,6 @@
 'use client';
 
 import React from 'react';
-import NavBar from '../../components/nav/NavBar';
-import MobileNavBar from '../../components/nav/MobileNavBar';
 import { Sheet } from '@mui/joy';
 
 
@@ -11,8 +9,6 @@ const Layout: React.FC<{
 }> = ({ children }) => {
   return (
     <>
-      <NavBar/>
-      <MobileNavBar/>
       <Sheet
         variant='soft'
         sx={{
