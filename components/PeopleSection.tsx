@@ -135,7 +135,7 @@ const Person: React.FC<ExecProps> = ({ name, title, imgUrl }) => {
   )
 };
 
-const SubcommitteeList: React.FC<{ name: string, directors: PersonProps[], subcommittee: PersonProps[] }> = ({name: string, directors, subcommittee}) => {
+const SubcommitteeList: React.FC<{ name: string, directors: PersonProps[], subcommittee: PersonProps[], other?: {role: string, people: PersonProps[]}[] }> = ({name: string, directors, subcommittee, other}) => {
   return (
     <>
       <Box px={3}>
@@ -163,6 +163,11 @@ const SubcommitteeList: React.FC<{ name: string, directors: PersonProps[], subco
                 <TeamListItem name={props.name} imgUrl={props.imgUrl} title="Subcommittee" key={props.name}/>
               )
             })
+          }
+          {
+            other ? other.map(({role, people}) => {
+              return people.map((props) => <TeamListItem name={props.name} imgUrl={props.imgUrl} title={role} key={props.name}/>);
+            }): <></>
           }
         </List>
       </Box>
