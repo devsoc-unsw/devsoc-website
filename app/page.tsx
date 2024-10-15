@@ -21,25 +21,11 @@ interface EventCardProp {
 
 const eventContent: EventCardProp[] = [
   {
-    title: "2025 Exec Election",
-    href: "",
-    dateTime: "Voting period on now",
+    title: "Clubs Takeover",
+    href: "https://www.facebook.com/events/1586760535262553/",
+    dateTime: "12-2PM October 22nd 2024",
     thumbnail: "",
-    button: ""
-  },
-  {
-    title: "2024 AGM",
-    href: "",
-    dateTime: "4:45PM October 2nd 2024",
-    thumbnail: "",
-    button: ""
-  },
-  {
-    title: "Weekly BBQ",
-    href: "",
-    dateTime: "12 - 2PM, Fridays Weekly",
-    thumbnail: "https://scontent.fsyd10-1.fna.fbcdn.net/v/t39.30808-6/460339822_122176606844084186_6742496778709299665_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=75d36f&_nc_ohc=F-tEsbQQzRsQ7kNvgFeKIMk&_nc_ht=scontent.fsyd10-1.fna&_nc_gid=AEidUETEJlE98TVUJJImvur&oh=00_AYB17GXL90BSbE3hvm6vXLuYyVp09K3FwM0fV75ZH0Huhw&oe=66F9ACA9",
-    button: ""
+    button: "View event"
   },
   {
     title: "Techspire",
