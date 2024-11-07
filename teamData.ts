@@ -885,7 +885,32 @@ export const teamData: TeamData = {
           { name: "Nicole Chun", imgUrl: "crocyoiin" },
           { name: "Dylan Huynh", imgUrl: "TAS-scorchedshadow" }
         ],
-        subcommittee: []
+        subcommittee: [],
+        other: [
+          {
+            role: "Workshop Presenter",
+            people: [
+              { name: "Lachlan Shoesmith", imgUrl: "lachlanshoesmith"},
+              { name: "Jayden Nguyen", imgUrl: "JeydinNewWon"},
+              { name: "Tim Tang", imgUrl: "chinosu" },
+            ]
+          },
+          {
+            role: "Exercise Writer",
+            people: [
+              { name: "Hanyuan Li", imgUrl: "hanyuone" },
+              { name: "Alex Lee", imgUrl: "NailTheHogRider" },
+              { name: "Rachel Bai", imgUrl: "rachel-bai" },
+            ]
+          },
+          {
+            role: "UI/UX Workshop",
+            people: [
+              { name: "Daniel Huynh", imgUrl: "ledanielhuynh" },
+              { name: "Merry Rosalie", imgUrl: "MerryRosalie" },
+            ]
+          }
+        ]
       }
     ]
   }
@@ -897,7 +922,11 @@ interface TeamData {
     subcommittees: {
       name: string,
       directors: PersonProps[],
-      subcommittee: PersonProps[]
+      subcommittee: PersonProps[],
+      other?: {
+        role: string
+        people: PersonProps[]
+      }[]
     }[]
   }
 }
