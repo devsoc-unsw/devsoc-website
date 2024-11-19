@@ -99,14 +99,6 @@ export const projectData: Omit<ProjectCardProps, "trainee">[] = [
     status: "Operational",
   },
   {
-    name: "Jobsboard",
-    desc: "A portal for students to explore job openings offered by our sponsors and other tech companies.",
-    logoUrl: "/projects/jobsboard/logo.png",
-    thumbnailUrl: "/projects/jobsboard/thumbnail.png",
-    projectUrl: "https://jobsboard.csesoc.unsw.edu.au/",
-    status: "Operational",
-  },
-  {
     name: "Chaos",
     desc: "A platform for simplifying applying and recruiting for student society subcommittees at UNSW.",
     logoUrl: "/projects/chaos/logo.png",
