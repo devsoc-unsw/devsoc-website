@@ -46,7 +46,7 @@ export const PeopleSection = () => {
     <>
       <Slider
         aria-label="Always visible"
-        defaultValue={2024}
+        defaultValue={2025}
         getAriaValueText={valueText}
         step={1}
         min={2018}

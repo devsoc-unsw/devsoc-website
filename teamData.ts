@@ -916,22 +916,21 @@ export const teamData: TeamData = {
   },
   2025: {
     executives: [
-      { name: "Dylan Huynh", title: "Co-President", imgUrl: "/people/pres-nf.jpeg" },
-      { name: "Ashley Luong", title: "Co-President", imgUrl: "/people/pres-nm.png" },
-      { name: "Jayden Nguyen", title: "Administrative Officer", imgUrl: "/people/admin.jpg" },
-      { name: "Mark Quach", title: "VP (Internals)", imgUrl: "/people/gedi.jpeg" },
-      { name: "Jade Kam", title: "VP (Externals)", imgUrl: "/people/vpi.jpeg" },
-      { name: "Flynn Lambrechts", title: "VP (Projects)", imgUrl: "/people/vpo.jpeg" },
-      { name: "Nicole Chun", title: "VP (Projects)", imgUrl: "/people/vpc.jpeg" },
-      { name: "Jackson Wang", title: "VP (Project Operation )", imgUrl: "/people/vps.jpeg" },
+      { name: "Dylan Huynh", title: "Co-President", imgUrl: "/people/2025/pres-nf.JPG" },
+      { name: "Ashley Luong", title: "Co-President", imgUrl: "/people/2025/pres-nm.png" },
+      { name: "Jayden Nguyen", title: "Administrative Officer", imgUrl: "/people/2025/admin.png" },
+      { name: "Mark Quach", title: "VP (Internals)", imgUrl: "/people/2025/vpi.png" },
+      { name: "Jade Kam", title: "VP (Externals)", imgUrl: "/people/2025/vpe.png" },
+      { name: "Flynn Lambrechts", title: "VP (Projects)", imgUrl: "/people/2025/vpp1.png" },
+      { name: "Nicole Chun", title: "VP (Projects)", imgUrl: "/people/2025/vpp3.png" },
+      { name: "Jackson Wang", title: "VP (Project Operation )", imgUrl: "/people/2025/vpo.png" },
     ],
     subcommittees: [
       {
         name: "Chaos",
         directors: [
           { name: "Kavika Palletenne", imgUrl: "KavikaPalletenne" },
-          { name: "Josh Lim", imgUrl: "JoshCLim " },
-          { name: "Peter Osborne", imgUrl: "PeterOsborne" },
+          { name: "Isaac Kim", imgUrl: "gyoumi" },
         ],
         subcommittee: [
         ]
@@ -939,22 +938,25 @@ export const teamData: TeamData = {
       {
         name: "Circles",
         directors: [
-          { name: "Martin Knezevic", imgUrl: "martanman" },
-          { name: "Oliver Bowers", imgUrl: "ollibowers" },
+          { name: "Keats Mackay", imgUrl: "Keatsm" },
+          { name: "Matthew Lim", imgUrl: "ollibowers" },
         ],
         subcommittee: [
         ]
       },
       {
         name: "Clusters",
-        directors: [],
+        directors: [ 
+          { name: "Rin DeVisser", imgUrl: "rin-senpai"}, 
+          { name: "Ryan Hay", imgUrl: "typerofcode"}
+        ],
         subcommittee: []
       },
       {
         name: "Freerooms",
         directors: [
-          { name: "Jessica Feng", imgUrl: "JessicaF" },
-          { name: "Richard Xue", imgUrl: "Vinegarette" },
+          { name: "Micheal Tanto", imgUrl: "mt-fns" },
+          { name: "Anh Viet Duc Nguyen", imgUrl: "4nhus" },
         ],
         subcommittee: [
         ]
@@ -962,8 +964,8 @@ export const teamData: TeamData = {
       {
         name: "Notangles",
         directors: [
-          { name: "Raiyan Ahmed", imgUrl: "Rayahhhmed" },
-          { name: "Shaam Jevan", imgUrl: "Shzmj" },
+          { name: "Lucas Harvey", imgUrl: "lhvy" },
+          { name: "Mark Tran", imgUrl: "marktran2" },
         ],
         subcommittee: [
         ]
@@ -980,6 +982,7 @@ export const teamData: TeamData = {
       {
         name: "Unilectives",
         directors: [
+          { name: "Alec Liu", imgUrl: "alecliu1204" },
         ],
         subcommittee: [
         ]
@@ -997,6 +1000,7 @@ export const teamData: TeamData = {
         name: "UI\/UX",
         directors: [
           { name: "Cindy Zhang", imgUrl: "" },
+          { name: "Rita Lin", imgUrl: "Rita4747" },
         ],
         subcommittee: [
         ]
@@ -1004,6 +1008,8 @@ export const teamData: TeamData = {
       {
         name: "Training\u00A0Program",
         directors: [
+            { name: "Khye Jac Low", imgUrl: "kj4c"},
+            { name: "Eve Miles", imgUrl: "evaluate09"},
             { name: "Lachlan Shoesmith", imgUrl: "lachlanshoesmith"},
         ],
         subcommittee: [],
@@ -1013,8 +1019,8 @@ export const teamData: TeamData = {
       {
         name: "Events",
         directors: [
-          { name: "Joye Fu", imgUrl: "" },
-          { name: "Vincent Tannos", imgUrl: "" },
+          { name: "Stephanie Lu", imgUrl: "" },
+          { name: "Tom Liu", imgUrl: "" },
         ],
         subcommittee: [
         ]
@@ -1023,7 +1029,8 @@ export const teamData: TeamData = {
         name: "Marketing",
         directors: [
           { name: "Joye Fu", imgUrl: "" },
-          { name: "Vincent Tannos", imgUrl: "" },
+          { name: "Vincent Tannos", imgUrl: "vincenttannos" },
+          { name: "William Yang", imgUrl: "" },
         ],
         subcommittee: [
         ]
@@ -1031,7 +1038,8 @@ export const teamData: TeamData = {
       {
         name: "HR",
         directors: [
-          { name: "Stephanie Lu", imgUrl: "" },
+          { name: "Kelly Chour", imgUrl: "" },
+          { name: "Edward Zhang", imgUrl: "" },
         ],
         subcommittee: [
         ]
@@ -1039,8 +1047,7 @@ export const teamData: TeamData = {
       {
         name: "Sponsorships",
         directors: [
-          { name: "Joye Fu", imgUrl: "" },
-          { name: "Vincent Tannos", imgUrl: "" },
+          { name: "Bob Chen", imgUrl: "3bobchen" },
         ],
         subcommittee: [
         ]
