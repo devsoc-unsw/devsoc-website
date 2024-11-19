@@ -687,14 +687,14 @@ export const teamData: TeamData = {
   },
   2024: {
     executives: [
-      { name: "Bob Chen", title: "Co-President", imgUrl: "/people/pres-nf.jpeg" },
-      { name: "Sally Sun", title: "Co-President", imgUrl: "/people/pres-nm.png" },
-      { name: "Jeremy Le", title: "Administrative Officer", imgUrl: "/people/admin.jpg" },
-      { name: "Michael Girikallo", title: "GEDI Officer", imgUrl: "/people/gedi.jpeg" },
-      { name: "Audrey Tanama", title: "VP (Internals)", imgUrl: "/people/vpi.jpeg" },
-      { name: "Henry Guo", title: "VP (Operations)", imgUrl: "/people/vpo.jpeg" },
-      { name: "Manhua Lu", title: "VP (Course Projects)", imgUrl: "/people/vpc.jpeg" },
-      { name: "Franco Reyes", title: "VP (Standalone Projects)", imgUrl: "/people/vps.jpeg" },
+      { name: "Bob Chen", title: "Co-President", imgUrl: "/people/2024/pres-nf.jpeg" },
+      { name: "Sally Sun", title: "Co-President", imgUrl: "/people/2024/pres-nm.png" },
+      { name: "Jeremy Le", title: "Administrative Officer", imgUrl: "/people/2024/admin.jpg" },
+      { name: "Michael Girikallo", title: "GEDI Officer", imgUrl: "/people/2024/gedi.jpeg" },
+      { name: "Audrey Tanama", title: "VP (Internals)", imgUrl: "/people/2024/vpi.jpeg" },
+      { name: "Henry Guo", title: "VP (Operations)", imgUrl: "/people/2024/vpo.jpeg" },
+      { name: "Manhua Lu", title: "VP (Course Projects)", imgUrl: "/people/2024/vpc.jpeg" },
+      { name: "Franco Reyes", title: "VP (Standalone Projects)", imgUrl: "/people/2024/vps.jpeg" },
     ],
     subcommittees: [
       {
@@ -913,7 +913,141 @@ export const teamData: TeamData = {
         ]
       }
     ]
+  },
+  2025: {
+    executives: [
+      { name: "Dylan Huynh", title: "Co-President", imgUrl: "/people/pres-nf.jpeg" },
+      { name: "Ashley Luong", title: "Co-President", imgUrl: "/people/pres-nm.png" },
+      { name: "Jayden Nguyen", title: "Administrative Officer", imgUrl: "/people/admin.jpg" },
+      { name: "Mark Quach", title: "VP (Internals)", imgUrl: "/people/gedi.jpeg" },
+      { name: "Jade Kam", title: "VP (Externals)", imgUrl: "/people/vpi.jpeg" },
+      { name: "Flynn Lambrechts", title: "VP (Projects)", imgUrl: "/people/vpo.jpeg" },
+      { name: "Nicole Chun", title: "VP (Projects)", imgUrl: "/people/vpc.jpeg" },
+      { name: "Jackson Wang", title: "VP (Project Operation )", imgUrl: "/people/vps.jpeg" },
+    ],
+    subcommittees: [
+      {
+        name: "Chaos",
+        directors: [
+          { name: "Kavika Palletenne", imgUrl: "KavikaPalletenne" },
+          { name: "Josh Lim", imgUrl: "JoshCLim " },
+          { name: "Peter Osborne", imgUrl: "PeterOsborne" },
+        ],
+        subcommittee: [
+        ]
+      },
+      {
+        name: "Circles",
+        directors: [
+          { name: "Martin Knezevic", imgUrl: "martanman" },
+          { name: "Oliver Bowers", imgUrl: "ollibowers" },
+        ],
+        subcommittee: [
+        ]
+      },
+      {
+        name: "Clusters",
+        directors: [],
+        subcommittee: []
+      },
+      {
+        name: "Freerooms",
+        directors: [
+          { name: "Jessica Feng", imgUrl: "JessicaF" },
+          { name: "Richard Xue", imgUrl: "Vinegarette" },
+        ],
+        subcommittee: [
+        ]
+      },
+      {
+        name: "Notangles",
+        directors: [
+          { name: "Raiyan Ahmed", imgUrl: "Rayahhhmed" },
+          { name: "Shaam Jevan", imgUrl: "Shzmj" },
+        ],
+        subcommittee: [
+        ]
+      },
+      {
+        name: "Structs",
+        directors: [
+          { name: "Tim Tang", imgUrl: "chinosu" },
+          { name: "Sylvia Wang", imgUrl: "PolarisXII" },
+        ],
+        subcommittee: [
+        ]
+      },
+      {
+        name: "Unilectives",
+        directors: [
+        ],
+        subcommittee: [
+        ]
+      },
+      {
+        name: "Platform",
+        directors: [
+          { name: "Sacha Korban", imgUrl: "sachk" },
+          { name: "Ethan Scott", imgUrl: "ChinoGoblino" },
+        ],
+        subcommittee: [
+        ]
+      },
+      {
+        name: "UI\/UX",
+        directors: [
+          { name: "Cindy Zhang", imgUrl: "" },
+        ],
+        subcommittee: [
+        ]
+      },
+      {
+        name: "Training\u00A0Program",
+        directors: [
+            { name: "Lachlan Shoesmith", imgUrl: "lachlanshoesmith"},
+        ],
+        subcommittee: [],
+        other: [
+        ]
+      },
+      {
+        name: "Events",
+        directors: [
+          { name: "Joye Fu", imgUrl: "" },
+          { name: "Vincent Tannos", imgUrl: "" },
+        ],
+        subcommittee: [
+        ]
+      },
+      {
+        name: "Marketing",
+        directors: [
+          { name: "Joye Fu", imgUrl: "" },
+          { name: "Vincent Tannos", imgUrl: "" },
+        ],
+        subcommittee: [
+        ]
+      },
+      {
+        name: "HR",
+        directors: [
+          { name: "Stephanie Lu", imgUrl: "" },
+        ],
+        subcommittee: [
+        ]
+      },
+      {
+        name: "Sponsorships",
+        directors: [
+          { name: "Joye Fu", imgUrl: "" },
+          { name: "Vincent Tannos", imgUrl: "" },
+        ],
+        subcommittee: [
+        ]
+      },
+    ]
   }
+
 };
 export type PersonProps = Omit<ExecProps, 'title'>;
 interface TeamData {
