@@ -916,14 +916,14 @@ export const teamData: TeamData = {
   },
   2025: {
     executives: [
-      { name: "Dylan Huynh", title: "Co-President", imgUrl: "/people/2025/pres-nf.JPG" },
+      { name: "Dylan Huynh", title: "Co-President", imgUrl: "/people/2025/pres-nf.jpg" },
       { name: "Ashley Luong", title: "Co-President", imgUrl: "/people/2025/pres-nm.png" },
       { name: "Jayden Nguyen", title: "Administrative Officer", imgUrl: "/people/2025/admin.png" },
       { name: "Mark Quach", title: "VP (Internals)", imgUrl: "/people/2025/vpi.png" },
       { name: "Jade Kam", title: "VP (Externals)", imgUrl: "/people/2025/vpe.png" },
       { name: "Flynn Lambrechts", title: "VP (Projects)", imgUrl: "/people/2025/vpp1.png" },
       { name: "Nicole Chun", title: "VP (Projects)", imgUrl: "/people/2025/vpp3.png" },
-      { name: "Jackson Wang", title: "VP (Project Operation )", imgUrl: "/people/2025/vpo.png" },
+      { name: "Jackson Wang", title: "VP (Project Operations)", imgUrl: "/people/2025/vpo.png" },
     ],
     subcommittees: [
       {
@@ -999,8 +999,8 @@ export const teamData: TeamData = {
       {
         name: "UI\/UX",
         directors: [
-          { name: "Cindy Zhang", imgUrl: "" },
           { name: "Rita Lin", imgUrl: "Rita4747" },
+          { name: "Cindy Zhang", imgUrl: "" },
         ],
         subcommittee: [
         ]
