@@ -927,6 +927,14 @@ export const teamData: TeamData = {
     ],
     subcommittees: [
       {
+        name: "Bridges",
+        directors: [
+          { name: "Urja Arora", imgUrl: "ur-ja" },
+          { name: "Brian Nhan", imgUrl: "brnhan" },
+        ],
+        subcommittee: []
+      },
+      {
         name: "Chaos",
         directors: [
           { name: "Kavika Palletenne", imgUrl: "KavikaPalletenne" },
