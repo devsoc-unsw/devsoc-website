@@ -99,14 +99,6 @@ export const projectData: Omit<ProjectCardProps, "trainee">[] = [
     status: "Operational",
   },
   {
-    name: "Jobsboard",
-    desc: "A portal for students to explore job openings offered by our sponsors and other tech companies.",
-    logoUrl: "/projects/jobsboard/logo.png",
-    thumbnailUrl: "/projects/jobsboard/thumbnail.png",
-    projectUrl: "https://jobsboard.csesoc.unsw.edu.au/",
-    status: "Operational",
-  },
-  {
     name: "Chaos",
     desc: "A platform for simplifying applying and recruiting for student society subcommittees at UNSW.",
     logoUrl: "/projects/chaos/logo.png",
@@ -263,15 +255,15 @@ export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
 // Data for the "Join DevSoc" section
 // Should set/unset applicationUrl to mark recruitment as open/closed
 export const recruitmentData: RecruitmentProps[] = [
-  { position: "Directors", Icon: Lightbulb, applicationUrl: "https://forms.gle/59wHpMg9GzSbywWr7" },
-  { position: "New Projects", Icon: FlightTakeoff, applicationUrl: "https://forms.gle/p2ot9HA9UmoAta6D9" },
+  { position: "Directors", Icon: Lightbulb },
+  // { position: "New Projects", Icon: FlightTakeoff },
   { position: "Subcommittee", Icon: Groups },
-  // {
-  //   position: "Training Leads",
-  //   Icon: CoPresent,
-  // },
   {
-    position: "Trainees & Training Leads",
+    position: "Training Leads",
+    Icon: CoPresent,
+  },
+  {
+    position: "Trainees",
     Icon: School,
   },
 ];
