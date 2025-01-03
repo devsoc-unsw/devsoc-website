@@ -10,6 +10,7 @@ import Image from "next/image";
 import { NextButton, PrevButton, usePrevNextButtons } from "../components/embla/EmblaCarouselArrowButtons";
 import "./styles.css"
 import { useMediaQuery } from "@mui/system";
+import { CustomCarousel } from '../components/carousel/CustomCarousel';
 
 interface EventCardProp {
   title: string;
@@ -69,7 +70,7 @@ export default function Home() {
           <Box sx={{width: "100%"}}>
             <Typography className={"heroText"} mt={3} fontSize={{xs: "2rem", sm: "2.3rem", md: "3.2rem"}}
                         fontWeight={500} component='div'>
-              UNSW&apos;s student developer society
+              UNSW&apos;s software development society
             </Typography>
             <Typography className={"heroText"} mt={0} fontSize={{xs: "1.5rem", sm: "2rem", md: "2.5rem"}} fontWeight={200}
                         component='div'>
@@ -77,7 +78,7 @@ export default function Home() {
             </Typography>
           </Box>
         </Stack>
-        <Box sx={{display: "flex", flexDirection: "row", gap: "1rem", alignItems: "center"}} mt={{xs: 2, md: 0}}>
+        {/* <Box sx={{display: "flex", flexDirection: "row", gap: "1rem", alignItems: "center"}} mt={{xs: 2, md: 0}}>
           <Typography
             paddingTop={{xs: 1, md: 3}}
             paddingBottom={{xs: 1, md: 3}}
@@ -86,22 +87,8 @@ export default function Home() {
           >
             Highlights
           </Typography>
-          <div className="embla__controls">
-            <div className="embla__buttons">
-              <PrevButton onClick={onPrevButtonClick} />
-              <NextButton onClick={onNextButtonClick} />
-            </div>
-          </div>
-        </Box>
-        <Card
-          ref={emblaRef}
-          className="embla"
-          sx={{padding: 0, height: {xs: '90px', md: '115px'}}}
-        >
-          <Stack className="embla__container">
-            {eventContent.map((props, idx) => <HighlightLinkCard key={`event ${props.title}`} {...props}/>)}
-          </Stack>
-        </Card>
+        </Box> */}
+        <CustomCarousel/>
         <Box
           ref={scrollRef}
           marginBottom={{xs: "3rem", md: 0}}
@@ -125,6 +112,70 @@ export default function Home() {
     </Box>
   )
 }
+
+
+const Slide: React.FC<EventCardProp> = ({
+  title,
+  href,
+  dateTime,
+  thumbnail,
+  button
+}) => {
+  let color = "#111111";
+  const theme = useTheme();
+  const isMdUp = useMediaQuery(theme.breakpoints.up('md'));
+  return (
+    <Card
+      className="embla__slide"
+      sx={{
+        height: {xs: "200px", md: "500px"},
+        backgroundColor: color,
+        borderRadius: 0,
+        padding: thumbnail && isMdUp ? '2rem 1rem' : {xs: '1rem', md: '2rem'},
+        flexDirection: 'row',
+        gap: '4rem',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        border: 'none'
+      }}
+    >
+      <Box sx={{display: "flex", flexDirection: "row", gap: "2rem"}}>
+        {
+          thumbnail && isMdUp ? <Image width={170} height={90} src={thumbnail} alt={title}/> : null
+        }
+        <Box sx={{display: "flex", flexDirection: "column"}}>
+          <Typography
+            sx={{
+              color: "#EDEEF0",
+              fontSize: { xs: '1.5rem', sm: '1.75rem', md: '2rem' },
+              fontWeight: 500,
+              alignSelf: "flex-start",
+              justifySelf: "center"
+            }}
+          >
+            {title}
+          </Typography>
+          <Typography
+            sx={{
+              color: "#EDEEF0",
+              alignSelf: "flex-start",
+              justifySelf: "center"
+            }}
+          >
+            {dateTime}
+          </Typography>
+        </Box>
+      </Box>
+      {
+        button ?
+          <Link href={href} sx={{ textDecoration: 'none' }}>
+            <Button variant="soft">{button}</Button>
+          </Link> : null
+      }
+    </Card>
+  )
+}
+
 
 const HighlightLinkCard: React.FC<EventCardProp> = ({
   title,
