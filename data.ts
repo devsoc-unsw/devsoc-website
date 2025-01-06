@@ -266,7 +266,7 @@ export const recruitmentData: RecruitmentProps[] = [
   {
     position: "Trainees",
     Icon: School,
-    applicationUrl: "https://tp.devso.cc/leads"
+    applicationUrl: "https://tp.devso.cc/trainees"
   },
 ];
 
