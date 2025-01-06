@@ -1020,7 +1020,13 @@ export const teamData: TeamData = {
             { name: "Eve Miles", imgUrl: "evaluate09"},
             { name: "Lachlan Shoesmith", imgUrl: "lachlanshoesmith"},
         ],
-        subcommittee: [],
+        subcommittee: [
+          { name: "Alfie Chen", imgUrl: "Alfie728" },
+          { name: "Alyssa Cheong", imgUrl: "alyssacheong" },
+          { name: "Giselle Angela Hanjaya Putri", imgUrl: "michimochi25" },
+          { name: "Kim Lam", imgUrl: "kimlamm" },
+          
+        ],
         other: [
         ]
       },
