@@ -21,10 +21,18 @@ export function CustomCarousel() {
     { src: "/carousel/workshops.png", text: "Learn Together" },
     { src: "/carousel/together.jpg", text: "Develop Together" },
     { src: "/carousel/projects.png", text: "Our Projects" },
-    { src: "/projects/notangles/thumbnail.png", text: "Notangles" },
+    {
+      src: "/projects/notangles/thumbnail.png",
+      text: "Notangles",
+      contrast: true,
+    },
     { src: "/projects/freerooms/thumbnail.png", text: "Freerooms" },
-    { src: "/projects/unilectives/thumbnail.png", text: "Unilectives" },
-    { src: "/projects/circles/thumbnail.png", text: "Circles" },
+    {
+      src: "/projects/unilectives/thumbnail.png",
+      text: "Unilectives",
+      contrast: true,
+    },
+    { src: "/projects/circles/thumbnail.png", text: "Circles", contrast: true },
     { src: "/projects/structs/thumbnail.png", text: "Structs.sh" },
     { src: "/carousel/applications.png", text: "Join us!" },
   ];
@@ -53,7 +61,16 @@ export function CustomCarousel() {
         >
           {slides.map((e, index) => (
             <div className="embla__slide" key={index}>
-              {e.src ? <img className="embla__image" src={e.src} /> : null}
+              {e.src ? (
+                <img
+                  className={
+                    e.contrast
+                      ? "embla__image contrast_high"
+                      : "embla__image contrast_low"
+                  }
+                  src={e.src}
+                />
+              ) : null}
               <Typography
                 className="embla__text"
                 sx={{

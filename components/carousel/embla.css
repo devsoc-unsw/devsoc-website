@@ -31,7 +31,13 @@
   width: 100%;
   height: 100%;
   z-index: 1;
-  filter: contrast(85%);
+}
+
+.contrast_low {
+  filter: contrast(95%);
+}
+.contrast_high {
+  filter: contrast(75%);
 }
 
 .embla__controls {
