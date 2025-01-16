@@ -4,7 +4,6 @@
 .embla__container {
   display: flex;
   width: 100%;
-  height: 500px;
 }
 .embla__slide {
   flex: 0 0 100%;
@@ -13,10 +12,10 @@
 
 .embla__text {
   position: relative;
-  font-size: 4rem;
   letter-spacing: 1px;
   font-weight: 600;
-  text-shadow: 0 2px 4px rgb(0 0 0 / 0.7);
+  text-shadow: 0 2px 3px rgb(0 0 0 / 0.7);
+  /* -webkit-text-stroke: 4px rgb(48,48,48); */
   color: white;
   display: flex;
   align-items: center;
@@ -32,6 +31,7 @@
   width: 100%;
   height: 100%;
   z-index: 1;
+  filter: contrast(85%);
 }
 
 .embla__controls {
