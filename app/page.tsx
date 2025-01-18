@@ -90,16 +90,6 @@ export default function Home() {
             </Typography>
           </Box>
         </Stack>
-        {/* <Box sx={{display: "flex", flexDirection: "row", gap: "1rem", alignItems: "center"}} mt={{xs: 2, md: 0}}>
-          <Typography
-            paddingTop={{xs: 1, md: 3}}
-            paddingBottom={{xs: 1, md: 3}}
-            fontSize={{xs: 20, md: 30}}
-            fontWeight={600}
-          >
-            Highlights
-          </Typography>
-        </Box> */}
         <CustomCarousel />
         <Box
           ref={scrollRef}
