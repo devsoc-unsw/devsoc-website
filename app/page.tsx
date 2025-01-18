@@ -98,7 +98,6 @@ export default function Home() {
           sx={{
             display: "flex",
             overflowX: "auto",
-            scrollbarWidth: "none",
           }}
         >
           <Stack
