@@ -56,21 +56,12 @@ export function CustomCarousel() {
         <Box
           className="embla__container"
           sx={{
-            height: { xs: "200px", sm: "300px", md: "500px" },
+            height: { xs: "200px", sm: "300px", md: "400px" },
           }}
         >
           {slides.map((e, index) => (
             <div className="embla__slide" key={index}>
-              {e.src ? (
-                <img
-                  className={
-                    e.contrast
-                      ? "embla__image contrast_high"
-                      : "embla__image contrast_low"
-                  }
-                  src={e.src}
-                />
-              ) : null}
+              {e.src ? <img className="embla__image" src={e.src} /> : null}
               <Typography
                 className="embla__text"
                 sx={{

@@ -77,7 +77,7 @@ export default function Home() {
               fontWeight={500}
               component="div"
             >
-              UNSW&apos;s software development society
+              UNSW&apos;s Software Development Society
             </Typography>
             <Typography
               className={"heroText"}
