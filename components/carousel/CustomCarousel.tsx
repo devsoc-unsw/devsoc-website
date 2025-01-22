@@ -12,7 +12,7 @@ import { Box, Typography } from "@mui/joy";
 export function CustomCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { loop: true, watchDrag: false },
-    [Autoplay({ delay: 5000 })]
+    [Autoplay({ delay: 4500 })]
   );
   const slides = [
     { src: "/carousel/brainstorm.png", text: "Solve Unique Problems" },
