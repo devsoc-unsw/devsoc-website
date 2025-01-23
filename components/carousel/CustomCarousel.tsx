@@ -27,8 +27,8 @@ export function CustomCarousel() {
       position: "50% 0%",
     },
     {
-      src: "/projects/freerooms/thumbnail.png",
-      text: "Freerooms",
+      src: "/projects/circles/thumbnail.png",
+      text: "Circles",
       position: "50% 20%",
     },
     {
@@ -37,14 +37,14 @@ export function CustomCarousel() {
       position: "50% 0%",
     },
     {
-      src: "/projects/circles/thumbnail.png",
-      text: "Circles",
-      position: "50% 20%",
-    },
-    {
       src: "/projects/structs/thumbnail.png",
       text: "Structs.sh",
       postion: "50% 80%",
+    },
+    {
+      src: "/projects/freerooms/thumbnail.png",
+      text: "Freerooms",
+      position: "50% 20%",
     },
     { src: "/carousel/applications.png", text: "Join us!" },
   ];
