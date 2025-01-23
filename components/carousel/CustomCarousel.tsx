@@ -24,16 +24,28 @@ export function CustomCarousel() {
     {
       src: "/projects/notangles/thumbnail.png",
       text: "Notangles",
-      contrast: true,
+      position: "50% 0%",
     },
-    { src: "/projects/freerooms/thumbnail.png", text: "Freerooms" },
     {
-      src: "/projects/unilectives/thumbnail.png",
-      text: "Unilectives",
-      contrast: true,
+      src: "/projects/freerooms/thumbnail.png",
+      text: "Freerooms",
+      position: "50% 20%",
     },
-    { src: "/projects/circles/thumbnail.png", text: "Circles", contrast: true },
-    { src: "/projects/structs/thumbnail.png", text: "Structs.sh" },
+    {
+      src: "/carousel/unilectives.png",
+      text: "Unilectives",
+      position: "50% 0%",
+    },
+    {
+      src: "/projects/circles/thumbnail.png",
+      text: "Circles",
+      position: "50% 20%",
+    },
+    {
+      src: "/projects/structs/thumbnail.png",
+      text: "Structs.sh",
+      postion: "50% 80%",
+    },
     { src: "/carousel/applications.png", text: "Join us!" },
   ];
 
@@ -61,7 +73,15 @@ export function CustomCarousel() {
         >
           {slides.map((e, index) => (
             <div className="embla__slide" key={index}>
-              {e.src ? <img className="embla__image" src={e.src} /> : null}
+              {e.src ? (
+                <img
+                  className="embla__image"
+                  src={e.src}
+                  style={{
+                    objectPosition: `${e.position ? e.position : "50% 50%"}`,
+                  }}
+                />
+              ) : null}
               <Typography
                 className="embla__text"
                 sx={{
