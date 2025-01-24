@@ -2,25 +2,23 @@
 
 import React, { useState } from "react";
 import { Slider, Typography, Box, Stack, AspectRatio } from "@mui/joy";
-import { SponsorInfo } from "../data";
+import { SponsorInfo, SupporterData } from "../data";
 import { Link } from "@mui/material";
 import Image from "next/image";
 import PageSection from "./PageSection";
 
 interface SupportersPageContentProps {
-  projectSupporterData: any[];
+  projectSupporterData: { [year: number]: SupporterData[] };
 }
 
-const years = [2025, 2024]; // List of years
+const years = [2025, 2024];
 
 const SupportersPageContent: React.FC<SupportersPageContentProps> = ({
   projectSupporterData,
 }) => {
   const [selectedYear, setSelectedYear] = useState<number>(2025);
 
-  const filteredSponsors = projectSupporterData.filter(
-    (section) => section.year === selectedYear
-  );
+  const sectionsForYear = projectSupporterData[selectedYear];
 
   const handleYearChange = (event: any, newValue: number | number[]) => {
     setSelectedYear(newValue as number);
@@ -41,12 +39,12 @@ const SupportersPageContent: React.FC<SupportersPageContentProps> = ({
         color="devsoc_red"
         onChange={handleYearChange}
       />
-      <Typography level="h2" py={4} px={4} textAlign="center">
+      <Typography level="h1" py={8} px={8} textAlign="center">
         {selectedYear} Supporters
       </Typography>
 
       {/* Display Logos and Subtitles */}
-      {filteredSponsors.map((section, idx) => (
+      {sectionsForYear?.map((section, idx) => (
         <PageSection title={section.title} key={idx}>
           <Typography textAlign="center" marginBottom="2rem">
             {section.subtitle}

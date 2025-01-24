@@ -322,78 +322,230 @@ export interface SupporterData {
   title: string;
   subtitle?: string;
   logos: SponsorInfo[];
-  year: number;
 }
 
-export const projectSupporterData: SupporterData[] = [
-  {
-    title: "Affiliations",
-    logos: [
-      {
-        name: "Registered Charity",
-        logo: acnc,
-        url: "https://www.acnc.gov.au/charity/charities/7fa763bf-0876-ee11-8179-00224893b0ed/profile",
-      },
-      {
-        name: "School of CSE",
-        logo: cse,
-        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
-      },
-      {
-        name: "Arc",
-        logo: arc,
-        url: "https://www.arc.unsw.edu.au/",
-      },
-    ],
-    year: 2025,
-  },
-  {
-    title: "Platinum Tier",
-    logos: [
+export const projectSupporterData: { [year: number]: SupporterData[] } = {
+  2025: [
+    {
+      title: "Affiliations",
+      logos: [
+        {
+          name: "Registered Charity",
+          logo: acnc,
+          url: "https://www.acnc.gov.au/charity/charities/7fa763bf-0876-ee11-8179-00224893b0ed/profile",
+        },
+        {
+          name: "School of CSE",
+          logo: cse,
+          url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
+        },
+        {
+          name: "Arc",
+          logo: arc,
+          url: "https://www.arc.unsw.edu.au/",
+        },
+      ],
+    },
+    {
+      title: "Platinum Tier",
+      logos: [
+        {
+          name: "The Trade Desk",
+          logo: tradedesk,
+          url: "https://careers.thetradedesk.com/",
+        },
+      ],
+    },
+    {
+      title: "Gold Tier",
+      logos: [
+        {
+          name: "Jane Street",
+          logo: janeStreet,
+          url: "https://www.janestreet.com/",
+        },
+        {
+          name: "TikTok",
+          logo: tiktok,
+          url: "https://careers.tiktok.com/",
+        },
+      ],
+    },
+    {
+      title: "Silver Tier",
+      logos: [
+        {
+          name: "Citadel",
+          logo: citadel,
+          url: "https://www.citadelsecurities.com/",
+        },
+        {
+          name: "imc",
+          logo: imc,
+          url: "https://www.imc.com/",
+        },
+        {
+          name: "ZIP",
+          logo: "https://media.boohoo.com/i/boohooamplience/zippay_new_white_nobg_1309?fmt=webp",
+          url: "https://zip.co/au",
+        },
+      ],
+    },
+  ],
+  2024: [
+    {
+      title: "Affiliations",
+      logos: [
+        {
+          name: "Registered Charity",
+          logo: acnc,
+          url: "https://www.acnc.gov.au/charity/charities/7fa763bf-0876-ee11-8179-00224893b0ed/profile",
+        },
+        {
+          name: "School of CSE",
+          logo: cse,
+          url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
+        },
+        {
+          name: "CSESoc",
+          logo: csesoc,
+          url: "https://www.csesoc.unsw.edu.au/",
+        },
+      ],
+    },
+    {
+      title: "Project Sponsors",
+      logos: [
+        {
+          name: "Jane Street",
+          logo: janeStreet,
+          url: "https://www.janestreet.com/",
+        },
+        {
+          name: "TikTok",
+          logo: tiktok,
+          url: "https://careers.tiktok.com/",
+        },
+        {
+          name: "Macquarie",
+          logo: macquarie,
+          url: "https://www.macquarie.com",
+        },
+      ],
+    },
+    {
+      title: "Diamond Tier",
+      subtitle: "CSESoc & DevSoc Joint Sponsorship Drive",
+      logos: [
+        {
+          name: "Jane Street",
+          logo: janeStreet,
+          url: "https://www.janestreet.com/",
+        },
+        {
+          name: "TikTok",
+          logo: tiktok,
+          url: "https://careers.tiktok.com/",
+        },
+      ],
+    },
+    {
+      title: "Gold Tier",
+      subtitle: "CSESoc & DevSoc Joint Sponsorship Drive",
+      logos: [
+        {
+          name: "Atlassian",
+          logo: "https://www.skillfinder.com.au/media/wysiwyg/atlassian-logo-gradient-horizontal-white.png",
+          url: "https://www.atlassian.com/",
+        },
+        {
+          name: "Citadel",
+          logo: citadel,
+          url: "https://www.citadelsecurities.com/",
+        },
+        {
+          name: "imc",
+          logo: imc,
+          url: "https://www.imc.com/",
+        },
+        {
+          name: "neara",
+          logo: "https://neara.com/wp-content/uploads/2023/03/footer-white-logo-with-red-icon.png",
+          url: "https://neara.com/",
+        },
+        {
+          name: "SafetyCulture",
+          logo: sc,
+          url: "https://safetyculture.com/",
+        },
+        {
+          name: "Zurich",
+          logo: zurich,
+          url: "https://www.zurich.com.au/",
+        },
+      ],
+    },
+    {
+      title: "Silver Tier",
+      subtitle: "CSESoc & DevSoc Joint Sponsorship Drive",
+      logos: [
+        {
+          name: "appian",
+          logo: "https://www.cds.co.uk/hs-fs/hubfs/Appian-white-logo.png?width=1200&height=627&name=Appian-white-logo.png",
+          url: "https://appian.com/",
+        },
+        {
+          name: "FlowTraders",
+          logo: "https://paragonnational.org/Companies/flow.png",
+          url: "https://www.flowtraders.com/",
+        },
+        {
+          name: "Macquarie",
+          logo: macquarie,
+          url: "https://www.macquarie.com",
+        },
+        {
+          name: "Optiver",
+          logo: optiver,
+          url: "https://optiver.com/",
+        },
+        {
+          name: "quantium",
+          logo: "https://becarwise.com.au/wp-content/uploads/2022/04/quantium-logo-w.png",
+          url: "https://quantium.com/",
+        },
+        {
+          name: "Quickli",
+          logo: quickli,
+          url: "https://quickli.com.au/",
+        },
+        {
+          name: "revolutioniseSPORT",
+          logo: rs,
+          url: "https://www.revolutionise.com.au/",
+        },
+        {
+          name: "RecordPoint",
+          logo: rp,
+          url: "https://www.recordpoint.com/",
+        },
+        {
+          name: "SIG",
+          logo: sig,
+          url: "https://sig.com/",
+        },
+        {
+          name: "ZIP",
+          logo: "https://media.boohoo.com/i/boohooamplience/zippay_new_white_nobg_1309?fmt=webp",
+          url: "https://zip.co/au",
+        },
+        {
+          name: "Canva",
+          logo: "https://www.edigitalagency.com.au/wp-content/uploads/Canva-wordmark-logo-white-font-png.png",
+          url: "https://www.canva.com/",
+        },
+      ],
+    },
+  ]
+};
 
-      { name: "The Trade Desk",
-        logo: tradedesk,
-        url: "https://careers.thetradedesk.com/"
-      },
-
-    ],
-    year: 2025,
-  },
-  {
-    title: "Gold Tier",
-    logos: [
-      {
-        name: "Jane Street",
-        logo: janeStreet,
-        url: "https://www.janestreet.com/",
-      },
-      {
-        name: "TikTok",
-        logo: tiktok,
-        url: "https://careers.tiktok.com/",
-      },
-    ],
-    year: 2025,
-  },
-  {
-    title: "Silver Tier",
-    logos: [
-      {
-        name: "Citadel",
-        logo: citadel,
-        url: "https://www.citadelsecurities.com/",
-      },
-      {
-        name: "imc",
-        logo: imc,
-        url: "https://www.imc.com/",
-      },
-      {
-        name: "ZIP",
-        logo: "https://media.boohoo.com/i/boohooamplience/zippay_new_white_nobg_1309?fmt=webp",
-        url: "https://zip.co/au",
-      },
-    ],
-    year: 2025,
-  },
-];
