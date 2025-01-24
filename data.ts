@@ -322,6 +322,7 @@ export interface SupporterData {
   title: string;
   subtitle?: string;
   logos: SponsorInfo[];
+  year: number;
 }
 
 export const projectSupporterData: SupporterData[] = [
@@ -344,9 +345,10 @@ export const projectSupporterData: SupporterData[] = [
         url: "https://www.arc.unsw.edu.au/",
       },
     ],
+    year: 2025,
   },
   {
-    title: "Diamond Tier",
+    title: "Platinum Tier",
     logos: [
 
       { name: "The Trade Desk",
@@ -355,6 +357,7 @@ export const projectSupporterData: SupporterData[] = [
       },
 
     ],
+    year: 2025,
   },
   {
     title: "Gold Tier",
@@ -370,6 +373,7 @@ export const projectSupporterData: SupporterData[] = [
         url: "https://careers.tiktok.com/",
       },
     ],
+    year: 2025,
   },
   {
     title: "Silver Tier",
@@ -389,7 +393,7 @@ export const projectSupporterData: SupporterData[] = [
         logo: "https://media.boohoo.com/i/boohooamplience/zippay_new_white_nobg_1309?fmt=webp",
         url: "https://zip.co/au",
       },
-
     ],
+    year: 2025,
   },
 ];
