@@ -324,11 +324,14 @@ export interface SupporterData {
   logos: SponsorInfo[];
 }
 
-export const projectSupporterData: { [year: number]: SupporterData[] } = {
-  2025: [
-    {
+export const affilateData: SupporterData = {
       title: "Affiliations",
       logos: [
+        {
+          name: "Arc",
+          logo: arc,
+          url: "https://www.arc.unsw.edu.au/",
+        },
         {
           name: "Registered Charity",
           logo: acnc,
@@ -339,13 +342,12 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           logo: cse,
           url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
         },
-        {
-          name: "Arc",
-          logo: arc,
-          url: "https://www.arc.unsw.edu.au/",
-        },
-      ],
-    },
+
+      ]
+
+}
+export const projectSupporterData: { [year: number]: SupporterData[] } = {
+  2025: [
     {
       title: "Platinum Tier",
       logos: [
@@ -393,26 +395,6 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
     },
   ],
   2024: [
-    {
-      title: "Affiliations",
-      logos: [
-        {
-          name: "Registered Charity",
-          logo: acnc,
-          url: "https://www.acnc.gov.au/charity/charities/7fa763bf-0876-ee11-8179-00224893b0ed/profile",
-        },
-        {
-          name: "School of CSE",
-          logo: cse,
-          url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
-        },
-        {
-          name: "CSESoc",
-          logo: csesoc,
-          url: "https://www.csesoc.unsw.edu.au/",
-        },
-      ],
-    },
     {
       title: "Project Sponsors",
       logos: [

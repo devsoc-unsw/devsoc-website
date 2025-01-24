@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Slider, Typography, Box, Stack, AspectRatio } from "@mui/joy";
-import { SponsorInfo, SupporterData } from "../data";
+import { affilateData, SponsorInfo, SupporterData } from "../data";
 import { Link } from "@mui/material";
 import Image from "next/image";
 import PageSection from "./PageSection";
@@ -19,7 +19,6 @@ const SupportersPageContent: React.FC<SupportersPageContentProps> = ({
   const [selectedYear, setSelectedYear] = useState<number>(2025);
 
   const sectionsForYear = projectSupporterData[selectedYear];
-
   const handleYearChange = (event: any, newValue: number | number[]) => {
     setSelectedYear(newValue as number);
   };
@@ -27,6 +26,15 @@ const SupportersPageContent: React.FC<SupportersPageContentProps> = ({
   const valueText = (value: number) => value.toString();
   return (
     <>
+      {/* Affiliate */}
+      <PageSection title={affilateData.title}>
+        <Typography textAlign="center" marginBottom="2rem"></Typography>
+        <Stack spacing={4}>
+          <AffiliateLogo data={affilateData.logos} />
+        </Stack>
+        <br />
+      </PageSection>
+
       {/* Slider Component */}
       <Slider
         aria-label="Select Year"
@@ -59,7 +67,6 @@ const SupportersPageContent: React.FC<SupportersPageContentProps> = ({
   );
 };
 
-// Separate DisplayLogo Component
 interface DisplayLogoProps {
   data: SponsorInfo[];
 }
@@ -89,6 +96,44 @@ const DisplayLogo: React.FC<DisplayLogoProps> = ({ data }) => {
               height: 100,
               width: "100%",
               maxWidth: 200,
+              padding: 0.3,
+            }}
+          >
+            <Link target="_blank" href={sponsor.url}>
+              <Image src={sponsor.logo} alt={sponsor.name} fill priority />
+            </Link>
+          </AspectRatio>
+        );
+      })}
+    </Stack>
+  );
+};
+
+const AffiliateLogo: React.FC<DisplayLogoProps> = ({ data }) => {
+  return (
+    <Stack
+      display="grid"
+      gridTemplateColumns={{
+        xs: "repeat(auto-fit, 1fr)",
+        md: "repeat(auto-fit, minmax(200px, 1fr))",
+        xl: "repeat(auto-fit, 1fr)",
+      }}
+      marginBottom={5}
+      sx={{ gridGap: "20px" }}
+    >
+      {data.map((sponsor, idx) => {
+        return (
+          <AspectRatio
+            key={idx}
+            variant="plain"
+            ratio="5/2"
+            objectFit="contain"
+            sx={{
+              display: "flex",
+              margin: "auto",
+              height: 80,
+              width: "100%",
+              maxWidth: 150,
               padding: 0.3,
             }}
           >
