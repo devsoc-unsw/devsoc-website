@@ -39,17 +39,19 @@ const SupportersPageContent: React.FC<SupportersPageContentProps> = ({
       </PageSection>
 
       {/* Slider Component */}
-      <Slider
-        aria-label="Select Year"
-        value={selectedYear}
-        getAriaValueText={valueText}
-        step={1}
-        min={Math.min(...years)}
-        max={Math.max(...years)}
-        marks={years.map((year) => ({ value: year, label: `${year}` }))}
-        color="devsoc_red"
-        onChange={handleYearChange}
-      />
+      <Box sx={{ paddingBottom: "4rem" }}>
+        <Slider
+          aria-label="Select Year"
+          value={selectedYear}
+          getAriaValueText={valueText}
+          step={1}
+          min={Math.min(...years)}
+          max={Math.max(...years)}
+          marks={years.map((year) => ({ value: year, label: `${year}` }))}
+          color="devsoc_red"
+          onChange={handleYearChange}
+        />
+      </Box>
       {/* <Typography level="h1" py={6} px={6} textAlign="center">
         {selectedYear} Supporters
       </Typography> */}
