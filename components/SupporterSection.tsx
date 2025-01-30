@@ -30,7 +30,10 @@ const SupportersPageContent: React.FC<SupportersPageContentProps> = ({
       <PageSection title={affilateData.title}>
         <Typography textAlign="center" marginBottom="2rem"></Typography>
         <Stack spacing={4}>
-          <AffiliateLogo data={affilateData.logos} />
+          <DisplayLogo
+            data={affilateData.logos}
+            logoSize={{ height: 80, maxWidth: 100 }}
+          />
         </Stack>
         <br />
       </PageSection>
@@ -47,9 +50,9 @@ const SupportersPageContent: React.FC<SupportersPageContentProps> = ({
         color="devsoc_red"
         onChange={handleYearChange}
       />
-      <Typography level="h1" py={8} px={8} textAlign="center">
+      {/* <Typography level="h1" py={6} px={6} textAlign="center">
         {selectedYear} Supporters
-      </Typography>
+      </Typography> */}
 
       {/* Display Logos and Subtitles */}
       {sectionsForYear?.map((section, idx) => (
@@ -58,7 +61,10 @@ const SupportersPageContent: React.FC<SupportersPageContentProps> = ({
             {section.subtitle}
           </Typography>
           <Stack spacing={4}>
-            <DisplayLogo data={section.logos} />
+            <DisplayLogo
+              data={section.logos}
+              logoSize={{ height: 100, maxWidth: 200 }}
+            />
           </Stack>
           <br />
         </PageSection>
@@ -69,47 +75,15 @@ const SupportersPageContent: React.FC<SupportersPageContentProps> = ({
 
 interface DisplayLogoProps {
   data: SponsorInfo[];
+  logoSize: { height: number; maxWidth: number };
 }
 
-const DisplayLogo: React.FC<DisplayLogoProps> = ({ data }) => {
-  return (
-    <Stack
-      display="grid"
-      gridTemplateColumns={{
-        xs: "repeat(auto-fit, 1fr)",
-        md: "repeat(auto-fit, minmax(200px, 1fr))",
-        xl: "repeat(auto-fit, 1fr)",
-      }}
-      marginBottom={5}
-      sx={{ gridGap: "20px" }}
-    >
-      {data.map((sponsor, idx) => {
-        return (
-          <AspectRatio
-            key={idx}
-            variant="plain"
-            ratio="5/2"
-            objectFit="contain"
-            sx={{
-              display: "flex",
-              margin: "auto",
-              height: 100,
-              width: "100%",
-              maxWidth: 200,
-              padding: 0.3,
-            }}
-          >
-            <Link target="_blank" href={sponsor.url}>
-              <Image src={sponsor.logo} alt={sponsor.name} fill priority />
-            </Link>
-          </AspectRatio>
-        );
-      })}
-    </Stack>
-  );
+const customLogoSizes: Record<string, { height: number; maxWidth: number }> = {
+  "Registered Charity": { height: 100, maxWidth: 250 },
+  "The Trade Desk": { height: 100, maxWidth: 280 },
 };
 
-const AffiliateLogo: React.FC<DisplayLogoProps> = ({ data }) => {
+const DisplayLogo: React.FC<DisplayLogoProps> = ({ data, logoSize }) => {
   return (
     <Stack
       display="grid"
@@ -122,6 +96,12 @@ const AffiliateLogo: React.FC<DisplayLogoProps> = ({ data }) => {
       sx={{ gridGap: "20px" }}
     >
       {data.map((sponsor, idx) => {
+        // Logos that are wide need their height and width increased to "match" the others.
+        const customSize = customLogoSizes[sponsor.name];
+        const dynamicHeight = customSize ? customSize.height : logoSize.height;
+        const dynamicMaxWidth = customSize
+          ? customSize.maxWidth
+          : logoSize.maxWidth;
         return (
           <AspectRatio
             key={idx}
@@ -131,9 +111,9 @@ const AffiliateLogo: React.FC<DisplayLogoProps> = ({ data }) => {
             sx={{
               display: "flex",
               margin: "auto",
-              height: 80,
+              height: dynamicHeight,
               width: "100%",
-              maxWidth: 150,
+              maxWidth: dynamicMaxWidth,
               padding: 0.3,
             }}
           >
