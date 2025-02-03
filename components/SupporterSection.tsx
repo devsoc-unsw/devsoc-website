@@ -26,7 +26,6 @@ const SupportersPageContent: React.FC<SupportersPageContentProps> = ({
   const valueText = (value: number) => value.toString();
   return (
     <>
-      {/* Affiliate */}
       <PageSection title={affilateData.title}>
         <Typography textAlign="center" marginBottom="2rem"></Typography>
         <Stack spacing={4}>
@@ -38,7 +37,6 @@ const SupportersPageContent: React.FC<SupportersPageContentProps> = ({
         <br />
       </PageSection>
 
-      {/* Slider Component */}
       <Box sx={{ paddingBottom: "4rem" }}>
         <Slider
           aria-label="Select Year"
@@ -56,7 +54,6 @@ const SupportersPageContent: React.FC<SupportersPageContentProps> = ({
         {selectedYear} Supporters
       </Typography> */}
 
-      {/* Display Logos and Subtitles */}
       {sectionsForYear?.map((section, idx) => (
         <PageSection title={section.title} key={idx}>
           <Typography textAlign="center" marginBottom="2rem">
@@ -82,7 +79,8 @@ interface DisplayLogoProps {
 
 const customLogoSizes: Record<string, { height: number; maxWidth: number }> = {
   "Registered Charity": { height: 100, maxWidth: 250 },
-  "The Trade Desk": { height: 100, maxWidth: 280 },
+  "The Trade Desk": { height: 100, maxWidth: 250 },
+  "Jane Street": { height: 100, maxWidth: 250 },
 };
 
 const DisplayLogo: React.FC<DisplayLogoProps> = ({ data, logoSize }) => {

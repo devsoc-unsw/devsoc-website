@@ -31,6 +31,7 @@ import unsw from "./assets/unsw.png";
 import arc from "./assets/arc.png";
 import csesoc from "./assets/csesocwhite.png";
 import tradedesk from "./assets/thetradedesk.png"
+import arista from "./assets/arista.png"
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 // General stuff:
@@ -352,6 +353,11 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
       title: "Platinum Tier",
       logos: [
         {
+          name: "Arista",
+          logo: arista,
+          url: "https://www.arista.com/en/"
+        },
+        {
           name: "The Trade Desk",
           logo: tradedesk,
           url: "https://careers.thetradedesk.com/",
@@ -366,11 +372,11 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           logo: janeStreet,
           url: "https://www.janestreet.com/",
         },
-        {
-          name: "TikTok",
-          logo: tiktok,
-          url: "https://careers.tiktok.com/",
-        },
+        // {
+        //   name: "TikTok",
+        //   logo: tiktok,
+        //   url: "https://careers.tiktok.com/",
+        // },
       ],
     },
     {
@@ -386,11 +392,11 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           logo: imc,
           url: "https://www.imc.com/",
         },
-        {
-          name: "ZIP",
-          logo: "https://media.boohoo.com/i/boohooamplience/zippay_new_white_nobg_1309?fmt=webp",
-          url: "https://zip.co/au",
-        },
+        // {
+        //   name: "ZIP",
+        //   logo: "https://media.boohoo.com/i/boohooamplience/zippay_new_white_nobg_1309?fmt=webp",
+        //   url: "https://zip.co/au",
+        // },
       ],
     },
   ],
