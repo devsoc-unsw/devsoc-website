@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Slider, Typography, Box, Stack, AspectRatio } from "@mui/joy";
-import { affilateData, SponsorInfo, SupporterData } from "../data";
+import { SponsorInfo, SupporterData } from "../data";
 import { Link } from "@mui/material";
 import Image from "next/image";
 import PageSection from "./PageSection";
@@ -26,17 +26,6 @@ const SupportersPageContent: React.FC<SupportersPageContentProps> = ({
   const valueText = (value: number) => value.toString();
   return (
     <>
-      <PageSection title={affilateData.title}>
-        <Typography textAlign="center" marginBottom="2rem"></Typography>
-        <Stack spacing={4}>
-          <DisplayLogo
-            data={affilateData.logos}
-            logoSize={{ height: 80, maxWidth: 100 }}
-          />
-        </Stack>
-        <br />
-      </PageSection>
-
       <Box sx={{ paddingBottom: "4rem" }}>
         <Slider
           aria-label="Select Year"
@@ -83,7 +72,7 @@ const customLogoSizes: Record<string, { height: number; maxWidth: number }> = {
   "Jane Street": { height: 100, maxWidth: 250 },
 };
 
-const DisplayLogo: React.FC<DisplayLogoProps> = ({ data, logoSize }) => {
+export const DisplayLogo: React.FC<DisplayLogoProps> = ({ data, logoSize }) => {
   return (
     <Stack
       display="grid"
