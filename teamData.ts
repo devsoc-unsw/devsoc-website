@@ -1064,6 +1064,8 @@ export const teamData: TeamData = {
           { name: "Bob Chen", imgUrl: "3bobchen" },
         ],
         subcommittee: [
+          { name: "Aryan Rajandan", imgUrl: "shonk7" },
+          { name: "Nuren Alahee", imgUrl: "" },
         ]
       },
     ]
