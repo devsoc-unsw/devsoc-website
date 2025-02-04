@@ -25,7 +25,7 @@ export default function SupportersPage() {
         </Stack>
       </PageSection>
       <br />
-      <SupportersPageContent projectSupporterData={projectSupporterData} />;
+      <SupportersPageContent projectSupporterData={projectSupporterData} />
     </>
   );
 }
