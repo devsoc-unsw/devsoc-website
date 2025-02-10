@@ -373,7 +373,7 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           url: "https://www.janestreet.com/",
         },
         {
-          name: "SafetyCulture",
+          name: "Safety Culture",
           logo: sc,
           url: "https://safetyculture.com/",
         },
@@ -467,7 +467,7 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           url: "https://neara.com/",
         },
         {
-          name: "SafetyCulture",
+          name: "Safety Culture",
           logo: sc,
           url: "https://safetyculture.com/",
         },
