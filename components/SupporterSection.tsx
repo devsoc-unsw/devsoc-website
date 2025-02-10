@@ -70,6 +70,7 @@ const customLogoSizes: Record<string, { height: number; maxWidth: number }> = {
   "Registered Charity": { height: 100, maxWidth: 250 },
   "The Trade Desk": { height: 100, maxWidth: 250 },
   "Jane Street": { height: 100, maxWidth: 250 },
+  "ZIP Logo": { height: 90, maxWidth: 140 },
 };
 
 export const DisplayLogo: React.FC<DisplayLogoProps> = ({ data, logoSize }) => {
