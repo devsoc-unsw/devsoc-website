@@ -393,7 +393,7 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           url: "https://www.imc.com/",
         },
         {
-          name: "ZIP",
+          name: "ZIP Logo",
           logo: "https://media.boohoo.com/i/boohooamplience/zippay_new_white_nobg_1309?fmt=webp",
           url: "https://zip.co/au",
         },
