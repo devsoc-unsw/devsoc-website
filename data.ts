@@ -372,6 +372,11 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           logo: janeStreet,
           url: "https://www.janestreet.com/",
         },
+        {
+          name: "SafetyCulture",
+          logo: sc,
+          url: "https://safetyculture.com/",
+        },
         // {
         //   name: "TikTok",
         //   logo: tiktok,
