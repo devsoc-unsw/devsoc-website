@@ -259,7 +259,11 @@ export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
 export const recruitmentData: RecruitmentProps[] = [
   { position: "Directors", Icon: Lightbulb },
   // { position: "New Projects", Icon: FlightTakeoff },
-  { position: "Subcommittee", Icon: Groups },
+  {
+    position: "Subcommittee",
+    Icon: Groups,
+    applicationUrl: "https://forms.gle/UvUNZVEAcKQpT8DX7"
+  },
   {
     position: "Training Leads",
     Icon: CoPresent,
