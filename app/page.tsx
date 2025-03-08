@@ -13,7 +13,6 @@ import {
   usePrevNextButtons,
 } from "../components/embla/EmblaCarouselArrowButtons";
 import "./styles.css";
-import { useMediaQuery } from "@mui/system";
 import { CustomCarousel } from "../components/carousel/CustomCarousel";
 
 interface EventCardProp {

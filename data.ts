@@ -30,8 +30,8 @@ import cse from "./assets/CSE.jpeg";
 import unsw from "./assets/unsw.png";
 import arc from "./assets/arc.png";
 import csesoc from "./assets/csesocwhite.png";
-import tradedesk from "./assets/thetradedesk.png"
-import arista from "./assets/arista.png"
+import tradedesk from "./assets/thetradedesk.png";
+import arista from "./assets/arista.png";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 // General stuff:
@@ -259,7 +259,10 @@ export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
 export const recruitmentData: RecruitmentProps[] = [
   { position: "Directors", Icon: Lightbulb },
   // { position: "New Projects", Icon: FlightTakeoff },
-  { position: "Subcommittee", Icon: Groups, applicationUrl: "https://forms.gle/UvUNZVEAcKQpT8DX7" },
+  {
+    position: "Subcommittee",
+    Icon: Groups,
+  },
   {
     position: "Training Leads",
     Icon: CoPresent,
@@ -324,27 +327,25 @@ export interface SupporterData {
 }
 
 export const affilateData: SupporterData = {
-      title: "Affiliations",
-      logos: [
-        {
-          name: "Arc",
-          logo: arc,
-          url: "https://www.arc.unsw.edu.au/",
-        },
-        {
-          name: "Registered Charity",
-          logo: acnc,
-          url: "https://www.acnc.gov.au/charity/charities/7fa763bf-0876-ee11-8179-00224893b0ed/profile",
-        },
-        {
-          name: "School of CSE",
-          logo: cse,
-          url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
-        },
-
-      ]
-
-}
+  title: "Affiliations",
+  logos: [
+    {
+      name: "Arc",
+      logo: arc,
+      url: "https://www.arc.unsw.edu.au/",
+    },
+    {
+      name: "Registered Charity",
+      logo: acnc,
+      url: "https://www.acnc.gov.au/charity/charities/7fa763bf-0876-ee11-8179-00224893b0ed/profile",
+    },
+    {
+      name: "School of CSE",
+      logo: cse,
+      url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
+    },
+  ],
+};
 export const projectSupporterData: { [year: number]: SupporterData[] } = {
   2025: [
     {
@@ -353,7 +354,7 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
         {
           name: "Arista",
           logo: arista,
-          url: "https://www.arista.com/en/"
+          url: "https://www.arista.com/en/",
         },
         {
           name: "The Trade Desk",
@@ -537,6 +538,5 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
         },
       ],
     },
-  ]
+  ],
 };
-
