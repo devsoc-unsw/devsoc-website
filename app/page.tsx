@@ -1,78 +1,40 @@
 "use client";
-import { AspectRatio, Card, Stack, Typography, useTheme } from "@mui/joy";
-import React, { useEffect, useRef } from "react";
-import { Box, Button, Link } from "@mui/material";
+import { AspectRatio, Card, Stack, Typography } from "@mui/joy";
+import React, { useRef, useState, useEffect } from "react";
+import { Box, Link } from "@mui/material";
 import { projectData } from "../data";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
 import { ProjectCardProps } from "../components/ProjectCard";
 import Image from "next/image";
-import {
-  NextButton,
-  PrevButton,
-  usePrevNextButtons,
-} from "../components/embla/EmblaCarouselArrowButtons";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import "./styles.css";
-import { CustomCarousel } from "../components/carousel/CustomCarousel";
-
-interface EventCardProp {
-  title: string;
-  href: string;
-  dateTime: string;
-  thumbnail: string;
-  button: string;
-}
 
 export default function Home() {
   const scrollRef = useRef<HTMLDivElement | null>(null);
-  const [emblaRef, emblaApi] = useEmblaCarousel(
-    { loop: true, axis: "y", duration: 45 },
-    [Autoplay({ delay: 5000 })]
-  );
-  const {
-    prevBtnDisabled,
-    nextBtnDisabled,
-    onPrevButtonClick,
-    onNextButtonClick,
-  } = usePrevNextButtons(emblaApi);
   const displayProjects = projectData.filter(
     (x) => x.name !== "Chaos" && x.name !== "Jobsboard"
   );
 
   return (
-    <Box className="homeContent">
-      <Stack
-        direction="column"
-        pt={2}
-        px={4}
-        width="100%"
-        maxWidth={1300}
-        m="auto"
-        overflow="hidden"
-      >
-        <Stack direction="column">
-          <Box sx={{ width: "100%" }}>
-            <Typography
-              className={"heroText"}
-              mt={3}
-              fontSize={{ xs: "2rem", sm: "2.3rem", md: "3.2rem" }}
-              fontWeight={500}
-              component="div"
-            >
-              UNSW&apos;s Software Development Society
-            </Typography>
-            <Typography
-              className={"heroText"}
-              mt={0}
-              fontSize={{ xs: "1.5rem", sm: "2rem", md: "2.5rem" }}
-              fontWeight={200}
-              component="div"
-            >
-              Run by devs, for devs
-            </Typography>
-          </Box>
-        </Stack>
-        <CustomCarousel />
+    <Box display="flex" flexDirection="column" alignItems="center" position="relative">
+      <GradientBlob />
+      <Stack sx={{ padding: 10, display: "flex", justifyContent: "center", alignItems: "center", minHeight: "calc(100vh - 75px)" }}>
+        <Box sx={{ width: "100%" }}>
+          <Typography
+            fontSize={{ xs: "2rem", sm: "2.3rem", md: "3rem" }}
+            fontWeight={600}
+            component="div"
+          >
+            UNSW&apos;s<br/>Software Development Society
+          </Typography>
+          <Typography
+            mt={2}
+            fontSize={{ xs: "1.5rem", sm: "2rem", md: "2rem" }}
+            fontWeight={200}
+            component="div"
+          >
+            Run by devs, for devs
+          </Typography>
+        </Box>
         <Box
           ref={scrollRef}
           marginBottom={{ xs: "3rem", md: 0 }}
@@ -80,6 +42,7 @@ export default function Home() {
           sx={{
             display: "flex",
             overflowX: "auto",
+            width: "100%",
           }}
         >
           <Stack
@@ -94,6 +57,8 @@ export default function Home() {
           </Stack>
         </Box>
       </Stack>
+      <ExpandMoreIcon sx={{ fontSize: "3rem", color: "white", margin: "-100px" }}/>
+      
     </Box>
   );
 }
@@ -112,18 +77,20 @@ const LinkCard: React.FC<
     "#222222",
   ];
   return (
-    <Link href={projectUrl}>
+    <Link href={projectUrl} style={{ textDecoration: 'none' }} >
       <Card
         className="boxBackground"
         sx={{
-          width: { xs: "100%", lg: "215px" },
+          width: { xs: "100%", lg: "210px" },
           height: { xs: "5rem", lg: "86px" },
           backgroundColor: colors[order],
-          boxShadow: "sm",
-          padding: "1rem",
+          padding: "1rem 2rem",
           flexDirection: "row",
-          gap: "1.25rem",
+          justifyContent: "space-between", 
           alignItems: "center",
+          "&:hover": {
+            border: "2px grey solid", 
+          },
         }}
       >
         <AspectRatio objectFit="contain" ratio={1} sx={{ width: "3rem" }}>
@@ -145,5 +112,47 @@ const LinkCard: React.FC<
         </Typography>
       </Card>
     </Link>
+  );
+};
+
+const GradientBlob = () => {
+  const gradient = ["#a169ff",  "#9bc7f5", "#9edff8"];
+
+  return (
+    <div
+      style={{
+        position: "absolute",
+        top: "50%",
+        right: "10%", 
+        transform: "translateY(-50%)",
+        width: "40vw",
+        height: "50vh",
+        borderRadius: "50%",
+        background: `linear-gradient(45deg, ${gradient[0]}, ${gradient[1]}, ${gradient[2]})`,
+        filter: "blur(110px)",
+        opacity: 0.7,
+        zIndex: -1,
+        animation: "ripple 5s ease-in-out infinite",
+      }}
+    >
+      <style>
+        {`
+          @keyframes ripple {
+            0% {
+              transform: translateY(-50%) scale(1);
+              opacity: 0.7;
+            }
+            50% {
+              transform: translateY(-50%) scale(1.2);
+              opacity: 0.4;
+            }
+            100% {
+              transform: translateY(-50%) scale(1);
+              opacity: 0.7;
+            }
+          }
+        `}
+      </style>
+    </div>
   );
 };
