@@ -397,6 +397,11 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           logo: imc,
           url: "https://www.imc.com/",
         },
+        {
+          name: "Record Point",
+          logo: rp,
+          url: "https://www.recordpoint.com/",
+        },
         // {
         //   name: "ZIP Logo",
         //   logo: "https://media.boohoo.com/i/boohooamplience/zippay_new_white_nobg_1309?fmt=webp",
