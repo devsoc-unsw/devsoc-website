@@ -1,12 +1,13 @@
 "use client";
 import { AspectRatio, Card, Stack, Typography } from "@mui/joy";
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 import { Box, Link } from "@mui/material";
 import { projectData } from "../data";
 import { ProjectCardProps } from "../components/ProjectCard";
 import Image from "next/image";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import "./styles.css";
+import IrlPhotos from "../components/IrlPhotos";
 
 export default function Home() {
   const scrollRef = useRef<HTMLDivElement | null>(null);
@@ -15,14 +16,15 @@ export default function Home() {
   );
 
   return (
-    <Box display="flex" flexDirection="column" alignItems="center" position="relative">
+    <Box display="flex" flexDirection="column" alignItems="center" position="relative" width="100%">
       <GradientBlob />
-      <Stack sx={{ padding: 10, display: "flex", justifyContent: "center", alignItems: "center", minHeight: "calc(100vh - 75px)" }}>
+      <Stack sx={{ position: "relative", padding: 10, display: "flex", justifyContent: "center", alignItems: "center", minHeight: "calc(100vh - 75px)" }}>
         <Box sx={{ width: "100%" }}>
           <Typography
             fontSize={{ xs: "2rem", sm: "2.3rem", md: "3rem" }}
             fontWeight={600}
             component="div"
+            sx={{ color: "white" }}
           >
             UNSW&apos;s<br/>Software Development Society
           </Typography>
@@ -57,8 +59,8 @@ export default function Home() {
           </Stack>
         </Box>
       </Stack>
-      <ExpandMoreIcon sx={{ fontSize: "3rem", color: "white", margin: "-100px" }}/>
-      
+      {/* <ExpandMoreIcon sx={{ fontSize: "3rem", color: "white", margin: "-100px" }}/>
+      <IrlPhotos /> */}
     </Box>
   );
 }
@@ -121,7 +123,7 @@ const GradientBlob = () => {
   return (
     <div
       style={{
-        position: "absolute",
+        position: "fixed",
         top: "50%",
         right: "10%", 
         transform: "translateY(-50%)",
@@ -144,7 +146,7 @@ const GradientBlob = () => {
             }
             50% {
               transform: translateY(-50%) scale(1.2);
-              opacity: 0.4;
+              opacity: 0.3;
             }
             100% {
               transform: translateY(-50%) scale(1);
