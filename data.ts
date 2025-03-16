@@ -43,6 +43,7 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 export const navData = [
   { text: "About", href: "/about-us" },
   { text: "Projects", href: "/our-projects" },
+  { text: "Events", href: "/events" },
   { text: "Starlight", href: "/starlight" },
   { text: "Get Involved", href: "/get-involved" },
   { text: "Sponsors", href: "/supporters" },
@@ -539,4 +540,164 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
       ],
     },
   ],
+};
+
+export interface EventsData {
+  eventId: number;
+  url: string;
+  blurb?: string;
+}
+
+export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
+  2025: {
+    t1: [
+      {
+        eventId: 871129181620045,
+        url: "/events/2025/t1/training-recruitment.jpg",
+      },
+      {
+        eventId: 960750976153060,
+        url: "/events/2025/t1/o-week.jpg",
+      },
+      {
+        eventId: 1784366812405086,
+        url: "/events/2025/t1/alumni-panel.jpg",
+      },
+      {
+        eventId: 645810791219709,
+        url: "/events/2025/t1/subcom-recruitment.jpg",
+      },
+      {
+        eventId: 1640016264063435,
+        url: "/events/2025/t1/director-meet-greet.jpg",
+      },
+      {
+        eventId: 956373929944745,
+        url: "/events/2025/t1/resume-workshop.jpg",
+      },
+      {
+        eventId: 4185180705043824,
+        url: "/events/2025/t1/arista-bbq.jpg",
+      },
+      {
+        eventId: 2851307125046408,
+        url: "/events/2025/t1/hackabyte.jpg",
+        blurb: `Sign up to DevSoc's first hackathon of the year – HACKaByte 🤖 – with a chance to win some amazing merch and prizes 💸 ! \n
+In collaboration with Jane Street and theTradeDesk, HACKaByte will be a 3 day hackathon.\n
+❗Registation is required❗\n
+🗓️ 𝗪𝗛𝗘𝗡: Week 6 Monday to Wednesday (24/03 - 26/03)`
+      },
+      {
+        eventId: 1283127062792775,
+        url: "/events/2025/t1/ttd-bbq.jpg",
+        blurb: `Grab a quick bite to satiate those hunger pangs and feast on some fresh glizzies 🌭!\n
+Learn more about theTradeDesk, a leading marketing software company and their opportunities! ⚙️\n
+🗓️ 𝗪𝗛𝗘𝗡: Week 5 Tuesday (18/03)
+🕰️ 𝗧𝗜𝗠𝗘: 12-2pm
+📍 𝗪𝗛𝗘𝗥𝗘: Library Lawn`
+      },
+    ],
+    t2: [],
+    t3: [],
+  },
+  2024: {
+    t1: [
+      {
+        eventId: 408235398306055,
+        url: "/events/2024/t1/trainee-recruitment.jpg",
+      },
+      {
+        eventId: 7218786831515014,
+        url: "/events/2024/t1/lead-recruitment.jpg",
+      },
+      {
+        eventId: 264622273172892,
+        url: "/events/2024/t1/o-week.jpg",
+      },
+      {
+        eventId: 275798828666607,
+        url: "/events/2024/t1/subcom-recruitment.jpg",
+      },
+      {
+        eventId: 2153641741645762,
+        url: "/events/2024/t1/director-meet-greet.jpg",
+      },
+      {
+        eventId: 1395740467719443,
+        url: "/events/2024/t1/resume-workshop.jpg",
+      },
+      {
+        eventId: 1140261576981892,
+        url: "/events/2024/t1/alumni-panel.jpg",
+      },
+    ],
+    t2: [
+      {
+        eventId: 978083463697396,
+        url: "/events/2024/t2/training-recruitment.jpg",
+      },
+      {
+        eventId: 1426532081562135,
+        url: "/events/2024/t2/games-night.jpg",
+      },
+      {
+        eventId: 440888395551383,
+        url: "/events/2024/t2/behavioural-workshop.jpg",
+      },
+      {
+        eventId: 1638626536886940,
+        url: "/events/2024/t2/3d-animation-workshop.jpg",
+      },
+      {
+        eventId: 806747934751895,
+        url: "/events/2024/t2/technical-workshop.jpg",
+      },
+      {
+        eventId: 995424298591300,
+        url: "/events/2024/t2/starlight.jpg",
+      },
+      {
+        eventId: 812985947468897,
+        url: "/events/2024/t2/bbq.jpg",
+      },
+    ],
+    t3: [
+      {
+        eventId: 1509821806303887,
+        url: "/events/2024/t3/training-recruitment.jpg",
+      },
+      {
+        eventId: 1782876068915405,
+        url: "/events/2024/t3/programming-terms-irl.jpg",
+      },
+      {
+        eventId: 1238021360714510,
+        url: "/events/2024/t3/brain-busters.jpg",
+      },
+      {
+        eventId: 1035358768318854,
+        url: "/events/2024/t3/blueprint-hackathon.jpg",
+      },
+      {
+        eventId: 428430126479506,
+        url: "/events/2024/t3/fmaa-alternate-pathway.jpg",
+      },
+      {
+        eventId: 391230697254986,
+        url: "/events/2024/t3/techspire.jpg",
+      },
+      {
+        eventId: 1586760535262553,
+        url: "/events/2024/t3/clubs-takeover.jpg",
+      },
+      {
+        eventId: 969014061938215,
+        url: "/events/2024/t3/director-recruitment.jpg",
+      },
+      {
+        eventId: 1213002186585963,
+        url: "/events/2024/t3/scratch-showdown.jpg",
+      },
+    ],
+  }
 };
