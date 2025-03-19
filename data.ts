@@ -397,7 +397,7 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
         {
           name: "QRT",
           logo: qrt,
-          url: "https://careers.tiktok.com/",
+          url: "https://www.qube-rt.com/careers/",
         },
         {
           name: "Record Point",
