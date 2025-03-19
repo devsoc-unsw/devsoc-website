@@ -20,6 +20,7 @@ import sig from "./assets/sig.png";
 import imc from "./assets/imc.png";
 import sc from "./assets/sc.png";
 import quickli from "./assets/quickli.png";
+import qrt from "./assets/qrt.svg";
 import zurich from "./assets/zurich.png";
 import citadel from "./assets/citadel.png";
 import optiver from "./assets/optiver.png";
@@ -376,11 +377,7 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           logo: sc,
           url: "https://safetyculture.com/",
         },
-        // {
-        //   name: "TikTok",
-        //   logo: tiktok,
-        //   url: "https://careers.tiktok.com/",
-        // },
+
       ],
     },
     {
@@ -396,6 +393,22 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           logo: imc,
           url: "https://www.imc.com/",
         },
+        {
+          name: "QRT",
+          logo: qrt,
+          url: "https://careers.tiktok.com/",
+        },
+        {
+          name: "Record Point",
+          logo: rp,
+          url: "https://www.recordpoint.com/",
+        },
+        {
+          name: "TikTok",
+          logo: tiktok,
+          url: "https://careers.tiktok.com/",
+        },
+
         // {
         //   name: "ZIP Logo",
         //   logo: "https://media.boohoo.com/i/boohooamplience/zippay_new_white_nobg_1309?fmt=webp",
