@@ -580,6 +580,10 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
         url: "/events/2025/t1/arista-bbq.jpg",
       },
       {
+        eventId: 1283127062792775,
+        url: "/events/2025/t1/ttd-bbq.jpg",
+      },
+      {
         eventId: 2851307125046408,
         url: "/events/2025/t1/hackabyte.jpg",
         blurb: `Sign up to DevSoc's first hackathon of the year – HACKaByte 🤖 – with a chance to win some amazing merch and prizes 💸 ! \n
@@ -588,13 +592,13 @@ In collaboration with Jane Street and theTradeDesk, HACKaByte will be a 3 day ha
 🗓️ 𝗪𝗛𝗘𝗡: Week 6 Monday to Wednesday (24/03 - 26/03)`
       },
       {
-        eventId: 1283127062792775,
-        url: "/events/2025/t1/ttd-bbq.jpg",
-        blurb: `Grab a quick bite to satiate those hunger pangs and feast on some fresh glizzies 🌭!\n
-Learn more about theTradeDesk, a leading marketing software company and their opportunities! ⚙️\n
-🗓️ 𝗪𝗛𝗘𝗡: Week 5 Tuesday (18/03)
-🕰️ 𝗧𝗜𝗠𝗘: 12-2pm
-📍 𝗪𝗛𝗘𝗥𝗘: Library Lawn`
+        eventId: 522815864195391,
+        url: "/events/2025/t1/careers-fair.jpg",
+        blurb: `Join us at the DevSoc x DataSoc x Mathsoc Careers Fair, where you can network with recruiters and get all your burning questions answered 🔥\n
+Come swing by for free food 🍕 , free advice 💬 , and endless opportunities! 🚀\n
+📅 𝗪𝗛𝗘𝗡: Week 7 Monday (31/03)
+🕑 𝗧𝗜𝗠𝗘: 2PM - 5PM
+📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: Roundhouse Conference Room 5 & 6`
       },
     ],
     t2: [],
