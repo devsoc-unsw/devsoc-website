@@ -85,6 +85,7 @@ const LinkCard: React.FC<
         sx={{
           width: { xs: "100%", lg: "210px" },
           height: { xs: "5rem", lg: "86px" },
+          borderColor: colors[order],
           backgroundColor: colors[order],
           padding: "1rem 2rem",
           flexDirection: "row",
