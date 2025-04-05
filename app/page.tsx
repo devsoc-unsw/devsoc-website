@@ -30,7 +30,7 @@ export default function Home() {
           </Typography>
           <Typography
             mt={2}
-            fontSize={{ xs: "1.5rem", sm: "2rem", md: "2rem" }}
+            fontSize={{ xs: "1rem", sm: "1rem", md: "1.5rem" }}
             fontWeight={200}
             component="div"
           >
@@ -119,21 +119,17 @@ const LinkCard: React.FC<
 };
 
 const GradientBlob = () => {
-  const gradient = ["#a169ff",  "#9bc7f5", "#9edff8"];
-
   return (
     <div
       style={{
         position: "fixed",
         top: "50%",
         right: "10%", 
-        transform: "translateY(-50%)",
         width: "40vw",
         height: "50vh",
-        borderRadius: "50%",
-        background: `linear-gradient(45deg, ${gradient[0]}, ${gradient[1]}, ${gradient[2]})`,
+        background: "url('/home/gradient.svg') no-repeat center center",
+        backgroundSize: "150%",
         filter: "blur(110px)",
-        opacity: 0.7,
         zIndex: -1,
         animation: "ripple 5s ease-in-out infinite",
       }}

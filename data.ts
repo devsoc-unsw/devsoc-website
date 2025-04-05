@@ -599,19 +599,37 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
       {
         eventId: 2851307125046408,
         url: "/events/2025/t1/hackabyte.jpg",
-        blurb: `Sign up to DevSoc's first hackathon of the year – HACKaByte 🤖 – with a chance to win some amazing merch and prizes 💸 ! \n
-In collaboration with Jane Street and theTradeDesk, HACKaByte will be a 3 day hackathon.\n
-❗Registation is required❗\n
-🗓️ 𝗪𝗛𝗘𝗡: Week 6 Monday to Wednesday (24/03 - 26/03)`
       },
       {
         eventId: 522815864195391,
         url: "/events/2025/t1/careers-fair.jpg",
-        blurb: `Join us at the DevSoc x DataSoc x Mathsoc Careers Fair, where you can network with recruiters and get all your burning questions answered 🔥\n
-Come swing by for free food 🍕 , free advice 💬 , and endless opportunities! 🚀\n
-📅 𝗪𝗛𝗘𝗡: Week 7 Monday (31/03)
-🕑 𝗧𝗜𝗠𝗘: 2PM - 5PM
-📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: Roundhouse Conference Room 5 & 6`
+      },
+      {
+        eventId: 1049058983717403,
+        url: "/events/2025/t1/arista-site.jpg",
+      },
+      {
+        eventId: 652045011121247,
+        url: "/events/2025/t1/citadel-technical-interview.jpg",
+      },
+      {
+        eventId: 1310327673376810,
+        url: "/events/2025/t1/clubs-takeover.jpg",
+        blurb: `Feeling burnt out from classes? 😭
+Need a quick pick-me-up? 😋 \n
+Come along to DevSoc’s Clubs Takeover where we’ll be giving out 🍔 FREE FOOD 🍔 and 🧃DRINKS 🧃\n
+📆 𝗪𝗛𝗘𝗡: Week 8 Tuesday, 8th April 2025
+⏰ 𝗧𝗜𝗠𝗘: 12PM - 2PM 
+📍𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: UNSW Quad`
+      },
+      {
+        eventId: 1312081666752516,
+        url: "/events/2025/t1/leetcode-workshop.jpg",
+        blurb: `Leetcode got you RECURSIVELY asking why you chose Comp Sci? 😖 \n
+Trying to sort things out in O(1) time? 😭 QUEUE up and STACK up on those coding skills so you can POP off on your next technical 👔😎\n
+📅 𝗪𝗛𝗘𝗡: Week 8 Tuesday (08/04)
+🕑 𝗧𝗜𝗠𝗘: 4PM - 6PM
+📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: Mathews 104`
       },
     ],
     t2: [],
