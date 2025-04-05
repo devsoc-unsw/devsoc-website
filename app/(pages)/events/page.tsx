@@ -11,14 +11,14 @@ export const metadata: Metadata = {
 
 export default function EventsPage() {
   return (
-    <>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
       <PageSection title="Upcoming Events">
         <CurEventsSection />
       </PageSection>
       <PageSection title="Past Events">
         <PastEventsSection />
       </PageSection>
-    </>
+    </div>
   )
 }
 

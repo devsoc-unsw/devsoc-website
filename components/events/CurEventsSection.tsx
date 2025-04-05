@@ -33,6 +33,14 @@ export default function CurEventSection() {
                   onClick={() =>
                     window.open(`https://www.facebook.com/events/${event.eventId}`, '_blank')
                   }
+                  sx={{
+                    "&:hover": {
+                      backgroundColor: "#32383E", 
+                      borderRadius: "10px",
+
+                    },
+                    marginTop: 1,
+                  }}
                 >
                   <Grid xs={12} sm={6} component="div" pt={2}>
                     <Image

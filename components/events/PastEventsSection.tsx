@@ -55,7 +55,19 @@ export default function PastEventsSection() {
           <Grid container spacing={2}>
             {events[termKey].map((event, eventIndex) => (
               event.blurb ? null : (
-                <Grid xs={12} sm={6} md={4} key={eventIndex} component="div">
+                <Grid 
+                  xs={12} 
+                  sm={6} 
+                  md={4} 
+                  key={eventIndex} 
+                  component="div" 
+                  sx={{
+                    "&:hover": {
+                      backgroundColor: "#32383E", 
+                      borderRadius: "5px",
+                    },
+                  }}
+                >
                   <div
                     onClick={() =>
                       window.open(`https://www.facebook.com/events/${event.eventId}`, '_blank')
@@ -71,7 +83,6 @@ export default function PastEventsSection() {
                         position: 'absolute',
                         top: 0,
                         left: 0,
-
                       }}
                     />
                   </div>
