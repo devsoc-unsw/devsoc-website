@@ -615,21 +615,28 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
       {
         eventId: 1310327673376810,
         url: "/events/2025/t1/clubs-takeover.jpg",
-        blurb: `Feeling burnt out from classes? 😭
-Need a quick pick-me-up? 😋 \n
-Come along to DevSoc’s Clubs Takeover where we’ll be giving out 🍔 FREE FOOD 🍔 and 🧃DRINKS 🧃\n
-📆 𝗪𝗛𝗘𝗡: Week 8 Tuesday, 8th April 2025
-⏰ 𝗧𝗜𝗠𝗘: 12PM - 2PM 
-📍𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: UNSW Quad`
       },
       {
         eventId: 1312081666752516,
         url: "/events/2025/t1/leetcode-workshop.jpg",
-        blurb: `Leetcode got you RECURSIVELY asking why you chose Comp Sci? 😖 \n
-Trying to sort things out in O(1) time? 😭 QUEUE up and STACK up on those coding skills so you can POP off on your next technical 👔😎\n
-📅 𝗪𝗛𝗘𝗡: Week 8 Tuesday (08/04)
+      },
+      {
+        eventId: 642914275228467,
+        url: "/events/2025/t1/behaviour-workshop.jpg",
+        blurb: `🚨 Behavioural interviews got you sweating? 😰 Can’t just brute-force your way through these questions? 😭\n
+Time to get REAL about your answers and learn how to 𝗮𝗻𝘀𝘄𝗲𝗿 𝗮𝗻𝗱 𝗰𝗼𝗺𝗺𝘂𝗻𝗶𝗰𝗮𝘁𝗲 with confidence and clarity 💥 through our 🔥 waffle-free behavioural masterclass 🔥\n
+📅 𝗪𝗛𝗘𝗡: Week 9 Tuesday (15/04)
 🕑 𝗧𝗜𝗠𝗘: 4PM - 6PM
-📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: Mathews 104`
+📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: Pioneer Theatre, AGSM`
+      },
+      {
+        eventId: 695822716461247,
+        url: "/events/2025/t1/citadel-bbq.jpg",
+        blurb: `Looking to rekindle🔥 that spark for coding?💻\n
+Take a break from the screen and join us for one last BBQ of the term! 🎉🔥 Come for the food 🍖, stay for the vibes, and chat 🗣 with the representatives of Citadel Securities!\n
+📅 𝗪𝗛𝗘𝗡: Week 9 Thursday (17/04)
+🕑 𝗧𝗜𝗠𝗘: 12PM - 2PM
+📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: Library Lawn`
       },
     ],
     t2: [],
