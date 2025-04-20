@@ -86,17 +86,13 @@ export default function StarlightProjectsPage() {
       <PageSection title="Starlight Showcase">
         <Typography textAlign="justify">
           Starlight is a project showcase that celebrates all kinds of software
-          projects being built by passionate developers at UNSW. Submissions are
-          open to everyone that has a project they want to share! Join us on{" "}
-          <b>July 19th 4-6:30pm</b> at the <b>Roundhouse</b> to find out more
-          about the projects listed below! Voting form avaliable{" "}
-          <a href="https://forms.gle/DxfPzK2woZUxVqWT9">here</a> and questions
-          for QA Panel{" "}
-          <a href="https://app.sli.do/event/8y9xSRYtU3ZAxy4mEssUQa">here</a>.
+          projects being built by passionate developers at UNSW. The showcase
+          will be held on the 24th of July 2025. Submissions are open to
+          everyone that has a project they want to share!
         </Typography>
-        <Typography textAlign="justify">
-          If you are also interested in our tshirts our EOI form avaliable{" "}
-          <a href="https://forms.gle/BZ3ZeX9tQJYATrMd6">here</a>!
+        <Typography textAlign="justify" pt={2}>
+          Submissions will be opening <b>soon</b>! In the mean time, check out
+          last years submissions below!
         </Typography>
         <Typography level="h3" py={2} textAlign={"center"}>
           Schedule
@@ -120,7 +116,7 @@ export default function StarlightProjectsPage() {
           })}
         </Stack>
         <Typography level="h3" py={2} textAlign={"center"}>
-          Industry Guests
+          2024 Industry Guests
         </Typography>
         <Stack
           display="grid"
@@ -137,7 +133,7 @@ export default function StarlightProjectsPage() {
           })}
         </Stack>
       </PageSection>
-      <PageSection title="Submissions">
+      <PageSection title="2024 Submissions">
         <Grid container flexGrow={1} rowSpacing={3}>
           {starlightProjectData.map((props) => (
             <Grid xs={12} md={6} key={props.name}>
