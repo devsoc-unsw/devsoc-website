@@ -623,23 +623,22 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
       {
         eventId: 642914275228467,
         url: "/events/2025/t1/behaviour-workshop.jpg",
-        blurb: `🚨 Behavioural interviews got you sweating? 😰 Can’t just brute-force your way through these questions? 😭\n
-Time to get REAL about your answers and learn how to 𝗮𝗻𝘀𝘄𝗲𝗿 𝗮𝗻𝗱 𝗰𝗼𝗺𝗺𝘂𝗻𝗶𝗰𝗮𝘁𝗲 with confidence and clarity 💥 through our 🔥 waffle-free behavioural masterclass 🔥\n
-📅 𝗪𝗛𝗘𝗡: Week 9 Tuesday (15/04)
-🕑 𝗧𝗜𝗠𝗘: 4PM - 6PM
-📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: Pioneer Theatre, AGSM`
       },
       {
         eventId: 695822716461247,
         url: "/events/2025/t1/citadel-bbq.jpg",
-        blurb: `Looking to rekindle🔥 that spark for coding?💻\n
-Take a break from the screen and join us for one last BBQ of the term! 🎉🔥 Come for the food 🍖, stay for the vibes, and chat 🗣 with the representatives of Citadel Securities!\n
-📅 𝗪𝗛𝗘𝗡: Week 9 Thursday (17/04)
-🕑 𝗧𝗜𝗠𝗘: 12PM - 2PM
-📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: Library Lawn`
       },
     ],
-    t2: [],
+    t2: [{
+      eventId: 683939274224482,
+      url: "/events/2025/t2/starlight.jpg",
+      blurb: `🌟 APPLICATIONS FOR STARLIGHT ARE OPEN! 🌟\n
+Ever wanted a platform to showcase your latest project? Then Starlight is the perfect opportunity for YOU!🫵 Starlight is an open gallery event running in Week 8 of Term 2, where developers of all experience levels can showcase their projects and connect with their peers. Find more details in our FB event page!\n
+📅 𝗗𝗘𝗔𝗗𝗟𝗜𝗡𝗘: 14th July 2024 11:59pm (Week 7 Monday)
+💫 𝗦𝗛𝗢𝗪𝗖𝗔𝗦𝗘: Term 2, Week 8 Day TBC
+📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: TBD`
+    }
+    ],
     t3: [],
   },
   2024: {
