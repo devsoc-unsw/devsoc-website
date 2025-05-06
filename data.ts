@@ -629,7 +629,16 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
         url: "/events/2025/t1/citadel-bbq.jpg",
       },
     ],
-    t2: [],
+    t2: [{
+      eventId: 683939274224482,
+      url: "/events/2025/t2/starlight.jpg",
+      blurb: `🌟 APPLICATIONS FOR STARLIGHT ARE OPEN! 🌟\n
+Ever wanted a platform to showcase your latest project? Then Starlight is the perfect opportunity for YOU!🫵 Starlight is an open gallery event running in Week 8 of Term 2, where developers of all experience levels can showcase their projects and connect with their peers. Find more details in our FB event page!\n
+📅 Deadline: 14th July 2024 11:59pm (Week 7 Monday)
+💫 Showcase: Term 2, Week 8 Day TBC
+📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: TBD`
+    }
+    ],
     t3: [],
   },
   2024: {
