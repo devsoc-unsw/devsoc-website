@@ -268,10 +268,12 @@ export const recruitmentData: RecruitmentProps[] = [
   {
     position: "Training Leads",
     Icon: CoPresent,
+    applicationUrl: "https://tp.devso.cc/leads"
   },
   {
     position: "Trainees",
     Icon: School,
+    applicationUrl: "https://tp.devso.cc/trainees"
   },
 ];
 
