@@ -1007,7 +1007,7 @@ export const teamData: TeamData = {
           { name: "Connie Du", imgUrl: "c0nnied" },
           { name: "Dicko Evaldo", imgUrl: "DickoEvaldo" },
           { name: "Muqueet Mohsen Chowdhury", imgUrl: "mmc03-ucb" },
-          { name: "Shabinda Sarkaria", imgUrl: "shaykaria" },,
+          { name: "Shabinda Sarkaria", imgUrl: "shaykaria" },
           { name: "Yi Yao Wang", imgUrl: "yiyaoW11" },
         ]
       },
