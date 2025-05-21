@@ -264,6 +264,7 @@ export const recruitmentData: RecruitmentProps[] = [
   // { position: "New Projects", Icon: FlightTakeoff },
   {
     position: "Subcommittee",
+    applicationUrl: "https://tp.devso.cc/subcom",
     Icon: Groups,
   },
   {
