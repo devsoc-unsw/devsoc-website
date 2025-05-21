@@ -998,7 +998,7 @@ export const teamData: TeamData = {
         name: "Freerooms",
         directors: [
           { name: "Anh Viet Duc Nguyen", imgUrl: "avdn-dev" },
-          { name: "Micheal Tanto", imgUrl: "mt-fns" },
+          { name: "Michael Tanto", imgUrl: "mt-fns" },
         ],
         subcommittee: [
           { name: "Ben Godwin", imgUrl: "bengodw" },
@@ -1083,7 +1083,7 @@ export const teamData: TeamData = {
           { name: "Carlson Perez", imgUrl: "carlswoon" },
           { name: "Donald Chung", imgUrl: "" },
           { name: "Jimmy Kirkpatrick", imgUrl: "brokirkoo" },
-          { name: "Lee Yan Lam (Ashley)", imgUrl: "xzyams" },
+          { name: "Ashley Lee", imgUrl: "xzyams" },
           { name: "Nathaniel Tan", imgUrl: "NgTaniel" },
         ]
       },
