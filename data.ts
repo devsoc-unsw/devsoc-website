@@ -629,7 +629,44 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
         url: "/events/2025/t1/citadel-bbq.jpg",
       },
     ],
-    t2: [{
+    t2: [
+      {
+        eventId: 570192562824901,
+        url: "/events/2025/t2/o-day-t2.jpg",
+        blurb: `🚀 Join Us at Term 2 O-Day! 🚀\n
+  🤝 Meet fellow coding enthusiasts
+  🎁 Score ✨EXCLUSIVE✨ DevSoc merch
+  📅  Learn about our upcoming workshops, hackathons, and career events
+  🔧  Find out how you can join/contribute to our projects!\n
+  📅 𝗪𝗛𝗘𝗡: 26th May 10 AM – 4 PM (Monday)
+  📍 𝗪𝗛𝗘𝗥𝗘: Outside Main Library`
+      },
+      {
+        eventId: 1062484559164505,
+        url: "/events/2025/t2/rookie-code-rumble.jpg",
+        blurb: `🚨 ATTENTION ALL HACKERMANS🚨\n
+  Get ready for the SecSoc X DevSoc X CSESoc Rookie Code Rumble CTF — a week-long Capture The Flag competition that will test your hacking👾 and cybersecurity💻 skills!
+  Gather your friends in teams of 1-3 and compete for $𝟲𝟬𝟬 WORTH OF CASH PRIZES!!💰💰\n
+  🗓️ 𝗪𝗛𝗘𝗡: 30th May 6:00 PM - 6th June 11:59 PM
+  📍 𝗪𝗛𝗘𝗥𝗘: Online (kick-off location TBD)`
+      },
+      {
+        eventId: 725155683421732,
+        url: "/events/2025/t2/training-recruitment-t2.jpg",
+        blurb: `🔥DevSoc's T2 Training Program Recruitment🔥\n
+  Our 𝗔𝗪𝗔𝗥𝗗 𝗪𝗜𝗡𝗡𝗜𝗡𝗚 Training Program™️ is back again. Boost your web dev skills 📈 by making a React project from scratch as a trainee, or boost your leadership and teaching skills as a Training Lead! 💗\n
+  ⏰️ 𝗥𝗘𝗖𝗥𝗨𝗜𝗧𝗠𝗘𝗡𝗧 𝗖𝗟𝗢𝗦𝗘𝗦 on the 28th May 11:59pm!`
+      },
+      {
+        eventId: 639790979037857,
+        url: "/events/2025/t2/training-subcom-recruit.jpg",
+        blurb: `🌱 Training Program Subcom Recruitment 🌵\n
+  🚨 𝗗𝗼 𝘆𝗼𝘂 𝗹𝗼𝘃𝗲 𝘁𝗲𝗮𝗰𝗵𝗶𝗻𝗴?
+  🚨 𝗗𝗼 𝘆𝗼𝘂 𝘁𝗵𝗿𝗶𝘃𝗲 𝗼𝗻 𝗽𝗹𝗮𝗻𝗻𝗶𝗻𝗴 𝗳𝘂𝗻, 𝗺𝗲𝗮𝗻𝗶𝗻𝗴𝗳𝘂𝗹 𝗲𝘃𝗲𝗻𝘁𝘀?\n
+  Don't miss out on this ✨EXCLUSIVE✨ opportunity to join DevSoc's Training Program Subcom! 🎉\n
+  ⏳ 𝗔𝗣𝗣𝗟𝗜𝗖𝗔𝗧𝗜𝗢𝗡𝗦 𝗖𝗟𝗢𝗦𝗘: 30th May 11:59pm (Friday)`
+      },
+      {
       eventId: 683939274224482,
       url: "/events/2025/t2/starlight.jpg",
       blurb: `🌟 APPLICATIONS FOR STARLIGHT ARE OPEN! 🌟\n
