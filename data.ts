@@ -32,6 +32,7 @@ import unsw from "./assets/unsw.png";
 import arc from "./assets/arc.png";
 import csesoc from "./assets/csesocwhite.png";
 import tradedesk from "./assets/thetradedesk.png";
+import lyra from "./assets/lyra.svg";
 import arista from "./assets/arista.png";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
@@ -263,15 +264,18 @@ export const recruitmentData: RecruitmentProps[] = [
   // { position: "New Projects", Icon: FlightTakeoff },
   {
     position: "Subcommittee",
+    applicationUrl: "https://tp.devso.cc/subcom",
     Icon: Groups,
   },
   {
     position: "Training Leads",
     Icon: CoPresent,
+    applicationUrl: "https://tp.devso.cc/leads",
   },
   {
     position: "Trainees",
     Icon: School,
+    applicationUrl: "https://tp.devso.cc/trainees",
   },
 ];
 
@@ -378,7 +382,6 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           logo: sc,
           url: "https://safetyculture.com/",
         },
-
       ],
     },
     {
@@ -408,6 +411,11 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           name: "TikTok",
           logo: tiktok,
           url: "https://careers.tiktok.com/",
+        },
+        {
+          name: "Lyra Technologies",
+          logo: lyra,
+          url: "https://www.lyratechnologies.com.au/",
         },
 
         // {
@@ -667,14 +675,14 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
   ⏳ 𝗔𝗣𝗣𝗟𝗜𝗖𝗔𝗧𝗜𝗢𝗡𝗦 𝗖𝗟𝗢𝗦𝗘: 30th May 11:59pm (Friday)`
       },
       {
-      eventId: 683939274224482,
-      url: "/events/2025/t2/starlight.jpg",
-      blurb: `🌟 APPLICATIONS FOR STARLIGHT ARE OPEN! 🌟\n
+        eventId: 683939274224482,
+        url: "/events/2025/t2/starlight.jpg",
+        blurb: `🌟 APPLICATIONS FOR STARLIGHT ARE OPEN! 🌟\n
 Ever wanted a platform to showcase your latest project? Then Starlight is the perfect opportunity for YOU!🫵 Starlight is an open gallery event running in Week 8 of Term 2, where developers of all experience levels can showcase their projects and connect with their peers. Find more details in our FB event page!\n
 📅 𝗗𝗘𝗔𝗗𝗟𝗜𝗡𝗘: 14th July 2024 11:59pm (Week 7 Monday)
 💫 𝗦𝗛𝗢𝗪𝗖𝗔𝗦𝗘: Term 2, Week 8 Day TBC
-📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: TBD`
-    }
+📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: TBD`,
+      },
     ],
     t3: [],
   },
@@ -777,5 +785,5 @@ Ever wanted a platform to showcase your latest project? Then Starlight is the pe
         url: "/events/2024/t3/scratch-showdown.jpg",
       },
     ],
-  }
+  },
 };
