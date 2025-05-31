@@ -87,12 +87,22 @@ export default function StarlightProjectsPage() {
         <Typography textAlign="justify">
           Starlight is a project showcase that celebrates all kinds of software
           projects being built by passionate developers at UNSW. The showcase
-          will be held on the 24th of July 2025. Submissions are open to
-          everyone that has a project they want to share!
+          will be held on the 25th of July 2025. Submissions are open to
+          everyone that has a project they want to share! More information about
+          the event is avaliable{" "}
+          <Link
+            href="https://www.canva.com/design/DAGkribj1e8/E7BfubxdQQLadKB20Hxzww/view"
+            target="_blank"
+          >
+            here.
+          </Link>
         </Typography>
         <Typography textAlign="justify" pt={2}>
-          Submissions will be opening <b>soon</b>! In the mean time, check out
-          last years submissions below!
+          Submissions are open now! Submissions will be processed through{" "}
+          <Link href="https://devsoc-starlight.devpost.com" target="_blank">
+            Devpost
+          </Link>
+          . Check out last years submissions below!
         </Typography>
         <Typography level="h3" py={2} textAlign={"center"}>
           Schedule
