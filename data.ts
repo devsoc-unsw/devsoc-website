@@ -8,6 +8,7 @@ import {
   LinkedIn,
   School,
   FlightTakeoff,
+  AutoAwesome,
 } from "@mui/icons-material";
 import { RecruitmentProps } from "./app/(pages)/get-involved/page";
 import DiscordIcon from "./components/nav/DiscordIcon";
@@ -260,22 +261,22 @@ export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
 // Data for the "Join DevSoc" section
 // Should set/unset applicationUrl to mark recruitment as open/closed
 export const recruitmentData: RecruitmentProps[] = [
-  { position: "Directors", Icon: Lightbulb },
-  // { position: "New Projects", Icon: FlightTakeoff },
+  {
+    position: "Starlight",
+    Icon: AutoAwesome,
+    applicationUrl: "https://devsoc-starlight.devpost.com/",
+  },
   {
     position: "Subcommittee",
-    applicationUrl: "https://tp.devso.cc/subcom",
     Icon: Groups,
   },
   {
     position: "Training Leads",
     Icon: CoPresent,
-    applicationUrl: "https://tp.devso.cc/leads",
   },
   {
     position: "Trainees",
     Icon: School,
-    applicationUrl: "https://tp.devso.cc/trainees",
   },
 ];
 
