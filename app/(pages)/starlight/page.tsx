@@ -170,9 +170,9 @@ function renderLogoRows(idx: number, sponsor: SponsorInfo, large?: boolean) {
         display: "flex",
         margin: "auto",
         marginBottom: 5,
-        height: large ? 70 : 50,
+        height: large ? 75 : 50,
         width: "100%",
-        maxWidth: large ? 200 : 170,
+        maxWidth: large ? 210 : 170,
         padding: 0.5,
       }}
     >
