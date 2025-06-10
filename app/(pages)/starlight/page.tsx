@@ -126,7 +126,7 @@ export default function StarlightProjectsPage() {
           })}
         </Stack>
         <Typography level="h3" py={2} textAlign={"center"}>
-          2024 Industry Guests
+          2025 Starlight Partners
         </Typography>
         <Stack
           display="grid"
@@ -138,8 +138,11 @@ export default function StarlightProjectsPage() {
           marginBottom={5}
           sx={{ gridGap: "20px" }}
         >
-          {starlightSupporterData["2024"].industryLogos.map((sponsor, idx) => {
-            return renderLogoRows(idx, sponsor);
+          {starlightSupporterData["2025"].partnerLogos?.map((sponsor, idx, arr) => {
+            // Please feel free to  remove this large flag if you want all logos to be the same size
+            // This is just to make the page look better
+            const large = idx >= arr.length - 3;
+            return renderLogoRows(idx, sponsor, large);
           })}
         </Stack>
       </PageSection>
@@ -156,7 +159,7 @@ export default function StarlightProjectsPage() {
   );
 }
 
-function renderLogoRows(idx: number, sponsor: SponsorInfo) {
+function renderLogoRows(idx: number, sponsor: SponsorInfo, large?: boolean) {
   return (
     <AspectRatio
       key={idx}
@@ -166,9 +169,10 @@ function renderLogoRows(idx: number, sponsor: SponsorInfo) {
       sx={{
         display: "flex",
         margin: "auto",
-        height: 50,
+        marginBottom: 5,
+        height: large ? 70 : 50,
         width: "100%",
-        maxWidth: 170,
+        maxWidth: large ? 200 : 170,
         padding: 0.5,
       }}
     >
