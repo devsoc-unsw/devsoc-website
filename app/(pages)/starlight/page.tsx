@@ -126,21 +126,36 @@ export default function StarlightProjectsPage() {
           })}
         </Stack>
         <Typography level="h3" py={2} textAlign={"center"}>
-          2024 Industry Guests
+          2025 Industry Guests
         </Typography>
         <Stack
           display="grid"
           gridTemplateColumns={{
-            xs: "repeat(auto-fit, 1fr)",
+            xs: "repeat(auto-fit, minmax(200px, 1fr))",
             md: "repeat(auto-fit, minmax(200px, 1fr))",
-            xl: "repeat(auto-fit, 1fr)",
+            xl: "repeat(auto-fit, minmax(200px, 1fr))",
           }}
-          marginBottom={5}
-          sx={{ gridGap: "20px" }}
+          marginBottom={8}
+          sx={{ gridGap: "32px" }}
         >
-          {starlightSupporterData["2024"].industryLogos.map((sponsor, idx) => {
-            return renderLogoRows(idx, sponsor);
-          })}
+          {(starlightSupporterData["2025"].industryLogos || [])
+            .map((sponsor, idx) => renderLogoRows(idx, sponsor))}
+        </Stack>
+        <Typography level="h3" py={2} textAlign={"center"}>
+          2025 Society Partners
+        </Typography>
+        <Stack
+          display="grid"
+          gridTemplateColumns={{
+            xs: "repeat(auto-fit, minmax(200px, 1fr))",
+            md: "repeat(auto-fit, minmax(200px, 1fr))",
+            xl: "repeat(auto-fit, minmax(200px, 1fr))",
+          }}
+          marginBottom={8}
+          sx={{ gridGap: "32px" }}
+        >
+          {(starlightSupporterData["2025"].societyLogos || [])
+            .map((sponsor, idx) => renderLogoRows(idx, sponsor))}
         </Stack>
       </PageSection>
       <PageSection title="2024 Submissions">
@@ -166,6 +181,7 @@ function renderLogoRows(idx: number, sponsor: SponsorInfo) {
       sx={{
         display: "flex",
         margin: "auto",
+        marginBottom: 5,
         height: 50,
         width: "100%",
         maxWidth: 170,

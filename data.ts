@@ -35,6 +35,10 @@ import csesoc from "./assets/csesocwhite.png";
 import tradedesk from "./assets/thetradedesk.png";
 import lyra from "./assets/lyra.svg";
 import arista from "./assets/arista.png";
+import createunsw from "./assets/createunsw.svg"; 
+import gmsoc from "./assets/gmsoc.png";
+import ramsoc from "./assets/ramsoc.svg";
+import redback from "./assets/redback.png";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 // General stuff:
@@ -290,7 +294,8 @@ export interface SponsorInfo {
 
 export interface StarlightSupporterData {
   supporterLogos: SponsorInfo[];
-  industryLogos: SponsorInfo[];
+  industryLogos?: SponsorInfo[];
+  societyLogos?: SponsorInfo[];
 }
 
 export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
@@ -323,6 +328,75 @@ export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
         logo: "https://media.boohoo.com/i/boohooamplience/zippay_new_white_nobg_1309?fmt=webp",
         url: "https://zip.co/au",
       },
+    ],
+  },
+  2025: {
+    supporterLogos: [
+      {
+        name: "UNSW",
+        logo: unsw,
+        url: "https://www.unsw.edu.au/",
+      },
+      {
+        name: "Arc",
+        logo: arc,
+        url: "https://www.arc.unsw.edu.au/",
+      },
+      {
+        name: "Roundhouse",
+        logo: "https://www.arc.unsw.edu.au/assets/images/roundhouse-header.svg",
+        url: "https://www.arc.unsw.edu.au/roundhouse",
+      },
+    ],
+    industryLogos: [
+      {
+        name: "Lyra Technologies",
+        logo: lyra,
+        url: "https://www.lyratechnologies.com.au/",
+      },
+      {
+        name: "imc",
+        logo: imc,
+        url: "https://www.imc.com/",
+      },
+      {
+        name: "Jane Street",
+        logo: janeStreet,
+        url: "https://www.janestreet.com/",
+      },
+      {
+        name: "Macquarie",
+        logo: macquarie,
+        url: "https://www.macquarie.com/au/en.html",
+      },
+      {
+        name: "The Trade Desk",
+        logo: tradedesk,
+        url: "https://careers.thetradedesk.com/",
+      },
+    ],
+    societyLogos: [
+           {
+        name: "Create UNSW",
+        logo: createunsw,
+        url: "https://www.createunsw.com.au/",
+      },
+      {
+        name: "RAMSoc",
+        logo: ramsoc,
+        url: "https://ramsocunsw.org/",
+      },
+      {
+        name: "Game Makers Society",
+        logo: gmsoc,
+        url: "https://www.arc.unsw.edu.au/get-involved/opportunity?name=Game%20Making%20Society",
+      },
+      {
+        name: "Redback Racing",
+        logo: redback,
+        url: "https://www.redbackracing.com/",
+      },
+
     ],
   },
 };
