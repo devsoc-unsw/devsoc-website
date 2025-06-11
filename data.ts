@@ -295,7 +295,7 @@ export interface SponsorInfo {
 export interface StarlightSupporterData {
   supporterLogos: SponsorInfo[];
   industryLogos?: SponsorInfo[];
-  partnerLogos?: SponsorInfo[];
+  societyLogos?: SponsorInfo[];
 }
 
 export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
@@ -348,8 +348,35 @@ export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
         url: "https://www.arc.unsw.edu.au/roundhouse",
       },
     ],
-    partnerLogos: [
+    industryLogos: [
       {
+        name: "Lyra Technologies",
+        logo: lyra,
+        url: "https://www.lyratechnologies.com.au/",
+      },
+      {
+        name: "imc",
+        logo: imc,
+        url: "https://www.imc.com/",
+      },
+      {
+        name: "Jane Street",
+        logo: janeStreet,
+        url: "https://www.janestreet.com/",
+      },
+      {
+        name: "Macquarie",
+        logo: macquarie,
+        url: "https://www.macquarie.com/au/en.html",
+      },
+      {
+        name: "The Trade Desk",
+        logo: tradedesk,
+        url: "https://careers.thetradedesk.com/",
+      },
+    ],
+    societyLogos: [
+           {
         name: "Create UNSW",
         logo: createunsw,
         url: "https://www.createunsw.com.au/",
@@ -360,26 +387,16 @@ export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
         url: "https://ramsocunsw.org/",
       },
       {
-        name: "Redback Racing",
-        logo: redback,
-        url: "https://www.redbackracing.com/",
-      },
-      {
         name: "Game Makers Society",
         logo: gmsoc,
         url: "https://www.arc.unsw.edu.au/get-involved/opportunity?name=Game%20Making%20Society",
       },
-      { 
-        name: "Safety Culture",
-        logo: sc,
-        url: "https://safetyculture.com/",
-      },
       {
-        name: "theTradeDesk",
-        logo: tradedesk,
-        url: "https://careers.thetradedesk.com/",
-      }
-      
+        name: "Redback Racing",
+        logo: redback,
+        url: "https://www.redbackracing.com/",
+      },
+
     ],
   },
 };

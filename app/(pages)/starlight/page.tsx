@@ -126,24 +126,36 @@ export default function StarlightProjectsPage() {
           })}
         </Stack>
         <Typography level="h3" py={2} textAlign={"center"}>
-          2025 Starlight Partners
+          2025 Industry Guests
         </Typography>
         <Stack
           display="grid"
           gridTemplateColumns={{
-            xs: "repeat(auto-fit, 1fr)",
+            xs: "repeat(auto-fit, minmax(200px, 1fr))",
             md: "repeat(auto-fit, minmax(200px, 1fr))",
-            xl: "repeat(auto-fit, 1fr)",
+            xl: "repeat(auto-fit, minmax(200px, 1fr))",
           }}
-          marginBottom={5}
-          sx={{ gridGap: "20px" }}
+          marginBottom={8}
+          sx={{ gridGap: "32px" }}
         >
-          {starlightSupporterData["2025"].partnerLogos?.map((sponsor, idx, arr) => {
-            // Please feel free to  remove this large flag if you want all logos to be the same size
-            // This is just to make the page look better
-            const large = idx >= arr.length - 3;
-            return renderLogoRows(idx, sponsor, large);
-          })}
+          {(starlightSupporterData["2025"].industryLogos || [])
+            .map((sponsor, idx) => renderLogoRows(idx, sponsor))}
+        </Stack>
+        <Typography level="h3" py={2} textAlign={"center"}>
+          2025 Society Partners
+        </Typography>
+        <Stack
+          display="grid"
+          gridTemplateColumns={{
+            xs: "repeat(auto-fit, minmax(200px, 1fr))",
+            md: "repeat(auto-fit, minmax(200px, 1fr))",
+            xl: "repeat(auto-fit, minmax(200px, 1fr))",
+          }}
+          marginBottom={8}
+          sx={{ gridGap: "32px" }}
+        >
+          {(starlightSupporterData["2025"].societyLogos || [])
+            .map((sponsor, idx) => renderLogoRows(idx, sponsor))}
         </Stack>
       </PageSection>
       <PageSection title="2024 Submissions">
@@ -159,7 +171,7 @@ export default function StarlightProjectsPage() {
   );
 }
 
-function renderLogoRows(idx: number, sponsor: SponsorInfo, large?: boolean) {
+function renderLogoRows(idx: number, sponsor: SponsorInfo) {
   return (
     <AspectRatio
       key={idx}
@@ -170,9 +182,9 @@ function renderLogoRows(idx: number, sponsor: SponsorInfo, large?: boolean) {
         display: "flex",
         margin: "auto",
         marginBottom: 5,
-        height: large ? 75 : 50,
+        height: 50,
         width: "100%",
-        maxWidth: large ? 210 : 170,
+        maxWidth: 170,
         padding: 0.5,
       }}
     >
