@@ -37,6 +37,7 @@ import lyra from "./assets/lyra.svg";
 import arista from "./assets/arista.png";
 import createunsw from "./assets/createunsw.svg"; 
 import gmsoc from "./assets/gmsoc.png";
+import gmsoc2 from "./assets/gmsoc2.png";
 import ramsoc from "./assets/ramsoc.svg";
 import redback from "./assets/redback.png";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
@@ -302,19 +303,24 @@ export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
   2024: {
     supporterLogos: [
       {
-        name: "UNSW",
-        logo: unsw,
-        url: "https://www.unsw.edu.au/",
-      },
-      {
         name: "Arc",
         logo: arc,
         url: "https://www.arc.unsw.edu.au/",
       },
       {
+        name: "CSE",
+        logo: cse,
+        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
+      },
+      {
         name: "Roundhouse",
         logo: "https://www.arc.unsw.edu.au/assets/images/roundhouse-header.svg",
         url: "https://www.arc.unsw.edu.au/roundhouse",
+      },
+       {
+        name: "UNSW",
+        logo: unsw,
+        url: "https://www.unsw.edu.au/",
       },
     ],
     industryLogos: [
@@ -350,6 +356,11 @@ export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
     ],
     industryLogos: [
       {
+        name: "Arista",
+        logo: arista,
+        url: "https://www.arista.com/en/",
+      },
+      {
         name: "Lyra Technologies",
         logo: lyra,
         url: "https://www.lyratechnologies.com.au/",
@@ -365,9 +376,9 @@ export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
         url: "https://www.janestreet.com/",
       },
       {
-        name: "Macquarie",
-        logo: macquarie,
-        url: "https://www.macquarie.com/au/en.html",
+        name: "Safety Culture",
+        logo: sc,
+        url: "https://safetyculture.com/",
       },
       {
         name: "The Trade Desk",
@@ -381,16 +392,17 @@ export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
         logo: createunsw,
         url: "https://www.createunsw.com.au/",
       },
+            {
+        name: "Game Makers Society",
+        logo: gmsoc2,
+        url: "https://www.arc.unsw.edu.au/get-involved/opportunity?name=Game%20Making%20Society",
+      },
       {
         name: "RAMSoc",
         logo: ramsoc,
         url: "https://ramsocunsw.org/",
       },
-      {
-        name: "Game Makers Society",
-        logo: gmsoc,
-        url: "https://www.arc.unsw.edu.au/get-involved/opportunity?name=Game%20Making%20Society",
-      },
+
       {
         name: "Redback Racing",
         logo: redback,
