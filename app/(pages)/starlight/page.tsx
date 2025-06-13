@@ -114,15 +114,14 @@ export default function StarlightProjectsPage() {
         <Stack
           display="grid"
           gridTemplateColumns={{
-            xs: "repeat(auto-fit, 1fr)",
-            md: "repeat(auto-fit, minmax(200px, 1fr))",
-            xl: "repeat(auto-fit, 1fr)",
+            sm: "repeat(2, 1fr)",
+            md: "repeat(4, 1fr)",
           }}
           marginBottom={5}
           sx={{ gridGap: "20px" }}
         >
           {starlightSupporterData["2024"].supporterLogos.map((sponsor, idx) => {
-            return renderLogoRows(idx, sponsor);
+            return renderLogoRows(idx, sponsor, "small");
           })}
         </Stack>
         <Typography level="h3" py={2} textAlign={"center"}>
@@ -147,15 +146,14 @@ export default function StarlightProjectsPage() {
         <Stack
           display="grid"
           gridTemplateColumns={{
-            xs: "repeat(auto-fit, minmax(200px, 1fr))",
-            md: "repeat(auto-fit, minmax(200px, 1fr))",
-            xl: "repeat(auto-fit, minmax(200px, 1fr))",
+            sm: "repeat(2, 1fr)",
+            md: "repeat(4, 1fr)",
           }}
           marginBottom={8}
           sx={{ gridGap: "32px" }}
         >
           {(starlightSupporterData["2025"].societyLogos || [])
-            .map((sponsor, idx) => renderLogoRows(idx, sponsor))}
+            .map((sponsor, idx) => renderLogoRows(idx, sponsor, "small"))}
         </Stack>
       </PageSection>
       <PageSection title="2024 Submissions">
@@ -171,7 +169,13 @@ export default function StarlightProjectsPage() {
   );
 }
 
-function renderLogoRows(idx: number, sponsor: SponsorInfo) {
+function renderLogoRows(idx: number, sponsor: SponsorInfo, size: "small" | "large" = "large") {
+  const isRamsoc = sponsor.name && sponsor.name.toLowerCase().includes("ramsoc");
+  const sizeProps = isRamsoc
+    ? { height: 40, maxWidth: 100 }
+    : size === "small"
+      ? { height: 50, maxWidth: 130 }
+      : { height: 50, maxWidth: 170 };
   return (
     <AspectRatio
       key={idx}
@@ -181,11 +185,9 @@ function renderLogoRows(idx: number, sponsor: SponsorInfo) {
       sx={{
         display: "flex",
         margin: "auto",
-        marginBottom: 5,
-        height: 50,
         width: "100%",
-        maxWidth: 170,
         padding: 0.5,
+        ...sizeProps,
       }}
     >
       <Link target="_blank" href={sponsor.url}>
