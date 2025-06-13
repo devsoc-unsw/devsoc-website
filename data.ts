@@ -37,7 +37,6 @@ import lyra from "./assets/lyra.svg";
 import arista from "./assets/arista.png";
 import createunsw from "./assets/createunsw.svg"; 
 import gmsoc from "./assets/gmsoc.png";
-import gmsoc2 from "./assets/gmsoc2.png";
 import ramsoc from "./assets/ramsoc.svg";
 import redback from "./assets/redback.png";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
@@ -350,6 +349,11 @@ export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
       },
     ],
     industryLogos: [
+      {
+        name: "Lyra Technologies",
+        logo: lyra,
+        url: "https://www.lyratechnologies.com.au/",
+      },
       {
         name: "imc",
         logo: imc,
