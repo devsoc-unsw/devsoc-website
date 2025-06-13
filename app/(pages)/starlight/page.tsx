@@ -14,6 +14,7 @@ import Step, { stepClasses } from "@mui/joy/Step";
 import HailRoundedIcon from "@mui/icons-material/HailRounded";
 import KeyboardVoiceRoundedIcon from "@mui/icons-material/KeyboardVoiceRounded";
 import WavingHandRoundedIcon from "@mui/icons-material/WavingHandRounded";
+import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import Image from "next/image";
 
 export const metadata: Metadata = {
@@ -49,32 +50,32 @@ function StarlightStepper() {
         orientation="vertical"
         indicator={
           <StepIndicator variant="solid" color="primary">
-            <HailRoundedIcon />
+             <WavingHandRoundedIcon />
           </StepIndicator>
         }
       >
-        <StepperLabel text="4pm - Project Introduction" />
+        <StepperLabel text="4pm - Meet the projects" />
       </Step>
       <Step
         orientation="vertical"
-        indicator={
-          <StepIndicator variant="solid" color="primary">
-            <WavingHandRoundedIcon />
-          </StepIndicator>
-        }
-      >
-        <StepperLabel text="4:30pm - Meet the projects"></StepperLabel>
-      </Step>
-      <Step
-        orientation="vertical"
-        disabled
         indicator={
           <StepIndicator variant="solid" color="primary">
             <KeyboardVoiceRoundedIcon />
           </StepIndicator>
         }
       >
-        <StepperLabel text="5:30pm - QA Panel & Prizes"></StepperLabel>
+        <StepperLabel text="6pm - QA Panel"></StepperLabel>
+      </Step>
+      <Step
+        orientation="vertical"
+        disabled
+        indicator={
+          <StepIndicator variant="solid" color="primary">
+            <EmojiEventsIcon />
+          </StepIndicator>
+        }
+      >
+        <StepperLabel text="7pm - Prize Annoucement"></StepperLabel>
       </Step>
     </Stepper>
   );
@@ -108,6 +109,7 @@ export default function StarlightProjectsPage() {
           Schedule
         </Typography>
         <StarlightStepper />
+        <Box sx={{ pb: 4}} />
         <Typography level="h3" py={2} textAlign={"center"}>
           Supporters
         </Typography>
