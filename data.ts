@@ -639,6 +639,16 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
     ],
     t2: [
       {
+        eventId: 681334814788758,
+        url: "/events/2025/t2/industryMentoring.jpg",
+        blurb: `✨UNSW DataSoc x DevSoc Industry Mentoring Program 2025✨
+Looking to break into data science or software engineering but don’t know where to start?
+DataSoc x DevSoc’s Industry Mentoring Program connects ambitious UNSW students with experienced professionals 
+👩‍💼👨‍💻 who are ready to share their journey, wisdom, and advice
+  🤝 𝗢𝗣𝗘𝗡𝗜𝗡𝗚 𝗡𝗜𝗚𝗛𝗧: 26th June
+  🗓️ 𝗔𝗣𝗣𝗟𝗜𝗖𝗔𝗧𝗜𝗢𝗡 𝗖𝗟𝗢𝗦𝗘: 21st June`
+      },
+      {
         eventId: 1380586546511605,
         url: "/events/2025/t2/paintChill.jpg",
         blurb: `Join us for a chill afternoon to unwind, get creative and let your mind wander before assignment season hits 😵‍💫😵‍💫.
