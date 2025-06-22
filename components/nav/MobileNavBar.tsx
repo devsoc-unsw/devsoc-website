@@ -85,7 +85,7 @@ const MenuDrawer: React.FC<MenuDrawerProps> = ({ open, setOpen }) => {
               justifyContent: "center"
             }}
           >
-            Shop
+           Merch 
           </ListItemButton>
       </List>
       <Divider />
