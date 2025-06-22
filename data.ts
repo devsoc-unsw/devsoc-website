@@ -40,6 +40,7 @@ import gmsoc from "./assets/gmsoc.png";
 import gmsoc2 from "./assets/gmsoc2.png";
 import ramsoc from "./assets/ramsoc.svg";
 import redback from "./assets/redback.png";
+import flowtraders from "./assets/flowtraders.png";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 // General stuff:
@@ -470,11 +471,6 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           logo: sc,
           url: "https://safetyculture.com/",
         },
-        {
-          name: "Safety Culture",
-          logo: sc,
-          url: "https://safetyculture.com/",
-        },
       ],
     },
     {
@@ -491,28 +487,10 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           url: "https://www.imc.com/",
         },
         {
-          name: "QRT",
-          logo: qrt,
-          url: "https://www.qube-rt.com/careers/",
-        },
-        {
-          name: "Record Point",
-          logo: rp,
-          url: "https://www.recordpoint.com/",
-        },
-        {
-          name: "TikTok",
-          logo: tiktok,
-          url: "https://careers.tiktok.com/",
-        },
-        {
           name: "Lyra Technologies",
           logo: lyra,
           url: "https://www.lyratechnologies.com.au/",
         },
-
-        // {
-        //   name: "ZIP Logo",
         {
           name: "QRT",
           logo: qrt,
@@ -528,17 +506,9 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           logo: tiktok,
           url: "https://careers.tiktok.com/",
         },
-        {
-          name: "Lyra Technologies",
-          logo: lyra,
-          url: "https://www.lyratechnologies.com.au/",
-        },
 
-        // {
-        //   name: "ZIP Logo",
-        //   logo: "https://media.boohoo.com/i/boohooamplience/zippay_new_white_nobg_1309?fmt=webp",
-        //   url: "https://zip.co/au",
-        // },
+
+
       ],
     },
   ],
@@ -627,7 +597,7 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
         },
         {
           name: "FlowTraders",
-          logo: "https://paragonnational.org/Companies/flow.png",
+          logo: flowtraders,
           url: "https://www.flowtraders.com/",
         },
         {
