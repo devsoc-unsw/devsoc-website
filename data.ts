@@ -639,6 +639,14 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
     ],
     t2: [
       {
+        eventId: 1744190676180232,
+        url: "/events/2025/t2/TriviaNight.jpg",
+        blurb: `Want to get your brain running for a much needed mid-term lock-in, we’ve got you covered. 
+        Participate with your friends or soon-to-be friends in a night of fun and lighthearted activities, with many prizes 🏆 to be won and some dinner at the end 🍕😋.\n
+    🗓️ 𝗪𝗛𝗘𝗡: 3rd July 5-7 PM
+    📍 𝗪𝗛𝗘𝗥𝗘: Ainsworth G02`
+      },
+      {
         eventId: 681334814788758,
         url: "/events/2025/t2/industryMentoring.jpg",
         blurb: `✨UNSW DataSoc x DevSoc Industry Mentoring Program 2025✨
@@ -649,14 +657,6 @@ DataSoc x DevSoc’s Industry Mentoring Program connects ambitious UNSW students
   🗓️ 𝗔𝗣𝗣𝗟𝗜𝗖𝗔𝗧𝗜𝗢𝗡 𝗖𝗟𝗢𝗦𝗘: 21st June`
       },
       {
-        eventId: 1380586546511605,
-        url: "/events/2025/t2/paintChill.jpg",
-        blurb: `Join us for a chill afternoon to unwind, get creative and let your mind wander before assignment season hits 😵‍💫😵‍💫.
-         No worries if your art looks like Picasso without the price tag, just come for the vibes 😎\n
-  🗓️ 𝗪𝗛𝗘𝗡: 18th June 4-6 PM
-  📍 𝗪𝗛𝗘𝗥𝗘: Mathews 104`
-      },
-      {
         eventId: 683939274224482,
         url: "/events/2025/t2/starlight.jpg",
         blurb: `🌟 APPLICATIONS FOR STARLIGHT ARE OPEN! 🌟\n
@@ -665,31 +665,35 @@ DataSoc x DevSoc’s Industry Mentoring Program connects ambitious UNSW students
     💫 𝗦𝗛𝗢𝗪𝗖𝗔𝗦𝗘: Term 2, Week 8 Day TBC
     📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: TBD`,
       },
-      
       {
-        eventId: 1648737762479606,
-        url: "/events/2025/t2/linkedinPhotoshoot.jpg",
-      },
-      {
-        eventId: 1119467540015853,
-        url: "/events/2025/t2/T2W1BBQ.jpg",
-      },
-      {
-        eventId: 1062484559164505,
-        url: "/events/2025/t2/rookie-code-rumble.jpg",
-      },
-      {
-        eventId: 570192562824901,
-        url: "/events/2025/t2/o-day-t2.jpg",
+        eventId: 639790979037857,
+        url: "/events/2025/t2/training-subcom-recruit.jpg",
       },
       {
         eventId: 725155683421732,
         url: "/events/2025/t2/training-recruitment-t2.jpg",
       },
       {
-        eventId: 639790979037857,
-        url: "/events/2025/t2/training-subcom-recruit.jpg",
+        eventId: 570192562824901,
+        url: "/events/2025/t2/o-day-t2.jpg",
       },
+      {
+        eventId: 1062484559164505,
+        url: "/events/2025/t2/rookie-code-rumble.jpg",
+      },
+      {
+        eventId: 1119467540015853,
+        url: "/events/2025/t2/T2W1BBQ.jpg",
+      },
+      {
+        eventId: 1648737762479606,
+        url: "/events/2025/t2/linkedinPhotoshoot.jpg",
+      },
+      {
+        eventId: 1380586546511605,
+        url: "/events/2025/t2/paintChill.jpg",
+      },
+      
     ],
     t3: [],
   },
