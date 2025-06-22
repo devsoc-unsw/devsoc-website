@@ -44,8 +44,8 @@ const SupportersPageContent: React.FC<SupportersPageContentProps> = ({
         {selectedYear} Supporters
       </Typography> */}
 
-      {sectionsForYear?.map((section) => (
-        <InfoBar message={section.infoBar ?? ""}/>
+      {sectionsForYear?.map((section, idx) => (
+        <InfoBar key={idx} message={section.infoBar ?? ""}/>
       ))}
 
       {sectionsForYear?.map((section, idx) => (
