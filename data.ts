@@ -414,6 +414,7 @@ export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
 };
 
 export interface SupporterData {
+  infoBar?: string;
   title: string;
   subtitle?: string;
   logos: SponsorInfo[];
@@ -469,6 +470,11 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           logo: sc,
           url: "https://safetyculture.com/",
         },
+        {
+          name: "Safety Culture",
+          logo: sc,
+          url: "https://safetyculture.com/",
+        },
       ],
     },
     {
@@ -507,6 +513,29 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
 
         // {
         //   name: "ZIP Logo",
+        {
+          name: "QRT",
+          logo: qrt,
+          url: "https://www.qube-rt.com/careers/",
+        },
+        {
+          name: "Record Point",
+          logo: rp,
+          url: "https://www.recordpoint.com/",
+        },
+        {
+          name: "TikTok",
+          logo: tiktok,
+          url: "https://careers.tiktok.com/",
+        },
+        {
+          name: "Lyra Technologies",
+          logo: lyra,
+          url: "https://www.lyratechnologies.com.au/",
+        },
+
+        // {
+        //   name: "ZIP Logo",
         //   logo: "https://media.boohoo.com/i/boohooamplience/zippay_new_white_nobg_1309?fmt=webp",
         //   url: "https://zip.co/au",
         // },
@@ -515,6 +544,7 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
   ],
   2024: [
     {
+      infoBar: "In 2024, CSESoc and DevSoc collaborated on a joint sponsorship programme.",
       title: "Project Sponsors",
       logos: [
         {
@@ -536,7 +566,7 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
     },
     {
       title: "Diamond Tier",
-      subtitle: "CSESoc & DevSoc Joint Sponsorship Drive",
+      // subtitle: "CSESoc & DevSoc Joint Sponsorship Drive",
       logos: [
         {
           name: "Jane Street",
@@ -552,7 +582,7 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
     },
     {
       title: "Gold Tier",
-      subtitle: "CSESoc & DevSoc Joint Sponsorship Drive",
+      // subtitle: "CSESoc & DevSoc Joint Sponsorship Drive",
       logos: [
         {
           name: "Atlassian",
@@ -588,7 +618,7 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
     },
     {
       title: "Silver Tier",
-      subtitle: "CSESoc & DevSoc Joint Sponsorship Drive",
+      // subtitle: "CSESoc & DevSoc Joint Sponsorship Drive",
       logos: [
         {
           name: "appian",
