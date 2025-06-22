@@ -40,6 +40,7 @@ import gmsoc from "./assets/gmsoc.png";
 import gmsoc2 from "./assets/gmsoc2.png";
 import ramsoc from "./assets/ramsoc.svg";
 import redback from "./assets/redback.png";
+import flowtraders from "./assets/flowtraders.png";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 // General stuff:
@@ -597,7 +598,7 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
         },
         {
           name: "FlowTraders",
-          logo: "https://paragonnational.org/Companies/flow.png",
+          logo: flowtraders,
           url: "https://www.flowtraders.com/",
         },
         {
