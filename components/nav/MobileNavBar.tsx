@@ -16,7 +16,7 @@ import NextLink from 'next/link';
 
 import { navData, socialsData } from '../../data';
 import React from 'react';
-import { Menu as MenuIcon } from '@mui/icons-material';
+import { Menu as MenuIcon, Shop } from '@mui/icons-material';
 
 const NavBar = () => {
   const [open, setOpen] = React.useState(false);
@@ -76,6 +76,17 @@ const MenuDrawer: React.FC<MenuDrawerProps> = ({ open, setOpen }) => {
             {text}
           </ListItemButton>
         ))}
+          <ListItemButton
+            component={NextLink}
+            href={"https://shop.devsoc.app"}
+            onClick={() => setOpen(false)}
+            target="_blank"
+            sx={{
+              justifyContent: "center"
+            }}
+          >
+            Shop
+          </ListItemButton>
       </List>
       <Divider />
       <Stack direction='row' mt={2} spacing={2} alignItems='center' justifyContent='center'>
@@ -84,6 +95,7 @@ const MenuDrawer: React.FC<MenuDrawerProps> = ({ open, setOpen }) => {
             <Icon sx={{ fontSize: '1.8rem' }}/>
           </Link>
         ))}
+        
       </Stack>
     </Drawer>
   )
