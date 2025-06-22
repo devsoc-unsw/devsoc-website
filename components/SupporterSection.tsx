@@ -1,11 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
-import { Slider, Typography, Box, Stack, AspectRatio } from "@mui/joy";
+import { Slider, Typography, Box, Stack, AspectRatio, Alert } from "@mui/joy";
 import { SponsorInfo, SupporterData } from "../data";
 import { Link } from "@mui/material";
 import Image from "next/image";
 import PageSection from "./PageSection";
+import InfoOutlined from "@mui/icons-material/InfoOutlined";
 
 interface SupportersPageContentProps {
   projectSupporterData: { [year: number]: SupporterData[] };
@@ -42,6 +43,10 @@ const SupportersPageContent: React.FC<SupportersPageContentProps> = ({
       {/* <Typography level="h1" py={6} px={6} textAlign="center">
         {selectedYear} Supporters
       </Typography> */}
+
+      {sectionsForYear?.map((section) => (
+        <InfoBar message={section.infoBar ?? ""}/>
+      ))}
 
       {sectionsForYear?.map((section, idx) => (
         <PageSection title={section.title} key={idx}>
@@ -118,5 +123,11 @@ export const DisplayLogo: React.FC<DisplayLogoProps> = ({ data, logoSize }) => {
     </Stack>
   );
 };
+
+export const InfoBar = ({ message }: { message: string }) => message ? (
+  <Alert color="primary" sx={{ mt: 0, mb: 7, ml: -2, mr: -2 }} startDecorator={<InfoOutlined />} size="lg">
+    {message}
+  </Alert>
+) : null;
 
 export default SupportersPageContent;

@@ -3,6 +3,7 @@ import { projectSupporterData, affilateData } from "../../../data";
 import type { Metadata } from "next";
 import SupportersPageContent, {
   DisplayLogo,
+  InfoBar
 } from "../../../components/SupporterSection";
 import { Typography, Stack } from "@mui/joy";
 import PageSection from "../../../components/PageSection";
@@ -25,7 +26,9 @@ export default function SupportersPage() {
         </Stack>
       </PageSection>
       <br />
+
       <SupportersPageContent projectSupporterData={projectSupporterData} />
+
     </>
   );
 }
