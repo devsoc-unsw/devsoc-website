@@ -266,6 +266,20 @@ export const starlightProjectData: { [year: number]: Omit<ProjectCardProps, "tra
       projectUrl: "https://devsoc-starlight.devpost.com/",
       thumbnailUrl: "/starlightProjects/placeholder.jpg",
     },
+    {
+      name: "UNSW Redback Racing - Autonomous Vehicles",
+      desc: "Suite of automated systems to allow an autonomous car to percieve and navigate around a circuit. This includes developing both vehicle simulations alongside hardware.",
+      projectUrl: "https://www.redbackracing.com/",
+      thumbnailUrl:
+        "/starlightProjects/24_05_UNSWRedbackRacingAutonomousVehicles.png",
+    },
+    {
+      name: "UNSW Redback Racing - Data Acquistion",
+      desc: `Redback Racing's Data Acquisition Team focuses on capturing vehicle telemetry data and displaying it in a meaningful way. Check out their vehicle driver display and a live telemetry web app!`,
+      projectUrl: "https://www.redbackracing.com/",
+      thumbnailUrl:
+        "/starlightProjects/24_04_UNSWRedbackRacingDataAcquisition.JPG",
+    },
   ],
 };
 // Data for the "Join DevSoc" section
@@ -730,29 +744,29 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
     ],
     t2: [
       {
-        eventId: 1744190676180232,
-        url: "/events/2025/t2/TriviaNight.jpg",
-        blurb: `Want to get your brain running for a much needed mid-term lock-in, we’ve got you covered. 
-        Participate with your friends or soon-to-be friends in a night of fun and lighthearted activities, with many prizes 🏆 to be won and some dinner at the end 🍕😋.\n
-    🗓️ 𝗪𝗛𝗘𝗡: 3rd July 5-7 PM
-    📍 𝗪𝗛𝗘𝗥𝗘: Ainsworth G02`
+        eventId: 772603135193625,
+        url: "/events/2025/t2/game-jam-hackathon.jpg",
+        blurb: `🤓 𝗗𝗘𝗩𝗦𝗢𝗖'𝗦 𝗚𝗔𝗠𝗘 𝗝𝗔𝗠 𝗥𝗘𝗧𝗨𝗥𝗡𝗦! 🎮\n
+        Rally your chaos crew 🚀, get those brain juices bubbling 🧠🎮 and press START on your game dev journey with DevSoc's one and only Game Jam!\n
+        📅 𝗦𝗧𝗔𝗥𝗧𝗦 : 7th July 2025 2pm (Week 6 Monday)
+        💫 𝗦𝗛𝗢𝗪𝗖𝗔𝗦𝗘: 9th July 3pm (Week 6 Wednesday)
+        📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: Ainsworth G03`
       },
       {
-        eventId: 681334814788758,
-        url: "/events/2025/t2/industryMentoring.jpg",
-        blurb: `✨UNSW DataSoc x DevSoc Industry Mentoring Program 2025✨
-Looking to break into data science or software engineering but don’t know where to start?
-DataSoc x DevSoc’s Industry Mentoring Program connects ambitious UNSW students with experienced professionals 
-👩‍💼👨‍💻 who are ready to share their journey, wisdom, and advice
-  🤝 𝗢𝗣𝗘𝗡𝗜𝗡𝗚 𝗡𝗜𝗚𝗛𝗧: 26th June
-  🗓️ 𝗔𝗣𝗣𝗟𝗜𝗖𝗔𝗧𝗜𝗢𝗡 𝗖𝗟𝗢𝗦𝗘: 21st June`
+        eventId: 772603135193625,
+        url: "/events/2025/t2/tp-localhost-workshop.jpg",
+        blurb: `🤯 \"𝗟𝗢𝗖𝗔𝗟𝗛𝗢𝗦𝗧 𝗧𝗢 𝗢𝗡𝗟𝗜𝗡𝗘\" 𝗪𝗢𝗥𝗞𝗦𝗛𝗢𝗣! 📶\n
+        Our award-winning Training Program is 𝗕𝗔𝗖𝗞 for its 𝘧𝘪𝘳𝘴𝘵 𝘦𝘷𝘦𝘳 workshop 𝗼𝗽𝗲𝗻 𝘁𝗼 𝗮𝗹𝗹! Learn how to 𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝗽𝗲𝗿𝘀𝗼𝗻𝗮𝗹 𝗽𝗿𝗼𝗷𝗲𝗰𝘁𝘀 😎 so that they are 𝘳𝘦𝘴𝘶𝘮𝘦-𝘳𝘦𝘢𝘥𝘺 and following 𝗗𝗲𝘃𝗢𝗽𝘀 best practices 😋!\n
+        📅 𝗗𝗔𝗧𝗘 : 15th July 2025 (Week 7 Tuesday)
+        ⏰ 𝗧𝗜𝗠𝗘: 2-4pm
+        📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: Quad G04`
       },
       {
         eventId: 683939274224482,
         url: "/events/2025/t2/starlight.jpg",
-        blurb: `🌟 APPLICATIONS FOR STARLIGHT ARE OPEN! 🌟\n
+        blurb: `🌟 𝗔𝗣𝗣𝗟𝗜𝗖𝗔𝗧𝗜𝗢𝗡𝗦 𝗙𝗢𝗥 𝗦𝗧𝗔𝗥𝗟𝗜𝗚𝗛𝗧 𝗔𝗥𝗘 𝗢𝗣𝗘𝗡! 🌟\n
     Ever wanted a platform to showcase your latest project? Then Starlight is the perfect opportunity for YOU!🫵 Starlight is an open gallery event running in Week 8 of Term 2, where developers of all experience levels can showcase their projects and connect with their peers. Find more details in our FB event page!\n
-    📅 𝗗𝗘𝗔𝗗𝗟𝗜𝗡𝗘: 14th July 2024 11:59pm (Week 7 Monday)
+    📅 𝗗𝗘𝗔𝗗𝗟𝗜𝗡𝗘: 14th July 2025 11:59pm (Week 7 Monday)
     💫 𝗦𝗛𝗢𝗪𝗖𝗔𝗦𝗘: Term 2, Week 8 Day TBC
     📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: TBD`,
       },
@@ -784,7 +798,22 @@ DataSoc x DevSoc’s Industry Mentoring Program connects ambitious UNSW students
         eventId: 1380586546511605,
         url: "/events/2025/t2/paintChill.jpg",
       },
-      
+      {
+        eventId: 1072982195023412,
+        url: "/events/2025/t2/week-5-bbq.jpg",
+      },
+      {
+        eventId: 681334814788758,
+        url: "/events/2025/t2/industryMentoring.jpg",
+      },
+      {
+        eventId: 1744190676180232,
+        url: "/events/2025/t2/TriviaNight.jpg",
+      },
+      {
+        eventId: 1871053577164558,
+        url: "/events/2025/t2/rock-your-linkedin.jpg",
+      },
     ],
     t3: [],
   },
