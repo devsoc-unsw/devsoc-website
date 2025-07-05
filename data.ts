@@ -735,6 +735,15 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
         📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: Ainsworth G03`
       },
       {
+        eventId: 772603135193625,
+        url: "/events/2025/t2/tp-localhost-workshop.jpg",
+        blurb: `🤯 \"𝗟𝗢𝗖𝗔𝗟𝗛𝗢𝗦𝗧 𝗧𝗢 𝗢𝗡𝗟𝗜𝗡𝗘\" 𝗪𝗢𝗥𝗞𝗦𝗛𝗢𝗣! 📶\n
+        Our award-winning Training Program is 𝗕𝗔𝗖𝗞 for its 𝘧𝘪𝘳𝘴𝘵 𝘦𝘷𝘦𝘳 workshop 𝗼𝗽𝗲𝗻 𝘁𝗼 𝗮𝗹𝗹! Learn how to 𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝗽𝗲𝗿𝘀𝗼𝗻𝗮𝗹 𝗽𝗿𝗼𝗷𝗲𝗰𝘁𝘀 😎 so that they are 𝘳𝘦𝘴𝘶𝘮𝘦-𝘳𝘦𝘢𝘥𝘺 and following 𝗗𝗲𝘃𝗢𝗽𝘀 best practices 😋!\n
+        📅 𝗗𝗔𝗧𝗘 : 15th July 2025 (Week 7 Tuesday)
+        ⏰ 𝗧𝗜𝗠𝗘: 2-4pm
+        📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: Quad G04`
+      },
+      {
         eventId: 683939274224482,
         url: "/events/2025/t2/starlight.jpg",
         blurb: `🌟 𝗔𝗣𝗣𝗟𝗜𝗖𝗔𝗧𝗜𝗢𝗡𝗦 𝗙𝗢𝗥 𝗦𝗧𝗔𝗥𝗟𝗜𝗚𝗛𝗧 𝗔𝗥𝗘 𝗢𝗣𝗘𝗡! 🌟\n
@@ -742,18 +751,6 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
     📅 𝗗𝗘𝗔𝗗𝗟𝗜𝗡𝗘: 14th July 2025 11:59pm (Week 7 Monday)
     💫 𝗦𝗛𝗢𝗪𝗖𝗔𝗦𝗘: Term 2, Week 8 Day TBC
     📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: TBD`,
-      },
-      {
-        eventId: 1871053577164558,
-        url: "/events/2025/t2/rock-your-linkedin.jpg",
-      },
-      {
-        eventId: 1744190676180232,
-        url: "/events/2025/t2/TriviaNight.jpg",
-      },
-      {
-        eventId: 681334814788758,
-        url: "/events/2025/t2/industryMentoring.jpg",
       },
       {
         eventId: 639790979037857,
@@ -783,7 +780,22 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
         eventId: 1380586546511605,
         url: "/events/2025/t2/paintChill.jpg",
       },
-      
+      {
+        eventId: 1072982195023412,
+        url: "/events/2025/t2/week-5-bbq.jpg",
+      },
+      {
+        eventId: 681334814788758,
+        url: "/events/2025/t2/industryMentoring.jpg",
+      },
+      {
+        eventId: 1744190676180232,
+        url: "/events/2025/t2/TriviaNight.jpg",
+      },
+      {
+        eventId: 1871053577164558,
+        url: "/events/2025/t2/rock-your-linkedin.jpg",
+      },
     ],
     t3: [],
   },
