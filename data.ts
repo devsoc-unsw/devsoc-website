@@ -40,7 +40,6 @@ import gmsoc from "./assets/gmsoc.png";
 import gmsoc2 from "./assets/gmsoc2.png";
 import ramsoc from "./assets/ramsoc.svg";
 import redback from "./assets/redback.png";
-import flowtraders from "./assets/flowtraders.png";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 // General stuff:
@@ -152,118 +151,122 @@ export const traineeProjectData: Omit<ProjectCardProps, "trainee">[] = [
   },
 ];
 
-export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
-  // {
-  //   name: "Your project can be here!",
-  //   desc: "Submissions are still open! Take your chance to showcase your favourite project through the link below!",
-  //   projectUrl: "https://forms.gle/FMGM8YbrhB4kXKUe8",
-  //   thumbnailUrl: "/starlightProjects/placeholder.jpg",
-  // },
-  {
-    name: "LemonOS",
-    desc: "Hobby operating system written to run on PC hardware. Contains features and software found in many modern operating systems. Can run software common on Linux/unix systems and even games like DOOM!",
-    projectUrl: "https://github.com/LemonOSProject/LemonOS",
-    thumbnailUrl: "/starlightProjects/24_16_LemonOS.png",
-  },
-  {
-    name: "Campus Collab - 24T1 Trainee Project",
-    desc: "The ultimate platform for connecting and collaborating with fellow students. Effortlessly create and manage project listings and discover exciting events on and off campus!",
-    projectUrl: "https://github.com/sohumshah2/campuscollab",
-    thumbnailUrl: "/starlightProjects/24_15_CampusCollab.jpg",
-  },
-  {
-    name: "FairShare",
-    desc: "A receipt sharing website aimed at helping making splitting bills easier!",
-    projectUrl: "https://fairshared.me",
-    thumbnailUrl: "starlightProjects/24_17_FairShare.png",
-  },
-  {
-    name: "Discord LeetCode Bot",
-    desc: "Get motivated to LeetCode with this customisable Discord bot!",
-    projectUrl: "https://github.com/Kaiqi-Liang/LeetCode-Daily",
-    thumbnailUrl: "/starlightProjects/24_14_DiscordLeetCodeBot.png",
-  },
-  {
-    name: "Quests - Stamp Rally Management System",
-    desc: "A mobile friendly stamp rally management system equipped with tasks, rooms, societies and a raffle developed for MegaLAN Events!",
-    projectUrl: "https://github.com/megalan-association/quests",
-    thumbnailUrl: "/starlightProjects/24_11_Quests.jpeg",
-  },
-  {
-    name: "Propagate.ink",
-    desc: "The website application for visual learners! Create mind maps with accompanying, details and aesthetic notes for each node!",
-    projectUrl: "https://www.propagate.ink",
-    thumbnailUrl: "/starlightProjects/24_10_Propagate.png",
-  },
-  {
-    name: "Way Home",
-    desc: "WayHome is a cross platform location sharing app. Share your location and memories of your favorite places with your pookies!",
-    projectUrl: "https://github.com/mt-fns/WayHome",
-    thumbnailUrl: "/starlightProjects/24_09_WayHome.png",
-  },
-  {
-    name: "Beem Memo Pay",
-    desc: "Capture memories from group expenses and conclude your trips by sharing your favorite moments. Make group expenses on Beem fun and social!",
-    projectUrl: "https://github.com/AI-Hack-2024/Beem-MemoPay",
-    thumbnailUrl: "/starlightProjects/24_08_BeemMemoPay.png",
-  },
-  {
-    name: "AchieveMint - 24T1 Trainee Project",
-    desc: "Enhance your productivity with this all-in-one organization website, featuring a to-do list, note-taking, reminders and a resting page to help you stay on track and achieve more!",
-    projectUrl: "https://github.com/devsoc-unsw/trainee-saturn-24t1",
-    thumbnailUrl: "/starlightProjects/24_07_AchieveMint.png",
-  },
-  {
-    name: "UNSWipe - 24T1 Trainee Project",
-    desc: "Find the perfect groupmate for your CSE course with this real-time messaging app!",
-    projectUrl: "https://github.com/devsoc-unsw/trainee-uranus-24t1",
-    thumbnailUrl: "/traineeProjects/unswipe.png",
-  },
-  {
-    name: "UNSW Redback Racing - Autonomous Vehicles",
-    desc: "Suite of automated systems to allow an autonomous car to percieve and navigate around a circuit. This includes developing both vehicle simulations alongside hardware.",
-    projectUrl: "https://www.redbackracing.com/",
-    thumbnailUrl:
-      "/starlightProjects/24_05_UNSWRedbackRacingAutonomousVehicles.png",
-  },
-  {
-    name: "UNSW Redback Racing - Data Acquistion",
-    desc: `Redback Racing's Data Acquisition Team focuses on capturing vehicle telemetry data and displaying it in a meaningful way. Check out their vehicle driver display and a live telemetry web app!`,
-    projectUrl: "https://www.redbackracing.com/",
-    thumbnailUrl:
-      "/starlightProjects/24_04_UNSWRedbackRacingDataAcquisition.JPG",
-  },
-  {
-    name: "Browoser",
-    desc: "Funni browser app for Apple Watch built in SwiftUI. Also contains a useless AI to comfort you when you're lonely!!",
-    projectUrl: "https://apps.apple.com/us/app/browoser/id6463472872",
-    thumbnailUrl: "/starlightProjects/24_12_Browoser.png",
-  },
-  {
-    name: "Hardstuck Debating Script",
-    desc: "Automatically create debating scrim groups with this python script!",
-    projectUrl: "https://github.com/TAS-scorchedshadow/DebatingAlgorithm",
-    thumbnailUrl: "/starlightProjects/24_03_HardstuckDebating.png",
-  },
-  {
-    name: "Groveify - 24T1 Trainee Project",
-    desc: "Groveify is a habit tracker and productivity manager that comes with a cute little world to keep you going!",
-    projectUrl: "https://groveify.com",
-    thumbnailUrl: "/traineeProjects/groveify.png",
-  },
-  {
-    name: "Generic Assembler",
-    desc: "Convert assembly in a custom MIPS-Like assembly language into binary or hex format!",
-    projectUrl: "https://github.com/JamesTreloar/GenericAssembler",
-    thumbnailUrl: "/starlightProjects/24_01_GenericAssembler.png",
-  },
-  {
-    name: "Riflelytics",
-    desc: "Data aggregation and visualisation website for rifle shooting. Easily integrates with existing target hardware!",
-    thumbnailUrl: "/starlightProjects/24_0A_riflelytics.png",
-    projectUrl: "https://github.com/TAS-scorchedshadow/Rifle_Shooting_Major",
-  },
-];
+export const starlightProjectData: { [year: number]: Omit<ProjectCardProps, "trainee">[] } = {
+  2024: [
+    {
+      name: "LemonOS",
+      desc: "Hobby operating system written to run on PC hardware. Contains features and software found in many modern operating systems. Can run software common on Linux/unix systems and even games like DOOM!",
+      projectUrl: "https://github.com/LemonOSProject/LemonOS",
+      thumbnailUrl: "/starlightProjects/24_16_LemonOS.png",
+    },
+    {
+      name: "Campus Collab - 24T1 Trainee Project",
+      desc: "The ultimate platform for connecting and collaborating with fellow students. Effortlessly create and manage project listings and discover exciting events on and off campus!",
+      projectUrl: "https://github.com/sohumshah2/campuscollab",
+      thumbnailUrl: "/starlightProjects/24_15_CampusCollab.jpg",
+    },
+    {
+      name: "FairShare",
+      desc: "A receipt sharing website aimed at helping making splitting bills easier!",
+      projectUrl: "https://fairshared.me",
+      thumbnailUrl: "starlightProjects/24_17_FairShare.png",
+    },
+    {
+      name: "Discord LeetCode Bot",
+      desc: "Get motivated to LeetCode with this customisable Discord bot!",
+      projectUrl: "https://github.com/Kaiqi-Liang/LeetCode-Daily",
+      thumbnailUrl: "/starlightProjects/24_14_DiscordLeetCodeBot.png",
+    },
+    {
+      name: "Quests - Stamp Rally Management System",
+      desc: "A mobile friendly stamp rally management system equipped with tasks, rooms, societies and a raffle developed for MegaLAN Events!",
+      projectUrl: "https://github.com/megalan-association/quests",
+      thumbnailUrl: "/starlightProjects/24_11_Quests.jpeg",
+    },
+    {
+      name: "Propagate.ink",
+      desc: "The website application for visual learners! Create mind maps with accompanying, details and aesthetic notes for each node!",
+      projectUrl: "https://www.propagate.ink",
+      thumbnailUrl: "/starlightProjects/24_10_Propagate.png",
+    },
+    {
+      name: "Way Home",
+      desc: "WayHome is a cross platform location sharing app. Share your location and memories of your favorite places with your pookies!",
+      projectUrl: "https://github.com/mt-fns/WayHome",
+      thumbnailUrl: "/starlightProjects/24_09_WayHome.png",
+    },
+    {
+      name: "Beem Memo Pay",
+      desc: "Capture memories from group expenses and conclude your trips by sharing your favorite moments. Make group expenses on Beem fun and social!",
+      projectUrl: "https://github.com/AI-Hack-2024/Beem-MemoPay",
+      thumbnailUrl: "/starlightProjects/24_08_BeemMemoPay.png",
+    },
+    {
+      name: "AchieveMint - 24T1 Trainee Project",
+      desc: "Enhance your productivity with this all-in-one organization website, featuring a to-do list, note-taking, reminders and a resting page to help you stay on track and achieve more!",
+      projectUrl: "https://github.com/devsoc-unsw/trainee-saturn-24t1",
+      thumbnailUrl: "/starlightProjects/24_07_AchieveMint.png",
+    },
+    {
+      name: "UNSWipe - 24T1 Trainee Project",
+      desc: "Find the perfect groupmate for your CSE course with this real-time messaging app!",
+      projectUrl: "https://github.com/devsoc-unsw/trainee-uranus-24t1",
+      thumbnailUrl: "/traineeProjects/unswipe.png",
+    },
+    {
+      name: "UNSW Redback Racing - Autonomous Vehicles",
+      desc: "Suite of automated systems to allow an autonomous car to percieve and navigate around a circuit. This includes developing both vehicle simulations alongside hardware.",
+      projectUrl: "https://www.redbackracing.com/",
+      thumbnailUrl:
+        "/starlightProjects/24_05_UNSWRedbackRacingAutonomousVehicles.png",
+    },
+    {
+      name: "UNSW Redback Racing - Data Acquistion",
+      desc: `Redback Racing's Data Acquisition Team focuses on capturing vehicle telemetry data and displaying it in a meaningful way. Check out their vehicle driver display and a live telemetry web app!`,
+      projectUrl: "https://www.redbackracing.com/",
+      thumbnailUrl:
+        "/starlightProjects/24_04_UNSWRedbackRacingDataAcquisition.JPG",
+    },
+    {
+      name: "Browoser",
+      desc: "Funni browser app for Apple Watch built in SwiftUI. Also contains a useless AI to comfort you when you're lonely!!",
+      projectUrl: "https://apps.apple.com/us/app/browoser/id6463472872",
+      thumbnailUrl: "/starlightProjects/24_12_Browoser.png",
+    },
+    {
+      name: "Hardstuck Debating Script",
+      desc: "Automatically create debating scrim groups with this python script!",
+      projectUrl: "https://github.com/TAS-scorchedshadow/DebatingAlgorithm",
+      thumbnailUrl: "/starlightProjects/24_03_HardstuckDebating.png",
+    },
+    {
+      name: "Groveify - 24T1 Trainee Project",
+      desc: "Groveify is a habit tracker and productivity manager that comes with a cute little world to keep you going!",
+      projectUrl: "https://groveify.com",
+      thumbnailUrl: "/traineeProjects/groveify.png",
+    },
+    {
+      name: "Generic Assembler",
+      desc: "Convert assembly in a custom MIPS-Like assembly language into binary or hex format!",
+      projectUrl: "https://github.com/JamesTreloar/GenericAssembler",
+      thumbnailUrl: "/starlightProjects/24_01_GenericAssembler.png",
+    },
+    {
+      name: "Riflelytics",
+      desc: "Data aggregation and visualisation website for rifle shooting. Easily integrates with existing target hardware!",
+      thumbnailUrl: "/starlightProjects/24_0A_riflelytics.png",
+      projectUrl: "https://github.com/TAS-scorchedshadow/Rifle_Shooting_Major",
+    },
+  ],
+  2025: [
+    {
+      name: "Your project can be here!",
+      desc: "Submissions are still open! Take your chance to showcase your favourite project through the link below!",
+      projectUrl: "https://devsoc-starlight.devpost.com/",
+      thumbnailUrl: "/starlightProjects/placeholder.jpg",
+    },
+  ],
+};
 // Data for the "Join DevSoc" section
 // Should set/unset applicationUrl to mark recruitment as open/closed
 export const recruitmentData: RecruitmentProps[] = [
@@ -487,11 +490,6 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           url: "https://www.imc.com/",
         },
         {
-          name: "Lyra Technologies",
-          logo: lyra,
-          url: "https://www.lyratechnologies.com.au/",
-        },
-        {
           name: "QRT",
           logo: qrt,
           url: "https://www.qube-rt.com/careers/",
@@ -506,9 +504,17 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           logo: tiktok,
           url: "https://careers.tiktok.com/",
         },
+        {
+          name: "Lyra Technologies",
+          logo: lyra,
+          url: "https://www.lyratechnologies.com.au/",
+        },
 
-
-
+        // {
+        //   name: "ZIP Logo",
+        //   logo: "https://media.boohoo.com/i/boohooamplience/zippay_new_white_nobg_1309?fmt=webp",
+        //   url: "https://zip.co/au",
+        // },
       ],
     },
   ],
@@ -536,7 +542,7 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
     },
     {
       title: "Diamond Tier",
-      // subtitle: "CSESoc & DevSoc Joint Sponsorship Drive",
+      subtitle: "CSESoc & DevSoc Joint Sponsorship Drive",
       logos: [
         {
           name: "Jane Street",
@@ -552,7 +558,7 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
     },
     {
       title: "Gold Tier",
-      // subtitle: "CSESoc & DevSoc Joint Sponsorship Drive",
+      subtitle: "CSESoc & DevSoc Joint Sponsorship Drive",
       logos: [
         {
           name: "Atlassian",
@@ -588,7 +594,7 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
     },
     {
       title: "Silver Tier",
-      // subtitle: "CSESoc & DevSoc Joint Sponsorship Drive",
+      subtitle: "CSESoc & DevSoc Joint Sponsorship Drive",
       logos: [
         {
           name: "appian",
@@ -597,7 +603,7 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
         },
         {
           name: "FlowTraders",
-          logo: flowtraders,
+          logo: "https://paragonnational.org/Companies/flow.png",
           url: "https://www.flowtraders.com/",
         },
         {
@@ -726,61 +732,50 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
     ],
     t2: [
       {
-        eventId: 1744190676180232,
-        url: "/events/2025/t2/TriviaNight.jpg",
-        blurb: `Want to get your brain running for a much needed mid-term lock-in, we’ve got you covered. 
-        Participate with your friends or soon-to-be friends in a night of fun and lighthearted activities, with many prizes 🏆 to be won and some dinner at the end 🍕😋.\n
-    🗓️ 𝗪𝗛𝗘𝗡: 3rd July 5-7 PM
-    📍 𝗪𝗛𝗘𝗥𝗘: Ainsworth G02`
+        eventId: 570192562824901,
+        url: "/events/2025/t2/o-day-t2.jpg",
+        blurb: `🚀 Join Us at Term 2 O-Day! 🚀\n
+  🤝 Meet fellow coding enthusiasts
+  🎁 Score ✨EXCLUSIVE✨ DevSoc merch
+  📅  Learn about our upcoming workshops, hackathons, and career events
+  🔧  Find out how you can join/contribute to our projects!\n
+  📅 𝗪𝗛𝗘𝗡: 26th May 10 AM – 4 PM (Monday)
+  📍 𝗪𝗛𝗘𝗥𝗘: Outside Main Library`,
       },
       {
-        eventId: 681334814788758,
-        url: "/events/2025/t2/industryMentoring.jpg",
-        blurb: `✨UNSW DataSoc x DevSoc Industry Mentoring Program 2025✨
-Looking to break into data science or software engineering but don’t know where to start?
-DataSoc x DevSoc’s Industry Mentoring Program connects ambitious UNSW students with experienced professionals 
-👩‍💼👨‍💻 who are ready to share their journey, wisdom, and advice
-  🤝 𝗢𝗣𝗘𝗡𝗜𝗡𝗚 𝗡𝗜𝗚𝗛𝗧: 26th June
-  🗓️ 𝗔𝗣𝗣𝗟𝗜𝗖𝗔𝗧𝗜𝗢𝗡 𝗖𝗟𝗢𝗦𝗘: 21st June`
+        eventId: 1062484559164505,
+        url: "/events/2025/t2/rookie-code-rumble.jpg",
+        blurb: `🚨 ATTENTION ALL HACKERMANS🚨\n
+  Get ready for the SecSoc X DevSoc X CSESoc Rookie Code Rumble CTF — a week-long Capture The Flag competition that will test your hacking👾 and cybersecurity💻 skills!
+  Gather your friends in teams of 1-3 and compete for $𝟲𝟬𝟬 WORTH OF CASH PRIZES!!💰💰\n
+  🗓️ 𝗪𝗛𝗘𝗡: 30th May 6:00 PM - 6th June 11:59 PM
+  📍 𝗪𝗛𝗘𝗥𝗘: Online (kick-off location TBD)`,
+      },
+      {
+        eventId: 725155683421732,
+        url: "/events/2025/t2/training-recruitment-t2.jpg",
+        blurb: `🔥DevSoc's T2 Training Program Recruitment🔥\n
+  Our 𝗔𝗪𝗔𝗥𝗗 𝗪𝗜𝗡𝗡𝗜𝗡𝗚 Training Program™️ is back again. Boost your web dev skills 📈 by making a React project from scratch as a trainee, or boost your leadership and teaching skills as a Training Lead! 💗\n
+  ⏰️ 𝗥𝗘𝗖𝗥𝗨𝗜𝗧𝗠𝗘𝗡𝗧 𝗖𝗟𝗢𝗦𝗘𝗦 on the 28th May 11:59pm!`,
+      },
+      {
+        eventId: 639790979037857,
+        url: "/events/2025/t2/training-subcom-recruit.jpg",
+        blurb: `🌱 Training Program Subcom Recruitment 🌵\n
+  🚨 𝗗𝗼 𝘆𝗼𝘂 𝗹𝗼𝘃𝗲 𝘁𝗲𝗮𝗰𝗵𝗶𝗻𝗴?
+  🚨 𝗗𝗼 𝘆𝗼𝘂 𝘁𝗵𝗿𝗶𝘃𝗲 𝗼𝗻 𝗽𝗹𝗮𝗻𝗻𝗶𝗻𝗴 𝗳𝘂𝗻, 𝗺𝗲𝗮𝗻𝗶𝗻𝗴𝗳𝘂𝗹 𝗲𝘃𝗲𝗻𝘁𝘀?\n
+  Don't miss out on this ✨EXCLUSIVE✨ opportunity to join DevSoc's Training Program Subcom! 🎉\n
+  ⏳ 𝗔𝗣𝗣𝗟𝗜𝗖𝗔𝗧𝗜𝗢𝗡𝗦 𝗖𝗟𝗢𝗦𝗘: 30th May 11:59pm (Friday)`,
       },
       {
         eventId: 683939274224482,
         url: "/events/2025/t2/starlight.jpg",
         blurb: `🌟 APPLICATIONS FOR STARLIGHT ARE OPEN! 🌟\n
-    Ever wanted a platform to showcase your latest project? Then Starlight is the perfect opportunity for YOU!🫵 Starlight is an open gallery event running in Week 8 of Term 2, where developers of all experience levels can showcase their projects and connect with their peers. Find more details in our FB event page!\n
-    📅 𝗗𝗘𝗔𝗗𝗟𝗜𝗡𝗘: 14th July 2024 11:59pm (Week 7 Monday)
-    💫 𝗦𝗛𝗢𝗪𝗖𝗔𝗦𝗘: Term 2, Week 8 Day TBC
-    📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: TBD`,
+Ever wanted a platform to showcase your latest project? Then Starlight is the perfect opportunity for YOU!🫵 Starlight is an open gallery event running in Week 8 of Term 2, where developers of all experience levels can showcase their projects and connect with their peers. Find more details in our FB event page!\n
+📅 𝗗𝗘𝗔𝗗𝗟𝗜𝗡𝗘: 14th July 2024 11:59pm (Week 7 Monday)
+💫 𝗦𝗛𝗢𝗪𝗖𝗔𝗦𝗘: Term 2, Week 8 Day TBC
+📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: TBD`,
       },
-      {
-        eventId: 639790979037857,
-        url: "/events/2025/t2/training-subcom-recruit.jpg",
-      },
-      {
-        eventId: 725155683421732,
-        url: "/events/2025/t2/training-recruitment-t2.jpg",
-      },
-      {
-        eventId: 570192562824901,
-        url: "/events/2025/t2/o-day-t2.jpg",
-      },
-      {
-        eventId: 1062484559164505,
-        url: "/events/2025/t2/rookie-code-rumble.jpg",
-      },
-      {
-        eventId: 1119467540015853,
-        url: "/events/2025/t2/T2W1BBQ.jpg",
-      },
-      {
-        eventId: 1648737762479606,
-        url: "/events/2025/t2/linkedinPhotoshoot.jpg",
-      },
-      {
-        eventId: 1380586546511605,
-        url: "/events/2025/t2/paintChill.jpg",
-      },
-      
     ],
     t3: [],
   },
