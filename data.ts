@@ -267,18 +267,44 @@ export const starlightProjectData: { [year: number]: Omit<ProjectCardProps, "tra
       thumbnailUrl: "/starlightProjects/placeholder.jpg",
     },
     {
+      name: "yellowshirt - 24T2 Trainee Project", 
+      desc: "A location-guessing game for universities, targeting new and accustomed students alike.",
+      projectUrl: "https://yellowshirt.xyz",
+      thumbnailUrl: "/starlightProjects/2025/25_05_Yellowshirt.png",
+
+    },
+    {
+      name: "CREATE UNSW - Spiderbot",
+      desc: "Check out this cool bot by the CREATE team! It even dances!",
+      projectUrl: "https://www.facebook.com/watch/?v=1031336124791472",
+      thumbnailUrl: "/starlightProjects/2025/25_06_CREATEUNSWSpiderbot.png",
+    },
+    {
+      name: "Electus - 25T1 Trainee Project",
+      desc: "Make society elections easier with this open source voting platform!",
+      projectUrl: "https://github.com/devsoc-unsw/trainee-fighting-25t1",
+      thumbnailUrl:
+        "/starlightProjects/2025/25_03_Electus.png",
+    },
+    {
+      name: "Arcane Raiders",
+      desc: "Team up with your wizard friends to pillage the magic tower! Create elemental synergies, defeat powerful bosses and claim the tower's treasure in this rogue-like dungeon-raider.",  
+      projectUrl: "https://store.steampowered.com/app/2899410/Arcane_Raiders/",
+      thumbnailUrl: "/starlightProjects/2025/25_04_ArcaneRaiders.jpg",
+    },
+    {
       name: "UNSW Redback Racing - Autonomous Vehicles",
       desc: "Suite of automated systems to allow an autonomous car to percieve and navigate around a circuit. This includes developing both vehicle simulations alongside hardware.",
       projectUrl: "https://www.redbackracing.com/",
       thumbnailUrl:
-        "/starlightProjects/24_05_UNSWRedbackRacingAutonomousVehicles.png",
+        "/starlightProjects/2025/25_02_UNSWRedbackRacingAutonomousVehicles.png",
     },
     {
       name: "UNSW Redback Racing - Data Acquistion",
       desc: `Redback Racing's Data Acquisition Team focuses on capturing vehicle telemetry data and displaying it in a meaningful way. Check out their vehicle driver display and a live telemetry web app!`,
       projectUrl: "https://www.redbackracing.com/",
       thumbnailUrl:
-        "/starlightProjects/24_04_UNSWRedbackRacingDataAcquisition.JPG",
+        "/starlightProjects/2025/25_01_UNSWRedbackRacingDataAcquisition.JPG",
     },
   ],
 };
