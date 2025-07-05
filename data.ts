@@ -753,7 +753,7 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
         📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: Ainsworth G03`
       },
       {
-        eventId: 772603135193625,
+        eventId: 673293572406651,
         url: "/events/2025/t2/tp-localhost-workshop.jpg",
         blurb: `🤯 \"𝗟𝗢𝗖𝗔𝗟𝗛𝗢𝗦𝗧 𝗧𝗢 𝗢𝗡𝗟𝗜𝗡𝗘\" 𝗪𝗢𝗥𝗞𝗦𝗛𝗢𝗣! 📶\n
         Our award-winning Training Program is 𝗕𝗔𝗖𝗞 for its 𝘧𝘪𝘳𝘴𝘵 𝘦𝘷𝘦𝘳 workshop 𝗼𝗽𝗲𝗻 𝘁𝗼 𝗮𝗹𝗹! Learn how to 𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝗽𝗲𝗿𝘀𝗼𝗻𝗮𝗹 𝗽𝗿𝗼𝗷𝗲𝗰𝘁𝘀 😎 so that they are 𝘳𝘦𝘴𝘶𝘮𝘦-𝘳𝘦𝘢𝘥𝘺 and following 𝗗𝗲𝘃𝗢𝗽𝘀 best practices 😋!\n
