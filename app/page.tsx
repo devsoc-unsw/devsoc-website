@@ -1,13 +1,18 @@
 "use client";
-import { AspectRatio, Card, Stack, Typography } from "@mui/joy";
-import React, { useRef } from "react";
+import {
+  AspectRatio,
+  Button,
+  Card,
+  Snackbar,
+  Stack,
+  Typography,
+} from "@mui/joy";
+import React, { useRef, useState } from "react";
 import { Box, Link } from "@mui/material";
 import { projectData } from "../data";
 import { ProjectCardProps } from "../components/ProjectCard";
 import Image from "next/image";
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import "./styles.css";
-import IrlPhotos from "../components/IrlPhotos";
 
 export default function Home() {
   const scrollRef = useRef<HTMLDivElement | null>(null);
@@ -15,10 +20,27 @@ export default function Home() {
     (x) => x.name !== "Chaos" && x.name !== "Jobsboard"
   );
 
+  const [open, setOpen] = useState(true);
+
   return (
-    <Box display="flex" flexDirection="column" alignItems="center" position="relative" width="100%">
+    <Box
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      position="relative"
+      width="100%"
+    >
       <GradientBlob />
-      <Stack sx={{ position: "relative", padding: 10, display: "flex", justifyContent: "center", alignItems: "center", minHeight: "calc(100vh - 75px)" }}>
+      <Stack
+        sx={{
+          position: "relative",
+          padding: 10,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "calc(100vh - 75px)",
+        }}
+      >
         <Box sx={{ width: "100%" }}>
           <Typography
             fontSize={{ xs: "2rem", sm: "2.3rem", md: "3rem" }}
@@ -26,7 +48,9 @@ export default function Home() {
             component="div"
             sx={{ color: "white" }}
           >
-            UNSW&apos;s<br/>Software Development Society
+            UNSW&apos;s
+            <br />
+            Software Development Society
           </Typography>
           <Typography
             mt={2}
@@ -61,6 +85,19 @@ export default function Home() {
       </Stack>
       {/* <ExpandMoreIcon sx={{ fontSize: "3rem", color: "white", margin: "-100px" }}/>
       <IrlPhotos /> */}
+      <Snackbar
+        anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+        open={open}
+        onClose={() => setOpen(false)}
+        autoHideDuration={6000}
+        sx={{ display: "flex", alignItems: "center" }}
+      >
+        <b>
+          <Link href="https://shop.devsoc.app" target="_blank">
+            2025 Merch Now Avaliable!!
+          </Link>
+        </b>
+      </Snackbar>
     </Box>
   );
 }
@@ -79,7 +116,7 @@ const LinkCard: React.FC<
     "#222222",
   ];
   return (
-    <Link href={projectUrl} style={{ textDecoration: 'none' }} >
+    <Link href={projectUrl} style={{ textDecoration: "none" }}>
       <Card
         className="boxBackground"
         sx={{
@@ -89,10 +126,10 @@ const LinkCard: React.FC<
           backgroundColor: colors[order],
           padding: "1rem 2rem",
           flexDirection: "row",
-          justifyContent: "space-between", 
+          justifyContent: "space-between",
           alignItems: "center",
           "&:hover": {
-            border: "2px grey solid", 
+            border: "2px grey solid",
           },
         }}
       >
@@ -124,7 +161,7 @@ const GradientBlob = () => {
       style={{
         position: "fixed",
         top: "50%",
-        right: "10%", 
+        right: "10%",
         width: "40vw",
         height: "50vh",
         background: "url('/home/gradient.svg') no-repeat center center",

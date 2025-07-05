@@ -8,6 +8,7 @@ import {
   LinkedIn,
   School,
   FlightTakeoff,
+  AutoAwesome,
 } from "@mui/icons-material";
 import { RecruitmentProps } from "./app/(pages)/get-involved/page";
 import DiscordIcon from "./components/nav/DiscordIcon";
@@ -34,6 +35,11 @@ import csesoc from "./assets/csesocwhite.png";
 import tradedesk from "./assets/thetradedesk.png";
 import lyra from "./assets/lyra.svg";
 import arista from "./assets/arista.png";
+import createunsw from "./assets/createunsw.svg"; 
+import gmsoc from "./assets/gmsoc.png";
+import gmsoc2 from "./assets/gmsoc2.png";
+import ramsoc from "./assets/ramsoc.svg";
+import redback from "./assets/redback.png";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 // General stuff:
@@ -260,22 +266,22 @@ export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
 // Data for the "Join DevSoc" section
 // Should set/unset applicationUrl to mark recruitment as open/closed
 export const recruitmentData: RecruitmentProps[] = [
-  { position: "Directors", Icon: Lightbulb },
-  // { position: "New Projects", Icon: FlightTakeoff },
+  {
+    position: "Starlight",
+    Icon: AutoAwesome,
+    applicationUrl: "https://devsoc-starlight.devpost.com/",
+  },
   {
     position: "Subcommittee",
-    applicationUrl: "https://tp.devso.cc/subcom",
     Icon: Groups,
   },
   {
     position: "Training Leads",
     Icon: CoPresent,
-    applicationUrl: "https://tp.devso.cc/leads",
   },
   {
     position: "Trainees",
     Icon: School,
-    applicationUrl: "https://tp.devso.cc/trainees",
   },
 ];
 
@@ -289,11 +295,48 @@ export interface SponsorInfo {
 
 export interface StarlightSupporterData {
   supporterLogos: SponsorInfo[];
-  industryLogos: SponsorInfo[];
+  industryLogos?: SponsorInfo[];
+  societyLogos?: SponsorInfo[];
 }
 
 export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
   2024: {
+    supporterLogos: [
+      {
+        name: "Arc",
+        logo: arc,
+        url: "https://www.arc.unsw.edu.au/",
+      },
+      {
+        name: "CSE",
+        logo: cse,
+        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
+      },
+      {
+        name: "Roundhouse",
+        logo: "https://www.arc.unsw.edu.au/assets/images/roundhouse-header.svg",
+        url: "https://www.arc.unsw.edu.au/roundhouse",
+      },
+       {
+        name: "UNSW",
+        logo: unsw,
+        url: "https://www.unsw.edu.au/",
+      },
+    ],
+    industryLogos: [
+      {
+        name: "Macquarie",
+        logo: "https://online.macquarie.com.au/modelmanager/assets/resources/app/macquarie-modelmanager/images/logo-vertical-inverse.png",
+        url: "https://www.macquarie.com/au/en.html",
+      },
+      {
+        name: "Zip Co",
+        logo: "https://media.boohoo.com/i/boohooamplience/zippay_new_white_nobg_1309?fmt=webp",
+        url: "https://zip.co/au",
+      },
+    ],
+  },
+  2025: {
     supporterLogos: [
       {
         name: "UNSW",
@@ -313,15 +356,59 @@ export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
     ],
     industryLogos: [
       {
-        name: "Macquarie",
-        logo: "https://online.macquarie.com.au/modelmanager/assets/resources/app/macquarie-modelmanager/images/logo-vertical-inverse.png",
-        url: "https://www.macquarie.com/au/en.html",
+        name: "Arista",
+        logo: arista,
+        url: "https://www.arista.com/en/",
       },
       {
-        name: "Zip Co",
-        logo: "https://media.boohoo.com/i/boohooamplience/zippay_new_white_nobg_1309?fmt=webp",
-        url: "https://zip.co/au",
+        name: "Lyra Technologies",
+        logo: lyra,
+        url: "https://www.lyratechnologies.com.au/",
       },
+      {
+        name: "imc",
+        logo: imc,
+        url: "https://www.imc.com/",
+      },
+      {
+        name: "Jane Street",
+        logo: janeStreet,
+        url: "https://www.janestreet.com/",
+      },
+      {
+        name: "Safety Culture",
+        logo: sc,
+        url: "https://safetyculture.com/",
+      },
+      {
+        name: "The Trade Desk",
+        logo: tradedesk,
+        url: "https://careers.thetradedesk.com/",
+      },
+    ],
+    societyLogos: [
+           {
+        name: "Create UNSW",
+        logo: createunsw,
+        url: "https://www.createunsw.com.au/",
+      },
+            {
+        name: "Game Makers Society",
+        logo: gmsoc2,
+        url: "https://www.arc.unsw.edu.au/get-involved/opportunity?name=Game%20Making%20Society",
+      },
+      {
+        name: "RAMSoc",
+        logo: ramsoc,
+        url: "https://ramsocunsw.org/",
+      },
+
+      {
+        name: "Redback Racing",
+        logo: redback,
+        url: "https://www.redbackracing.com/",
+      },
+
     ],
   },
 };
@@ -639,50 +726,61 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
     ],
     t2: [
       {
-        eventId: 570192562824901,
-        url: "/events/2025/t2/o-day-t2.jpg",
-        blurb: `🚀 Join Us at Term 2 O-Day! 🚀\n
-  🤝 Meet fellow coding enthusiasts
-  🎁 Score ✨EXCLUSIVE✨ DevSoc merch
-  📅  Learn about our upcoming workshops, hackathons, and career events
-  🔧  Find out how you can join/contribute to our projects!\n
-  📅 𝗪𝗛𝗘𝗡: 26th May 10 AM – 4 PM (Monday)
-  📍 𝗪𝗛𝗘𝗥𝗘: Outside Main Library`
+        eventId: 1744190676180232,
+        url: "/events/2025/t2/TriviaNight.jpg",
+        blurb: `Want to get your brain running for a much needed mid-term lock-in, we’ve got you covered. 
+        Participate with your friends or soon-to-be friends in a night of fun and lighthearted activities, with many prizes 🏆 to be won and some dinner at the end 🍕😋.\n
+    🗓️ 𝗪𝗛𝗘𝗡: 3rd July 5-7 PM
+    📍 𝗪𝗛𝗘𝗥𝗘: Ainsworth G02`
       },
       {
-        eventId: 1062484559164505,
-        url: "/events/2025/t2/rookie-code-rumble.jpg",
-        blurb: `🚨 ATTENTION ALL HACKERMANS🚨\n
-  Get ready for the SecSoc X DevSoc X CSESoc Rookie Code Rumble CTF — a week-long Capture The Flag competition that will test your hacking👾 and cybersecurity💻 skills!
-  Gather your friends in teams of 1-3 and compete for $𝟲𝟬𝟬 WORTH OF CASH PRIZES!!💰💰\n
-  🗓️ 𝗪𝗛𝗘𝗡: 30th May 6:00 PM - 6th June 11:59 PM
-  📍 𝗪𝗛𝗘𝗥𝗘: Online (kick-off location TBD)`
+        eventId: 681334814788758,
+        url: "/events/2025/t2/industryMentoring.jpg",
+        blurb: `✨UNSW DataSoc x DevSoc Industry Mentoring Program 2025✨
+Looking to break into data science or software engineering but don’t know where to start?
+DataSoc x DevSoc’s Industry Mentoring Program connects ambitious UNSW students with experienced professionals 
+👩‍💼👨‍💻 who are ready to share their journey, wisdom, and advice
+  🤝 𝗢𝗣𝗘𝗡𝗜𝗡𝗚 𝗡𝗜𝗚𝗛𝗧: 26th June
+  🗓️ 𝗔𝗣𝗣𝗟𝗜𝗖𝗔𝗧𝗜𝗢𝗡 𝗖𝗟𝗢𝗦𝗘: 21st June`
       },
       {
-        eventId: 725155683421732,
-        url: "/events/2025/t2/training-recruitment-t2.jpg",
-        blurb: `🔥DevSoc's T2 Training Program Recruitment🔥\n
-  Our 𝗔𝗪𝗔𝗥𝗗 𝗪𝗜𝗡𝗡𝗜𝗡𝗚 Training Program™️ is back again. Boost your web dev skills 📈 by making a React project from scratch as a trainee, or boost your leadership and teaching skills as a Training Lead! 💗\n
-  ⏰️ 𝗥𝗘𝗖𝗥𝗨𝗜𝗧𝗠𝗘𝗡𝗧 𝗖𝗟𝗢𝗦𝗘𝗦 on the 28th May 11:59pm!`
+        eventId: 683939274224482,
+        url: "/events/2025/t2/starlight.jpg",
+        blurb: `🌟 APPLICATIONS FOR STARLIGHT ARE OPEN! 🌟\n
+    Ever wanted a platform to showcase your latest project? Then Starlight is the perfect opportunity for YOU!🫵 Starlight is an open gallery event running in Week 8 of Term 2, where developers of all experience levels can showcase their projects and connect with their peers. Find more details in our FB event page!\n
+    📅 𝗗𝗘𝗔𝗗𝗟𝗜𝗡𝗘: 14th July 2024 11:59pm (Week 7 Monday)
+    💫 𝗦𝗛𝗢𝗪𝗖𝗔𝗦𝗘: Term 2, Week 8 Day TBC
+    📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: TBD`,
       },
       {
         eventId: 639790979037857,
         url: "/events/2025/t2/training-subcom-recruit.jpg",
-        blurb: `🌱 Training Program Subcom Recruitment 🌵\n
-  🚨 𝗗𝗼 𝘆𝗼𝘂 𝗹𝗼𝘃𝗲 𝘁𝗲𝗮𝗰𝗵𝗶𝗻𝗴?
-  🚨 𝗗𝗼 𝘆𝗼𝘂 𝘁𝗵𝗿𝗶𝘃𝗲 𝗼𝗻 𝗽𝗹𝗮𝗻𝗻𝗶𝗻𝗴 𝗳𝘂𝗻, 𝗺𝗲𝗮𝗻𝗶𝗻𝗴𝗳𝘂𝗹 𝗲𝘃𝗲𝗻𝘁𝘀?\n
-  Don't miss out on this ✨EXCLUSIVE✨ opportunity to join DevSoc's Training Program Subcom! 🎉\n
-  ⏳ 𝗔𝗣𝗣𝗟𝗜𝗖𝗔𝗧𝗜𝗢𝗡𝗦 𝗖𝗟𝗢𝗦𝗘: 30th May 11:59pm (Friday)`
       },
       {
-      eventId: 683939274224482,
-      url: "/events/2025/t2/starlight.jpg",
-      blurb: `🌟 APPLICATIONS FOR STARLIGHT ARE OPEN! 🌟\n
-Ever wanted a platform to showcase your latest project? Then Starlight is the perfect opportunity for YOU!🫵 Starlight is an open gallery event running in Week 8 of Term 2, where developers of all experience levels can showcase their projects and connect with their peers. Find more details in our FB event page!\n
-📅 𝗗𝗘𝗔𝗗𝗟𝗜𝗡𝗘: 14th July 2024 11:59pm (Week 7 Monday)
-💫 𝗦𝗛𝗢𝗪𝗖𝗔𝗦𝗘: Term 2, Week 8 Day TBC
-📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: TBD`,
+        eventId: 725155683421732,
+        url: "/events/2025/t2/training-recruitment-t2.jpg",
       },
+      {
+        eventId: 570192562824901,
+        url: "/events/2025/t2/o-day-t2.jpg",
+      },
+      {
+        eventId: 1062484559164505,
+        url: "/events/2025/t2/rookie-code-rumble.jpg",
+      },
+      {
+        eventId: 1119467540015853,
+        url: "/events/2025/t2/T2W1BBQ.jpg",
+      },
+      {
+        eventId: 1648737762479606,
+        url: "/events/2025/t2/linkedinPhotoshoot.jpg",
+      },
+      {
+        eventId: 1380586546511605,
+        url: "/events/2025/t2/paintChill.jpg",
+      },
+      
     ],
     t3: [],
   },
