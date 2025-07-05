@@ -152,118 +152,136 @@ export const traineeProjectData: Omit<ProjectCardProps, "trainee">[] = [
   },
 ];
 
-export const starlightProjectData: Omit<ProjectCardProps, "trainee">[] = [
-  // {
-  //   name: "Your project can be here!",
-  //   desc: "Submissions are still open! Take your chance to showcase your favourite project through the link below!",
-  //   projectUrl: "https://forms.gle/FMGM8YbrhB4kXKUe8",
-  //   thumbnailUrl: "/starlightProjects/placeholder.jpg",
-  // },
-  {
-    name: "LemonOS",
-    desc: "Hobby operating system written to run on PC hardware. Contains features and software found in many modern operating systems. Can run software common on Linux/unix systems and even games like DOOM!",
-    projectUrl: "https://github.com/LemonOSProject/LemonOS",
-    thumbnailUrl: "/starlightProjects/24_16_LemonOS.png",
-  },
-  {
-    name: "Campus Collab - 24T1 Trainee Project",
-    desc: "The ultimate platform for connecting and collaborating with fellow students. Effortlessly create and manage project listings and discover exciting events on and off campus!",
-    projectUrl: "https://github.com/sohumshah2/campuscollab",
-    thumbnailUrl: "/starlightProjects/24_15_CampusCollab.jpg",
-  },
-  {
-    name: "FairShare",
-    desc: "A receipt sharing website aimed at helping making splitting bills easier!",
-    projectUrl: "https://fairshared.me",
-    thumbnailUrl: "starlightProjects/24_17_FairShare.png",
-  },
-  {
-    name: "Discord LeetCode Bot",
-    desc: "Get motivated to LeetCode with this customisable Discord bot!",
-    projectUrl: "https://github.com/Kaiqi-Liang/LeetCode-Daily",
-    thumbnailUrl: "/starlightProjects/24_14_DiscordLeetCodeBot.png",
-  },
-  {
-    name: "Quests - Stamp Rally Management System",
-    desc: "A mobile friendly stamp rally management system equipped with tasks, rooms, societies and a raffle developed for MegaLAN Events!",
-    projectUrl: "https://github.com/megalan-association/quests",
-    thumbnailUrl: "/starlightProjects/24_11_Quests.jpeg",
-  },
-  {
-    name: "Propagate.ink",
-    desc: "The website application for visual learners! Create mind maps with accompanying, details and aesthetic notes for each node!",
-    projectUrl: "https://www.propagate.ink",
-    thumbnailUrl: "/starlightProjects/24_10_Propagate.png",
-  },
-  {
-    name: "Way Home",
-    desc: "WayHome is a cross platform location sharing app. Share your location and memories of your favorite places with your pookies!",
-    projectUrl: "https://github.com/mt-fns/WayHome",
-    thumbnailUrl: "/starlightProjects/24_09_WayHome.png",
-  },
-  {
-    name: "Beem Memo Pay",
-    desc: "Capture memories from group expenses and conclude your trips by sharing your favorite moments. Make group expenses on Beem fun and social!",
-    projectUrl: "https://github.com/AI-Hack-2024/Beem-MemoPay",
-    thumbnailUrl: "/starlightProjects/24_08_BeemMemoPay.png",
-  },
-  {
-    name: "AchieveMint - 24T1 Trainee Project",
-    desc: "Enhance your productivity with this all-in-one organization website, featuring a to-do list, note-taking, reminders and a resting page to help you stay on track and achieve more!",
-    projectUrl: "https://github.com/devsoc-unsw/trainee-saturn-24t1",
-    thumbnailUrl: "/starlightProjects/24_07_AchieveMint.png",
-  },
-  {
-    name: "UNSWipe - 24T1 Trainee Project",
-    desc: "Find the perfect groupmate for your CSE course with this real-time messaging app!",
-    projectUrl: "https://github.com/devsoc-unsw/trainee-uranus-24t1",
-    thumbnailUrl: "/traineeProjects/unswipe.png",
-  },
-  {
-    name: "UNSW Redback Racing - Autonomous Vehicles",
-    desc: "Suite of automated systems to allow an autonomous car to percieve and navigate around a circuit. This includes developing both vehicle simulations alongside hardware.",
-    projectUrl: "https://www.redbackracing.com/",
-    thumbnailUrl:
-      "/starlightProjects/24_05_UNSWRedbackRacingAutonomousVehicles.png",
-  },
-  {
-    name: "UNSW Redback Racing - Data Acquistion",
-    desc: `Redback Racing's Data Acquisition Team focuses on capturing vehicle telemetry data and displaying it in a meaningful way. Check out their vehicle driver display and a live telemetry web app!`,
-    projectUrl: "https://www.redbackracing.com/",
-    thumbnailUrl:
-      "/starlightProjects/24_04_UNSWRedbackRacingDataAcquisition.JPG",
-  },
-  {
-    name: "Browoser",
-    desc: "Funni browser app for Apple Watch built in SwiftUI. Also contains a useless AI to comfort you when you're lonely!!",
-    projectUrl: "https://apps.apple.com/us/app/browoser/id6463472872",
-    thumbnailUrl: "/starlightProjects/24_12_Browoser.png",
-  },
-  {
-    name: "Hardstuck Debating Script",
-    desc: "Automatically create debating scrim groups with this python script!",
-    projectUrl: "https://github.com/TAS-scorchedshadow/DebatingAlgorithm",
-    thumbnailUrl: "/starlightProjects/24_03_HardstuckDebating.png",
-  },
-  {
-    name: "Groveify - 24T1 Trainee Project",
-    desc: "Groveify is a habit tracker and productivity manager that comes with a cute little world to keep you going!",
-    projectUrl: "https://groveify.com",
-    thumbnailUrl: "/traineeProjects/groveify.png",
-  },
-  {
-    name: "Generic Assembler",
-    desc: "Convert assembly in a custom MIPS-Like assembly language into binary or hex format!",
-    projectUrl: "https://github.com/JamesTreloar/GenericAssembler",
-    thumbnailUrl: "/starlightProjects/24_01_GenericAssembler.png",
-  },
-  {
-    name: "Riflelytics",
-    desc: "Data aggregation and visualisation website for rifle shooting. Easily integrates with existing target hardware!",
-    thumbnailUrl: "/starlightProjects/24_0A_riflelytics.png",
-    projectUrl: "https://github.com/TAS-scorchedshadow/Rifle_Shooting_Major",
-  },
-];
+export const starlightProjectData: { [year: number]: Omit<ProjectCardProps, "trainee">[] } = {
+  2024: [
+    {
+      name: "LemonOS",
+      desc: "Hobby operating system written to run on PC hardware. Contains features and software found in many modern operating systems. Can run software common on Linux/unix systems and even games like DOOM!",
+      projectUrl: "https://github.com/LemonOSProject/LemonOS",
+      thumbnailUrl: "/starlightProjects/24_16_LemonOS.png",
+    },
+    {
+      name: "Campus Collab - 24T1 Trainee Project",
+      desc: "The ultimate platform for connecting and collaborating with fellow students. Effortlessly create and manage project listings and discover exciting events on and off campus!",
+      projectUrl: "https://github.com/sohumshah2/campuscollab",
+      thumbnailUrl: "/starlightProjects/24_15_CampusCollab.jpg",
+    },
+    {
+      name: "FairShare",
+      desc: "A receipt sharing website aimed at helping making splitting bills easier!",
+      projectUrl: "https://fairshared.me",
+      thumbnailUrl: "starlightProjects/24_17_FairShare.png",
+    },
+    {
+      name: "Discord LeetCode Bot",
+      desc: "Get motivated to LeetCode with this customisable Discord bot!",
+      projectUrl: "https://github.com/Kaiqi-Liang/LeetCode-Daily",
+      thumbnailUrl: "/starlightProjects/24_14_DiscordLeetCodeBot.png",
+    },
+    {
+      name: "Quests - Stamp Rally Management System",
+      desc: "A mobile friendly stamp rally management system equipped with tasks, rooms, societies and a raffle developed for MegaLAN Events!",
+      projectUrl: "https://github.com/megalan-association/quests",
+      thumbnailUrl: "/starlightProjects/24_11_Quests.jpeg",
+    },
+    {
+      name: "Propagate.ink",
+      desc: "The website application for visual learners! Create mind maps with accompanying, details and aesthetic notes for each node!",
+      projectUrl: "https://www.propagate.ink",
+      thumbnailUrl: "/starlightProjects/24_10_Propagate.png",
+    },
+    {
+      name: "Way Home",
+      desc: "WayHome is a cross platform location sharing app. Share your location and memories of your favorite places with your pookies!",
+      projectUrl: "https://github.com/mt-fns/WayHome",
+      thumbnailUrl: "/starlightProjects/24_09_WayHome.png",
+    },
+    {
+      name: "Beem Memo Pay",
+      desc: "Capture memories from group expenses and conclude your trips by sharing your favorite moments. Make group expenses on Beem fun and social!",
+      projectUrl: "https://github.com/AI-Hack-2024/Beem-MemoPay",
+      thumbnailUrl: "/starlightProjects/24_08_BeemMemoPay.png",
+    },
+    {
+      name: "AchieveMint - 24T1 Trainee Project",
+      desc: "Enhance your productivity with this all-in-one organization website, featuring a to-do list, note-taking, reminders and a resting page to help you stay on track and achieve more!",
+      projectUrl: "https://github.com/devsoc-unsw/trainee-saturn-24t1",
+      thumbnailUrl: "/starlightProjects/24_07_AchieveMint.png",
+    },
+    {
+      name: "UNSWipe - 24T1 Trainee Project",
+      desc: "Find the perfect groupmate for your CSE course with this real-time messaging app!",
+      projectUrl: "https://github.com/devsoc-unsw/trainee-uranus-24t1",
+      thumbnailUrl: "/traineeProjects/unswipe.png",
+    },
+    {
+      name: "UNSW Redback Racing - Autonomous Vehicles",
+      desc: "Suite of automated systems to allow an autonomous car to percieve and navigate around a circuit. This includes developing both vehicle simulations alongside hardware.",
+      projectUrl: "https://www.redbackracing.com/",
+      thumbnailUrl:
+        "/starlightProjects/24_05_UNSWRedbackRacingAutonomousVehicles.png",
+    },
+    {
+      name: "UNSW Redback Racing - Data Acquistion",
+      desc: `Redback Racing's Data Acquisition Team focuses on capturing vehicle telemetry data and displaying it in a meaningful way. Check out their vehicle driver display and a live telemetry web app!`,
+      projectUrl: "https://www.redbackracing.com/",
+      thumbnailUrl:
+        "/starlightProjects/24_04_UNSWRedbackRacingDataAcquisition.JPG",
+    },
+    {
+      name: "Browoser",
+      desc: "Funni browser app for Apple Watch built in SwiftUI. Also contains a useless AI to comfort you when you're lonely!!",
+      projectUrl: "https://apps.apple.com/us/app/browoser/id6463472872",
+      thumbnailUrl: "/starlightProjects/24_12_Browoser.png",
+    },
+    {
+      name: "Hardstuck Debating Script",
+      desc: "Automatically create debating scrim groups with this python script!",
+      projectUrl: "https://github.com/TAS-scorchedshadow/DebatingAlgorithm",
+      thumbnailUrl: "/starlightProjects/24_03_HardstuckDebating.png",
+    },
+    {
+      name: "Groveify - 24T1 Trainee Project",
+      desc: "Groveify is a habit tracker and productivity manager that comes with a cute little world to keep you going!",
+      projectUrl: "https://groveify.com",
+      thumbnailUrl: "/traineeProjects/groveify.png",
+    },
+    {
+      name: "Generic Assembler",
+      desc: "Convert assembly in a custom MIPS-Like assembly language into binary or hex format!",
+      projectUrl: "https://github.com/JamesTreloar/GenericAssembler",
+      thumbnailUrl: "/starlightProjects/24_01_GenericAssembler.png",
+    },
+    {
+      name: "Riflelytics",
+      desc: "Data aggregation and visualisation website for rifle shooting. Easily integrates with existing target hardware!",
+      thumbnailUrl: "/starlightProjects/24_0A_riflelytics.png",
+      projectUrl: "https://github.com/TAS-scorchedshadow/Rifle_Shooting_Major",
+    },
+  ],
+  2025: [
+    {
+      name: "Your project can be here!",
+      desc: "Submissions are still open! Take your chance to showcase your favourite project through the link below!",
+      projectUrl: "https://devsoc-starlight.devpost.com/",
+      thumbnailUrl: "/starlightProjects/placeholder.jpg",
+    },
+    {
+      name: "UNSW Redback Racing - Autonomous Vehicles",
+      desc: "Suite of automated systems to allow an autonomous car to percieve and navigate around a circuit. This includes developing both vehicle simulations alongside hardware.",
+      projectUrl: "https://www.redbackracing.com/",
+      thumbnailUrl:
+        "/starlightProjects/24_05_UNSWRedbackRacingAutonomousVehicles.png",
+    },
+    {
+      name: "UNSW Redback Racing - Data Acquistion",
+      desc: `Redback Racing's Data Acquisition Team focuses on capturing vehicle telemetry data and displaying it in a meaningful way. Check out their vehicle driver display and a live telemetry web app!`,
+      projectUrl: "https://www.redbackracing.com/",
+      thumbnailUrl:
+        "/starlightProjects/24_04_UNSWRedbackRacingDataAcquisition.JPG",
+    },
+  ],
+};
 // Data for the "Join DevSoc" section
 // Should set/unset applicationUrl to mark recruitment as open/closed
 export const recruitmentData: RecruitmentProps[] = [
