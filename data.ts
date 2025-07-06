@@ -358,19 +358,24 @@ export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
   2025: {
     supporterLogos: [
       {
-        name: "UNSW",
-        logo: unsw,
-        url: "https://www.unsw.edu.au/",
-      },
-      {
         name: "Arc",
         logo: arc,
         url: "https://www.arc.unsw.edu.au/",
       },
       {
+        name: "CSE",
+        logo: cse,
+        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
+      },
+      {
         name: "Roundhouse",
         logo: "https://www.arc.unsw.edu.au/assets/images/roundhouse-header.svg",
         url: "https://www.arc.unsw.edu.au/roundhouse",
+      },
+       {
+        name: "UNSW",
+        logo: unsw,
+        url: "https://www.unsw.edu.au/",
       },
     ],
     industryLogos: [
