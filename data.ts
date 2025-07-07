@@ -35,7 +35,7 @@ import csesoc from "./assets/csesocwhite.png";
 import tradedesk from "./assets/thetradedesk.png";
 import lyra from "./assets/lyra.svg";
 import arista from "./assets/arista.png";
-import createunsw from "./assets/createunsw.svg"; 
+import createunsw from "./assets/createunsw.svg";
 import gmsoc from "./assets/gmsoc.png";
 import gmsoc2 from "./assets/gmsoc2.png";
 import ramsoc from "./assets/ramsoc.svg";
@@ -152,7 +152,9 @@ export const traineeProjectData: Omit<ProjectCardProps, "trainee">[] = [
   },
 ];
 
-export const starlightProjectData: { [year: number]: Omit<ProjectCardProps, "trainee">[] } = {
+export const starlightProjectData: {
+  [year: number]: Omit<ProjectCardProps, "trainee">[];
+} = {
   2024: [
     {
       name: "LemonOS",
@@ -267,35 +269,32 @@ export const starlightProjectData: { [year: number]: Omit<ProjectCardProps, "tra
       thumbnailUrl: "/starlightProjects/placeholder.jpg",
     },
     {
-      name: "Formify", 
+      name: "Formify",
       desc: "Formify transforms tedious, manual form-filling and helps professionals connect more deeply with their clients through focused and genuine conversations. It uses WebSocket connections, real-time audio analysis, and mapping of natural dialogue into structured data to make client interactions feel effortless.",
       projectUrl: "https://formify-mu.vercel.app/",
       thumbnailUrl: "/starlightProjects/2025/27_07_Formify.jpeg",
-
     },
     {
-      name: "yellowshirt - 24T2 Trainee Project", 
+      name: "yellowshirt - 24T2 Trainee Project",
       desc: "A location-guessing game for universities, targeting new and accustomed students alike.",
       projectUrl: "https://yellowshirt.xyz",
       thumbnailUrl: "/starlightProjects/2025/25_05_Yellowshirt.png",
-
     },
     {
       name: "CREATE UNSW - Spiderbot",
       desc: "Check out this cool bot by the CREATE team! It even dances!",
       projectUrl: "https://www.facebook.com/watch/?v=1031336124791472",
-      thumbnailUrl: "/starlightProjects/2025/25_06_CREATEUNSWSpiderbot.png",
+      thumbnailUrl: "/starlightProjects/2025/25_06_CreateUNSWSpiderbot.png",
     },
     {
       name: "Electus - 25T1 Trainee Project",
       desc: "Make society elections easier with this open source voting platform!",
       projectUrl: "https://github.com/devsoc-unsw/trainee-fighting-25t1",
-      thumbnailUrl:
-        "/starlightProjects/2025/25_03_Electus.png",
+      thumbnailUrl: "/starlightProjects/2025/25_03_Electus.png",
     },
     {
       name: "Arcane Raiders",
-      desc: "Team up with your wizard friends to pillage the magic tower! Create elemental synergies, defeat powerful bosses and claim the tower's treasure in this rogue-like dungeon-raider.",  
+      desc: "Team up with your wizard friends to pillage the magic tower! Create elemental synergies, defeat powerful bosses and claim the tower's treasure in this rogue-like dungeon-raider.",
       projectUrl: "https://store.steampowered.com/app/2899410/Arcane_Raiders/",
       thumbnailUrl: "/starlightProjects/2025/25_04_ArcaneRaiders.jpg",
     },
@@ -369,7 +368,7 @@ export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
         logo: "https://www.arc.unsw.edu.au/assets/images/roundhouse-header.svg",
         url: "https://www.arc.unsw.edu.au/roundhouse",
       },
-       {
+      {
         name: "UNSW",
         logo: unsw,
         url: "https://www.unsw.edu.au/",
@@ -439,12 +438,12 @@ export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
       },
     ],
     societyLogos: [
-           {
+      {
         name: "Create UNSW",
         logo: createunsw,
         url: "https://www.createunsw.com.au/",
       },
-            {
+      {
         name: "Game Makers Society",
         logo: gmsoc2,
         url: "https://www.arc.unsw.edu.au/get-involved/opportunity?name=Game%20Making%20Society",
@@ -460,7 +459,6 @@ export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
         logo: redback,
         url: "https://www.redbackracing.com/",
       },
-
     ],
   },
 };
@@ -557,15 +555,13 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           logo: tiktok,
           url: "https://careers.tiktok.com/",
         },
-
-
-
       ],
     },
   ],
   2024: [
     {
-      infoBar: "In 2024, CSESoc and DevSoc collaborated on a joint sponsorship programme.",
+      infoBar:
+        "In 2024, CSESoc and DevSoc collaborated on a joint sponsorship programme.",
       title: "Project Sponsors",
       logos: [
         {
@@ -783,7 +779,7 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
         Rally your chaos crew 🚀, get those brain juices bubbling 🧠🎮 and press START on your game dev journey with DevSoc's one and only Game Jam!\n
         📅 𝗦𝗧𝗔𝗥𝗧𝗦 : 7th July 2025 2pm (Week 6 Monday)
         💫 𝗦𝗛𝗢𝗪𝗖𝗔𝗦𝗘: 9th July 3pm (Week 6 Wednesday)
-        📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: Ainsworth G03`
+        📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: Ainsworth G03`,
       },
       {
         eventId: 673293572406651,
@@ -792,7 +788,7 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
         Our award-winning Training Program is 𝗕𝗔𝗖𝗞 for its 𝘧𝘪𝘳𝘴𝘵 𝘦𝘷𝘦𝘳 workshop 𝗼𝗽𝗲𝗻 𝘁𝗼 𝗮𝗹𝗹! Learn how to 𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝗽𝗲𝗿𝘀𝗼𝗻𝗮𝗹 𝗽𝗿𝗼𝗷𝗲𝗰𝘁𝘀 😎 so that they are 𝘳𝘦𝘴𝘶𝘮𝘦-𝘳𝘦𝘢𝘥𝘺 and following 𝗗𝗲𝘃𝗢𝗽𝘀 best practices 😋!\n
         📅 𝗗𝗔𝗧𝗘 : 15th July 2025 (Week 7 Tuesday)
         ⏰ 𝗧𝗜𝗠𝗘: 2-4pm
-        📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: Quad G04`
+        📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: Quad G04`,
       },
       {
         eventId: 683939274224482,
