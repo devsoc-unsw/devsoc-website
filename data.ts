@@ -267,6 +267,13 @@ export const starlightProjectData: { [year: number]: Omit<ProjectCardProps, "tra
       thumbnailUrl: "/starlightProjects/placeholder.jpg",
     },
     {
+      name: "Formify", 
+      desc: "Formify transforms tedious, manual form-filling and helps professionals connect more deeply with their clients through focused and genuine conversations. It uses WebSocket connections, real-time audio analysis, and mapping of natural dialogue into structured data to make client interactions feel effortless.",
+      projectUrl: "https://formify-mu.vercel.app/",
+      thumbnailUrl: "/starlightProjects/2025/27_07_Formify.jpeg",
+
+    },
+    {
       name: "yellowshirt - 24T2 Trainee Project", 
       desc: "A location-guessing game for universities, targeting new and accustomed students alike.",
       projectUrl: "https://yellowshirt.xyz",
