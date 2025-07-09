@@ -269,10 +269,22 @@ export const starlightProjectData: {
       thumbnailUrl: "/starlightProjects/placeholder.jpg",
     },
     {
+      name: "RAMSOC - Sumobots",
+      desc: "The top bots from RAMSoc's Sumobot competition are coming! Check out their unique designs and learn more about the competition!",
+      projectUrl: "https://sumobots.ramsocunsw.org/2025",
+      thumbnailUrl: "/starlightProjects/2025/25_09_Sumobot.png",
+    },
+    {
+      name: "Generic Assembler (v2)",
+      desc: "Assembles assembler for custom ISAs. Designed for learning processor development. Prevents the need for hand assembling.Currently supports MIPS like ISAs.",
+      projectUrl: "https://github.com/JamesTreloar/GenericAssembler",
+      thumbnailUrl: "/starlightProjects/2025/25_08_GenericAssembler.png",
+    },
+    {
       name: "Formify",
-      desc: "Formify transforms tedious, manual form-filling and helps professionals connect more deeply with their clients through focused and genuine conversations. It uses WebSocket connections, real-time audio analysis, and mapping of natural dialogue into structured data to make client interactions feel effortless.",
+      desc: "Formify automates tedious, manual form-filling with voice recognition! It uses WebSocket connections, real-time audio analysis, and mapping of natural dialogue into structured data to make interactions feel effortless.",
       projectUrl: "https://formify-mu.vercel.app/",
-      thumbnailUrl: "/starlightProjects/2025/27_07_Formify.jpeg",
+      thumbnailUrl: "/starlightProjects/2025/25_07_Formify.jpeg",
     },
     {
       name: "yellowshirt - 24T2 Trainee Project",
