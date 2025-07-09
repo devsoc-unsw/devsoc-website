@@ -276,7 +276,7 @@ export const starlightProjectData: {
     },
     {
       name: "Generic Assembler (v2)",
-      desc: "Assembles assembler for custom ISAs. Designed for learning processor development. Prevents the need for hand assembling.Currently supports MIPS like ISAs.",
+      desc: "Assembles assembler for custom ISAs. Designed for learning processor development. Prevents the need for hand assembling.Currently supports MIPS like ISAs!",
       projectUrl: "https://github.com/JamesTreloar/GenericAssembler",
       thumbnailUrl: "/starlightProjects/2025/25_08_GenericAssembler.png",
     },
