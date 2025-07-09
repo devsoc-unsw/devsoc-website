@@ -269,6 +269,25 @@ export const starlightProjectData: {
       thumbnailUrl: "/starlightProjects/placeholder.jpg",
     },
     {
+      name: "Bluesat - High Altitude Balloon",
+      desc: "Bluesat's high air balloon just made its first flight reaching a max altitude of 35 km carrying a reseach payload!",
+      projectUrl: "https://bluesat.unsw.edu.au/#projects",
+      thumbnailUrl:
+        "/starlightProjects/2025/25_12_BluesatHighAltitudeBalloon.jpg",
+    },
+    {
+      name: "Bluesat - Rover",
+      desc: "Bluesat has seen the returned to their Offworld Robotics project and in just entered their first rover challenge since 2019. ",
+      projectUrl: "https://bluesat.unsw.edu.au/#projects",
+      thumbnailUrl: "/starlightProjects/2025/25_11_BluesatRover.jpeg",
+    },
+    {
+      name: "Bluesat - Ground Station",
+      desc: "This ground station maintains an uplink and downlink connection with Bluesat's high altitude balloon and potentially their own cubesat in low Earth orbit.",
+      projectUrl: "https://bluesat.unsw.edu.au/#projects",
+      thumbnailUrl: "/starlightProjects/2025/25_10_BluesatGroundStation.png",
+    },
+    {
       name: "RAMSOC - Sumobots",
       desc: "The top bots from RAMSoc's Sumobot competition are coming! Check out their unique designs and learn more about the competition!",
       projectUrl: "https://sumobots.ramsocunsw.org/2025",
@@ -284,7 +303,7 @@ export const starlightProjectData: {
       name: "Formify",
       desc: "Formify automates tedious, manual form-filling with voice recognition! It uses WebSocket connections, real-time audio analysis, and mapping of natural dialogue into structured data to make interactions feel effortless.",
       projectUrl: "https://formify-mu.vercel.app/",
-      thumbnailUrl: "/starlightProjects/2025/27_07_Formify.jpeg",
+      thumbnailUrl: "/starlightProjects/2025/25_07_Formify.jpeg",
     },
     {
       name: "yellowshirt - 24T2 Trainee Project",
