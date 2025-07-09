@@ -283,7 +283,7 @@ export const starlightProjectData: {
     },
     {
       name: "Bluesat - Ground Station",
-      desc: "This ground station maintains an uplink and downlink connection with Bluesat's high altitude balloon and later their own cubesat in low Earth orbit.",
+      desc: "This ground station maintains an uplink and downlink connection with Bluesat's high altitude balloon and their own cubesat in low Earth orbit.",
       projectUrl: "https://bluesat.unsw.edu.au/#projects",
       thumbnailUrl: "/starlightProjects/2025/25_10_BlueSatGroundStation.png",
     },
