@@ -269,6 +269,7 @@ export const starlightProjectData: {
       thumbnailUrl: "/starlightProjects/placeholder.jpg",
     },
     {
+<<<<<<< HEAD
       name: "RAMSOC - Sumobots",
       desc: "The top bots from RAMSoc's Sumobot competition are coming! Check out their unique designs and learn more about the competition!",
       projectUrl: "https://sumobots.ramsocunsw.org/2025",
@@ -285,6 +286,12 @@ export const starlightProjectData: {
       desc: "Formify automates tedious, manual form-filling with voice recognition! It uses WebSocket connections, real-time audio analysis, and mapping of natural dialogue into structured data to make interactions feel effortless.",
       projectUrl: "https://formify-mu.vercel.app/",
       thumbnailUrl: "/starlightProjects/2025/25_07_Formify.jpeg",
+=======
+      name: "Formify",
+      desc: "Formify transforms tedious, manual form-filling and helps professionals connect more deeply with their clients through focused and genuine conversations. It uses WebSocket connections, real-time audio analysis, and mapping of natural dialogue into structured data to make client interactions feel effortless.",
+      projectUrl: "https://formify-mu.vercel.app/",
+      thumbnailUrl: "/starlightProjects/2025/27_07_Formify.jpeg",
+>>>>>>> origin/main
     },
     {
       name: "yellowshirt - 24T2 Trainee Project",
@@ -402,19 +409,24 @@ export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
   2025: {
     supporterLogos: [
       {
-        name: "UNSW",
-        logo: unsw,
-        url: "https://www.unsw.edu.au/",
-      },
-      {
         name: "Arc",
         logo: arc,
         url: "https://www.arc.unsw.edu.au/",
       },
       {
+        name: "CSE",
+        logo: cse,
+        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
+      },
+      {
         name: "Roundhouse",
         logo: "https://www.arc.unsw.edu.au/assets/images/roundhouse-header.svg",
         url: "https://www.arc.unsw.edu.au/roundhouse",
+      },
+       {
+        name: "UNSW",
+        logo: unsw,
+        url: "https://www.unsw.edu.au/",
       },
     ],
     industryLogos: [
