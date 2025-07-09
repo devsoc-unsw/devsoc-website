@@ -284,7 +284,7 @@ export const starlightProjectData: {
       name: "Formify",
       desc: "Formify automates tedious, manual form-filling with voice recognition! It uses WebSocket connections, real-time audio analysis, and mapping of natural dialogue into structured data to make interactions feel effortless.",
       projectUrl: "https://formify-mu.vercel.app/",
-      thumbnailUrl: "/starlightProjects/2025/25_07_Formify.jpeg",
+      thumbnailUrl: "/starlightProjects/2025/27_07_Formify.jpeg",
     },
     {
       name: "yellowshirt - 24T2 Trainee Project",
