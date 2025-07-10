@@ -41,6 +41,7 @@ import gmsoc2 from "./assets/gmsoc2.png";
 import ramsoc from "./assets/ramsoc.svg";
 import redback from "./assets/redback.png";
 import flowtraders from "./assets/flowtraders.png";
+import bluesat from "./assets/bluesat.png";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 // General stuff:
@@ -474,6 +475,11 @@ export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
       },
     ],
     societyLogos: [
+      {
+        name: "Bluesat",
+        logo: bluesat,
+        url: "https://bluesat.unsw.edu.au/",
+      },
       {
         name: "Create UNSW",
         logo: createunsw,

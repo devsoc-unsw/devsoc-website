@@ -89,7 +89,7 @@ export function StarlightProjectsSection() {
                     return renderLogoRows(idx, sponsor, "small");
                 })}
             </Stack>
-            
+
             {starlightSupporterData[selectedYear].industryLogos && starlightSupporterData[selectedYear].industryLogos.length > 0 && (
                 <>
                     <Typography level="h3" py={2} textAlign={"center"}>
@@ -109,22 +109,23 @@ export function StarlightProjectsSection() {
                     </Stack>
                 </>
             )}
-            
+
             {starlightSupporterData[selectedYear].societyLogos && starlightSupporterData[selectedYear].societyLogos.length > 0 && (
                 <>
                     <Typography level="h3" py={2} textAlign={"center"}>
                         Society Partners
                     </Typography>
                     <Stack
-                        display="grid"
-                        gridTemplateColumns={{
-                            sm: "repeat(2, 1fr)",
-                            md: "repeat(4, 1fr)",
-                        }}
-                        marginBottom={8}
-                        sx={{ gridGap: "32px" }}
+                      display="grid"
+                      gridTemplateColumns={{
+                        xs: "repeat(auto-fit, minmax(200px, 1fr))",
+                        md: "repeat(auto-fit, minmax(200px, 1fr))",
+                        xl: "repeat(auto-fit, minmax(200px, 1fr))",
+                      }}
+                      marginBottom={8}
+                      sx={{ gridGap: "32px" }}
                     >
-                        {starlightSupporterData[selectedYear].societyLogos.map((sponsor, idx) => renderLogoRows(idx, sponsor, "small"))}
+                        {starlightSupporterData[selectedYear].societyLogos.map((sponsor, idx) => renderLogoRows(idx, sponsor))}
                     </Stack>
                 </>
             )}
