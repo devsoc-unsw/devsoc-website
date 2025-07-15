@@ -264,12 +264,6 @@ export const starlightProjectData: {
   ],
   2025: [
     {
-      name: "Your project can be here!",
-      desc: "Submissions are still open! Take your chance to showcase your favourite project through the link below!",
-      projectUrl: "https://devsoc-starlight.devpost.com/",
-      thumbnailUrl: "/starlightProjects/placeholder.jpg",
-    },
-    {
       name: "Arcane Raiders",
       desc: "Team up with your wizard friends to pillage the magic tower! Create elemental synergies, defeat powerful bosses and claim the tower's treasure in this rogue-like dungeon-raider.",
       projectUrl: "https://store.steampowered.com/app/2899410/Arcane_Raiders/",
@@ -321,7 +315,8 @@ export const starlightProjectData: {
     {
       name: "Drift",
       desc: "Drift breaks your big goals into small, actionable steps and creates a clear daily schedule, making it easier to stay on track and achieve success step by step.",
-      projectUrl: "https://github.com/devsoc-unsw/trainee-steel-25t1/blob/main/drift",
+      projectUrl:
+        "https://github.com/devsoc-unsw/trainee-steel-25t1/blob/main/drift",
       thumbnailUrl: "/starlightProjects/2025/25_16_Drift.png",
     },
     {
@@ -364,7 +359,8 @@ export const starlightProjectData: {
       name: "Pokémon Showdown Team Stealer",
       desc: "A (soon to be) Chrome extension to help you steal teams from Showdown Live videos from YouTube! This app automates the tedious process of manually stealing Pokémon Showdown teams from YouTube videos!",
       projectUrl: "https://github.com/Gyoumi/ps-team-stealer",
-      thumbnailUrl: "/starlightProjects/2025/25_13_PokemonShowdownTeamStealer.png",
+      thumbnailUrl:
+        "/starlightProjects/2025/25_13_PokemonShowdownTeamStealer.png",
     },
     {
       name: "QuirioPilot",
@@ -396,7 +392,7 @@ export const starlightProjectData: {
       projectUrl: "https://github.com/kevinh-e/tastebuds",
       thumbnailUrl: "/starlightProjects/2025/25_21_Tastebuds.png",
     },
-  
+
     {
       name: "UNSW Loove Letters",
       desc: "An anonymous confession platform for UNSW students, powered by AI moderation to ensure a safe and engaging space for sharing.",
@@ -423,7 +419,6 @@ export const starlightProjectData: {
       projectUrl: "https://yellowshirt.xyz",
       thumbnailUrl: "/starlightProjects/2025/25_05_Yellowshirt.png",
     },
-
   ],
 };
 // Data for the "Join DevSoc" section
