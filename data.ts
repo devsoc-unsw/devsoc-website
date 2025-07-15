@@ -264,10 +264,16 @@ export const starlightProjectData: {
   ],
   2025: [
     {
-      name: "Your project can be here!",
-      desc: "Submissions are still open! Take your chance to showcase your favourite project through the link below!",
-      projectUrl: "https://devsoc-starlight.devpost.com/",
-      thumbnailUrl: "/starlightProjects/placeholder.jpg",
+      name: "Arcane Raiders",
+      desc: "Team up with your wizard friends to pillage the magic tower! Create elemental synergies, defeat powerful bosses and claim the tower's treasure in this rogue-like dungeon-raider.",
+      projectUrl: "https://store.steampowered.com/app/2899410/Arcane_Raiders/",
+      thumbnailUrl: "/starlightProjects/2025/25_04_ArcaneRaiders.jpg",
+    },
+    {
+      name: "Bluesat - Ground Station",
+      desc: "This ground station maintains an uplink and downlink connection with Bluesat's high altitude balloon and potentially their own cubesat in low Earth orbit.",
+      projectUrl: "https://bluesat.unsw.edu.au/#projects",
+      thumbnailUrl: "/starlightProjects/2025/25_10_BluesatGroundStation.png",
     },
     {
       name: "Bluesat - High Altitude Balloon",
@@ -283,34 +289,16 @@ export const starlightProjectData: {
       thumbnailUrl: "/starlightProjects/2025/25_11_BluesatRover.jpeg",
     },
     {
-      name: "Bluesat - Ground Station",
-      desc: "This ground station maintains an uplink and downlink connection with Bluesat's high altitude balloon and potentially their own cubesat in low Earth orbit.",
-      projectUrl: "https://bluesat.unsw.edu.au/#projects",
-      thumbnailUrl: "/starlightProjects/2025/25_10_BluesatGroundStation.png",
+      name: "Breaktime",
+      desc: "Block distracting apps permanently and take intentional breaks.",
+      projectUrl: "http://breaktimeapp.github.io/",
+      thumbnailUrl: "/starlightProjects/2025/25_20_Breaktime.png",
     },
     {
-      name: "RAMSOC - Sumobots",
-      desc: "The top bots from RAMSoc's Sumobot competition are coming! Check out their unique designs and learn more about the competition!",
-      projectUrl: "https://sumobots.ramsocunsw.org/2025",
-      thumbnailUrl: "/starlightProjects/2025/25_09_Sumobot.png",
-    },
-    {
-      name: "Generic Assembler (v2)",
-      desc: "Assembles assembler for custom ISAs. Designed for learning processor development. Prevents the need for hand assembling.Currently supports MIPS like ISAs!",
-      projectUrl: "https://github.com/JamesTreloar/GenericAssembler",
-      thumbnailUrl: "/starlightProjects/2025/25_08_GenericAssembler.png",
-    },
-    {
-      name: "Formify",
-      desc: "Formify automates tedious, manual form-filling with voice recognition! It uses WebSocket connections, real-time audio analysis, and mapping of natural dialogue into structured data to make interactions feel effortless.",
-      projectUrl: "https://formify-mu.vercel.app/",
-      thumbnailUrl: "/starlightProjects/2025/25_07_Formify.jpeg",
-    },
-    {
-      name: "yellowshirt - 24T2 Trainee Project",
-      desc: "A location-guessing game for universities, targeting new and accustomed students alike.",
-      projectUrl: "https://yellowshirt.xyz",
-      thumbnailUrl: "/starlightProjects/2025/25_05_Yellowshirt.png",
+      name: "Cram & Conquer",
+      desc: "A cozy study app built for students :) Focus better with aesthetic Pomodoro timer, lofi music, focus pets, and powerful study tools and trackers.",
+      projectUrl: "https://www.cramandconquer.com/",
+      thumbnailUrl: "/starlightProjects/2025/25_22_Cram&Conquer.png",
     },
     {
       name: "CREATE UNSW - Spiderbot",
@@ -319,16 +307,97 @@ export const starlightProjectData: {
       thumbnailUrl: "/starlightProjects/2025/25_06_CreateUNSWSpiderbot.png",
     },
     {
+      name: "D&C: Divide and Conquer",
+      desc: "An interactive visual novel-style learning platform that uses AI-generated narrative adventures to enhance student engagement with course content.",
+      projectUrl: "https://github.com/michimochi25/divide-and-conquer",
+      thumbnailUrl: "/starlightProjects/2025/25_23_D&C.png",
+    },
+    {
+      name: "Drift",
+      desc: "Drift breaks your big goals into small, actionable steps and creates a clear daily schedule, making it easier to stay on track and achieve success step by step.",
+      projectUrl:
+        "https://github.com/devsoc-unsw/trainee-steel-25t1/blob/main/drift",
+      thumbnailUrl: "/starlightProjects/2025/25_16_Drift.png",
+    },
+    {
       name: "Electus - 25T1 Trainee Project",
       desc: "Make society elections easier with this open source voting platform!",
       projectUrl: "https://github.com/devsoc-unsw/trainee-fighting-25t1",
       thumbnailUrl: "/starlightProjects/2025/25_03_Electus.png",
     },
     {
-      name: "Arcane Raiders",
-      desc: "Team up with your wizard friends to pillage the magic tower! Create elemental synergies, defeat powerful bosses and claim the tower's treasure in this rogue-like dungeon-raider.",
-      projectUrl: "https://store.steampowered.com/app/2899410/Arcane_Raiders/",
-      thumbnailUrl: "/starlightProjects/2025/25_04_ArcaneRaiders.jpg",
+      name: "Formify",
+      desc: "Formify automates tedious, manual form-filling with voice recognition! It uses WebSocket connections, real-time audio analysis, and mapping of natural dialogue into structured data to make interactions feel effortless.",
+      projectUrl: "https://formify-mu.vercel.app/",
+      thumbnailUrl: "/starlightProjects/2025/25_07_Formify.jpeg",
+    },
+    {
+      name: "Generic Assembler (v2)",
+      desc: "Assembles assembler for custom ISAs. Designed for learning processor development. Prevents the need for hand assembling.Currently supports MIPS like ISAs!",
+      projectUrl: "https://github.com/JamesTreloar/GenericAssembler",
+      thumbnailUrl: "/starlightProjects/2025/25_08_GenericAssembler.png",
+    },
+    {
+      name: "Helios",
+      desc: "Helios is the ultimate Chrome extension for language learners. Get instant translations, track your progress, and build vocabulary while watching Netflix, YouTube, or browsing the web.",
+      projectUrl: "https://johnnieparris.github.io/HeliosLandingPage/",
+      thumbnailUrl: "/starlightProjects/2025/25_15_Helios.png",
+    },
+    {
+      name: "Inflow",
+      desc: "Inflow is a smart Chrome extension that uses AI to block distracting sites based on your current goal, keeping you focused and in the zone without relying on static blocklists.",
+      projectUrl: "https://github.com/trickytoy/InFlow",
+      thumbnailUrl: "/starlightProjects/2025/25_18_Inflow.png",
+    },
+    {
+      name: "Lock Step",
+      desc: "A Cybersecurity Toolkit created to bridge the gap for small businesses who face real threats but lack the resources, time and expertise. Straightforward, Practical, and Jargon-free guidance!",
+      projectUrl: "https://github.com/noorbabar/cybersecurity-toolkit",
+      thumbnailUrl: "/starlightProjects/2025/25_17_LockStep.png",
+    },
+    {
+      name: "Pokémon Showdown Team Stealer",
+      desc: "A (soon to be) Chrome extension to help you steal teams from Showdown Live videos from YouTube! This app automates the tedious process of manually stealing Pokémon Showdown teams from YouTube videos!",
+      projectUrl: "https://github.com/Gyoumi/ps-team-stealer",
+      thumbnailUrl:
+        "/starlightProjects/2025/25_13_PokemonShowdownTeamStealer.png",
+    },
+    {
+      name: "QuirioPilot",
+      desc: "AI tutor that doesn’t just answer questions it helps you explore your curiosity. It breaks queries down into clear subtopics, explain them in simple terms and generates interactive quizzes.",
+      projectUrl: "https://github.com/Ayushk249/AI-learning-system",
+      thumbnailUrl: "/starlightProjects/2025/25_24_QuirioPilot.png",
+    },
+    {
+      name: "RAMSOC - Sumobots",
+      desc: "The top bots from RAMSoc's Sumobot competition are coming! Check out their unique designs and learn more about the competition!",
+      projectUrl: "https://sumobots.ramsocunsw.org/2025",
+      thumbnailUrl: "/starlightProjects/2025/25_09_Sumobot.png",
+    },
+    {
+      name: "Room 134",
+      desc: "A physio student with zero experience in coding and 3d modelling started her three.js project.",
+      projectUrl: "https://room-134.vercel.app/",
+      thumbnailUrl: "/starlightProjects/2025/25_19_Room134.png",
+    },
+    {
+      name: "Sussy Uni",
+      desc: "Social deduction game for UNSW students to help them revise content, make friends, familiarise themselves with popular locations on campus, and have fun!",
+      projectUrl: "https://sussyuni.com/",
+      thumbnailUrl: "/starlightProjects/2025/25_25_SussyUni.png",
+    },
+    {
+      name: "Tastebuds",
+      desc: "Find the perfect taste for your buds! Find food to eat with your friends in real-time!",
+      projectUrl: "https://github.com/kevinh-e/tastebuds",
+      thumbnailUrl: "/starlightProjects/2025/25_21_Tastebuds.png",
+    },
+
+    {
+      name: "UNSW Loove Letters",
+      desc: "An anonymous confession platform for UNSW students, powered by AI moderation to ensure a safe and engaging space for sharing.",
+      projectUrl: "https://unswloveletters.vercel.app/",
+      thumbnailUrl: "/starlightProjects/2025/25_14_UNSWLoveLetters.png",
     },
     {
       name: "UNSW Redback Racing - Autonomous Vehicles",
@@ -343,6 +412,12 @@ export const starlightProjectData: {
       projectUrl: "https://www.redbackracing.com/",
       thumbnailUrl:
         "/starlightProjects/2025/25_01_UNSWRedbackRacingDataAcquisition.JPG",
+    },
+    {
+      name: "yellowshirt - 24T2 Trainee Project",
+      desc: "A location-guessing game for universities, targeting new and accustomed students alike.",
+      projectUrl: "https://yellowshirt.xyz",
+      thumbnailUrl: "/starlightProjects/2025/25_05_Yellowshirt.png",
     },
   ],
 };
