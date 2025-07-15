@@ -270,6 +270,18 @@ export const starlightProjectData: {
       thumbnailUrl: "/starlightProjects/placeholder.jpg",
     },
     {
+      name: "Arcane Raiders",
+      desc: "Team up with your wizard friends to pillage the magic tower! Create elemental synergies, defeat powerful bosses and claim the tower's treasure in this rogue-like dungeon-raider.",
+      projectUrl: "https://store.steampowered.com/app/2899410/Arcane_Raiders/",
+      thumbnailUrl: "/starlightProjects/2025/25_04_ArcaneRaiders.jpg",
+    },
+    {
+      name: "Bluesat - Ground Station",
+      desc: "This ground station maintains an uplink and downlink connection with Bluesat's high altitude balloon and potentially their own cubesat in low Earth orbit.",
+      projectUrl: "https://bluesat.unsw.edu.au/#projects",
+      thumbnailUrl: "/starlightProjects/2025/25_10_BluesatGroundStation.png",
+    },
+    {
       name: "Bluesat - High Altitude Balloon",
       desc: "Bluesat's high air balloon just made its first flight reaching a max altitude of 35 km carrying a reseach payload!",
       projectUrl: "https://bluesat.unsw.edu.au/#projects",
@@ -281,36 +293,6 @@ export const starlightProjectData: {
       desc: "Bluesat has seen the returned to their Offworld Robotics project and in just entered their first rover challenge since 2019. ",
       projectUrl: "https://bluesat.unsw.edu.au/#projects",
       thumbnailUrl: "/starlightProjects/2025/25_11_BluesatRover.jpeg",
-    },
-    {
-      name: "Bluesat - Ground Station",
-      desc: "This ground station maintains an uplink and downlink connection with Bluesat's high altitude balloon and potentially their own cubesat in low Earth orbit.",
-      projectUrl: "https://bluesat.unsw.edu.au/#projects",
-      thumbnailUrl: "/starlightProjects/2025/25_10_BluesatGroundStation.png",
-    },
-    {
-      name: "RAMSOC - Sumobots",
-      desc: "The top bots from RAMSoc's Sumobot competition are coming! Check out their unique designs and learn more about the competition!",
-      projectUrl: "https://sumobots.ramsocunsw.org/2025",
-      thumbnailUrl: "/starlightProjects/2025/25_09_Sumobot.png",
-    },
-    {
-      name: "Generic Assembler (v2)",
-      desc: "Assembles assembler for custom ISAs. Designed for learning processor development. Prevents the need for hand assembling.Currently supports MIPS like ISAs!",
-      projectUrl: "https://github.com/JamesTreloar/GenericAssembler",
-      thumbnailUrl: "/starlightProjects/2025/25_08_GenericAssembler.png",
-    },
-    {
-      name: "Formify",
-      desc: "Formify automates tedious, manual form-filling with voice recognition! It uses WebSocket connections, real-time audio analysis, and mapping of natural dialogue into structured data to make interactions feel effortless.",
-      projectUrl: "https://formify-mu.vercel.app/",
-      thumbnailUrl: "/starlightProjects/2025/25_07_Formify.jpeg",
-    },
-    {
-      name: "yellowshirt - 24T2 Trainee Project",
-      desc: "A location-guessing game for universities, targeting new and accustomed students alike.",
-      projectUrl: "https://yellowshirt.xyz",
-      thumbnailUrl: "/starlightProjects/2025/25_05_Yellowshirt.png",
     },
     {
       name: "CREATE UNSW - Spiderbot",
@@ -325,10 +307,22 @@ export const starlightProjectData: {
       thumbnailUrl: "/starlightProjects/2025/25_03_Electus.png",
     },
     {
-      name: "Arcane Raiders",
-      desc: "Team up with your wizard friends to pillage the magic tower! Create elemental synergies, defeat powerful bosses and claim the tower's treasure in this rogue-like dungeon-raider.",
-      projectUrl: "https://store.steampowered.com/app/2899410/Arcane_Raiders/",
-      thumbnailUrl: "/starlightProjects/2025/25_04_ArcaneRaiders.jpg",
+      name: "Formify",
+      desc: "Formify automates tedious, manual form-filling with voice recognition! It uses WebSocket connections, real-time audio analysis, and mapping of natural dialogue into structured data to make interactions feel effortless.",
+      projectUrl: "https://formify-mu.vercel.app/",
+      thumbnailUrl: "/starlightProjects/2025/25_07_Formify.jpeg",
+    },
+    {
+      name: "Generic Assembler (v2)",
+      desc: "Assembles assembler for custom ISAs. Designed for learning processor development. Prevents the need for hand assembling.Currently supports MIPS like ISAs!",
+      projectUrl: "https://github.com/JamesTreloar/GenericAssembler",
+      thumbnailUrl: "/starlightProjects/2025/25_08_GenericAssembler.png",
+    },
+    {
+      name: "RAMSOC - Sumobots",
+      desc: "The top bots from RAMSoc's Sumobot competition are coming! Check out their unique designs and learn more about the competition!",
+      projectUrl: "https://sumobots.ramsocunsw.org/2025",
+      thumbnailUrl: "/starlightProjects/2025/25_09_Sumobot.png",
     },
     {
       name: "UNSW Redback Racing - Autonomous Vehicles",
@@ -344,6 +338,13 @@ export const starlightProjectData: {
       thumbnailUrl:
         "/starlightProjects/2025/25_01_UNSWRedbackRacingDataAcquisition.JPG",
     },
+    {
+      name: "yellowshirt - 24T2 Trainee Project",
+      desc: "A location-guessing game for universities, targeting new and accustomed students alike.",
+      projectUrl: "https://yellowshirt.xyz",
+      thumbnailUrl: "/starlightProjects/2025/25_05_Yellowshirt.png",
+    },
+
   ],
 };
 // Data for the "Join DevSoc" section
