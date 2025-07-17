@@ -301,6 +301,12 @@ export const starlightProjectData: {
       thumbnailUrl: "/starlightProjects/2025/25_22_Cram&Conquer.png",
     },
     {
+      name: "CREATE UNSW - Cheese Chessboard",
+      desc: "An interactive physical chessboard with light-up visuals and piece-recognition technology.",
+      projectUrl: "https://drive.google.com/file/d/1IYknRjvkHHzsWvHAHv4zv8tGuJXsc_fH/view?usp=sharing",
+      thumbnailUrl: "/starlightProjects/2025/25_26_CreateUNSWCheeseChessboard.png",
+    },
+    {
       name: "CREATE UNSW - Spiderbot",
       desc: "Check out this cool bot by the CREATE team! It even dances!",
       projectUrl: "https://www.facebook.com/watch/?v=1031336124791472",
@@ -312,12 +318,24 @@ export const starlightProjectData: {
       projectUrl: "https://github.com/michimochi25/divide-and-conquer",
       thumbnailUrl: "/starlightProjects/2025/25_23_D&C.png",
     },
+        {
+      name: "Doomscroll to Distinction",
+      desc: "Doomscroll your way to a distinction. Students are already doomscrolling. Don’t fight it. Leverage it.",
+      projectUrl: "https://drive.google.com/file/d/1u3Hsy_iYQQMIpxuhSS7B4cGYhjf7YEY-/view?usp=sharing",
+      thumbnailUrl: "/starlightProjects/2025/25_28_Doomscroll.png",
+    },
     {
       name: "Drift",
       desc: "Drift breaks your big goals into small, actionable steps and creates a clear daily schedule, making it easier to stay on track and achieve success step by step.",
       projectUrl:
         "https://github.com/devsoc-unsw/trainee-steel-25t1/blob/main/drift",
       thumbnailUrl: "/starlightProjects/2025/25_16_Drift.png",
+    },
+    {
+      name: "Droid Racing Challenge - Speedy Gonzales",
+      desc: "Autonomous racing droid using computer vision for lane detection and navigation.",
+      projectUrl: "https://drive.google.com/file/d/1Yw2SDHKVrHkwCzYKx0xTL-6IKcXQFORX/view?usp=drive_link",
+      thumbnailUrl: "/starlightProjects/2025/25_27_DroidRacingChallengeSpeedyGonzales.png",
     },
     {
       name: "Electus - 25T1 Trainee Project",
@@ -367,6 +385,12 @@ export const starlightProjectData: {
       desc: "AI tutor that doesn’t just answer questions it helps you explore your curiosity. It breaks queries down into clear subtopics, explain them in simple terms and generates interactive quizzes.",
       projectUrl: "https://github.com/Ayushk249/AI-learning-system",
       thumbnailUrl: "/starlightProjects/2025/25_24_QuirioPilot.png",
+    },
+    {
+      name: "RAMSOC - Pick-a-bots",
+      desc: "Pick-A-Bots is a webapp that lets RAMSoc Sumobots finals' audience “bet” on matches. Users starts with fixed tokens, stake tokens on their predicted winner, and earn tokens for correct picks.",
+      projectUrl: "https://github.com/UNSW-Robotics-and-Mechatronics-Society/pick-a-bot-2025",
+      thumbnailUrl: "/starlightProjects/2025/25_29_RAMSOCPickABots.png",
     },
     {
       name: "RAMSOC - Sumobots",
@@ -427,7 +451,6 @@ export const recruitmentData: RecruitmentProps[] = [
   {
     position: "Starlight",
     Icon: AutoAwesome,
-    applicationUrl: "https://devsoc-starlight.devpost.com/",
   },
   {
     position: "Subcommittee",
