@@ -304,7 +304,7 @@ export const starlightProjectData: {
       name: "CREATE UNSW - Cheese Chessboard",
       desc: "An interactive physical chessboard with light-up visuals and piece-recognition technology.",
       projectUrl: "https://drive.google.com/file/d/1IYknRjvkHHzsWvHAHv4zv8tGuJXsc_fH/view?usp=sharing",
-      thumbnailUrl: "/starlightProjects/2025/25_26_CreateUNSWCheeseChessboard.png",
+      thumbnailUrl: "/starlightProjects/2025/25_26_CreateUnswChessboard.png",
     },
     {
       name: "CREATE UNSW - Spiderbot",
@@ -390,7 +390,7 @@ export const starlightProjectData: {
       name: "RAMSOC - Pick-a-bots",
       desc: "Pick-A-Bots is a webapp that lets RAMSoc Sumobots finals' audience “bet” on matches. Users starts with fixed tokens, stake tokens on their predicted winner, and earn tokens for correct picks.",
       projectUrl: "https://github.com/UNSW-Robotics-and-Mechatronics-Society/pick-a-bot-2025",
-      thumbnailUrl: "/starlightProjects/2025/25_29_RAMSOCPickABots.png",
+      thumbnailUrl: "/starlightProjects/2025/25_29_RamsocPickABots.png",
     },
     {
       name: "RAMSOC - Sumobots",
