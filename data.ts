@@ -726,31 +726,13 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
     ],
     t2: [
       {
-        eventId: 772603135193625,
-        url: "/events/2025/t2/game-jam-hackathon.jpg",
-        blurb: `🤓 𝗗𝗘𝗩𝗦𝗢𝗖'𝗦 𝗚𝗔𝗠𝗘 𝗝𝗔𝗠 𝗥𝗘𝗧𝗨𝗥𝗡𝗦! 🎮\n
-        Rally your chaos crew 🚀, get those brain juices bubbling 🧠🎮 and press START on your game dev journey with DevSoc's one and only Game Jam!\n
-        📅 𝗦𝗧𝗔𝗥𝗧𝗦 : 7th July 2025 2pm (Week 6 Monday)
-        💫 𝗦𝗛𝗢𝗪𝗖𝗔𝗦𝗘: 9th July 3pm (Week 6 Wednesday)
-        📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: Ainsworth G03`
-      },
-      {
-        eventId: 772603135193625,
-        url: "/events/2025/t2/tp-localhost-workshop.jpg",
-        blurb: `🤯 \"𝗟𝗢𝗖𝗔𝗟𝗛𝗢𝗦𝗧 𝗧𝗢 𝗢𝗡𝗟𝗜𝗡𝗘\" 𝗪𝗢𝗥𝗞𝗦𝗛𝗢𝗣! 📶\n
-        Our award-winning Training Program is 𝗕𝗔𝗖𝗞 for its 𝘧𝘪𝘳𝘴𝘵 𝘦𝘷𝘦𝘳 workshop 𝗼𝗽𝗲𝗻 𝘁𝗼 𝗮𝗹𝗹! Learn how to 𝗱𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝗽𝗲𝗿𝘀𝗼𝗻𝗮𝗹 𝗽𝗿𝗼𝗷𝗲𝗰𝘁𝘀 😎 so that they are 𝘳𝘦𝘴𝘶𝘮𝘦-𝘳𝘦𝘢𝘥𝘺 and following 𝗗𝗲𝘃𝗢𝗽𝘀 best practices 😋!\n
-        📅 𝗗𝗔𝗧𝗘 : 15th July 2025 (Week 7 Tuesday)
-        ⏰ 𝗧𝗜𝗠𝗘: 2-4pm
-        📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: Quad G04`
-      },
-      {
-        eventId: 683939274224482,
-        url: "/events/2025/t2/starlight.jpg",
-        blurb: `🌟 𝗔𝗣𝗣𝗟𝗜𝗖𝗔𝗧𝗜𝗢𝗡𝗦 𝗙𝗢𝗥 𝗦𝗧𝗔𝗥𝗟𝗜𝗚𝗛𝗧 𝗔𝗥𝗘 𝗢𝗣𝗘𝗡! 🌟\n
-    Ever wanted a platform to showcase your latest project? Then Starlight is the perfect opportunity for YOU!🫵 Starlight is an open gallery event running in Week 8 of Term 2, where developers of all experience levels can showcase their projects and connect with their peers. Find more details in our FB event page!\n
-    📅 𝗗𝗘𝗔𝗗𝗟𝗜𝗡𝗘: 14th July 2025 11:59pm (Week 7 Monday)
-    💫 𝗦𝗛𝗢𝗪𝗖𝗔𝗦𝗘: Term 2, Week 8 Day TBC
-    📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: TBD`,
+        eventId: 1275611117623673,
+        url: "/events/2025/t2/starLightShowcase.jpg",
+        blurb: `‼️STARLIGHT PROJECT SHOWCASE‼️
+        At Starlight we have the software and mechatronics projects on display made by the UNSW student community. Come on down **this Friday** and check out 30+ projects, and check out what opportunities are available to you as a UNSW engineering student!
+        📅 𝗗𝗔𝗧𝗘 : 25th July 2025 (Week 8 Friday)
+        ⏰ 𝗧𝗜𝗠𝗘: 4-8pm
+        📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: Roundhouse`
       },
       {
         eventId: 639790979037857,
@@ -796,6 +778,22 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
         eventId: 1871053577164558,
         url: "/events/2025/t2/rock-your-linkedin.jpg",
       },
+      {
+        eventId: 772603135193625,
+        url: "/events/2025/t2/game-jam-hackathon.jpg",
+      },
+      {
+        eventId: 683939274224482,
+        url: "/events/2025/t2/starlight.jpg",
+      },
+      {
+        eventId: 2535637913453765,
+        url: "/events/2025/t2/tp-localhost-workshop.jpg",
+      },
+      {
+        eventId: 1766471423940115,
+        url: "/events/2025/t2/Week7BBQ.jpg",
+      }
     ],
     t3: [],
   },
