@@ -83,21 +83,6 @@ export default function Home() {
           </Stack>
         </Box>
       </Stack>
-      {/* <ExpandMoreIcon sx={{ fontSize: "3rem", color: "white", margin: "-100px" }}/>
-      <IrlPhotos /> */}
-      <Snackbar
-        anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
-        open={open}
-        onClose={() => setOpen(false)}
-        autoHideDuration={6000}
-        sx={{ display: "flex", alignItems: "center" }}
-      >
-        <b>
-          <Link href="https://shop.devsoc.app" target="_blank">
-            2025 Merch Now Avaliable!!
-          </Link>
-        </b>
-      </Snackbar>
     </Box>
   );
 }
