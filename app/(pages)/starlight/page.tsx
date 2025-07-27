@@ -48,7 +48,7 @@ function StarlightStepper() {
           </StepIndicator>
         }
       >
-        <StepperLabel text="4pm - Meet the projects" />
+        <StepperLabel text="Meet the projects" />
       </Step>
       <Step
         orientation="vertical"
@@ -58,7 +58,7 @@ function StarlightStepper() {
           </StepIndicator>
         }
       >
-        <StepperLabel text="6pm - QA Panel"></StepperLabel>
+        <StepperLabel text="QA Panel"></StepperLabel>
       </Step>
       <Step
         orientation="vertical"
@@ -69,7 +69,7 @@ function StarlightStepper() {
           </StepIndicator>
         }
       >
-        <StepperLabel text="7pm - Prize Annoucement"></StepperLabel>
+        <StepperLabel text="Prize Annoucement"></StepperLabel>
       </Step>
     </Stepper>
   );
@@ -91,13 +91,6 @@ export default function StarlightProjectsPage() {
                     >
                         here.
                     </Link>
-                </Typography>
-                <Typography textAlign="justify" pt={2}>
-                    Submissions are open now! Submissions will be processed through{" "}
-                    <Link href="https://devsoc-starlight.devpost.com" target="_blank">
-                        Devpost
-                    </Link>
-                    . Check out last years submissions below!
                 </Typography>
                 <Typography level="h3" py={2} textAlign={"center"}>
                     Schedule

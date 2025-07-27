@@ -17,11 +17,12 @@ export interface ProjectCardProps {
   thumbnailUrl: string;
   projectUrl?: string;
   trainee: boolean;
-  status?: "Operational" | "Unavailable"
+  status?: "Operational" | "Unavailable";
+  techspire?: boolean;
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
-  name, desc, logoUrl, thumbnailUrl, projectUrl, trainee
+  name, desc, logoUrl, thumbnailUrl, projectUrl, trainee, techspire = false
 }) => {
   return (
     <Card variant="outlined" sx={{ width: { xs: "100%", md: "95%" }, height: "100%", mx: 'auto' }}>
@@ -62,21 +63,25 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         <Typography level="title-lg">
           {name}
         </Typography>
-        <Typography level="body-sm">
+        <Typography level="body-sm" style={{ whiteSpace: 'pre-line' }}>
           {desc}
         </Typography>
       </CardContent>
-      <CardActions buttonFlex="1">
-        <Button
-          component="a"
-          disabled={!projectUrl}
-          href={projectUrl}
-          target="_blank"
-          startDecorator={projectUrl && <OpenInNew/>}
-        >
-          {projectUrl ? (trainee ? "Check it out" : "Visit now") : "Coming soon!"}
-        </Button>
-      </CardActions>
+        {
+            !techspire ? (
+                <CardActions buttonFlex="1">
+                    <Button
+                        component="a"
+                        disabled={!projectUrl}
+                        href={projectUrl}
+                        target="_blank"
+                        startDecorator={projectUrl && <OpenInNew/>}
+                    >
+                        {projectUrl ? (trainee ? "Check it out" : "Visit now") : "Coming soon!"}
+                    </Button>
+                </CardActions>
+            ) : null
+        }
     </Card>
   )
 }
