@@ -556,6 +556,13 @@ export const techspireSpeakerData: {
       desc: "Sebastian Sequoiah-Grayson is a Senior Lecturer in Epistemics at the School of Computer Science and Engineering at the University of New South Wales. His work covers issues in applied matters for the ethics of technology and artificial intelligence, and also abstract mathematical matters in substructural epistemic logics and epistemics broadly.",
       thumbnailUrl: "/techspireSpeakers/24/5.png",
     },
+    {
+      name: "Jake Renzella",
+      desc: "Jake is a Senior Lecturer in the School of Computer Science and Engineering, with his interests in artificial intelligence being demonstrated in his new course for 2026: Machine Learning Engineering.\n" + "\n" +
+      "His research focuses on applying artificial intelligence to educational contexts, working on DCC Help, a C compiler with an integrated LLM which provides in situ error explanations for novice programmers. His past work includes stochastic modelling for Defence projects as a Research Fellow at the Applied Artificial Intelligence Institute.\n" + "\n" +
+          "Jake is excited to present his talk titled Great AI Depends on Great Software Engineering.",
+      thumbnailUrl: "/techspireSpeakers/24/7.png",
+    },
   ]
 }
 
