@@ -797,7 +797,7 @@ export const techspireHeaderData: { [n: number]: TechspireHeaderData } = {
       },
       {
         name: "Roundhouse",
-        logo: "https://www.arc.unsw.edu.au/assets/images/roundhouse-header.svg",
+        logo: roundhouse,
         url: "https://www.arc.unsw.edu.au/roundhouse",
       },
       {
@@ -850,7 +850,7 @@ export const techspireHeaderData: { [n: number]: TechspireHeaderData } = {
       },
       {
         name: "Roundhouse",
-        logo: "https://www.arc.unsw.edu.au/assets/images/roundhouse-header.svg",
+        logo: roundhouse,
         url: "https://www.arc.unsw.edu.au/roundhouse",
       },
       {
