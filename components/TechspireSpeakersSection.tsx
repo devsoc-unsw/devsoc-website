@@ -8,7 +8,7 @@ import { techspireSpeakerData, techspireHeaderData, SponsorInfo } from "../data"
 import { AspectRatio, Link, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 
-const years = [2025, 2024, 2022];
+const years = [2022, 2024, 2025];
 
 function renderLogoRows(idx: number, sponsor: SponsorInfo, size: "small" | "large" = "large") {
   const isApple = sponsor.name && sponsor.name.toLowerCase().includes("apple");
@@ -45,23 +45,24 @@ export function TechspireSpeakersSection() {
     const [selectedYear, setSelectedYear] = useState<number>(2024);
 
     const handleYearChange = (event: any, newValue: number | number[]) => {
-        setSelectedYear(newValue as number);
+        const yearIndex = newValue as number;
+        setSelectedYear(years[yearIndex]);
     };
 
-    const valueText = (value: number) => value.toString();
+    const valueText = (value: number) => years[value].toString();
 
     return (
         <PageSection title={`${selectedYear}`}>
             <Box sx={{}}>
                 <Slider
                     aria-label="Select Year"
-                    value={selectedYear}
+                    value={years.indexOf(selectedYear)}
                     getAriaValueText={valueText}
                     step={null}
-                    min={Math.min(...years)}
-                    max={Math.max(...years)}
+                    min={0}
+                    max={years.length - 1}
                     marks={years.map((year, i) => ({
-                        value: year,
+                        value: i,
                         label: `${year}`
                     }))}
                     color="devsoc_red"
