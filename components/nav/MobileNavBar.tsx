@@ -76,17 +76,6 @@ const MenuDrawer: React.FC<MenuDrawerProps> = ({ open, setOpen }) => {
             {text}
           </ListItemButton>
         ))}
-          <ListItemButton
-            component={NextLink}
-            href={"https://shop.devsoc.app"}
-            onClick={() => setOpen(false)}
-            target="_blank"
-            sx={{
-              justifyContent: "center"
-            }}
-          >
-           Merch 
-          </ListItemButton>
       </List>
       <Divider />
       <Stack direction='row' mt={2} spacing={2} alignItems='center' justifyContent='center'>

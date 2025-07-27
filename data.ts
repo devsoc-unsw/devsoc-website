@@ -55,6 +55,7 @@ export const navData = [
   { text: "Projects", href: "/our-projects" },
   { text: "Events", href: "/events" },
   { text: "Starlight", href: "/starlight" },
+  { text: "Techspire", href: "/techspire" },
   { text: "Get Involved", href: "/get-involved" },
   { text: "Sponsors", href: "/supporters" },
 ];

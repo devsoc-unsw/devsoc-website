@@ -49,18 +49,6 @@ const NavBar = () => {
                 </Link>
               </Typography>
             ))}{" "}
-            <Typography level="title-lg">
-              <Link
-                sx={{
-                  color: "inherit",
-                  textDecorationColor: "#D9807E",
-                }}
-                href={"https://shop.devsoc.app"}
-                target="_blank"
-              >
-                Merch
-              </Link>
-            </Typography>
           </Stack>
         </Stack>
         <Stack direction="row" mr={2} spacing={2} alignItems="center">
