@@ -494,7 +494,7 @@ export const techspireSpeakerData: {
       thumbnailUrl: "/techspireSpeakers/22/4.png",
     },
     {
-      name: "Darian Lee & Joanna He",
+      name: "Joanna He & Darian Lee",
       desc: "Founded in 2018 by Adam Tizzone, Jobsboard has played a crucial role in kickstarting the careers of many CSESoc students. It has scraped by in maintenance mode until this year, where a new team lead by Darian and Joanna aimed to completely revamp the project.\n" +
           "\n" +
           "With a modern UI, sponsor integrations, international support and more to come, the future careers of CSESoc students are in bright hands. Come listen to their journey.",
