@@ -466,14 +466,14 @@ export const techspireSpeakerData: {
           "Some older students might know Ofir as CSESoc's 2018 Co-President where he was chosen for the Engineering Student Service Leadership Award. Others might know him as their camp leader, or from the weekly barbecues where he manned the grill.\n" +
           "\n" +
           "Whether or not you know him, if you have used JIRA, you have likely interacted with one of his features.",
-      thumbnailUrl: "/techspireSpeakers/22/1.png",
+      thumbnailUrl: "/techspireSpeakers/22/1.webp",
     },
     {
       name: "Kath-Lin Han",
       desc: "During university, Kath-Lin explored a variety of internships in various fields from large industrial manufacturers to fast-paced FinTechs. Her exprience has taken her across the entire tech-stack from frontend to backend to UI design, helping her excel in her current role as a Full Stack Engineer at Pearler.\n" +
           "\n" +
           "Kath-Lin graduated from UNSW in 2021 after studying Computer Science and Mechatronics. Occasionally, you might see her at one of our barbecues in her white Pearler shirt!",
-      thumbnailUrl: "/techspireSpeakers/22/2.png",
+      thumbnailUrl: "/techspireSpeakers/22/2.webp",
     },
     {
       name: "Adam Tizzone",
@@ -482,7 +482,7 @@ export const techspireSpeakerData: {
           "During his time at university, Adam was heavily involved in various extra-cirriculars including CSESoc where he would eventually become the 2017 Co-President.\n" +
           "\n" +
           "He has a deep passion for music, having helped direct multiple revues for different societies. When he is away from his desk, you might find him in his garage working on cars.",
-      thumbnailUrl: "/techspireSpeakers/22/3.png",
+      thumbnailUrl: "/techspireSpeakers/22/3.webp",
     },
     {
       name: "Marc Chee",
@@ -491,20 +491,20 @@ export const techspireSpeakerData: {
           "After leaving UNSW at the start of 2022, Marc opened a new chapter in his life with the Marc Chee School. He plans on pursuing his passion for teaching by spreading his knowledge of computer science to a new audience.\n" +
           "\n" +
           "These days, you can find Marc on YouTube talking code and life.",
-      thumbnailUrl: "/techspireSpeakers/22/4.png",
+      thumbnailUrl: "/techspireSpeakers/22/4.webp",
     },
     {
       name: "Joanna He & Darian Lee",
       desc: "Founded in 2018 by Adam Tizzone, Jobsboard has played a crucial role in kickstarting the careers of many CSESoc students. It has scraped by in maintenance mode until this year, where a new team lead by Darian and Joanna aimed to completely revamp the project.\n" +
           "\n" +
           "With a modern UI, sponsor integrations, international support and more to come, the future careers of CSESoc students are in bright hands. Come listen to their journey.",
-      thumbnailUrl: "/techspireSpeakers/22/6.png",
+      thumbnailUrl: "/techspireSpeakers/22/6.webp",
     },
     {
       name: "Adam Leung",
       desc: "Adam's journey began in highschool with an informatics class. Since then, he has continued to broaden his horizons through various companies and personal projects. He currently works on Amazon's InfoSec team as a Software Engineer whilst finishing his degree at USYD.\n" + "\n" + "Alongside representing his university at the Divisional and Regional ICPC, Adam also played a large role in founding USYD's Google Developer Student Club which has since grown to over 100 members.\n" +
           "\n" + "Adam's love for coding is evident via his diverse portfolio of personal projects and contributions to open source development.",
-      thumbnailUrl: "/techspireSpeakers/22/5.png",
+      thumbnailUrl: "/techspireSpeakers/22/5.webp",
     },
   ],
   2024: [
@@ -513,7 +513,7 @@ export const techspireSpeakerData: {
       desc: "Chris Peters is an Associate Director in Personal Technology Automation at Macquarie Group. He is passionate about automation, and for the past 10 years has been involved in creating restAPIs with .net core and various front-end frameworks, automating common business reporting and IT support tasks. Chris has over 20 years of professional work experience having worked as a Senior System Analyst at Abbott Laboratories and a Primary Developer at Menoko, prior to joining Macquarie Group 6 years ago. He now leads a team of passionate developers who he enjoys working with to deliver modern applications and new automation opportunities, helping to drive dramatic business growth.\n" +
           "\n" +
           "Chris is excited to be speaking at this year’s Techspire event. His speech will explore how “you are already becoming the leader you will be in 30 years”, and will draw on his own learnings from his career to date.",
-      thumbnailUrl: "/techspireSpeakers/24/1.png",
+      thumbnailUrl: "/techspireSpeakers/24/1.webp",
     },
     {
       name: "Nick Patrikeos",
@@ -522,7 +522,7 @@ export const techspireSpeakerData: {
           "Nick now works as a Software Engineer at Atlassian and oversees the software development at a Perth-based startup called The Growth Hunting Company. At Atlassian, Nick works on Post Office, Atlassian’s new unified messaging platform to power emails, notifications and in-product messaging. He works day-to-day with TypeScript, React and BitBucket CI pipelines in Atlassian’s Monorepo.\n" +
           "\n" +
           "Nick’s talk is titled “Why you should pay more attention to non-functional requirements” and discusses how we focus on the wrong thing - what we’re building - when we should be focusing on how we’re building it, in software engineering.",
-      thumbnailUrl: "/techspireSpeakers/24/2.png",
+      thumbnailUrl: "/techspireSpeakers/24/2.webp",
     },
     {
       name: "Nelson Tam",
@@ -531,7 +531,7 @@ export const techspireSpeakerData: {
           "Prior to joining Apple, Nelson has worked on kernels, static analysis, e-commerce marketplaces, and self-driving cars. Some of his previous employers include Freelancer.com and Ghost Locomotion.\n" +
           "\n" +
           "Nelson enjoys running and cycling, and had recently finished the Sydney Marathon 2024. He is a follower of Jesus, married to Sophia with three children. He is passionate about investing in people and sharing his life story with others.",
-      thumbnailUrl: "/techspireSpeakers/24/3.png",
+      thumbnailUrl: "/techspireSpeakers/24/3.webp",
     },
     {
       name: "Richard Hofman",
@@ -540,7 +540,7 @@ export const techspireSpeakerData: {
           "In his role at Google, Richard’s work mostly encompasses cryptographically attested device identity and the infrastructure needed to issue and validate credentials based on these identities. He has also worked on improving the cryptographic security of SSH traffic at Google.\n" +
           "\n" +
           "Richard will be speaking about WebAuthn and FIDO2, two closely related, privacy-aware standards for online cryptographic authentication. These technologies form the basis for “Passkeys”, but are surprisingly broad in their own right.",
-      thumbnailUrl: "/techspireSpeakers/24/6.png",
+      thumbnailUrl: "/techspireSpeakers/24/6.webp",
     },
     {
       name: "James Ji",
@@ -549,19 +549,19 @@ export const techspireSpeakerData: {
           "While at UNSW, he built Circles, the defacto degree planner for CSE students. He would later run CSESoc Projects (now DevSoc) where he spawned many new initiatives such as the Training Program and Techspire.\n" +
           "\n" +
           "We invited James back to share his unique experiences on building projects, starting initiatives, challenges in the industry and more.",
-      thumbnailUrl: "/techspireSpeakers/24/4.png",
+      thumbnailUrl: "/techspireSpeakers/24/4.webp",
     },
     {
       name: "Sebastian Sequoiah-Grayson",
       desc: "Sebastian Sequoiah-Grayson is a Senior Lecturer in Epistemics at the School of Computer Science and Engineering at the University of New South Wales. His work covers issues in applied matters for the ethics of technology and artificial intelligence, and also abstract mathematical matters in substructural epistemic logics and epistemics broadly.",
-      thumbnailUrl: "/techspireSpeakers/24/5.png",
+      thumbnailUrl: "/techspireSpeakers/24/5.webp",
     },
     {
       name: "Jake Renzella",
       desc: "Jake is a Senior Lecturer in the School of Computer Science and Engineering, with his interests in artificial intelligence being demonstrated in his new course for 2026: Machine Learning Engineering.\n" + "\n" +
       "His research focuses on applying artificial intelligence to educational contexts, working on DCC Help, a C compiler with an integrated LLM which provides in situ error explanations for novice programmers. His past work includes stochastic modelling for Defence projects as a Research Fellow at the Applied Artificial Intelligence Institute.\n" + "\n" +
           "Jake is excited to present his talk titled Great AI Depends on Great Software Engineering.",
-      thumbnailUrl: "/techspireSpeakers/24/7.png",
+      thumbnailUrl: "/techspireSpeakers/24/7.webp",
     },
   ]
 }
