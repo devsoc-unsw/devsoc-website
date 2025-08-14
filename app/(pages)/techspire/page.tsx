@@ -1,20 +1,19 @@
 import React from "react";
 import PageSection from "../../../components/PageSection";
-import { Box, Grid, StepIndicator, stepIndicatorClasses } from "@mui/joy";
+import { Box, StepIndicator } from "@mui/joy";
 import type { Metadata } from "next";
-import {AspectRatio, Link, Stack, Typography} from "@mui/material";
-import { StarlightProjectsSection } from "../../../components/StarlightProjectsSection";
+import { Typography } from "@mui/material";
+import { TechspireSpeakersSection } from "../../../components/TechspireSpeakersSection";
 import Stepper from "@mui/joy/Stepper";
-import Step, { stepClasses } from "@mui/joy/Step";
-import HailRoundedIcon from "@mui/icons-material/HailRounded";
+import Step from "@mui/joy/Step";
 import KeyboardVoiceRoundedIcon from "@mui/icons-material/KeyboardVoiceRounded";
 import WavingHandRoundedIcon from "@mui/icons-material/WavingHandRounded";
-import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
+import BakeryDiningIcon from "@mui/icons-material/BakeryDining";
 
 export const metadata: Metadata = {
-  title: "Starlight | DevSoc UNSW",
+  title: "Techspire | DevSoc UNSW",
   description:
-    "Explore the variety of different projects developed by UNSW students!",
+    "DevSoc’s flagship annual technology conference event.",
 };
 
 function StepperLabel(props: { text: string }) {
@@ -33,7 +32,7 @@ function StepperLabel(props: { text: string }) {
   );
 }
 
-function StarlightStepper() {
+function TechspireStepper() {
   return (
     <Stepper
       sx={{
@@ -48,7 +47,7 @@ function StarlightStepper() {
           </StepIndicator>
         }
       >
-        <StepperLabel text="Meet the projects" />
+        <StepperLabel text="Introduction" />
       </Step>
       <Step
         orientation="vertical"
@@ -58,48 +57,50 @@ function StarlightStepper() {
           </StepIndicator>
         }
       >
-        <StepperLabel text="QA Panel"></StepperLabel>
+        <StepperLabel text="Talks"></StepperLabel>
       </Step>
       <Step
         orientation="vertical"
         disabled
         indicator={
           <StepIndicator variant="solid" color="primary">
-            <EmojiEventsIcon />
+              <BakeryDiningIcon />
           </StepIndicator>
         }
       >
-        <StepperLabel text="Prize Annoucement"></StepperLabel>
+        <StepperLabel text="Food + Intermission"></StepperLabel>
+      </Step>
+      <Step
+          orientation="vertical"
+          indicator={
+              <StepIndicator variant="solid" color="primary">
+                  <KeyboardVoiceRoundedIcon />
+              </StepIndicator>
+          }
+      >
+          <StepperLabel text="Talks"></StepperLabel>
       </Step>
     </Stepper>
   );
 }
 
-export default function StarlightProjectsPage() {
+export default function TechspireProjectsPage() {
     return (
         <>
-            <PageSection title="Starlight Showcase">
+            <PageSection title="Techspire">
                 <Typography textAlign="justify">
-                    Starlight is a project showcase that celebrates all kinds of software
-                    projects being built by passionate developers at UNSW. The showcase
-                    will be held on the 25th of July 2025. Submissions are open to
-                    everyone that has a project they want to share! More information about
-                    the event is avaliable{" "}
-                    <Link
-                        href="https://www.canva.com/design/DAGkribj1e8/E7BfubxdQQLadKB20Hxzww/view"
-                        target="_blank"
-                    >
-                        here.
-                    </Link>
+                    Techspire is DevSoc’s flagship technology conference event. It is run in a TED Talk format with industry,
+                    university, and student speakers presenting on their experiences and learnings. Each year revolves around
+                    a different theme and speakers are encouraged to ground their discussions around it. The event runs for 3 hours and is catered.
                 </Typography>
                 <Typography level="h3" py={2} textAlign={"center"}>
                     Schedule
                 </Typography>
-                <StarlightStepper />
+                <TechspireStepper />
                 <Box sx={{ pb: 4}} />
             </PageSection>
             
-            <StarlightProjectsSection />
+            <TechspireSpeakersSection />
         </>
     );
 }
