@@ -49,6 +49,7 @@ import bluesat from "./assets/bluesat.png";
 import pearler from "./assets/pearler.png";
 import canva from "./assets/canva.png";
 import amazon from "./assets/amazon.png";
+import neara from "./assets/neara.webp";
 import jobsboard from "./public/projects/jobsboard/logo.png";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
@@ -1016,7 +1017,7 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
         },
         {
           name: "neara",
-          logo: "https://neara.com/wp-content/uploads/2023/03/footer-white-logo-with-red-icon.png",
+          logo: neara,
           url: "https://neara.com/",
         },
         {
