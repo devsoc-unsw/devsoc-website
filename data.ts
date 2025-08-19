@@ -954,6 +954,11 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           logo: rp,
           url: "https://www.recordpoint.com/",
         },
+        {
+          name: "TikTok",
+          logo: tiktok,
+          url: "https://careers.tiktok.com/",
+        },
       ],
     },
   ],
