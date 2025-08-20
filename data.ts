@@ -655,7 +655,7 @@ export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
       },
       {
         name: "Roundhouse",
-        logo: "https://www.arc.unsw.edu.au/assets/images/roundhouse-header.svg",
+        logo: roundhouse,
         url: "https://www.arc.unsw.edu.au/roundhouse",
       },
       {
