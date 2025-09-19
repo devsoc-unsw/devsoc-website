@@ -8,7 +8,7 @@ import {
   LinkedIn,
   School,
   FlightTakeoff,
-  AutoAwesome,
+  AutoAwesome, Group,
 } from "@mui/icons-material";
 import { RecruitmentProps } from "./app/(pages)/get-involved/page";
 import DiscordIcon from "./components/nav/DiscordIcon";
@@ -575,18 +575,20 @@ export const recruitmentData: RecruitmentProps[] = [
     Icon: AutoAwesome,
   },
   {
+    position: "Directors",
+    Icon: Group,
+  },
+  {
     position: "Subcommittee",
     Icon: Groups,
   },
   {
     position: "Training Leads",
     Icon: CoPresent,
-    applicationUrl: "https://tp.devso.cc/leads"
   },
   {
     position: "Trainees",
     Icon: School,
-    applicationUrl: "https://tp.devso.cc/trainees"
   },
 ];
 
