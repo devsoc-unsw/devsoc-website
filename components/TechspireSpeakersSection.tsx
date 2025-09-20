@@ -42,7 +42,7 @@ function renderLogoRows(idx: number, sponsor: SponsorInfo, size: "small" | "larg
 }
 
 export function TechspireSpeakersSection() {
-    const [selectedYear, setSelectedYear] = useState<number>(2024);
+    const [selectedYear, setSelectedYear] = useState<number>(2025);
 
     const handleYearChange = (event: any, newValue: number | number[]) => {
         const yearIndex = newValue as number;

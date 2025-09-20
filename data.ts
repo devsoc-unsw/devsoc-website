@@ -564,6 +564,22 @@ export const techspireSpeakerData: {
           "Jake is excited to present his talk titled Great AI Depends on Great Software Engineering.",
       thumbnailUrl: "/techspireSpeakers/24/7.webp",
     },
+  ],
+  2025: [
+    {
+      name: "Michał Lewczyk",
+      desc: "Michał Lewczyk is a software engineer at Arista Networks, building the world’s fastest network switches. Earlier in his career, he pioneered LTE for Scandinavian telecom giants, and at Dolby made sure you could pump more bass out of anything with a speaker. He can program anything — from a washing machine to a Base Station Transceiver — all delivered with his signature East European accent and passion for sharing knowledge.",
+      thumbnailUrl: "/techspireSpeakers/25/IMG_5579.png",
+    },
+    {
+      name: "Hussain Nawaz",
+      desc: "I am a low-latency developer at QRT. I work on systems for high-frequency trading, ranging from market data feeds to execution.\n" +
+          "\n" +
+          "Keeping software high-performance is a critical part of my role and requires me to understand and probe the layers of abstraction between my code and the physical hardware.\n" +
+          "\n" +
+          "I graduated recently from UNSW. During my time there, I spent 3 years with DevSoc, working on the Circles – a project that I also director for a year, which became the most widely used DevSoc project.",
+      thumbnailUrl: "/techspireSpeakers/25/IMG_5784.jpg",
+    },
   ]
 }
 
@@ -864,7 +880,33 @@ export const techspireHeaderData: { [n: number]: TechspireHeaderData } = {
         url: "https://www.unsw.edu.au/",
       },
     ],
-    speakerLogos: [],
+    speakerLogos: [
+      {
+        name: "Arista",
+        logo: arista,
+        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
+      },
+      {
+        name: "safetyculture",
+        logo: sc,
+        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
+      },
+      {
+        name: "Lyra",
+        logo: lyra,
+        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
+      },
+      {
+        name: "QRT",
+        logo: qrt,
+        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
+      },
+      {
+        name: "Recordpoint",
+        logo: rp,
+        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
+      },
+    ],
     industryLogos: []
   },
 };
