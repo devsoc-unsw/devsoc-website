@@ -958,6 +958,10 @@ export const teamData: TeamData = {
           { name: "Le Thao Minh", imgUrl: "minhle35" },
           { name: "Peter Nguyen", imgUrl: "peternuyn" },
           { name: "Sandy Tran", imgUrl: "DampBiscuitt" },
+          { name: "Jared Schulz", imgUrl: "Plebbaroni" },
+          { name: "Ryan Tan Kang Khen", imgUrl: "RyanTan182" },
+          { name: "Christian Martinez", imgUrl: "drboom16" },
+          { name: "Regan Benedetti", imgUrl: "reganbenedetti" },
         ]
       },
       {
@@ -975,6 +979,7 @@ export const teamData: TeamData = {
           { name: "Kevin Lin", imgUrl: "KevinLin1803" },
           { name: "Valentina Guedez Mercado", imgUrl: "val-guedez" },
           { name: "Winnie Chan", imgUrl: "winnieee-chan" },
+          { name: "Eugene Briones", imgUrl: "le-eug" },
         ]
       },
       {
@@ -999,16 +1004,19 @@ export const teamData: TeamData = {
         directors: [
           { name: "Anh Viet Duc Nguyen", imgUrl: "avdn-dev" },
           { name: "Michael Tanto", imgUrl: "mt-fns" },
+          { name: "Chris Wong", imgUrl: "xleonx0x" },
+          { name: "Dicko Evaldo", imgUrl: "DickoEvaldo" },
         ],
         subcommittee: [
           { name: "Ben Godwin", imgUrl: "bengodw" },
           { name: "Brandon Tan", imgUrl: "BT0906" },
-          { name: "Chris Wong", imgUrl: "xleonx0x" },
           { name: "Connie Du", imgUrl: "c0nnied" },
-          { name: "Dicko Evaldo", imgUrl: "DickoEvaldo" },
           { name: "Muqueet Mohsen Chowdhury", imgUrl: "mmc03-ucb" },
           { name: "Shabinda Sarkaria", imgUrl: "shaykaria" },
           { name: "Yi Yao Wang", imgUrl: "yiyaoW11" },
+          { name: "Yanlin Li", imgUrl: "Yalilix" },
+          { name: "Ryan Yensch", imgUrl: "RyanYensch" },
+          { name: "Gabriella Lianti", imgUrl: "gabriellalianti" },
         ]
       },
       {
@@ -1025,6 +1033,10 @@ export const teamData: TeamData = {
           { name: "Kailash Siva", imgUrl: "KailashSiva" },
           { name: "Meredith Zhang", imgUrl: "mere-z" },
           { name: "Sunny Chen", imgUrl: "sunnyyuqingchen" },
+          { name: "Kai Fox", imgUrl: "fox-58" },
+          { name: "Tet Nay Lin", imgUrl: "tetnaylin" },
+          { name: "Yumna Zaheed", imgUrl: "yumnazaheed" },
+          { name: "Louis Fang Zhi Lim", imgUrl: "TR-04" },
         ]
       },
       {
@@ -1041,6 +1053,7 @@ export const teamData: TeamData = {
           { name: "Ilha Jung", imgUrl: "ilha78" },
           { name: "Joanne Ou", imgUrl: "jx7210" },
           { name: "Muhammad Amirul Haziq Juarimi", imgUrl: "EzyCzy" },
+          { name: "Patrick Truong", imgUrl: "PatrickkT" },
         ]
       },
       {
@@ -1055,6 +1068,7 @@ export const teamData: TeamData = {
           { name: "Lyn Duong", imgUrl: "l-duong05" },
           { name: "Violet Mynn Nwer", imgUrl: "VioletN22" },
           { name: "William Lu", imgUrl: "WilliamLu25" },
+          { name: "Sheen Sandhu", imgUrl: "sheensandhu" },
         ]
       },
       {
@@ -1090,7 +1104,7 @@ export const teamData: TeamData = {
       {
         name: "Training\u00A0Program",
         directors: [
-            { name: "Eve Miles", imgUrl: "evaluate09"},
+            { name: "Ray Miles", imgUrl: "evaluate09"},
             { name: "Khye Jac Low", imgUrl: "kj4c"},
             { name: "Lachlan Shoesmith", imgUrl: "lachlanshoesmith"},
         ],
@@ -1099,6 +1113,10 @@ export const teamData: TeamData = {
           { name: "Alyssa Cheong", imgUrl: "alyssacheong" },
           { name: "Giselle Angela Hanjaya Putri", imgUrl: "michimochi25" },
           { name: "Kim Lam", imgUrl: "kimlamm" },
+          { name: "Aryaman Sakthivel", imgUrl: "aryaman-sakthi"},
+          { name: "Chris Casolin", imgUrl: "chriscasolin"},
+          { name: "Danny Zhang", imgUrl: "joatenman"},
+          { name: "Jenny Liu", imgUrl: "jenliu88"},
         ],
         other: [
         ]
@@ -1169,8 +1187,7 @@ export const teamData: TeamData = {
         ]
       },
     ]
-  }
-
+  },
 };
 export type PersonProps = Omit<ExecProps, 'title'>;
 interface TeamData {
