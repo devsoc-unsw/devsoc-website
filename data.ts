@@ -913,15 +913,6 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
     ],
     t2: [
       {
-        eventId: 1275611117623673,
-        url: "/events/2025/t2/starLightShowcase.jpg",
-        blurb: `‼️STARLIGHT PROJECT SHOWCASE‼️
-        At Starlight we have the software and mechatronics projects on display made by the UNSW student community. Come on down **this Friday** and check out 30+ projects, and check out what opportunities are available to you as a UNSW engineering student!
-        📅 𝗗𝗔𝗧𝗘 : 25th July 2025 (Week 8 Friday)
-        ⏰ 𝗧𝗜𝗠𝗘: 4-8pm
-        📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: Roundhouse`
-      },
-      {
         eventId: 639790979037857,
         url: "/events/2025/t2/training-subcom-recruit.jpg",
       },
@@ -980,9 +971,40 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
       {
         eventId: 1766471423940115,
         url: "/events/2025/t2/Week7BBQ.jpg",
+      },
+      {
+        eventId: 1275611117623673,
+        url: "/events/2025/t2/starLightShowcase.jpg",
       }
     ],
-    t3: [],
+    t3: [
+      {
+        eventId: 2060837651391689,
+        url: "/events/2025/t3/clubsTakeoverBBQ.jpg",
+        blurb: `‼️Clubs Takeover BBQ‼️
+        Feeling burnt out from classes? 😭 Need a quick pick-me-up? 😋 Come along to DevSoc’s Clubs Takeover where we’ll be giving out 🍔 FREE FOOD 🍔 and 🧃DRINKS 🧃
+        📅 𝗗𝗔𝗧𝗘 : 15th October 2025 (Week 5 Wednesday)
+        ⏰ 𝗧𝗜𝗠𝗘: 11:30-2:30pm
+        📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: UNSW Quad`
+      },
+      {
+        eventId: 1009109267857671,
+        url: "/events/2025/t3/t3TP.jpg",
+      },
+      {
+        eventId: 757224750428,
+        url: "/events/2025/t3/t3O-day.jpg",
+      },
+      {
+        eventId: 825382136722604,
+        url: "/events/2025/t3/2025AGM.jpg",
+      },
+      {
+        eventId: 715373941559541,
+        url: "/events/2025/t3/2025FlagshipHackathon.jpg",
+      },
+
+    ],
   },
   2024: {
     t1: [
