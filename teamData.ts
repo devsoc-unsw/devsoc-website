@@ -11,8 +11,8 @@ export const teamData: TeamData = {
   },
   2019: {
     executives: [
-      { name: "Tom Kunc", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/C5603AQFILnScctz0CQ/profile-displayphoto-shrink_800_800/0/1521010349210?e=1721865600&v=beta&t=Mrf92v2FZgv8n47wotNEy794OwwEqBt_FoPc1lUxmmc" },
-      { name: "Shane Kadish", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/C5603AQENc_UoZObUcw/profile-displayphoto-shrink_800_800/0/1547879297950?e=1721865600&v=beta&t=bDBev-Et52gHRcbbL6PIYKwva6wj-5Gsc-3YoC66ISc" },
+      { name: "Tom Kunc", title: "Projects Director", imgUrl:"/people/2019/1521010349210.jpeg" },
+      { name: "Shane Kadish", title: "Projects Director", imgUrl: "/people/2019/1547879297950.jpeg" },
     ],
     subcommittees: [
       {
@@ -89,8 +89,8 @@ export const teamData: TeamData = {
   },
   2020: {
     executives: [
-      { name: "Gordon Zhong", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/C4D03AQG-dYRSVdZcow/profile-displayphoto-shrink_800_800/0/1655776311291?e=1721865600&v=beta&t=hPnlermuSGmbDhwQXJBIWWAsAK0aiepWrfuzg6QQI2s" },
-      { name: "Leesa Dang", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/C5603AQHYY9CP2fU67A/profile-displayphoto-shrink_800_800/0/1557634147933?e=1721865600&v=beta&t=yKLSQLcWauAGh5HB2Y17f8IRIn2peUqwHCA0CCX7jl8" },
+      { name: "Gordon Zhong", title: "Projects Director", imgUrl: "/people/2020/1655776311291.jpeg" },
+      { name: "Leesa Dang", title: "Projects Director", imgUrl: "/people/2020/1557634147933.jpeg" },
     ],
     subcommittees: [
       {
@@ -160,8 +160,8 @@ export const teamData: TeamData = {
   },
   2021: {
     executives: [
-      { name: "Esther Wong", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/C4D03AQGnqVZp3w7ITw/profile-displayphoto-shrink_800_800/0/1653634901266?e=1721865600&v=beta&t=q78_E16zwnaA8nWxFdZuYLXID5FAF181H_7upfl4FOA" },
-      { name: "Zac Kologlu", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/D5603AQFn-RBTj_zOqQ/profile-displayphoto-shrink_800_800/0/1673959501551?e=1721865600&v=beta&t=ByTFNe9DxG7R1cw3nySUXDOCAoBqYku2ZkLiX1EP7Lw" },
+      { name: "Esther Wong", title: "Projects Director", imgUrl: "/people/2021/1653634901266.jpeg" },
+      { name: "Zac Kologlu", title: "Projects Director", imgUrl: "/people/2021/1673959501551.jpeg" },
     ],
     subcommittees: [
       {
@@ -255,11 +255,11 @@ export const teamData: TeamData = {
   },
   2022: {
     executives: [
-      { name: "James Ji", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/D5603AQGTkMu2h1CoGw/profile-displayphoto-shrink_800_800/0/1671790198748?e=1721865600&v=beta&t=NXeEtcqCq7BNl_yt1wH_uXFp6mQZ3y2lboO29Zd14e4" },
-      { name: "Vicky Wu", title: "Projects Director", imgUrl: "https://media.licdn.com/dms/image/D4E03AQHUzxhp4c_mnQ/profile-displayphoto-shrink_800_800/0/1677625183062?e=1721865600&v=beta&t=yItOAojz--6f35LuEslAdFLYDg0D8waAabGimIjQeoE" },
-      { name: "Abiram Nadarajah", title: "Technical Director", imgUrl: "https://media.licdn.com/dms/image/C5603AQE3oeVUmozItw/profile-displayphoto-shrink_800_800/0/1619801785542?e=1721865600&v=beta&t=Ia_bthbsPaLnrj6dMghdgAvXoZ31-xa6X1Io18Tyl1Y" },
+      { name: "James Ji", title: "Projects Director", imgUrl: "/people/2022/1671790198748.jpeg" },
+      { name: "Vicky Wu", title: "Projects Director", imgUrl: "/people/2022/1677625183062.jpeg" },
+      { name: "Abiram Nadarajah", title: "Technical Director", imgUrl: "/people/2022/1619801785542.jpeg" },
       { name: "Jared L", title: "Technical Director", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
-      { name: "Shrey Somaiya", title: "Projects Lead", imgUrl: "https://media.licdn.com/dms/image/C4D03AQHOAs0zYH4KCg/profile-displayphoto-shrink_800_800/0/1653994970103?e=1722470400&v=beta&t=EAfTDqAmqihOqV-xaPzLhM8991xihysmbOcg9sOM2zs" },
+      { name: "Shrey Somaiya", title: "Projects Lead", imgUrl: "/people/2022/1653994970103.jpeg" },
     ],
     subcommittees: [
       {
@@ -958,6 +958,10 @@ export const teamData: TeamData = {
           { name: "Le Thao Minh", imgUrl: "minhle35" },
           { name: "Peter Nguyen", imgUrl: "peternuyn" },
           { name: "Sandy Tran", imgUrl: "DampBiscuitt" },
+          { name: "Jared Schulz", imgUrl: "Plebbaroni" },
+          { name: "Ryan Tan Kang Khen", imgUrl: "RyanTan182" },
+          { name: "Christian Martinez", imgUrl: "drboom16" },
+          { name: "Regan Benedetti", imgUrl: "reganbenedetti" },
         ]
       },
       {
@@ -975,6 +979,7 @@ export const teamData: TeamData = {
           { name: "Kevin Lin", imgUrl: "KevinLin1803" },
           { name: "Valentina Guedez Mercado", imgUrl: "val-guedez" },
           { name: "Winnie Chan", imgUrl: "winnieee-chan" },
+          { name: "Eugene Briones", imgUrl: "le-eug" },
         ]
       },
       {
@@ -999,16 +1004,19 @@ export const teamData: TeamData = {
         directors: [
           { name: "Anh Viet Duc Nguyen", imgUrl: "avdn-dev" },
           { name: "Michael Tanto", imgUrl: "mt-fns" },
+          { name: "Chris Wong", imgUrl: "xleonx0x" },
+          { name: "Dicko Evaldo", imgUrl: "DickoEvaldo" },
         ],
         subcommittee: [
           { name: "Ben Godwin", imgUrl: "bengodw" },
           { name: "Brandon Tan", imgUrl: "BT0906" },
-          { name: "Chris Wong", imgUrl: "xleonx0x" },
           { name: "Connie Du", imgUrl: "c0nnied" },
-          { name: "Dicko Evaldo", imgUrl: "DickoEvaldo" },
           { name: "Muqueet Mohsen Chowdhury", imgUrl: "mmc03-ucb" },
           { name: "Shabinda Sarkaria", imgUrl: "shaykaria" },
           { name: "Yi Yao Wang", imgUrl: "yiyaoW11" },
+          { name: "Yanlin Li", imgUrl: "Yalilix" },
+          { name: "Ryan Yensch", imgUrl: "RyanYensch" },
+          { name: "Gabriella Lianti", imgUrl: "gabriellalianti" },
         ]
       },
       {
@@ -1025,6 +1033,10 @@ export const teamData: TeamData = {
           { name: "Kailash Siva", imgUrl: "KailashSiva" },
           { name: "Meredith Zhang", imgUrl: "mere-z" },
           { name: "Sunny Chen", imgUrl: "sunnyyuqingchen" },
+          { name: "Kai Fox", imgUrl: "fox-58" },
+          { name: "Tet Nay Lin", imgUrl: "tetnaylin" },
+          { name: "Yumna Zaheed", imgUrl: "yumnazaheed" },
+          { name: "Louis Fang Zhi Lim", imgUrl: "TR-04" },
         ]
       },
       {
@@ -1041,6 +1053,7 @@ export const teamData: TeamData = {
           { name: "Ilha Jung", imgUrl: "ilha78" },
           { name: "Joanne Ou", imgUrl: "jx7210" },
           { name: "Muhammad Amirul Haziq Juarimi", imgUrl: "EzyCzy" },
+          { name: "Patrick Truong", imgUrl: "PatrickkT" },
         ]
       },
       {
@@ -1055,6 +1068,7 @@ export const teamData: TeamData = {
           { name: "Lyn Duong", imgUrl: "l-duong05" },
           { name: "Violet Mynn Nwer", imgUrl: "VioletN22" },
           { name: "William Lu", imgUrl: "WilliamLu25" },
+          { name: "Sheen Sandhu", imgUrl: "sheensandhu" },
         ]
       },
       {
@@ -1090,7 +1104,7 @@ export const teamData: TeamData = {
       {
         name: "Training\u00A0Program",
         directors: [
-            { name: "Eve Miles", imgUrl: "evaluate09"},
+            { name: "Ray Miles", imgUrl: "evaluate09"},
             { name: "Khye Jac Low", imgUrl: "kj4c"},
             { name: "Lachlan Shoesmith", imgUrl: "lachlanshoesmith"},
         ],
@@ -1099,6 +1113,10 @@ export const teamData: TeamData = {
           { name: "Alyssa Cheong", imgUrl: "alyssacheong" },
           { name: "Giselle Angela Hanjaya Putri", imgUrl: "michimochi25" },
           { name: "Kim Lam", imgUrl: "kimlamm" },
+          { name: "Aryaman Sakthivel", imgUrl: "aryaman-sakthi"},
+          { name: "Chris Casolin", imgUrl: "chriscasolin"},
+          { name: "Danny Zhang", imgUrl: "joatenman"},
+          { name: "Jenny Liu", imgUrl: "jenliu88"},
         ],
         other: [
         ]
@@ -1169,8 +1187,7 @@ export const teamData: TeamData = {
         ]
       },
     ]
-  }
-
+  },
 };
 export type PersonProps = Omit<ExecProps, 'title'>;
 interface TeamData {
