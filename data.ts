@@ -582,7 +582,9 @@ export const techspireSpeakerData: {
     },
       {
           name: "Luke Donnet",
-          desc: "A Full Stack Software Engineer at SafetyCulture who specializes in identity, access management, and authentication for distributed systems. Years of maintaining business-critical infrastructure have provided firsthand experience with how systems fail, from routine timeout cascades to bizarre edge cases that surface at the worst times. These incidents have revealed surprising patterns about data flow and failure propagation across service boundaries, especially where legacy and modern architectures meet. At SafetyCulture, each production incident becomes an opportunity to strengthen system resilience and deepen the team's collective understanding. Rather than seeking simple root causes or assigning blame, they focus on uncovering the complex interactions and reasonable decisions that lead to unexpected outcomes. The most valuable lessons come from understanding not just what went wrong, but why it made sense at the time.",
+          desc: "A Full Stack Software Engineer at SafetyCulture who specializes in identity, access management, and authentication for distributed systems. Years of maintaining business-critical infrastructure have provided firsthand experience with how systems fail, from routine timeout cascades to bizarre edge cases that surface at the worst times. These incidents have revealed surprising patterns about data flow and failure propagation across service boundaries, especially where legacy and modern architectures meet."
+              + "\n"
+              + "At SafetyCulture, each production incident becomes an opportunity to strengthen system resilience and deepen the team's collective understanding. Rather than seeking simple root causes or assigning blame, they focus on uncovering the complex interactions and reasonable decisions that lead to unexpected outcomes. The most valuable lessons come from understanding not just what went wrong, but why it made sense at the time.",
           thumbnailUrl: "/techspireSpeakers/25/PXL_20251010_025158035.PORTRAIT~2.jpg",
       },
   ]
