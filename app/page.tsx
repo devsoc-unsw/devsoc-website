@@ -89,7 +89,7 @@ export default function Home() {
 
 const LinkCard: React.FC<
   Omit<ProjectCardProps, "trainee"> & { order: number }
-> = ({ name, desc, logoUrl, thumbnailUrl, projectUrl, status, order }) => {
+> = ({ name, logoUrl, projectUrl, order }) => {
   // Class 3 colors sourced from https://www.radix-ui.com/colors
   const colors = [
     "#182449",
