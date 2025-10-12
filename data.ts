@@ -882,27 +882,32 @@ export const techspireHeaderData: { [n: number]: TechspireHeaderData } = {
       {
         name: "Arista",
         logo: arista,
-        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
+        url: "https://www.arista.com/en/",
       },
       {
-        name: "safetyculture",
-        logo: sc,
+        name: "CSE",
+        logo: cse,
         url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
       },
       {
         name: "Lyra",
         logo: lyra,
-        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
+        url: "https://www.lyratechnologies.com.au/",
       },
       {
         name: "QRT",
         logo: qrt,
-        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
+        url: "https://www.qube-rt.com/careers/",
       },
       {
         name: "Recordpoint",
         logo: rp,
-        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
+        url: "https://www.recordpoint.com/",
+      },
+      {
+        name: "Safety Culture",
+        logo: sc,
+        url: "https://safetyculture.com/",
       },
     ],
     industryLogos: []

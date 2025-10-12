@@ -9,6 +9,7 @@ import Step from "@mui/joy/Step";
 import KeyboardVoiceRoundedIcon from "@mui/icons-material/KeyboardVoiceRounded";
 import WavingHandRoundedIcon from "@mui/icons-material/WavingHandRounded";
 import BakeryDiningIcon from "@mui/icons-material/BakeryDining";
+import NetworkingIcon from "@mui/icons-material/Groups";
 
 export const metadata: Metadata = {
   title: "Techspire | DevSoc UNSW",
@@ -79,6 +80,16 @@ function TechspireStepper() {
           }
       >
           <StepperLabel text="Talks"></StepperLabel>
+      </Step>
+      <Step
+          orientation="vertical"
+          indicator={
+              <StepIndicator variant="solid" color="primary">
+                  <NetworkingIcon />
+              </StepIndicator>
+          }
+      >
+          <StepperLabel text="Networking"></StepperLabel>
       </Step>
     </Stepper>
   );
