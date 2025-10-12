@@ -768,11 +768,6 @@ export const techspireHeaderData: { [n: number]: TechspireHeaderData } = {
         url: "https://www.arc.unsw.edu.au/",
       },
       {
-        name: "Roundhouse",
-        logo: roundhouse,
-        url: "https://www.arc.unsw.edu.au/roundhouse",
-      },
-      {
         name: "UNSW",
         logo: unsw,
         url: "https://www.unsw.edu.au/",
@@ -891,11 +886,6 @@ export const techspireHeaderData: { [n: number]: TechspireHeaderData } = {
         name: "Jane Street",
         logo: janeStreet,
         url: "https://www.janestreet.com/",
-      },
-      {
-        name: "Roundhouse",
-        logo: roundhouse,
-        url: "https://www.arc.unsw.edu.au/roundhouse",
       },
       {
         name: "UNSW",
