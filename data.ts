@@ -909,6 +909,11 @@ export const techspireHeaderData: { [n: number]: TechspireHeaderData } = {
         url: "https://www.arista.com/en/",
       },
       {
+        name: "CSE",
+        logo: cse,
+        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
+      },
+      {
         name: "Lyra",
         logo: lyra,
         url: "https://www.lyratechnologies.com.au/",
