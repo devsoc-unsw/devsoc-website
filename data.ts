@@ -873,6 +873,21 @@ export const techspireHeaderData: { [n: number]: TechspireHeaderData } = {
         url: "https://www.arc.unsw.edu.au/",
       },
       {
+        name: "Citadel",
+        logo: citadel,
+        url: "https://www.citadelsecurities.com/",
+      },
+      {
+        name: "imc",
+        logo: imc,
+        url: "https://www.imc.com/",
+      },
+      {
+        name: "Jane Street",
+        logo: janeStreet,
+        url: "https://www.janestreet.com/",
+      },
+      {
         name: "UNSW",
         logo: unsw,
         url: "https://www.unsw.edu.au/",
