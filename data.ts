@@ -877,6 +877,21 @@ export const techspireHeaderData: { [n: number]: TechspireHeaderData } = {
         url: "https://www.arc.unsw.edu.au/",
       },
       {
+        name: "Citadel",
+        logo: citadel,
+        url: "https://www.citadelsecurities.com/",
+      },
+      {
+        name: "imc",
+        logo: imc,
+        url: "https://www.imc.com/",
+      },
+      {
+        name: "Jane Street",
+        logo: janeStreet,
+        url: "https://www.janestreet.com/",
+      },
+      {
         name: "Roundhouse",
         logo: roundhouse,
         url: "https://www.arc.unsw.edu.au/roundhouse",
@@ -891,27 +906,27 @@ export const techspireHeaderData: { [n: number]: TechspireHeaderData } = {
       {
         name: "Arista",
         logo: arista,
-        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
-      },
-      {
-        name: "safetyculture",
-        logo: sc,
-        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
+        url: "https://www.arista.com/en/",
       },
       {
         name: "Lyra",
         logo: lyra,
-        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
+        url: "https://www.lyratechnologies.com.au/",
       },
       {
         name: "QRT",
         logo: qrt,
-        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
+        url: "https://www.qube-rt.com/careers/",
       },
       {
         name: "Recordpoint",
         logo: rp,
-        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
+        url: "https://www.recordpoint.com/",
+      },
+      {
+        name: "Safety Culture",
+        logo: sc,
+        url: "https://safetyculture.com/",
       },
     ],
     industryLogos: []
