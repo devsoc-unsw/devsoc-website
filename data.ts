@@ -600,6 +600,7 @@ export const recruitmentData: RecruitmentProps[] = [
   {
     position: "Directors",
     Icon: Group,
+    applicationUrl: "https://tinyurl.com/mtaex3pa",
   },
   {
     position: "Subcommittee",
