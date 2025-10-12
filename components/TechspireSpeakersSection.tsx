@@ -15,11 +15,13 @@ function renderLogoRows(idx: number, sponsor: SponsorInfo, size: "small" | "larg
   const isCSE = sponsor.name && sponsor.name.toLowerCase().includes("cse");
   const isPearler = sponsor.name && sponsor.name.toLowerCase().includes("pearler");
   const isJobsboard = sponsor.name && sponsor.name.toLowerCase().includes("jobsboard");
-  const sizeProps = (isApple || isCSE || isPearler || isJobsboard )
-    ? { height: 40, maxWidth: 100 }
-    : size === "small"
-      ? { height: 50, maxWidth: 130 }
-      : { height: 50, maxWidth: 170 };
+  const sizeProps = isCSE
+    ? { height: 60, maxWidth: 160 }
+    : (isApple || isPearler || isJobsboard )
+      ? { height: 40, maxWidth: 100 }
+      : size === "small"
+        ? { height: 50, maxWidth: 130 }
+        : { height: 50, maxWidth: 170 };
   return (
     <AspectRatio
       key={idx}
@@ -84,13 +86,13 @@ export function TechspireSpeakersSection() {
                 display="grid"
                 gridTemplateColumns={{
                     sm: "repeat(2, 1fr)",
-                    md: `repeat(${Math.min(techspireHeaderData[selectedYear].supporterLogos.length, 4)}, 1fr)`,
+                    md: `repeat(${Math.min(techspireHeaderData[selectedYear].supporterLogos.length, 3)}, 1fr)`,
                 }}
-                marginBottom={5}
-                sx={{ gridGap: "20px" }}
+                marginBottom={8}
+                sx={{ gridGap: "64px" }}
             >
                 {techspireHeaderData[selectedYear].supporterLogos.map((sponsor, idx) => {
-                    return renderLogoRows(idx, sponsor, "small");
+                    return renderLogoRows(idx, sponsor);
                 })}
             </Stack>
 
@@ -107,7 +109,7 @@ export function TechspireSpeakersSection() {
                             xl: "repeat(auto-fit, minmax(200px, 1fr))",
                         }}
                         marginBottom={8}
-                        sx={{ gridGap: "32px" }}
+                        sx={{ gridGap: "64px" }}
                     >
                         {techspireHeaderData[selectedYear].speakerLogos.map((sponsor, idx) => renderLogoRows(idx, sponsor))}
                     </Stack>
