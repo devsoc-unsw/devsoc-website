@@ -1,6 +1,6 @@
 import React from "react";
 import PageSection from "../../../components/PageSection";
-import { Box, StepIndicator } from "@mui/joy";
+import { Box, Link, StepIndicator } from "@mui/joy";
 import type { Metadata } from "next";
 import { Typography } from "@mui/material";
 import { TechspireSpeakersSection } from "../../../components/TechspireSpeakersSection";
@@ -93,6 +93,12 @@ export default function TechspireProjectsPage() {
                     university, and student speakers presenting on their experiences and learnings. Each year revolves around
                     a different theme and speakers are encouraged to ground their discussions around it. The event runs for 3 hours and is catered.
                 </Typography>
+                <Box sx={{ mt: 2}}>
+                  <Link href="https://events.humanitix.com/techspire" target="_blank" rel="noopener noreferrer">
+                        Register here for tickets!
+                  </Link>
+                </Box>
+
                 <Typography level="h3" py={2} textAlign={"center"}>
                     Schedule
                 </Typography>
