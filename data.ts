@@ -587,6 +587,17 @@ export const techspireSpeakerData: {
               + "At SafetyCulture, each production incident becomes an opportunity to strengthen system resilience and deepen the team's collective understanding. Rather than seeking simple root causes or assigning blame, they focus on uncovering the complex interactions and reasonable decisions that lead to unexpected outcomes. The most valuable lessons come from understanding not just what went wrong, but why it made sense at the time.",
           thumbnailUrl: "/techspireSpeakers/25/PXL_20251010_025158035.PORTRAIT~2.jpg",
       },
+      {
+          name: "Dr. Hammond Pearce",
+          desc: "Dr. Hammond Pearce is a Senior Lecturer in UNSW's School of Computer Science and Engineering. Previously he worked at NYU's Department of Electrical and Computer Engineering / NYU Center for Cybersecurity as a Research Assistant Professor, and at NASA Ames on a research internship. His research interests lie in cybersecurity and hardware and embedded systems design, as well as the intersection of AI and industrial informatics in this area - in particular, Hammond is passionate about exploring the future of the design process in the hardware and firmware spaces, which involves the investigation of tools like ChatGPT and other Large Language Models and how they impact the development lifecycle. As part of his research work he won the Cybersecurity Award 2023 for the Best Machine Learning and Security Paper, the inaugural Efabless AI Generated Open-Source Silicon Design Challenge, and also previously won the Distinguished Paper Award at IEEE Symposium on Security and Privacy in 2022. Hammond obtained his Ph.D. in 2020 from the University of Auckland, New Zealand.",
+          thumbnailUrl: "/techspireSpeakers/25/hammond.jpeg",
+      },
+      {
+          name: "Anthony Woodward",
+          desc: "Anthony Woodward is the co-founder and CEO of RecordPoint, an innovative, fast-growing Australian SaaS solution focused on helping organizations discover, govern, and control their data for tighter compliance, more efficiency, and less risk. With a background in both technology and the law, Anthony has also held positions at Unique World, Commander, and Freehills.\n" +
+              "He also co-hosts the FILED podcast and writes the FILED newsletter, focusing on the intersection of data privacy and governance. Anthony is regarded as one of the leading thinkers on the intersection of data and privacy. ",
+          thumbnailUrl: "/techspireSpeakers/25/Anthony.jpg",
+      },
   ]
 }
 
