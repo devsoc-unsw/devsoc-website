@@ -1,6 +1,6 @@
 import React from "react";
 import PageSection from "../../../components/PageSection";
-import { Box, StepIndicator } from "@mui/joy";
+import { Box, Link, StepIndicator } from "@mui/joy";
 import type { Metadata } from "next";
 import { Typography } from "@mui/material";
 import { TechspireSpeakersSection } from "../../../components/TechspireSpeakersSection";
@@ -9,6 +9,7 @@ import Step from "@mui/joy/Step";
 import KeyboardVoiceRoundedIcon from "@mui/icons-material/KeyboardVoiceRounded";
 import WavingHandRoundedIcon from "@mui/icons-material/WavingHandRounded";
 import BakeryDiningIcon from "@mui/icons-material/BakeryDining";
+import NetworkingIcon from "@mui/icons-material/Groups";
 
 export const metadata: Metadata = {
   title: "Techspire | DevSoc UNSW",
@@ -80,6 +81,16 @@ function TechspireStepper() {
       >
           <StepperLabel text="Talks"></StepperLabel>
       </Step>
+      <Step
+          orientation="vertical"
+          indicator={
+              <StepIndicator variant="solid" color="primary">
+                  <NetworkingIcon />
+              </StepIndicator>
+          }
+      >
+          <StepperLabel text="Networking"></StepperLabel>
+      </Step>
     </Stepper>
   );
 }
@@ -93,6 +104,12 @@ export default function TechspireProjectsPage() {
                     university, and student speakers presenting on their experiences and learnings. Each year revolves around
                     a different theme and speakers are encouraged to ground their discussions around it. The event runs for 3 hours and is catered.
                 </Typography>
+                <Box sx={{ mt: 2}}>
+                  <Link href="https://events.humanitix.com/techspire" target="_blank" rel="noopener noreferrer">
+                        Register here for tickets!
+                  </Link>
+                </Box>
+
                 <Typography level="h3" py={2} textAlign={"center"}>
                     Schedule
                 </Typography>
