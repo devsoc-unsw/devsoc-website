@@ -598,6 +598,15 @@ export const techspireSpeakerData: {
               "He also co-hosts the FILED podcast and writes the FILED newsletter, focusing on the intersection of data privacy and governance. Anthony is regarded as one of the leading thinkers on the intersection of data and privacy. ",
           thumbnailUrl: "/techspireSpeakers/25/Anthony.jpg",
       },
+      {
+          name: "Anh Dao",
+          desc: "Anh is the co-founder of Lyra, a digital product studio that has worked with over 40 clients from San Francisco and Australia to design, build, and ship incredible products.\n" +
+              "\n" +
+              "Earlier in his career, he worked with many venture-backed startups, corporations, as well as teams including 88Rising, Paraform, Soma Capital, Elsa Fertility and many more.\n" +
+              "\n" +
+              "Currently Anh leads a team of 50 employees, and when he's not dancing (breaking), he's building the future of products at Lyra.",
+          thumbnailUrl: "/techspireSpeakers/25/lyra.jpeg",
+      },
   ]
 }
 
