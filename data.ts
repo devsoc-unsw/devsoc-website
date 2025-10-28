@@ -577,7 +577,7 @@ export const techspireSpeakerData: {
           "\n" +
           "Keeping software high-performance is a critical part of my role and requires me to understand and probe the layers of abstraction between my code and the physical hardware.\n" +
           "\n" +
-          "I graduated recently from UNSW. During my time there, I spent 3 years with DevSoc, working on the Circles – a project that I also director for a year, which became the most widely used DevSoc project.",
+          "I graduated recently from UNSW. During my time there, I spent 3 years with DevSoc. I worked on Circles – a project that I directed for a year, which later became the most widely used DevSoc project.",
       thumbnailUrl: "/techspireSpeakers/25/IMG_5784.jpg",
     },
       {
