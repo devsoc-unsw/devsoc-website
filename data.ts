@@ -134,6 +134,17 @@ export const projectData: StandardProjectCardProps[] = [
   },
 ];
 
+export const collabProjects: Omit<ProjectCardProps, "trainee">[] = [
+  {
+    name: "UNSW Engineering Persona Quiz",
+    desc: "Interactive quiz for first year engineering students. Built in collbaration with UNSW Engineering in 2025.",
+    logoUrl: "/projects/quiz/logo.png",
+    thumbnailUrl: "/projects/quiz/thumbnail.png",
+    projectUrl: "https://quiz.devsoc.app",
+    status: "Operational",
+  },
+];
+
 export const traineeProjectData: Omit<ProjectCardProps, "trainee">[] = [
   {
     name: "Groveify - 24T1 Trainee Project",
@@ -1356,6 +1367,15 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
     ],
     t3: [
       {
+        eventId: 2060837651391689,
+        url: "/events/2025/t3/clubsTakeoverBBQ.jpg",
+        blurb: `‼️Clubs Takeover BBQ‼️
+        Feeling burnt out from classes? 😭 Need a quick pick-me-up? 😋 Come along to DevSoc’s Clubs Takeover where we’ll be giving out 🍔 FREE FOOD 🍔 and 🧃DRINKS 🧃
+        📅 𝗗𝗔𝗧𝗘 : 15th October 2025 (Week 5 Wednesday)
+        ⏰ 𝗧𝗜𝗠𝗘: 11:30-2:30pm
+        📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: UNSW Quad`,
+      },
+      {
         eventId: 1009109267857671,
         url: "/events/2025/t3/t3TP.jpg",
       },
@@ -1371,6 +1391,7 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
         eventId: 715373941559541,
         url: "/events/2025/t3/2025FlagshipHackathon.jpg",
       },
+<<<<<<< HEAD
       {
         eventId: 2060837651391689,
         url: "/events/2025/t3/clubsTakeoverBBQ.jpg",
@@ -1391,6 +1412,8 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
         eventId: 1490725282147248,
         url: "/events/2025/t3/techspire.jpg",
       },
+=======
+>>>>>>> origin/main
     ],
   },
   2024: {

@@ -92,3 +92,17 @@ const traineeProjectRaw = [
 export const traineeProjectData: TraineeCardProps[] = traineeProjectRaw.map(
   (p) => ({ ...p, type: "trainee" })
 );
+
+const collabProjectsRaw = [
+  {
+    name: "UNSW Engineering Persona Quiz",
+    desc: "Interactive quiz for first year engineering students. Built in collbaration with UNSW Engineering in 2025.",
+    logoUrl: "/projects/quiz/logo.png",
+    thumbnailUrl: "/projects/quiz/thumbnail.png",
+    projectUrl: "https://quiz.devsoc.app",
+    status: "Operational",
+  },
+] as const;
+
+export const collabProjectData: StandardProjectCardProps[] =
+  collabProjectsRaw.map((p) => ({ ...p, type: "standard_project" }));
