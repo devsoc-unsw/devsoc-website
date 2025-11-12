@@ -1,12 +1,12 @@
 import React from "react";
-import { projectSupporterData, affilateData } from "../../../data";
 import type { Metadata } from "next";
 import SupportersPageContent, {
   DisplayLogo,
-  InfoBar
+  InfoBar,
 } from "../../../components/SupporterSection";
 import { Typography, Stack } from "@mui/joy";
 import PageSection from "../../../components/PageSection";
+import { affilateData, projectSupporterData } from "../../../data/supporters";
 
 export const metadata: Metadata = {
   title: "Supporters | DevSoc UNSW",
@@ -28,7 +28,6 @@ export default function SupportersPage() {
       <br />
 
       <SupportersPageContent projectSupporterData={projectSupporterData} />
-
     </>
   );
 }

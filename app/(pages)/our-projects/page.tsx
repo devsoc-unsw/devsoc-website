@@ -1,9 +1,12 @@
-import React from "react";
 import PageSection from "../../../components/PageSection";
 import { Grid } from "@mui/joy";
-import { collabProjects, projectData, traineeProjectData } from "../../../data";
-import { ProjectCard } from "../../../components/ProjectCard";
+import { ProjectCard, TraineeCard } from "../../../components/ProjectCard";
 import type { Metadata } from "next";
+import {
+  collabProjectsData,
+  flagshipProjectData,
+  traineeProjectData,
+} from "../../../data/project";
 
 export const metadata: Metadata = {
   title: "Our Projects | DevSoc UNSW",
@@ -16,19 +19,19 @@ export default function OurProjectsPage() {
     <>
       <PageSection title="Flagship Projects">
         <Grid container flexGrow={1} rowSpacing={3}>
-          {projectData.map((props) => (
+          {flagshipProjectData.map((props) => (
             <Grid xs={12} md={6} key={props.name}>
-              <ProjectCard {...props} trainee={false} />
+              <ProjectCard {...props} />
             </Grid>
           ))}
         </Grid>
       </PageSection>
-      {collabProjects.length > 0 && (
+      {collabProjectsData.length > 0 && (
         <PageSection title="Collab Projects">
           <Grid container flexGrow={1} rowSpacing={3}>
-            {collabProjects.map((props) => (
+            {collabProjectsData.map((props) => (
               <Grid xs={12} md={6} key={props.name}>
-                <ProjectCard {...props} trainee={false} />
+                <ProjectCard {...props} />
               </Grid>
             ))}
           </Grid>
@@ -39,7 +42,7 @@ export default function OurProjectsPage() {
           <Grid container flexGrow={1} rowSpacing={3}>
             {traineeProjectData.map((props) => (
               <Grid xs={12} md={6} key={props.name}>
-                <ProjectCard {...props} trainee={true} />
+                <TraineeCard {...props} />
               </Grid>
             ))}
           </Grid>
