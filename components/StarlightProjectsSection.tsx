@@ -6,8 +6,11 @@ import { ProjectCard } from "./ProjectCard";
 import PageSection from "./PageSection";
 import { AspectRatio, Link, Stack, Typography } from "@mui/material";
 import Image from "next/image";
-import { SponsorInfo } from "../data";
-import { starlightData, starlightSupporterData } from "../data/starlight";
+import {
+  starlightProjectData,
+  starlightSupporterData,
+} from "../data/starlight";
+import { SponsorInfo } from "../data/supporters";
 
 const years = [2025, 2024];
 
@@ -145,7 +148,7 @@ export function StarlightProjectsSection() {
         )}
       <PageSection title={`${selectedYear} Submissions`}>
         <Grid container flexGrow={1} rowSpacing={3}>
-          {(starlightData[selectedYear] || []).map((props) => (
+          {(starlightProjectData[selectedYear] || []).map((props) => (
             <Grid xs={12} md={6} key={props.name}>
               <ProjectCard {...props} />
             </Grid>

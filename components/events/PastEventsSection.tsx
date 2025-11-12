@@ -1,8 +1,8 @@
-'use client';
-import React, { useState, useEffect } from 'react';
-import { Slider, Typography, Grid } from '@mui/joy';
-import Image from 'next/image';
-import { eventsData } from '../../data';
+"use client";
+import React, { useState, useEffect } from "react";
+import { Slider, Typography, Grid } from "@mui/joy";
+import Image from "next/image";
+import { eventsData } from "../../data/events";
 
 interface EventData {
   eventId: number;
@@ -20,7 +20,7 @@ export default function PastEventsSection() {
   const years = [2025, 2024];
 
   const handleSliderChange = (e: Event, newValue: number | number[]) => {
-    if (typeof newValue === 'number') {
+    if (typeof newValue === "number") {
       setYear(newValue);
     }
   };
@@ -30,7 +30,7 @@ export default function PastEventsSection() {
   }, [year]);
 
   const formatTerm = (term: string): string => {
-    return 'Term ' + term.charAt(1);
+    return "Term " + term.charAt(1);
   };
 
   return (
@@ -53,34 +53,41 @@ export default function PastEventsSection() {
             </Typography>
           )}
           <Grid container spacing={2}>
-            {events[termKey].map((event, eventIndex) => (
+            {events[termKey].map((event, eventIndex) =>
               event.blurb ? null : (
-                <Grid 
-                  xs={12} 
-                  sm={6} 
-                  md={4} 
-                  key={eventIndex} 
-                  component="div" 
+                <Grid
+                  xs={12}
+                  sm={6}
+                  md={4}
+                  key={eventIndex}
+                  component="div"
                   sx={{
                     "&:hover": {
-                      backgroundColor: "#32383E", 
+                      backgroundColor: "#32383E",
                       borderRadius: "5px",
                     },
                   }}
                 >
                   <div
                     onClick={() =>
-                      window.open(`https://www.facebook.com/events/${event.eventId}`, '_blank')
+                      window.open(
+                        `https://www.facebook.com/events/${event.eventId}`,
+                        "_blank"
+                      )
                     }
-                    style={{ position: 'relative', width: '100%', paddingTop: '56.25%' }}
+                    style={{
+                      position: "relative",
+                      width: "100%",
+                      paddingTop: "56.25%",
+                    }}
                   >
                     <Image
                       src={event.url}
                       alt={`Event ${eventIndex}`}
                       fill
                       style={{
-                        objectFit: 'cover',
-                        position: 'absolute',
+                        objectFit: "cover",
+                        position: "absolute",
                         top: 0,
                         left: 0,
                       }}
@@ -88,7 +95,7 @@ export default function PastEventsSection() {
                   </div>
                 </Grid>
               )
-            ))}
+            )}
           </Grid>
         </div>
       ))}

@@ -9,14 +9,14 @@ import {
 } from "@mui/joy";
 import React, { useRef, useState } from "react";
 import { Box, Link } from "@mui/material";
-import { projectData } from "../data";
-import { ProjectCardProps } from "../components/ProjectCard";
+import { CardType } from "../components/ProjectCard";
 import Image from "next/image";
 import "./styles.css";
+import { flagshipProjectData } from "../data/project";
 
 export default function Home() {
   const scrollRef = useRef<HTMLDivElement | null>(null);
-  const displayProjects = projectData.filter(
+  const displayProjects = flagshipProjectData.filter(
     (x) => x.name !== "Chaos" && x.name !== "Jobsboard"
   );
 
@@ -87,9 +87,12 @@ export default function Home() {
   );
 }
 
-const LinkCard: React.FC<
-  Omit<ProjectCardProps, "trainee"> & { order: number }
-> = ({ name, logoUrl, projectUrl, order }) => {
+const LinkCard: React.FC<Omit<CardType, "trainee"> & { order: number }> = ({
+  name,
+  logoUrl,
+  projectUrl,
+  order,
+}) => {
   // Class 3 colors sourced from https://www.radix-ui.com/colors
   const colors = [
     "#182449",

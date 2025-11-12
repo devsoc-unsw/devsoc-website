@@ -24,7 +24,7 @@ interface CardPropsImpl {
   status?: "Operational" | "Unavailable";
 }
 
-type BaseCardProps = {
+export type CardType = {
   name: string;
   desc: string;
   projectUrl?: string;
@@ -33,32 +33,16 @@ type BaseCardProps = {
   status?: "Operational" | "Unavailable";
 };
 
-export type StandardProjectCardProps = BaseCardProps & {
-  type: "standard_project";
-};
-
-export type TraineeCardProps = BaseCardProps & {
-  type: "trainee";
-};
-
-export type TechspireCardProps = BaseCardProps & {
-  type: "techspire";
-};
-
-export type ProjectCardProps =
-  | TraineeCardProps
-  | TechspireCardProps
-  | StandardProjectCardProps;
-
-export const ProjectCard: React.FC<ProjectCardProps> = (
-  props: ProjectCardProps
-) => {
-  if (props.type === "trainee") {
-    return <ProjectCardImpl {...props} buttonTextWithUrl={"Check it out"} />;
-  } else if (props.type === "techspire") {
-    return <ProjectCardImpl {...props} showButton={false} />;
-  }
+export const ProjectCard: React.FC<CardType> = (props: CardType) => {
   return <ProjectCardImpl {...props} />;
+};
+
+export const TraineeCard: React.FC<CardType> = (props: CardType) => {
+  return <ProjectCardImpl {...props} buttonTextWithUrl={"Check it out"} />;
+};
+
+export const TechspireCard: React.FC<CardType> = (props: CardType) => {
+  return <ProjectCardImpl {...props} showButton={false} />;
 };
 
 const ProjectCardImpl: React.FC<CardPropsImpl> = ({

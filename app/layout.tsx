@@ -3,18 +3,18 @@
  * Metadata API - actual layout stuff happens in ClientLayout
  */
 
-import type { Metadata } from 'next';
-import React from 'react';
-import './globals.css';
-import ThemeRegistry from '../components/ThemeRegistry';
-import Box from '@mui/joy/Box';
-import { projectData } from '../data';
+import type { Metadata } from "next";
+import React from "react";
+import "./globals.css";
+import ThemeRegistry from "../components/ThemeRegistry";
+import Box from "@mui/joy/Box";
 import NavBar from "../components/nav/NavBar";
 import MobileNavBar from "../components/nav/MobileNavBar";
+import { flagshipProjectData } from "../data/project";
 
 export const metadata: Metadata = {
-  title: 'DevSoc UNSW',
-  description: 'Official website of the UNSW Software Development Society',
+  title: "DevSoc UNSW",
+  description: "Official website of the UNSW Software Development Society",
 };
 
 export default async function RootLayout({
@@ -26,15 +26,17 @@ export default async function RootLayout({
     <html lang="en">
       <body>
         <ThemeRegistry>
-          <NavBar/>
-          <MobileNavBar/>
-          {projectData.some((project) => project.status === 'Unavailable') && (
+          <NavBar />
+          <MobileNavBar />
+          {flagshipProjectData.some(
+            (project) => project.status === "Unavailable"
+          ) && (
             <Box p={1.5} bgcolor="#ed6c02" color="white">
               Our teams are currently working to resolve some issues with
               accessing the projects.
             </Box>
           )}
-            {children}
+          {children}
         </ThemeRegistry>
       </body>
     </html>

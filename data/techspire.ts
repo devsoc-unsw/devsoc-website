@@ -1,45 +1,29 @@
-import { TechspireCardProps } from "../components/ProjectCard";
-import atlassian from "./assets/atlassian.png";
-import apple from "./assets/apple.png";
-import janeStreet from "./assets/jane_street.svg";
-import rs from "./assets/rs.png";
-import rp from "./assets/rp.png";
-import sig from "./assets/sig.png";
-import imc from "./assets/imc.png";
-import sc from "./assets/sc.png";
-import quickli from "./assets/quickli.png";
-import qrt from "./assets/qrt.svg";
-import zurich from "./assets/zurich.png";
-import citadel from "./assets/citadel.png";
-import optiver from "./assets/optiver.png";
-import macquarie from "./assets/macquarie.svg";
-import tiktok from "./assets/tiktok.svg";
-import acnc from "./assets/acnc.png";
-import cse from "./assets/CSE.jpeg";
-import unsw from "./assets/unsw.png";
-import arc from "./assets/arc.png";
-import csesoc from "./assets/csesocwhite.png";
-import tradedesk from "./assets/thetradedesk.png";
-import roundhouse from "./assets/roundhouse.png";
-import lyra from "./assets/lyra.svg";
-import arista from "./assets/arista.png";
-import createunsw from "./assets/createunsw.svg";
-import google from "./assets/google.png";
-import gmsoc from "./assets/gmsoc.png";
-import gmsoc2 from "./assets/gmsoc2.png";
-import ramsoc from "./assets/ramsoc.svg";
-import redback from "./assets/redback.png";
-import flowtraders from "./assets/flowtraders.png";
-import bluesat from "./assets/bluesat.png";
-import pearler from "./assets/pearler.png";
-import canva from "./assets/canva.png";
-import amazon from "./assets/amazon.png";
-import neara from "./assets/neara.webp";
-import jobsboard from "./public/projects/jobsboard/logo.png";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
-import { SponsorInfo } from "../data";
+import { CardType } from "../components/ProjectCard";
+import atlassian from "../assets/atlassian.png";
+import apple from "../assets/apple.png";
+import janeStreet from "../assets/jane_street.svg";
+import rp from "../assets/rp.png";
+import imc from "../assets/imc.png";
+import sc from "../assets/sc.png";
+import qrt from "../assets/qrt.svg";
+import citadel from "../assets/citadel.png";
+import macquarie from "../assets/macquarie.svg";
+import tiktok from "../assets/tiktok.svg";
+import cse from "../assets/CSE.jpeg";
+import unsw from "../assets/unsw.png";
+import arc from "../assets/arc.png";
+import csesoc from "../assets/csesocwhite.png";
+import roundhouse from "../assets/roundhouse.png";
+import lyra from "../assets/lyra.svg";
+import arista from "../assets/arista.png";
+import google from "../assets/google.png";
+import pearler from "../assets/pearler.png";
+import canva from "../assets/canva.png";
+import amazon from "../assets/amazon.png";
+import jobsboard from "../public/projects/jobsboard/logo.png";
+import { SponsorInfo } from "./supporters";
 
-export const techspireSpeakerRaw = {
+export const techspireSpeakerData: Record<string, CardType[]> = {
   2022: [
     {
       name: "Ofir Zeevi",
@@ -212,18 +196,6 @@ export const techspireSpeakerRaw = {
     },
   ],
 };
-
-export const techspireSpeakerData: Record<string, TechspireCardProps[]> =
-  Object.fromEntries(
-    Object.entries(techspireSpeakerRaw).map(([year, projects]) => [
-      year,
-      projects.map((project) => ({
-        ...project,
-        type: "techspire" as const,
-      })),
-    ])
-  );
-
 export interface TechspireHeaderData {
   supporterLogos: SponsorInfo[];
   speakerLogos: SponsorInfo[];

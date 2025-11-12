@@ -1,9 +1,6 @@
-import {
-  StandardProjectCardProps,
-  TraineeCardProps,
-} from "../components/ProjectCard";
+import { CardType } from "../components/ProjectCard";
 
-const flagshipProjectRaw = [
+export const flagshipProjectData: CardType[] = [
   {
     name: "Notangles",
     desc: "An interactive drag-and-drop timetable planner designed to help UNSW students plan their ideal weekly timetable.",
@@ -53,10 +50,7 @@ const flagshipProjectRaw = [
   },
 ] as const;
 
-export const flagshipProjectData: StandardProjectCardProps[] =
-  flagshipProjectRaw.map((p) => ({ ...p, type: "standard_project" }));
-
-const traineeProjectRaw = [
+export const traineeProjectData = [
   {
     name: "Groveify - 24T1 Trainee Project",
     desc: "Groveify is a habit tracker and productivity manager that comes with a cute little world to keep you going!",
@@ -87,13 +81,9 @@ const traineeProjectRaw = [
     projectUrl: "https://github.com/csesoc/trainee-3-22t3",
     thumbnailUrl: "/traineeProjects/loft.png",
   },
-];
+] as const;
 
-export const traineeProjectData: TraineeCardProps[] = traineeProjectRaw.map(
-  (p) => ({ ...p, type: "trainee" })
-);
-
-const collabProjectsRaw = [
+export const collabProjectsData: CardType[] = [
   {
     name: "UNSW Engineering Persona Quiz",
     desc: "Interactive quiz for first year engineering students. Built in collbaration with UNSW Engineering in 2025.",
@@ -103,6 +93,3 @@ const collabProjectsRaw = [
     status: "Operational",
   },
 ] as const;
-
-export const collabProjectData: StandardProjectCardProps[] =
-  collabProjectsRaw.map((p) => ({ ...p, type: "standard_project" }));
