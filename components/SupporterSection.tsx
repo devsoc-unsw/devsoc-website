@@ -2,11 +2,11 @@
 
 import React, { useState } from "react";
 import { Slider, Typography, Box, Stack, AspectRatio, Alert } from "@mui/joy";
-import { SponsorInfo, SupporterData } from "../data";
 import { Link } from "@mui/material";
 import Image from "next/image";
 import PageSection from "./PageSection";
 import InfoOutlined from "@mui/icons-material/InfoOutlined";
+import { SponsorInfo, SupporterData } from "../data/supporters";
 
 interface SupportersPageContentProps {
   projectSupporterData: { [year: number]: SupporterData[] };
@@ -45,7 +45,7 @@ const SupportersPageContent: React.FC<SupportersPageContentProps> = ({
       </Typography> */}
 
       {sectionsForYear?.map((section, idx) => (
-        <InfoBar key={idx} message={section.infoBar ?? ""}/>
+        <InfoBar key={idx} message={section.infoBar ?? ""} />
       ))}
 
       {sectionsForYear?.map((section, idx) => (
@@ -124,10 +124,16 @@ export const DisplayLogo: React.FC<DisplayLogoProps> = ({ data, logoSize }) => {
   );
 };
 
-export const InfoBar = ({ message }: { message: string }) => message ? (
-  <Alert color="primary" sx={{ mt: 0, mb: 7, ml: -2, mr: -2 }} startDecorator={<InfoOutlined />} size="lg">
-    {message}
-  </Alert>
-) : null;
+export const InfoBar = ({ message }: { message: string }) =>
+  message ? (
+    <Alert
+      color="primary"
+      sx={{ mt: 0, mb: 7, ml: -2, mr: -2 }}
+      startDecorator={<InfoOutlined />}
+      size="lg"
+    >
+      {message}
+    </Alert>
+  ) : null;
 
 export default SupportersPageContent;

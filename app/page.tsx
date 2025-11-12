@@ -7,7 +7,6 @@ import {
   Stack,
   Typography,
 } from "@mui/joy";
-import React, { useRef, useState } from "react";
 import { Box, Link } from "@mui/material";
 import { CardType } from "../components/ProjectCard";
 import Image from "next/image";
@@ -15,12 +14,9 @@ import "./styles.css";
 import { flagshipProjectData } from "../data/project";
 
 export default function Home() {
-  const scrollRef = useRef<HTMLDivElement | null>(null);
   const displayProjects = flagshipProjectData.filter(
     (x) => x.name !== "Chaos" && x.name !== "Jobsboard"
   );
-
-  const [open, setOpen] = useState(true);
 
   return (
     <Box
@@ -62,7 +58,6 @@ export default function Home() {
           </Typography>
         </Box>
         <Box
-          ref={scrollRef}
           marginBottom={{ xs: "3rem", md: 0 }}
           marginTop={{ xs: "2rem", md: "2rem" }}
           sx={{

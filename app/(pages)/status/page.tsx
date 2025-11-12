@@ -1,4 +1,3 @@
-import React from "react";
 import { AspectRatio, Chip, Stack, Typography } from "@mui/joy";
 import PageSection from "../../../components/PageSection";
 import Image from "next/image";

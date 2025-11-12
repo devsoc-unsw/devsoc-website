@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Card from "@mui/joy/Card";
 import CardOverflow from "@mui/joy/CardOverflow";

@@ -1,4 +1,3 @@
-import React from "react";
 import PageSection from "../../../components/PageSection";
 import { Grid } from "@mui/joy";
 import { ProjectCard, TraineeCard } from "../../../components/ProjectCard";
