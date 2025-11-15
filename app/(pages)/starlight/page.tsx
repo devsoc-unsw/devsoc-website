@@ -79,13 +79,13 @@ export default function StarlightProjectsPage() {
   return (
     <>
       <PageSection title="Starlight Showcase">
-        <Typography mb={2}>
+        <Typography textAlign='justify' mb={2}>
           Starlight is a project showcase that celebrates all kinds of projects built by passionate and 
           aspiring engineers at UNSW. Submissions are open to anyone who has a project they want to share!
           Whether it’s Software, Mechatronics, Aerospace, or any other type of engineering project, you 
           are welcome to submit.
         </Typography>
-        <Typography>
+        <Typography textAlign='justify'>
           The event is open-floor, free for anyone to attend, and fully catered. If you’re interested in 
           exploring what different areas of engineering can offer, this is your go-to event! More 
           information about the event is available{" "}

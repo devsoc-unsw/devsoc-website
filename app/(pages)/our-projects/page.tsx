@@ -18,22 +18,22 @@ export default function OurProjectsPage() {
   return (
     <>
       <PageSection title="Our Projects">
-        <Typography mb={2}>
+        <Typography textAlign='justify' mb={2}>
           DevSoc is all about building projects that matter. Each year, our student developers 
           drive forward our <b>Flagship Projects</b>, delivering solutions that enhance and 
           simplify the student experience, making university life more engaging, efficient, 
           and accessible.
         </Typography>
-        <Typography mb={2}>
+        <Typography textAlign='justify' mb={2}>
           In addition, we collaborate with <b>UNSW Engineering</b> on real-world applications, 
           giving students the chance to contribute to impactful projects beyond the society.
         </Typography>
-        <Typography mb={2}>
+        <Typography textAlign='justify' mb={2}>
           Through our <b>Termly Training Program</b>, students gain hands-on experience, upskill 
           in modern development practices, and deliver their own projects— turning learning into 
           action.
         </Typography>
-        <Typography>
+        <Typography textAlign='justify'>
           At DevSoc, learning goes hand-in-hand with creating. Members work on real projects, 
           develop practical skills, and contribute to tools that make life at UNSW better for everyone.
         </Typography>

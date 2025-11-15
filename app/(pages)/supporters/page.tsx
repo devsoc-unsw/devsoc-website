@@ -16,12 +16,12 @@ export default function SupportersPage() {
   return (
     <>
       <PageSection title="Sponsor Us">
-        <Typography mb={2}>
+        <Typography textAlign='justify' mb={2}>
           Founded in late 2023, DevSoc has rapidly grown into one of the university’s most dynamic and 
           technically driven communities. In just a short time, our society has earned multiple Arc and 
           Engineering awards, reflecting both our impact and the quality of the initiatives we deliver.
         </Typography>
-        <Typography mb={2}>
+        <Typography textAlign='justify' mb={2}>
           DevSoc’s mission is to help students become industry-ready through practical technical experience, 
           project-based learning, and real exposure to software development. Sponsoring DevSoc gives partners 
           direct access to a highly engaged pipeline of emerging developers. Through our events, training program, 

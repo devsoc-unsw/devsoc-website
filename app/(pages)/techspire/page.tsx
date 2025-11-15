@@ -99,12 +99,12 @@ export default function TechspireProjectsPage() {
     return (
         <>
             <PageSection title="Techspire">
-                <Typography mb={2}>
+                <Typography textAlign='justify'mb={2}>
                     Techspire is DevSoc’s flagship technology conference event. It is run in a TED Talk format with industry,
                     university, and student speakers presenting on their experiences and learnings. Each year revolves around
                     a different theme and speakers are encouraged to ground their discussions around it.
                 </Typography>
-                <Typography mb={2}>
+                <Typography textAlign='justify' mb={2}>
                     The event is open to everyone — high school students, university students, recent graduates, and anyone 
                     with an interest in technology and innovation. It runs for 3 hours and is fully catered.
                 </Typography>
