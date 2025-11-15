@@ -17,6 +17,18 @@ interface EventsByTerm {
 export default function CurEventSection() {
   const events = eventsData[2025] as EventsByTerm;
 
+  const hasEvents = Object.values(events).some(
+    (termEvents) => termEvents.length > 0
+  );
+
+  if (!hasEvents) {
+    return (
+      <Typography textAlign="center" mt={4}>
+        There are currently no upcomings. Please check back later!
+      </Typography>
+    );
+  }
+
   return (
     <>
       {Object.keys(events).map((termKey, index) => (
