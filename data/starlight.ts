@@ -128,6 +128,18 @@ export const starlightProjectData: {
   ],
   2025: [
     {
+      name: "LinSoc - Trip",
+      desc: "Sydney public transport, in your terminal!",
+      projectUrl: "https://github.com/linuxunsw/trip",
+      thumbnailUrl: "/starlightProjects/2025/25_30_Trip.png",
+    },
+    {
+      name: "Breaktime",
+      desc: "Block distracting apps permanently and take intentional breaks.",
+      projectUrl: "http://breaktimeapp.github.io/",
+      thumbnailUrl: "/starlightProjects/2025/25_20_Breaktime.png",
+    },
+    {
       name: "Arcane Raiders",
       desc: "Team up with your wizard friends to pillage the magic tower! Create elemental synergies, defeat powerful bosses and claim the tower's treasure in this rogue-like dungeon-raider.",
       projectUrl: "https://store.steampowered.com/app/2899410/Arcane_Raiders/",
@@ -151,12 +163,6 @@ export const starlightProjectData: {
       desc: "Bluesat has seen the returned to their Offworld Robotics project and in just entered their first rover challenge since 2019. ",
       projectUrl: "https://bluesat.unsw.edu.au/#projects",
       thumbnailUrl: "/starlightProjects/2025/25_11_BluesatRover.jpeg",
-    },
-    {
-      name: "Breaktime",
-      desc: "Block distracting apps permanently and take intentional breaks.",
-      projectUrl: "http://breaktimeapp.github.io/",
-      thumbnailUrl: "/starlightProjects/2025/25_20_Breaktime.png",
     },
     {
       name: "Cram & Conquer",
