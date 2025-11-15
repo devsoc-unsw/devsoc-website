@@ -17,8 +17,8 @@ interface EventsByTerm {
 export default function CurEventSection() {
   const events = eventsData[2025] as EventsByTerm;
 
-  const hasEvents = Object.values(events).some(
-    (termEvents) => termEvents.length > 0
+  const hasEvents = Object.values(events).some((termEvents) =>
+    termEvents.some(event => event.blurb)
   );
 
   if (!hasEvents) {
