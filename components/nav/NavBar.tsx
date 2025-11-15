@@ -25,7 +25,7 @@ const NavBar = () => {
               variant="plain"
               ratio="15/4"
               objectFit="contain"
-              sx={{ width: 180 }}
+              sx={{ width: 120 }}
             >
               <Image
                 fill
@@ -36,7 +36,7 @@ const NavBar = () => {
           </Link>
           <Stack component="nav" direction="row" spacing={3}>
             {navData.map(({ text, href }, idx) => (
-              <Typography key={idx} level="title-lg">
+              <Typography key={idx} level="title-md">
                 <Link
                   component={NextLink}
                   sx={{

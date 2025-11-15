@@ -23,7 +23,7 @@ export default function CurEventSection() {
 
   if (!hasEvents) {
     return (
-      <Typography textAlign="center" mt={4}>
+      <Typography textAlign="center">
         There are currently no upcomings. Please check back later!
       </Typography>
     );
