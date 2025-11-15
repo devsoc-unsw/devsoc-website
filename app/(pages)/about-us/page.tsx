@@ -37,18 +37,50 @@ export default function AboutUsPage() {
         </Typography>
       </PageSection>
       <PageSection title="Governance">
-        <b>General Enquiries:</b><br/>
-        contact@devsoc.app <br/><br/>
-        <b>Registration Address:</b><br/>
-        Computer Science Building (K17)<br/>Engineering Road, UNSW Sydney,<br/>Kensington NSW 2052 <br/><br/>
-        DevSoc became an independent university society affiliated with UNSW Arc beginning in October 2023, separating
-        from CSESoc. You can find our latest constitution <Link target="_blank"
-                                                                href="https://drive.google.com/file/d/1vz-NuOY6ympFkq80s4GPnV5HrvKuaA1K/view?usp=sharing">here</Link>.
-        <br/>
-        <br/>
-        DevSoc became an ACNC registered not-for-profit organisation in 2024. You can find our not-for-profit
-        status <Link target="_blank"
-                     href="https://www.acnc.gov.au/charity/charities/7fa763bf-0876-ee11-8179-00224893b0ed/profile">here</Link>.
+        <Typography mb={2}>
+          <strong>General Enquiries:</strong>
+          <br />
+          <Link href="mailto:contact@devsoc.app" target="_blank">
+            contact@devsoc.app
+          </Link>
+        </Typography>
+        <Typography mb={2}>
+          <strong>Sponsorships Enquiries:</strong>
+          <br />
+          <Link href="mailto:sponsorships@devsoc.app" target="_blank">
+            sponsorships@devsoc.app
+          </Link>
+        </Typography>
+
+        <Typography mb={2}>
+          <strong>Registration Address:</strong>
+          <br />
+          Computer Science Building (K17)
+          <br />
+          Engineering Road, UNSW Sydney,
+          <br />
+          Kensington NSW 2052
+        </Typography>
+
+        <Typography mb={2}>
+          DevSoc became an independent university society affiliated with UNSW Arc beginning in October 2023, separating from CSESoc. You can find our latest constitution {" "}
+          <Link
+            href="https://drive.google.com/file/d/1vz-NuOY6ympFkq80s4GPnV5HrvKuaA1K/view?usp=sharing"
+            target="_blank"
+          >
+            here
+          </Link>.
+        </Typography>
+
+        <Typography>
+          DevSoc became an ACNC registered not-for-profit organisation in 2024. You can find our not-for-profit status {" "}
+          <Link
+            href="https://www.acnc.gov.au/charity/charities/7fa763bf-0876-ee11-8179-00224893b0ed/profile"
+            target="_blank"
+          >
+            here
+          </Link>.
+        </Typography>
       </PageSection>
       <PageSection title="People">
         <PeopleSection/>
