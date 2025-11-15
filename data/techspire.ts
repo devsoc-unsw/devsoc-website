@@ -316,6 +316,16 @@ export const techspireHeaderData: { [n: number]: TechspireHeaderData } = {
         url: "https://www.arc.unsw.edu.au/",
       },
       {
+        name: "CSE",
+        logo: cse,
+        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
+      },
+      {
+        name: "UNSW",
+        logo: unsw,
+        url: "https://www.unsw.edu.au/",
+      },
+      {
         name: "Citadel",
         logo: citadel,
         url: "https://www.citadelsecurities.com/",
@@ -329,12 +339,7 @@ export const techspireHeaderData: { [n: number]: TechspireHeaderData } = {
         name: "Jane Street",
         logo: janeStreet,
         url: "https://www.janestreet.com/",
-      },
-      {
-        name: "UNSW",
-        logo: unsw,
-        url: "https://www.unsw.edu.au/",
-      },
+      }
     ],
     speakerLogos: [
       {
