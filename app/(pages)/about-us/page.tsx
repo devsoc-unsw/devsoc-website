@@ -83,6 +83,10 @@ export default function AboutUsPage() {
         </Typography>
       </PageSection>
       <PageSection title="People">
+        <Typography mb={2}>
+          We only became an official society in late 2023, but our project leads and contributors have been 
+          coding, building, and creating for much longer!
+        </Typography>
         <PeopleSection/>
       </PageSection>
     </>
