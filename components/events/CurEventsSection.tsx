@@ -24,7 +24,7 @@ export default function CurEventSection() {
   if (!hasEvents) {
     return (
       <Typography textAlign="center">
-        There are currently no upcomings. Please check back later!
+        There are currently no upcoming events. Please check back later!
       </Typography>
     );
   }
