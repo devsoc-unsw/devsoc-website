@@ -10,7 +10,6 @@ import { CardType } from "../components/ProjectCard";
 import Image from "next/image";
 import "./styles.css";
 import { flagshipProjectData } from "../data/project";
-import Aurora from "../components/Aurora";
 
 export default function Home() {
   const displayProjects = flagshipProjectData.filter(
@@ -25,12 +24,7 @@ export default function Home() {
       position="relative"
       width="100%"
     >
-      <Aurora
-        colorStops={["#ff7a7a", "#b19eef", "#5227ff"]}
-        blend={0.5}
-        amplitude={0.7}
-        speed={0.7}
-      />
+      <GradientBlob />
       <Stack
         sx={{
           position: "relative",
@@ -143,5 +137,43 @@ const LinkCard: React.FC<Omit<CardType, "trainee"> & { order: number }> = ({
         </Typography>
       </Card>
     </Link>
+  );
+};
+
+const GradientBlob = () => {
+  return (
+    <div
+      style={{
+        position: "fixed",
+        top: "50%",
+        right: "10%",
+        width: "40vw",
+        height: "50vh",
+        background: "url('/home/gradient.svg') no-repeat center center",
+        backgroundSize: "150%",
+        filter: "blur(110px)",
+        zIndex: -1,
+        animation: "ripple 5s ease-in-out infinite",
+      }}
+    >
+      <style>
+        {`
+          @keyframes ripple {
+            0% {
+              transform: translateY(-50%) scale(1);
+              opacity: 0.7;
+            }
+            50% {
+              transform: translateY(-50%) scale(1.2);
+              opacity: 0.3;
+            }
+            100% {
+              transform: translateY(-50%) scale(1);
+              opacity: 0.7;
+            }
+          }
+        `}
+      </style>
+    </div>
   );
 };
