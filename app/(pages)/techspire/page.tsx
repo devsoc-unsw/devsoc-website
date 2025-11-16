@@ -99,16 +99,21 @@ export default function TechspireProjectsPage() {
     return (
         <>
             <PageSection title="Techspire">
-                <Typography textAlign="justify">
+                <Typography textAlign='justify'mb={2}>
                     Techspire is DevSoc’s flagship technology conference event. It is run in a TED Talk format with industry,
                     university, and student speakers presenting on their experiences and learnings. Each year revolves around
-                    a different theme and speakers are encouraged to ground their discussions around it. The event runs for 3 hours and is catered.
+                    a different theme and speakers are encouraged to ground their discussions around it.
                 </Typography>
-                <Box sx={{ mt: 2}}>
+                <Typography textAlign='justify' mb={2}>
+                    The event is open to everyone — high school students, university students, recent graduates, and anyone 
+                    with an interest in technology and innovation. It runs for 3 hours and is fully catered.
+                </Typography>
+                {/* To 2026 Team: uncomment and CHECK if link is still the same! */}
+                {/* <Box sx={{ mt: 2}}>
                   <Link href="https://events.humanitix.com/techspire" target="_blank" rel="noopener noreferrer">
                         Register here for tickets!
                   </Link>
-                </Box>
+                </Box> */}
 
                 <Typography level="h3" py={2} textAlign={"center"}>
                     Schedule

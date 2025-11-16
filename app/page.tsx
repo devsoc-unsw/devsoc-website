@@ -1,9 +1,7 @@
 "use client";
 import {
   AspectRatio,
-  Button,
   Card,
-  Snackbar,
   Stack,
   Typography,
 } from "@mui/joy";
@@ -34,12 +32,13 @@ export default function Home() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          minHeight: "calc(100vh - 75px)",
+          minHeight: "calc(100vh - 100px)",
+          maxWidth: "100vw"
         }}
       >
         <Box sx={{ width: "100%" }}>
           <Typography
-            fontSize={{ xs: "2rem", sm: "2.3rem", md: "3rem" }}
+            fontSize={{ sm: "1.5rem", md: "2rem" }}
             fontWeight={600}
             component="div"
             sx={{ color: "white" }}
@@ -50,7 +49,7 @@ export default function Home() {
           </Typography>
           <Typography
             mt={2}
-            fontSize={{ xs: "1rem", sm: "1rem", md: "1.5rem" }}
+            fontSize={{ sm: "0.8rem", md: "1.2rem" }}
             fontWeight={200}
             component="div"
           >
@@ -58,8 +57,7 @@ export default function Home() {
           </Typography>
         </Box>
         <Box
-          marginBottom={{ xs: "3rem", md: 0 }}
-          marginTop={{ xs: "2rem", md: "2rem" }}
+          marginTop="2rem"
           sx={{
             display: "flex",
             overflowX: "auto",
@@ -67,7 +65,7 @@ export default function Home() {
           }}
         >
           <Stack
-            spacing={{ xs: 3, lg: 5 }}
+            spacing={{ xs: 2, md: 3 }}
             direction={{ xs: "column", lg: "row" }}
             sx={{ display: "flex", width: "100%" }}
             flexDirection={{ xs: "column", lg: "row" }}
@@ -103,31 +101,38 @@ const LinkCard: React.FC<Omit<CardType, "trainee"> & { order: number }> = ({
       <Card
         className="boxBackground"
         sx={{
-          width: { xs: "100%", lg: "210px" },
-          height: { xs: "5rem", lg: "86px" },
-          borderColor: colors[order],
+          width: { xs: "100%", lg: "180px" },
+          height: { xs: "4rem", lg: "70px" },
+          border: "2px solid transparent",
           backgroundColor: colors[order],
-          padding: "1rem 2rem",
+          padding: "1rem 1.5rem",
           flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "center",
+          boxSizing: "border-box",
           "&:hover": {
             border: "2px grey solid",
           },
         }}
       >
-        <AspectRatio objectFit="contain" ratio={1} sx={{ width: "3rem" }}>
-          <Image
-            fill
-            alt={name}
-            src={logoUrl ?? ""}
-            style={{ backgroundColor: colors[order] }}
-          />
+        <AspectRatio ratio={1} sx={{ width: "2rem" }}>
+          <Box sx={{ position: "relative", width: "100%", height: "100%" }}>
+            <Image
+              src={logoUrl ?? ""}
+              alt={name}
+              fill
+              style={{
+                objectFit: "contain",
+                objectPosition: "center",
+                backgroundColor: colors[order],
+              }}
+            />
+          </Box>
         </AspectRatio>
         <Typography
           sx={{
             color: "#EDEEF0",
-            fontSize: { xs: "1.5rem", lg: "1.25rem" },
+            fontSize: { xs: "1rem", lg: "1.25rem" },
             fontWeight: 500,
           }}
         >

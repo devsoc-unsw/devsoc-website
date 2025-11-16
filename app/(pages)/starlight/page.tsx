@@ -76,30 +76,34 @@ function StarlightStepper() {
 }
 
 export default function StarlightProjectsPage() {
-    return (
-        <>
-            <PageSection title="Starlight Showcase">
-                <Typography textAlign="justify">
-                    Starlight is a project showcase that celebrates all kinds of software
-                    projects being built by passionate developers at UNSW. The showcase
-                    will be held on the 25th of July 2025. Submissions are open to
-                    everyone that has a project they want to share! More information about
-                    the event is avaliable{" "}
-                    <Link
-                        href="https://www.canva.com/design/DAGkribj1e8/E7BfubxdQQLadKB20Hxzww/view"
-                        target="_blank"
-                    >
-                        here.
-                    </Link>
-                </Typography>
-                <Typography level="h3" py={2} textAlign={"center"}>
-                    Schedule
-                </Typography>
-                <StarlightStepper />
-                <Box sx={{ pb: 4}} />
-            </PageSection>
-            
-            <StarlightProjectsSection />
-        </>
-    );
+  return (
+    <>
+      <PageSection title="Starlight Showcase">
+        <Typography textAlign='justify' mb={2}>
+          Starlight is a project showcase that celebrates all kinds of projects built by passionate and 
+          aspiring engineers at UNSW. Submissions are open to anyone who has a project they want to share!
+          Whether it’s Software, Mechatronics, Aerospace, or any other type of engineering project, you 
+          are welcome to submit.
+        </Typography>
+        <Typography textAlign='justify'>
+          The event is open-floor, free for anyone to attend, and fully catered. If you’re interested in 
+          exploring what different areas of engineering can offer, this is your go-to event! More 
+          information about the event is available{" "}
+          <Link
+            href="https://www.canva.com/design/DAGkribj1e8/E7BfubxdQQLadKB20Hxzww/view"
+            target="_blank"
+          >
+            here.
+          </Link>
+        </Typography>
+        <Typography level="h3" py={2} textAlign={"center"}>
+          Schedule
+        </Typography>
+        <StarlightStepper />
+        <Box sx={{ pb: 4}} />
+      </PageSection>
+      
+      <StarlightProjectsSection />
+    </>
+  );
 }

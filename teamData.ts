@@ -917,7 +917,7 @@ export const teamData: TeamData = {
   2025: {
     executives: [
       { name: "Dylan Huynh", title: "Co-President", imgUrl: "/people/2025/pres-nf.jpg" },
-      { name: "Ashley Luong", title: "Co-President", imgUrl: "/people/2025/pres-nm.png" },
+      { name: "Ashley Luong", title: "Co-President", imgUrl: "/people/2025/pres-nm.jpg" },
       { name: "Jayden Nguyen", title: "Administrative Officer", imgUrl: "/people/2025/admin.png" },
       { name: "Mark Quach", title: "VP (Internals)", imgUrl: "/people/2025/vpi.png" },
       { name: "Jade Kam", title: "VP (Externals)", imgUrl: "/people/2025/vpe.png" },
