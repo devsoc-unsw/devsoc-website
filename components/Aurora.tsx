@@ -1,3 +1,6 @@
+// Main Page Aurora Copied from https://reactbits.dev/backgrounds/aurora
+// (didn't want to download tailwind 🤡)
+
 import { Renderer, Program, Mesh, Color, Triangle } from "ogl";
 import { useEffect, useRef } from "react";
 
@@ -107,13 +110,12 @@ void main() {
 }
 `;
 
-/* --- React Props --- */
 export interface AuroraProps {
-  colorStops?: string[];     // ["#5227FF", "#7cff67", "#5227FF"]
-  amplitude?: number;        // 1.0
-  blend?: number;            // 0.5
-  time?: number;             // optional controlled time
-  speed?: number;            // speed multiplier
+  colorStops?: string[];
+  amplitude?: number;
+  blend?: number;
+  time?: number;
+  speed?: number;
 }
 
 export default function Aurora({

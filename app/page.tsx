@@ -39,7 +39,6 @@ export default function Home() {
           alignItems: "center",
           minHeight: "calc(100vh - 100px)",
           maxWidth: "100vw",
-          boxSizing: "border-box",
         }}
         padding={[5, 10]}
       >
