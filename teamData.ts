@@ -1178,7 +1178,7 @@ export const teamData: TeamData = {
           { name: "Bob Chen", imgUrl: "3bobchen" },
         ],
         subcommittee: [
-          { name: "Alisa Xi", imgUrl: "" },
+          { name: "Alisa Hsi", imgUrl: "" },
           { name: "Arshia John", imgUrl: "" },
           { name: "Aryan Rajandan", imgUrl: "shonk7" },
           { name: "Justin Zaia", imgUrl: "justinz27" },
