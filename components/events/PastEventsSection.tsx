@@ -79,6 +79,7 @@ export default function PastEventsSection() {
                       position: "relative",
                       width: "100%",
                       paddingTop: "56.25%",
+                      cursor: "pointer",
                     }}
                   >
                     <Image
