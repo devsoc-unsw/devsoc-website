@@ -20,7 +20,7 @@ import {
 } from "@mui/joy";
 
 export const PeopleSection = () => {
-  const [teamYear, setTeamYear] = useState(2025);
+  const [teamYear, setTeamYear] = useState(2026);
   const [subcommittee, setSubcommittee] = useState(
     teamData[teamYear]["subcommittees"][0]?.name
   );
@@ -41,7 +41,7 @@ export const PeopleSection = () => {
     }
   };
 
-  const years = [2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018];
+  const years = [2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018];
 
   function valueText(value: number) {
     return value.toString();
@@ -50,14 +50,14 @@ export const PeopleSection = () => {
     <>
       <Slider
         aria-label="Always visible"
-        defaultValue={2025}
+        defaultValue={2026}
         getAriaValueText={valueText}
         step={1}
         min={2018}
-        max={2025}
+        max={2026}
         marks={years.map((year) => ({ value: year, label: `${year}` }))}
         color="devsoc_red"
-        onChange={(e, year) => setTeamYear(!Array.isArray(year) ? year : 2025)}
+        onChange={(e, year) => setTeamYear(!Array.isArray(year) ? year : 2026)}
       />
       <Typography level="h2" py={4} px={4}>
         {teamYear >= 2024 ? "DevSoc Executives" : null}
