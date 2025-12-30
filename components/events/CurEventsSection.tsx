@@ -14,7 +14,7 @@ interface EventsByTerm {
   [term: string]: EventData[];
 }
 
-export default function CurEventSection() {
+export default function CurEventsSection() {
   const events = eventsData[2025] as EventsByTerm;
 
   const hasEvents = Object.values(events).some((termEvents) =>
@@ -54,6 +54,7 @@ export default function CurEventSection() {
                       borderRadius: "10px",
                     },
                     marginTop: 1,
+                    cursor: "pointer",
                   }}
                 >
                   <Grid xs={12} sm={6} component="div" pt={2}>
