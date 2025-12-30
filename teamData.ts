@@ -862,7 +862,7 @@ export const teamData: TeamData = {
           { name: "Rachel Bai", imgUrl: "rachel-bai" },
           { name: "Veer Sheth", imgUrl: "veersheth" },
           { name: "Vedad Neday Diznab", imgUrl: "d33-gari" },
-          { name: "Ricky Guan", imgUrl: "" },
+          { name: "Ricky Guan", imgUrl: "PotatoRicky" },
           { name: "Junya Wang", imgUrl: "sharkbaitchomp" },
         ]
       },
@@ -1167,8 +1167,7 @@ export const teamData: TeamData = {
           { name: "Emma Liang", imgUrl: "" },
           { name: "Ethan Richard", imgUrl: "eatham1203" },
           { name: "Jason Yan", imgUrl: "" },
-          { name: "John Wu", imgUrl: "" },
-          { name: "Olivianne Kho", imgUrl: "liivvyk" },
+          { name: "John Wu", imgUrl: "" },          { name: "Olivianne Kho", imgUrl: "liivvyk" },
           { name: "Sammi Cheung", imgUrl: "" },
         ]
       },
@@ -1180,11 +1179,132 @@ export const teamData: TeamData = {
         subcommittee: [
           { name: "Alisa Hsi", imgUrl: "" },
           { name: "Arshia John", imgUrl: "" },
-          { name: "Aryan Rajandan", imgUrl: "shonk7" },
+          { name: "Aryan Rajnandan", imgUrl: "shonk7" },
           { name: "Justin Zaia", imgUrl: "justinz27" },
           { name: "Nuren Alahee", imgUrl: "" },
           { name: "Tina Dang", imgUrl: "" },
         ]
+      },
+    ]
+  },
+  2026: {
+    executives: [
+      { name: "Cindy Zhang", title: "Co-President", imgUrl: "/people/2026/pres-nm.png" },
+      { name: "Lucas Harvey", title: "Co-President", imgUrl: "/people/2026/pres-nf.png" },
+      { name: "Aryan Rajnandan", title: "Administrative Officer", imgUrl: "/people/2026/admin.png" },
+      { name: "Edward Zhang", title: "VP (Internals)", imgUrl: "/people/2026/vpi.png" },
+      { name: "Danny Zhang", title: "VP (Externals)", imgUrl: "/people/2026/vpe.png" },
+      { name: "Tianming Tang", title: "VP (Projects)", imgUrl: "/people/2026/vpp1.png" },
+      { name: "Kavika Palletenne", title: "VP (Projects)", imgUrl: "/people/2026/vpp2.png" },
+      { name: "Matthew Lim", title: "VP (Project Operations)", imgUrl: "/people/2026/vpo.png" },
+    ],
+    subcommittees: [
+      {
+        name: "Chaos",
+        directors: [
+          { name: "Jared Schulz", imgUrl: "Plebbaroni" },
+          { name: "Peter Nguyen", imgUrl: "peternuyn" },
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Circles",
+        directors: [
+          { name: "Jason Cong Chen", imgUrl: "jcongc" },
+          { name: "Kevin Lin", imgUrl: "kevinlin1803" },
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Freerooms",
+        directors: [
+          { name: "Chris Wong", imgUrl: "xleonx0x" },
+          { name: "Ryan Yensch", imgUrl: "RyanYensch" },
+          { name: "Yanlin Li", imgUrl: "yalilix" },
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Notangles",
+        directors: [
+          { name: "David Hua", imgUrl: "sususu5" },
+          { name: "Lachlan Shoesmith", imgUrl: "lachlanshoesmith" },
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Structs",
+        directors: [
+          { name: "Abraham Earnest", imgUrl: "goldfish088" },
+          { name: "Patrick Tuong", imgUrl: "PatrickkT" },
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Warchest",
+        directors: [
+          { name: "Isaac Kim", imgUrl: "gyoumi" },
+          { name: "Kevin Jin", imgUrl: "" },
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Platforms",
+        directors: [
+          { name: "Ethan Scott", imgUrl: "ChinoGoblino" },
+          { name: "Taku Kodama", imgUrl: "risu729" },
+        ],
+        subcommittee: []
+      },
+      {
+        name: "HR",
+        directors: [
+          { name: "Jian Wang", imgUrl: "" },
+          { name: "Vansh Kalra", imgUrl: "" },
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Training\u00A0Program",
+        directors: [
+          { name: "Alyssa Cheong", imgUrl: "alyssacheong" },
+          { name: "Andy Atmadja", imgUrl: "" },
+          { name: "Sunny Chen", imgUrl: "sunnyyuqingchen" },
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Technical\u00A0Workshop",
+        directors: [
+          { name: "Mourya Dave", imgUrl: "" },
+          { name: "Parham Sepasgozar", imgUrl: "" },
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Events",
+        directors: [
+          { name: "Arshia John", imgUrl: "" },
+          { name: "Ricky Guan", imgUrl: "PotatoRicky" },
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Marketing",
+        directors: [
+          { name: "Aadhi Senthil Kumar", imgUrl: "" },
+          { name: "Avani Jain", imgUrl: "" },
+          { name: "Shreya Verma", imgUrl: "" },
+        ],
+        subcommittee: []
+      },
+      {
+        name: "Sponsorships",
+        directors: [
+          { name: "Mannan Zaveri", imgUrl: "" },
+          { name: "Mark Quach", imgUrl: "markquach12" },
+        ],
+        subcommittee: []
       },
     ]
   },
