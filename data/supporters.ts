@@ -17,6 +17,7 @@ import arc from "../assets/arc.png";
 import tradedesk from "../assets/thetradedesk.png";
 import lyra from "../assets/lyra.svg";
 import arista from "../assets/arista.png";
+import airwallex from "../assets/airwallex.avif";
 import flowtraders from "../assets/flowtraders.png";
 import neara from "../assets/neara.webp";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
@@ -55,6 +56,58 @@ export const affilateData: SupporterData = {
   ],
 };
 export const projectSupporterData: { [year: number]: SupporterData[] } = {
+  2026: [
+    {
+      title: "Platinum Tier",
+      logos: [
+        {
+          name: "Jane Street",
+          logo: janeStreet,
+          url: "https://www.janestreet.com/",
+        },
+        {
+          name: "The Trade Desk",
+          logo: tradedesk,
+          url: "https://careers.thetradedesk.com/",
+        },
+        {
+          name: "Lyra Technologies",
+          logo: lyra,
+          url: "https://www.lyratechnologies.com.au/",
+        },
+      ],
+    },
+    {
+      title: "Gold Tier",
+      logos: [
+        {
+          name: "Airwallex",
+          logo: airwallex,
+          url: "https://www.airwallex.com/au",
+        },
+        {
+          name: "Arista",
+          logo: arista,
+          url: "https://www.arista.com/en/",
+        },
+      ],
+    },
+    {
+      title: "Silver Tier",
+      logos: [
+        {
+          name: "Citadel",
+          logo: citadel,
+          url: "https://www.citadelsecurities.com/",
+        },
+        {
+          name: "imc",
+          logo: imc,
+          url: "https://www.imc.com/",
+        },
+      ],
+    },
+  ],
   2025: [
     {
       title: "Platinum Tier",
