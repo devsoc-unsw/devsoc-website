@@ -24,6 +24,7 @@ export const recruitmentData: RecruitmentProps[] = [
   {
     position: "Subcommittee",
     Icon: Groups,
+    applicationUrl: "https://eminent-chopper-b83.notion.site/2cf49c3a06f6816793ede48af0d3d25a",
   },
   {
     position: "Training Leads",
