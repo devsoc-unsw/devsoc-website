@@ -20,6 +20,7 @@ import arista from "../assets/arista.png";
 import airwallex from "../assets/airwallex.avif";
 import flowtraders from "../assets/flowtraders.png";
 import neara from "../assets/neara.webp";
+import zip from '../assets/zip.png'
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 export interface SponsorInfo {
@@ -301,7 +302,7 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
         },
         {
           name: "ZIP",
-          logo: "https://media.boohoo.com/i/boohooamplience/zippay_new_white_nobg_1309?fmt=webp",
+          logo: zip,
           url: "https://zip.co/au",
         },
         {
