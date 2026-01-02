@@ -12,12 +12,12 @@ interface SupportersPageContentProps {
   projectSupporterData: { [year: number]: SupporterData[] };
 }
 
-const years = [2025, 2024];
+const years = [2026, 2025, 2024];
 
 const SupportersPageContent: React.FC<SupportersPageContentProps> = ({
   projectSupporterData,
 }) => {
-  const [selectedYear, setSelectedYear] = useState<number>(2025);
+  const [selectedYear, setSelectedYear] = useState<number>(2026);
 
   const sectionsForYear = projectSupporterData[selectedYear];
   const handleYearChange = (event: any, newValue: number | number[]) => {
@@ -78,6 +78,7 @@ const customLogoSizes: Record<string, { height: number; maxWidth: number }> = {
   "ZIP Logo": { height: 90, maxWidth: 140 },
   "Safety Culture": { height: 100, maxWidth: 250 },
   "Record Point": { height: 100, maxWidth: 220 },
+  "Airwallex": { height: 80, maxWidth: 160 },
 };
 
 export const DisplayLogo: React.FC<DisplayLogoProps> = ({ data, logoSize }) => {
