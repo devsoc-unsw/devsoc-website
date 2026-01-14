@@ -78,7 +78,7 @@ const customLogoSizes: Record<string, { height: number; maxWidth: number }> = {
   "ZIP Logo": { height: 90, maxWidth: 140 },
   "Safety Culture": { height: 100, maxWidth: 250 },
   "Record Point": { height: 100, maxWidth: 220 },
-  "Airwallex": { height: 80, maxWidth: 160 },
+  "Airwallex": { height: 100, maxWidth: 250 },
 };
 
 export const DisplayLogo: React.FC<DisplayLogoProps> = ({ data, logoSize }) => {
