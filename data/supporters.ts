@@ -17,7 +17,7 @@ import arc from "../assets/arc.png";
 import tradedesk from "../assets/thetradedesk.png";
 import lyra from "../assets/lyra.svg";
 import arista from "../assets/arista.png";
-import airwallex from "../assets/airwallex.avif";
+import airwallex from "../assets/airwallex-light.png";
 import flowtraders from "../assets/flowtraders.png";
 import neara from "../assets/neara.webp";
 import zip from '../assets/zip.png'
