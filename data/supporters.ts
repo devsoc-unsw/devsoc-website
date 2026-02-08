@@ -19,6 +19,9 @@ import lyra from "../assets/lyra.svg";
 import arista from "../assets/arista.png";
 import airwallex from "../assets/airwallex-light.png";
 import flowtraders from "../assets/flowtraders.png";
+import hrt from "../assets/hrt.png";
+import atlassian from "../assets/atlassian.png";
+import januarycapital from "../assets/januarycapital-light.png";
 import neara from "../assets/neara.webp";
 import zip from '../assets/zip.png'
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
@@ -62,19 +65,24 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
       title: "Platinum Tier",
       logos: [
         {
+          name: "HRT",
+          logo: hrt,
+          url: "https://www.hudsonrivertrading.com/",
+        },
+        {
           name: "Jane Street",
           logo: janeStreet,
           url: "https://www.janestreet.com/",
         },
         {
-          name: "The Trade Desk",
-          logo: tradedesk,
-          url: "https://careers.thetradedesk.com/",
-        },
-        {
           name: "Lyra Technologies",
           logo: lyra,
           url: "https://www.lyratechnologies.com.au/",
+        },
+        {
+          name: "The Trade Desk",
+          logo: tradedesk,
+          url: "https://careers.thetradedesk.com/",
         },
       ],
     },
@@ -91,6 +99,16 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           logo: arista,
           url: "https://www.arista.com/en/",
         },
+        {
+          name: "Atlassian",
+          logo: atlassian,
+          url: "https://www.atlassian.com/",
+        },
+        {
+          name: "QRT",
+          logo: qrt,
+          url: "https://www.qube-rt.com/",
+        },
       ],
     },
     {
@@ -105,6 +123,16 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           name: "imc",
           logo: imc,
           url: "https://www.imc.com/",
+        },
+        {
+          name: "January Capital",
+          logo: januarycapital,
+          url: "https://www.january.capital/",
+        },
+        {
+          name: "Optiver",
+          logo: optiver,
+          url: "https://optiver.com/",
         },
       ],
     },
