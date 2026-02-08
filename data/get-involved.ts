@@ -24,14 +24,19 @@ export const recruitmentData: RecruitmentProps[] = [
   {
     position: "Subcommittee",
     Icon: Groups,
+    applicationUrl: "https://forms.gle/jmK9JzB1YQpXyq2m6",
   },
   {
     position: "Training Leads",
     Icon: CoPresent,
+    applicationUrl:
+      "https://eminent-chopper-b83.notion.site/2ea49c3a06f68117a328d99cf319e0cf",
   },
   {
     position: "Trainees",
     Icon: School,
+    applicationUrl:
+      "https://eminent-chopper-b83.notion.site/2ea49c3a06f6811d915fdf5833a71a5c",
   },
 ];
 
