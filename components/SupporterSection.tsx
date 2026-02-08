@@ -79,7 +79,7 @@ const customLogoSizes: Record<string, { height: number; maxWidth: number }> = {
   "Safety Culture": { height: 100, maxWidth: 250 },
   "Record Point": { height: 100, maxWidth: 220 },
   "Airwallex": { height: 100, maxWidth: 250 },
-  "HRT": { height: 100, maxWidth: 250 },
+  "HRT": { height: 80, maxWidth: 180 },
 };
 
 export const DisplayLogo: React.FC<DisplayLogoProps> = ({ data, logoSize }) => {
@@ -87,9 +87,9 @@ export const DisplayLogo: React.FC<DisplayLogoProps> = ({ data, logoSize }) => {
     <Stack
       display="grid"
       gridTemplateColumns={{
-        xs: "repeat(auto-fit, 1fr)",
-        md: "repeat(auto-fit, minmax(200px, 1fr))",
-        xl: "repeat(auto-fit, 1fr)",
+        xs: "repeat(1, 1fr)",
+        md: "repeat(2, 1fr)",
+        xl: "repeat(2, 1fr)",
       }}
       marginBottom={5}
       sx={{ gridGap: "20px" }}

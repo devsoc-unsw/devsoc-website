@@ -65,14 +65,14 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
       title: "Platinum Tier",
       logos: [
         {
+          name: "HRT",
+          logo: hrt,
+          url: "https://www.hudsonrivertrading.com/",
+        },
+        {
           name: "Jane Street",
           logo: janeStreet,
           url: "https://www.janestreet.com/",
-        },
-        {
-          name: "The Trade Desk",
-          logo: tradedesk,
-          url: "https://careers.thetradedesk.com/",
         },
         {
           name: "Lyra Technologies",
@@ -80,9 +80,9 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           url: "https://www.lyratechnologies.com.au/",
         },
         {
-          name: "HRT",
-          logo: hrt,
-          url: "https://www.hudsonrivertrading.com/",
+          name: "The Trade Desk",
+          logo: tradedesk,
+          url: "https://careers.thetradedesk.com/",
         },
       ],
     },
@@ -100,14 +100,14 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           url: "https://www.arista.com/en/",
         },
         {
-          name: "QRT",
-          logo: qrt,
-          url: "https://www.qube-rt.com/",
-        },
-        {
           name: "Atlassian",
           logo: atlassian,
           url: "https://www.atlassian.com/",
+        },
+        {
+          name: "QRT",
+          logo: qrt,
+          url: "https://www.qube-rt.com/",
         },
       ],
     },
