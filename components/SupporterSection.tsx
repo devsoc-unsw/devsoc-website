@@ -81,7 +81,7 @@ const customLogoSizes: Record<string, { height: number; maxWidth: number }> = {
   "Airwallex": { height: 100, maxWidth: 250 },
   "HRT": { height: 80, maxWidth: 180 },
   "Atlassian": { height: 120, maxWidth: 280 },
-  "RecordPoint": { height: 220, maxWidth: 300 },
+  "RecordPoint": { height: 140, maxWidth: 220 },
 };
 
 export const DisplayLogo: React.FC<DisplayLogoProps> = ({ data, logoSize }) => {
