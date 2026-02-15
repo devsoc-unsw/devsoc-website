@@ -24,6 +24,7 @@ import atlassian from "../assets/atlassian.png";
 import januarycapital from "../assets/januarycapital-light.png";
 import neara from "../assets/neara.webp";
 import zip from '../assets/zip.png'
+import recordpoint from '../assets/recordpoint.png'
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 export interface SponsorInfo {
@@ -133,6 +134,11 @@ export const projectSupporterData: { [year: number]: SupporterData[] } = {
           name: "Optiver",
           logo: optiver,
           url: "https://optiver.com/",
+        },
+        {
+          name: "RecordPoint",
+          logo: recordpoint,
+          url: "https://www.recordpoint.com/",
         },
       ],
     },
