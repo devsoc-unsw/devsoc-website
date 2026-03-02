@@ -15,6 +15,7 @@ export const navData = [
   { text: "Techspire", href: "/techspire" },
   { text: "Get Involved", href: "/get-involved" },
   { text: "Sponsors", href: "/supporters" },
+  { text: "Training Program", href: "/training-program"}
 ];
 
 // Links to socials on nav
