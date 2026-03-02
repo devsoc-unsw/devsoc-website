@@ -24,7 +24,6 @@ export const recruitmentData: RecruitmentProps[] = [
   {
     position: "Subcommittee",
     Icon: Groups,
-    applicationUrl: "https://forms.gle/jmK9JzB1YQpXyq2m6",
   },
   {
     position: "Training Leads",
