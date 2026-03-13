@@ -1277,7 +1277,6 @@ export const teamData: TeamData = {
         name: "Technical\u00A0Workshop",
         directors: [
           { name: "Mourya Dave", imgUrl: "" },
-          { name: "Parham Sepasgozar", imgUrl: "" },
         ],
         subcommittee: []
       },
