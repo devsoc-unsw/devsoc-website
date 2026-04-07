@@ -621,7 +621,7 @@ export const teamData: TeamData = {
           { name: "Brendan Ngo", imgUrl: "" },
           { name: "James Kirkpatrick", imgUrl: "" },
           { name: "Alexandria Fee", imgUrl: "" },
-          { name: "Matthew Lim", imgUrl: "" },
+          { name: "Matthew Lim", imgUrl: "matthew-lim-matthew-lim" },
           { name: "Sophia Zheng", imgUrl: "" },
         ]
       },
