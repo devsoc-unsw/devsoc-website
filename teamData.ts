@@ -269,7 +269,7 @@ export const teamData: TeamData = {
           { name: "Evan Williams", imgUrl: "evan-a-w" },
         ],
         subcommittee: [
-          { name: "Michael Vo", imgUrl: "zaxutic" },
+          { name: "Mica Vo", imgUrl: "zaxutic" },
           { name: "Jack Li", imgUrl: "XenocidePC" },
           { name: "Verdy Guo", imgUrl: "AryusG" },
           { name: "Dane Urban", imgUrl: "Danelegend" },
@@ -432,7 +432,7 @@ export const teamData: TeamData = {
       {
         name: "Chaos",
         directors: [
-          { name: "Michael Vo", imgUrl: "zaxutic" },
+          { name: "Mica Vo", imgUrl: "zaxutic" },
           { name: "Alex Miao", imgUrl: "alexmiaopu" },
           { name: "Henry Wan", imgUrl: "m4ch374" },
         ],
@@ -440,7 +440,7 @@ export const teamData: TeamData = {
           { name: "Oscar Kologlu", imgUrl: "Oscaz" },
           { name: "Mohamed Uzman Zawahir", imgUrl: "kappamalone" },
           { name: "Dane Urban", imgUrl: "Danelegend" },
-          { name: "William Zhang", imgUrl: "dhj03" },
+          { name: "William Zhang", imgUrl: "" },
           { name: "Kavika Palletenne", imgUrl: "KavikaPalletenne" },
           { name: "Muhammed Kumsuz", imgUrl: "kumsuzM" },
           { name: "Helen Song", imgUrl: "etyry" },
