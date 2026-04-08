@@ -17,6 +17,7 @@ import {
   ToggleButtonGroup,
   Button,
   Slider,
+  Link,
 } from "@mui/joy";
 
 export const PeopleSection = () => {
@@ -116,6 +117,16 @@ export const PeopleSection = () => {
             ))}
         </>
       ) : null}
+      <Box px={4} pt={4} pb={2}>
+        <Typography level="title-md" sx={{ mb: 0.5 }}>
+          Want to update or remove your details?
+        </Typography>
+        <Typography level="body-sm" sx={{ color: "text.secondary" }}>
+          If you’d like to change any information or have your data deleted from our
+          page, please send a request to{" "}
+          <Link href="mailto:exec@devsoc.app">exec@devsoc.app</Link>.
+        </Typography>
+      </Box>
     </>
   );
 };
