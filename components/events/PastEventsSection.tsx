@@ -15,9 +15,9 @@ interface EventsByTerm {
 }
 
 export default function PastEventsSection() {
-  const [events, setEvents] = useState<EventsByTerm>(eventsData[2025]);
-  const [year, setYear] = useState<number>(2025);
-  const years = [2025, 2024];
+  const [events, setEvents] = useState<EventsByTerm>(eventsData[2026]);
+  const [year, setYear] = useState<number>(2026);
+  const years = [2026, 2025, 2024];
 
   const handleSliderChange = (e: Event, newValue: number | number[]) => {
     if (typeof newValue === "number") {
@@ -37,10 +37,10 @@ export default function PastEventsSection() {
     <>
       <Slider
         aria-label="Always visible"
-        defaultValue={2025}
+        defaultValue={2026}
         step={1}
         min={2024}
-        max={2025}
+        max={2026}
         color="devsoc_red"
         onChange={handleSliderChange}
         marks={years.map((year) => ({ value: year, label: `${year}` }))}

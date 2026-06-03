@@ -5,6 +5,73 @@ export interface EventsData {
 }
 
 export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
+  2026: {
+    t1: [
+      {
+        eventId: 1439779917777385,
+        url: "/events/2026/t1/o-week.jpg",
+      },
+      {
+        eventId: 1698366548203318,
+        url: "/events/2026/t1/subcom-recruitment.jpg",
+      },
+      {
+        eventId: 1496894335481734,
+        url: "/events/2026/t1/cs-introduction-workshop.jpg",
+      },
+      {
+        eventId: 929436343035578,
+        url: "/events/2026/t1/tradedesk-technical-interview.jpg",
+      },
+      {
+        eventId: 1283617113871723,
+        url: "/events/2026/t1/unihack.jpg",
+      },
+      {
+        eventId: 1995869311357596,
+        url: "/events/2026/t1/web-development-workshop.jpg"
+      },
+      {
+        eventId: 969144819124030,
+        url: "/events/2026/t1/citadel-workshop.jpg",
+      },
+      {
+        eventId: 819423197288874,
+        url: "/events/2026/t1/project-starter-workshop.jpg",
+      },
+      {
+        eventId: 3147724858766279,
+        url: "/events/2026/t1/training-recruitment.jpg",
+      },
+      {
+        eventId: 1204197194987597,
+        url: "/events/2026/t1/halftime-hackathon.jpg",
+      },
+    ],
+    t2: [
+      {
+        eventId: 1360658365953553,
+        url: "/events/2026/t2/o-day-t2.jpg",
+      },
+      {
+        eventId: 1482572143360081,
+        url: "/events/2026/t2/javascript-workshop.jpg",
+      },
+      {
+        eventId: 944876728432057,
+        url: "/events/2026/t2/alumni-panel.jpg"
+      },
+      {
+        eventId: 960069010004399,
+        url: "/events/2026/t2/starlight-showcase.jpg",
+        blurb: `🌟 𝗔𝗣𝗣𝗟𝗜𝗖𝗔𝗧𝗜𝗢𝗡𝗦 𝗙𝗢𝗥 𝗦𝗧𝗔𝗥𝗟𝗜𝗚𝗛𝗧 𝗔𝗥𝗘 𝗢𝗣𝗘𝗡! 🌟\n
+        Ever wanted a platform to showcase your latest project? Then Starlight is the perfect opportunity for YOU!🫵 Starlight is an open gallery event running in Week 8 of Term 2, where developers of all experience levels can showcase their projects and connect with their peers. Find more details in our FB event page!\n
+        📅 𝗗𝗘𝗔𝗗𝗟𝗜𝗡𝗘: 10th July 2026 11:59pm (Week 6 Friday)
+        💫 𝗦𝗛𝗢𝗪𝗖𝗔𝗦𝗘: Term 2, Week 8 24th July
+        📍 𝗟𝗢𝗖𝗔𝗧𝗜𝗢𝗡: Roundhouse`,
+      },
+    ],
+  },
   2025: {
     t1: [
       {

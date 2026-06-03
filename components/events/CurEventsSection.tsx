@@ -15,7 +15,7 @@ interface EventsByTerm {
 }
 
 export default function CurEventsSection() {
-  const events = eventsData[2025] as EventsByTerm;
+  const events = eventsData[2026] as EventsByTerm;
 
   const hasEvents = Object.values(events).some((termEvents) =>
     termEvents.some(event => event.blurb)
