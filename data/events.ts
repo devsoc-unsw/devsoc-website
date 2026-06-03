@@ -11,8 +11,56 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
         eventId: 1439779917777385,
         url: "/events/2026/t1/o-week.jpg",
       },
+      {
+        eventId: 1698366548203318,
+        url: "/events/2026/t1/subcom-recruitment.jpg",
+      },
+      {
+        eventId: 1496894335481734,
+        url: "/events/2026/t1/cs-introduction-workshop.jpg",
+      },
+      {
+        eventId: 929436343035578,
+        url: "/events/2026/t1/tradedesk-technical-interview.jpg",
+      },
+      {
+        eventId: 1283617113871723,
+        url: "/events/2026/t1/unihack.jpg",
+      },
+      {
+        eventId: 1995869311357596,
+        url: "/events/2026/t1/web-development-workshop.jpg"
+      },
+      {
+        eventId: 969144819124030,
+        url: "/events/2026/t1/citadel-workshop.jpg",
+      },
+      {
+        eventId: 819423197288874,
+        url: "/events/2026/t1/project-starter-workshop.jpg",
+      },
+      {
+        eventId: 3147724858766279,
+        url: "/events/2026/t1/training-recruitment.jpg",
+      },
+      {
+        eventId: 1204197194987597,
+        url: "/events/2026/t1/halftime-hackathon.jpg",
+      },
     ],
     t2: [
+      {
+        eventId: 1360658365953553,
+        url: "/events/2026/t2/o-day-t2.jpg",
+      },
+      {
+        eventId: 1482572143360081,
+        url: "/events/2026/t2/javascript-workshop.jpg",
+      },
+      {
+        eventId: 944876728432057,
+        url: "/events/2026/t2/alumni-panel.jpg"
+      },
       {
         eventId: 960069010004399,
         url: "/events/2026/t2/starlight-showcase.jpg",
