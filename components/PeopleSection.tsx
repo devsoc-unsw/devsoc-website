@@ -233,7 +233,11 @@ const TeamListItem = (props: TeamListItemProps) => {
   return (
     <ListItem>
       <ListItemDecorator>
-        <Avatar src={`https://github.com/${props.imgUrl}.png`} />
+        <Avatar
+          src={
+            props.imgUrl ? `https://github.com/${props.imgUrl}.png` : undefined
+          }
+        />
       </ListItemDecorator>
       <ListItemContent>
         <Typography level="title-sm">{props.name}</Typography>
