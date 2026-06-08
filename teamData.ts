@@ -18,70 +18,70 @@ export const teamData: TeamData = {
       {
         name: "Degree\u00A0Planner",
         directors: [
-          { name: "Jonathan Charles", imgUrl: "" },
+          { name: "Jonathan Charles"},
         ],
         subcommittee: []
       },
       {
         name: "Notangles",
         directors: [
-          { name: "Tony Tang", imgUrl: "" },
+          { name: "Tony Tang"},
         ],
         subcommittee: []
       },
       {
         name: "uBark",
         directors: [
-          { name: "Adam Tizzone", imgUrl: "" },
+          { name: "Adam Tizzone"},
         ],
         subcommittee: []
       },
       {
         name: "Freerooms",
         directors: [
-          { name: "Callum Avery", imgUrl: "" },
+          { name: "Callum Avery"},
         ],
         subcommittee: []
       },
       {
         name: "Jobsboard",
         directors: [
-          { name: "Adam Tizzone", imgUrl: "" },
+          { name: "Adam Tizzone"},
         ],
         subcommittee: []
       },
       {
         name: "Website\u00A0(CSESoc)",
         directors: [
-          { name: "Gordon Zhong", imgUrl: "" },
+          { name: "Gordon Zhong"},
         ],
         subcommittee: []
       },
       {
         name: "Website\u00A0(CompClub)",
         directors: [
-          { name: "Thomas Lam", imgUrl: "" },
+          { name: "Thomas Lam"},
         ],
         subcommittee: []
       },
       {
         name: "Handbook\u00A0API",
         directors: [
-          { name: "Zac Kologlu", imgUrl: "" },
+          { name: "Zac Kologlu"},
         ],
         subcommittee: []
       },
       {
         name: "isSocsOpen",
         directors: [
-          { name: "Inura De Zoysa", imgUrl: "" },
+          { name: "Inura De Zoysa"},
         ],
         subcommittee: []
       },
       {
         name: "Payments\u00A0Platform",
         directors: [
-          { name: "Adam Tizzone", imgUrl: "" },
+          { name: "Adam Tizzone"},
         ],
         subcommittee: []
       }
@@ -96,51 +96,51 @@ export const teamData: TeamData = {
       {
         name: "Notangles",
         directors: [
-          { name: "Max Wo", imgUrl: "" },
+          { name: "Max Wo"},
         ],
         subcommittee: []
       },
       {
         name: "Degree\u00A0Planner",
         directors: [
-          { name: "Olga Popovic", imgUrl: "" },
-          { name: "Max Wo", imgUrl: "" },
+          { name: "Olga Popovic"},
+          { name: "Max Wo"},
         ],
         subcommittee: []
       },
       {
         name: "Slackbot",
         directors: [
-          { name: "Parviz Ahmadi", imgUrl: "" },
+          { name: "Parviz Ahmadi"},
         ],
         subcommittee: []
       },
       {
         name: "Freerooms",
         directors: [
-          { name: "Callum Avery", imgUrl: "" },
+          { name: "Callum Avery"},
         ],
         subcommittee: []
       },
       {
         name: "Jobsboard",
         directors: [
-          { name: "Adam Tizzone", imgUrl: "" },
+          { name: "Adam Tizzone"},
         ],
         subcommittee: []
       },
       {
         name: "Website\u00A0(CSESoc)",
         directors: [
-          { name: "Tommy Truong", imgUrl: "" },
+          { name: "Tommy Truong"},
         ],
         subcommittee: []
       },
       {
         name: "Website\u00A0(CompClub)",
         directors: [
-          { name: "Leesa Dang", imgUrl: "" },
-          { name: "Gordon Zhang", imgUrl: "" },
+          { name: "Leesa Dang"},
+          { name: "Gordon Zhang"},
         ],
         subcommittee: []
       },
@@ -152,7 +152,7 @@ export const teamData: TeamData = {
       {
         name: "uBark",
         directors: [
-          { name: "Adam Tizzone", imgUrl: "" },
+          { name: "Adam Tizzone"},
         ],
         subcommittee: []
       }
@@ -167,31 +167,31 @@ export const teamData: TeamData = {
       {
         name: "Circles",
         directors: [
-          { name: "James Ji", imgUrl: "" },
-          { name: "Jennifer Xu", imgUrl: "" },
+          { name: "James Ji"},
+          { name: "Jennifer Xu"},
         ],
         subcommittee: [
-          { name: "Yiyan Yang", imgUrl: "" },
+          { name: "Yiyan Yang"},
           { name: "Adam Brieger", imgUrl: "abrieger" },
-          { name: "Vincent Xiao", imgUrl: "" },
+          { name: "Vincent Xiao"},
           { name: "Kevin Huang", imgUrl: "Jevelry" },
           { name: "Gabriella Hartanto", imgUrl: "gabriellahartanto" },
           { name: "Sally Sun", imgUrl: "sallyysun" },
-          { name: "Sanojan Thiyagaraja", imgUrl: "" },
+          { name: "Sanojan Thiyagaraja"},
         ]
       },
       {
         name: "Discord\u00A0Bot",
         directors: [
-          { name: "Waleed Shahid", imgUrl: "" },
+          { name: "Waleed Shahid"},
         ],
         subcommittee: [
           { name: "Jack Li", imgUrl: "XenocidePC" },
           { name: "Oliver Bowers", imgUrl: "ollibowers" },
-          { name: "Kamiyu Hijikata", imgUrl: "" },
+          { name: "Kamiyu Hijikata"},
           { name: "Sanyam Jain", imgUrl: "sanyamjain47" },
           { name: "Rifa Jamal", imgUrl: "justneocity" },
-          { name: "Maria Zhang", imgUrl: "" },
+          { name: "Maria Zhang"},
         ]
       },
       {
@@ -202,7 +202,7 @@ export const teamData: TeamData = {
         subcommittee: [
           { name: "Keshiga Gopalarajah", imgUrl: "Kesh-ga" },
           { name: "Grace Kan", imgUrl: "Grace338" },
-          { name: "Arsham Emad", imgUrl: "" },
+          { name: "Arsham Emad"},
           { name: "Sarah Leung", imgUrl: "sarah-leung" },
           { name: "Damjan Stevanoski", imgUrl: "damo190" },
         ]
@@ -210,16 +210,16 @@ export const teamData: TeamData = {
       {
         name: "Notangles",
         directors: [
-          { name: "Luke Fisk-Lennon", imgUrl: "" },
+          { name: "Luke Fisk-Lennon"},
         ],
         subcommittee: [
-          { name: "Farnaz Tavakol", imgUrl: "" },
-          { name: "Abiram Nadarajah", imgUrl: "" },
-          { name: "Emily Tang", imgUrl: "" },
-          { name: "Andrew Lin", imgUrl: "" },
-          { name: "Oliver Xu", imgUrl: "" },
-          { name: "Mehak Arya", imgUrl: "" },
-          { name: "Martin Knezevic", imgUrl: "" },
+          { name: "Farnaz Tavakol"},
+          { name: "Abiram Nadarajah"},
+          { name: "Emily Tang"},
+          { name: "Andrew Lin"},
+          { name: "Oliver Xu"},
+          { name: "Mehak Arya"},
+          { name: "Martin Knezevic"},
         ]
       },
       {
@@ -232,8 +232,8 @@ export const teamData: TeamData = {
           { name: "Joanna Lin", imgUrl: "jlin2002" },
           { name: "Dominic Allas", imgUrl: "strayacode" },
           { name: "Yunze Shi", imgUrl: "syzxy" },
-          { name: "Rachel Yu", imgUrl: "" },
-          { name: "Raghav Lall", imgUrl: "" },
+          { name: "Rachel Yu"},
+          { name: "Raghav Lall"},
           { name: "Joseph Xu", imgUrl: "JosephXu741" },
         ]
       },
@@ -245,10 +245,10 @@ export const teamData: TeamData = {
         subcommittee: [
           { name: "Priscilla Soo", imgUrl: "psoo1" },
           { name: "Jacky Xie", imgUrl: "fafnirZ" },
-          { name: "Nian Li", imgUrl: "" },
+          { name: "Nian Li"},
           { name: "Varun Sethu", imgUrl: "varun-sethu" },
-          { name: "Nathan Cao", imgUrl: "" },
-          { name: "Zoe Ramirez", imgUrl: "" },
+          { name: "Nathan Cao"},
+          { name: "Zoe Ramirez"},
         ]
       },
     ]
@@ -291,12 +291,12 @@ export const teamData: TeamData = {
           { name: "Oliver Bowers", imgUrl: "ollibowers" },
           { name: "Christian Lam", imgUrl: "ui-Auxilary" },
           { name: "Hussain Nawaz", imgUrl: "imagine-hussain" },
-          { name: "Elliot Rotenstein", imgUrl: "" },
+          { name: "Elliot Rotenstein"},
           { name: "Joel West", imgUrl: "Joelrwest" },
           { name: "Josh Harcombe", imgUrl: "joooooooooooooooooooooooooooooooooooosh" },
           { name: "Mae Vuong", imgUrl: "hdphuong" },
-          { name: "Nyah Inglis", imgUrl: "" },
-          { name: "Sona Reddy", imgUrl: "" },
+          { name: "Nyah Inglis"},
+          { name: "Sona Reddy"},
         ]
       },
       {
@@ -328,8 +328,8 @@ export const teamData: TeamData = {
           { name: "Sam Schreyer", imgUrl: "sschreyer" },
           { name: "Jason Gong", imgUrl: "jasongong1" },
           { name: "Yuvraj Singh", imgUrl: "yuvrajsingh2" },
-          { name: "Jane Wang", imgUrl: "" },
-          { name: "Dominic Cheung", imgUrl: "Wolfdragon24" },
+          { name: "Jane Wang"},
+          { name: "Dominic Cheung"},
           { name: "Murtaza Pakawala", imgUrl: "MurtazaPakawala" },
           { name: "Alexander Chen", imgUrl: "zcDay1" },
         ]
@@ -389,7 +389,7 @@ export const teamData: TeamData = {
         ],
         subcommittee: [
           { name: "Edward Qian", imgUrl: "jedwed" },
-          { name: "Cece Zhu", imgUrl: "" },
+          { name: "Cece Zhu"},
           { name: "Justin Young", imgUrl: "Kluvens" },
           { name: "Jin Sunwoo", imgUrl: "JinTheHuman" },
           { name: "Rifa Jamal", imgUrl: "justneocity" },
@@ -404,9 +404,9 @@ export const teamData: TeamData = {
         subcommittee: [
           { name: "Laura Wen", imgUrl: "lauraw0" },
           { name: "James Teng", imgUrl: "jamest0" },
-          { name: "Richard Zhou", imgUrl: "" },
+          { name: "Richard Zhou"},
           { name: "Winnie Tan", imgUrl: "winnteas" },
-          { name: "Jane Wang", imgUrl: "" },
+          { name: "Jane Wang"},
           { name: "Edwin Lam", imgUrl: "oodwin" },
           { name: "Leanna Chan", imgUrl: "leannachan" },
           { name: "Hanyuan Li", imgUrl: "hanyuone" },
@@ -414,8 +414,8 @@ export const teamData: TeamData = {
           { name: "Gary Sun", imgUrl: "angary" },
           { name: "Alex Chen", imgUrl: "alex-ljc" },
           { name: "Thomas Liang", imgUrl: "ShunyaoLiang" },
-          { name: "Thomas Qian", imgUrl: "" },
-          { name: "Lachlan Blair", imgUrl: "" },
+          { name: "Thomas Qian"},
+          { name: "Lachlan Blair"},
         ]
       },
     ]
@@ -440,7 +440,7 @@ export const teamData: TeamData = {
           { name: "Oscar Kologlu", imgUrl: "Oscaz" },
           { name: "Mohamed Uzman Zawahir", imgUrl: "kappamalone" },
           { name: "Dane Urban", imgUrl: "Danelegend" },
-          { name: "William Zhang", imgUrl: "" },
+          { name: "William Zhang"},
           { name: "Kavika Palletenne", imgUrl: "KavikaPalletenne" },
           { name: "Muhammed Kumsuz", imgUrl: "kumsuzM" },
           { name: "Helen Song", imgUrl: "etyry" },
@@ -490,7 +490,7 @@ export const teamData: TeamData = {
         subcommittee: [
           { name: "Murtaza Pakawala", imgUrl: "MurtazaPakawala" },
           { name: "Thomas Zhao", imgUrl: "mi-mott" },
-          { name: "Dominic Cheung", imgUrl: "Wolfdragon24" },
+          { name: "Dominic Cheung"},
           { name: "Zhitao Chen", imgUrl: "Bigbugman" },
           { name: "Abraham Assariparambil Earnest", imgUrl: "abe123442" },
           { name: "Jeffrey Meng", imgUrl: "Meng0o" },
@@ -593,36 +593,36 @@ export const teamData: TeamData = {
       {
         name: "Culture",
         directors: [
-          { name: "Jane Wang", imgUrl: "" },
-          { name: "Sharon Zhong", imgUrl: "" },
+          { name: "Jane Wang"},
+          { name: "Sharon Zhong"},
         ],
         subcommittee: [
-          { name: "Kellie Yau", imgUrl: "" },
-          { name: "Ramanpreet Singh", imgUrl: "" },
-          { name: "William Feng", imgUrl: "" },
-          { name: "Madeline Robinson", imgUrl: "" },
-          { name: "Angeline Tran", imgUrl: "" },
-          { name: "Brandon Tan", imgUrl: "" },
-          { name: "Dylan Zhang", imgUrl: "" },
+          { name: "Kellie Yau"},
+          { name: "Ramanpreet Singh"},
+          { name: "William Feng"},
+          { name: "Madeline Robinson"},
+          { name: "Angeline Tran"},
+          { name: "Brandon Tan"},
+          { name: "Dylan Zhang"},
           { name: "Ashley Luong", imgUrl: "asssssssley" },
-          { name: "Rokika Khondaker", imgUrl: "" },
+          { name: "Rokika Khondaker"},
         ]
       },
       {
         name: "Content",
         directors: [
-          { name: "Rachel Ahn", imgUrl: "" },
-          { name: "Omar Al Zeidat", imgUrl: "" },
+          { name: "Rachel Ahn"},
+          { name: "Omar Al Zeidat"},
         ],
         subcommittee: [
-          { name: "Jasmin Wu", imgUrl: "" },
-          { name: "Ming Xuan Yong", imgUrl: "" },
-          { name: "Vicky Lee", imgUrl: "" },
-          { name: "Brendan Ngo", imgUrl: "" },
-          { name: "James Kirkpatrick", imgUrl: "" },
-          { name: "Alexandria Fee", imgUrl: "" },
+          { name: "Jasmin Wu"},
+          { name: "Ming Xuan Yong"},
+          { name: "Vicky Lee"},
+          { name: "Brendan Ngo"},
+          { name: "James Kirkpatrick"},
+          { name: "Alexandria Fee"},
           { name: "Matthew Lim", imgUrl: "matthew-lim-matthew-lim" },
-          { name: "Sophia Zheng", imgUrl: "" },
+          { name: "Sophia Zheng"},
         ]
       },
       {
@@ -818,15 +818,15 @@ export const teamData: TeamData = {
         name: "Marketing",
         directors: [
           { name: "Angella Pham", imgUrl: "anjerraa" },
-          { name: "Eric Wu", imgUrl: "" },
+          { name: "Eric Wu"},
           { name: "Mark Quach", imgUrl: "markquach12" },
         ],
         subcommittee: [
-          { name: "Himani Mittal", imgUrl: "" },
-          { name: "Joye Fu", imgUrl: "" },
-          { name: "Omar Al Zeidat", imgUrl: "" },
-          { name: "Vincent Tannos", imgUrl: "" },
-          { name: "Missy Chhuo", imgUrl: "" },
+          { name: "Himani Mittal"},
+          { name: "Joye Fu"},
+          { name: "Omar Al Zeidat"},
+          { name: "Vincent Tannos"},
+          { name: "Missy Chhuo"},
           { name: "Derik Sourignavong", imgUrl: "Derik-S" },
           { name: "Xing He", imgUrl: "xincczn" },
         ]
@@ -834,20 +834,20 @@ export const teamData: TeamData = {
       {
         name: "HR",
         directors: [
-          { name: "Jade Kam", imgUrl: "" },
+          { name: "Jade Kam"},
           { name: "Ashley Luong", imgUrl: "asssssssley" },
         ],
         subcommittee: [
-          { name: "Tom Liu", imgUrl: "" },
-          { name: "Stephanie Lu", imgUrl: "" },
-          { name: "Angeline Tran", imgUrl: "" },
-          { name: "Bryan Zou", imgUrl: "" },
-          { name: "Kim Lam", imgUrl: "" },
-          { name: "Edward Zhang", imgUrl: "" },
-          { name: "Bella Cu", imgUrl: "" },
-          { name: "Brandon Tan", imgUrl: "" },
+          { name: "Tom Liu"},
+          { name: "Stephanie Lu"},
+          { name: "Angeline Tran"},
+          { name: "Bryan Zou"},
+          { name: "Kim Lam"},
+          { name: "Edward Zhang"},
+          { name: "Bella Cu"},
+          { name: "Brandon Tan"},
           { name: "William Dang", imgUrl: "skrilliam" },
-          { name: "Arnold Tan", imgUrl: "" },
+          { name: "Arnold Tan"},
         ]
       },
       {
@@ -857,8 +857,8 @@ export const teamData: TeamData = {
           { name: "Merry Rosalie", imgUrl: "MerryRosalie" },
         ],
         subcommittee: [
-          { name: "Cindy Zhang", imgUrl: "" },
-          { name: "Sandy Tran", imgUrl: "" },
+          { name: "Cindy Zhang"},
+          { name: "Sandy Tran"},
           { name: "Rachel Bai", imgUrl: "rachel-bai" },
           { name: "Veer Sheth", imgUrl: "veersheth" },
           { name: "Vedad Neday Diznab", imgUrl: "d33-gari" },
@@ -1089,13 +1089,13 @@ export const teamData: TeamData = {
       {
         name: "UI\/UX",
         directors: [
-          { name: "Cindy Zhang", imgUrl: "" },
+          { name: "Cindy Zhang"},
           { name: "Rita Lin", imgUrl: "Rita4747" },
         ],
         subcommittee: [
-          { name: "Adam Almansor", imgUrl: "" },
+          { name: "Adam Almansor"},
           { name: "Carlson Perez", imgUrl: "carlswoon" },
-          { name: "Donald Chung", imgUrl: "" },
+          { name: "Donald Chung"},
           { name: "Jimmy Kirkpatrick", imgUrl: "brokirkoo" },
           { name: "Ashley Lee", imgUrl: "xzyams" },
           { name: "Nathaniel Tan", imgUrl: "NgTaniel" },
@@ -1124,51 +1124,51 @@ export const teamData: TeamData = {
       {
         name: "Events",
         directors: [
-          { name: "Stephanie Lu", imgUrl: "" },
-          { name: "Tom Liu", imgUrl: "" },
+          { name: "Stephanie Lu"},
+          { name: "Tom Liu"},
         ],
         subcommittee: [
-          { name: "Alex Mo", imgUrl: "" },
-          { name: "Brian Liang", imgUrl: "" },
-          { name: "Derek Wen", imgUrl: "" },
-          { name: "Jimmy Khanijow", imgUrl: "" },
-          { name: "Laura Zhang", imgUrl: "" },
-          { name: "Prisha Rao", imgUrl: "" },
+          { name: "Alex Mo"},
+          { name: "Brian Liang"},
+          { name: "Derek Wen"},
+          { name: "Jimmy Khanijow"},
+          { name: "Laura Zhang"},
+          { name: "Prisha Rao"},
           { name: "Ricky Guan", imgUrl: "PotatoRicky" },
-          { name: "Vanessa Huang", imgUrl: "" },
+          { name: "Vanessa Huang"},
         ]
       },
       {
         name: "Marketing",
         directors: [
-          { name: "Joye Fu", imgUrl: "" },
+          { name: "Joye Fu"},
           { name: "Vincent Tannos", imgUrl: "vincenttannos" },
-          { name: "William Yang", imgUrl: "" },
+          { name: "William Yang"},
         ],
         subcommittee: [
           { name: "Aadhi Senthil Kumar", imgUrl: "asenszn12" },
-          { name: "David Shun", imgUrl: "" },
-          { name: "Esther Djaidiguna", imgUrl: "" },
-          { name: "Ethan Low", imgUrl: "" },
-          { name: "Kristine Lim", imgUrl: "" },
+          { name: "David Shun"},
+          { name: "Esther Djaidiguna"},
+          { name: "Ethan Low"},
+          { name: "Kristine Lim"},
           { name: "Louis Diep", imgUrl: "louisdiep" },
           { name: "Maggie Wong", imgUrl: "maggiewongx" },
-          { name: "Rooney Pham", imgUrl: "" },
+          { name: "Rooney Pham"},
         ]
       },
       {
         name: "HR",
         directors: [
-          { name: "Edward Zhang", imgUrl: "" },
-          { name: "Kelly Chour", imgUrl: "" },
+          { name: "Edward Zhang"},
+          { name: "Kelly Chour"},
         ],
         subcommittee: [
-          { name: "Christine Park", imgUrl: "" },
-          { name: "Emma Liang", imgUrl: "" },
+          { name: "Christine Park"},
+          { name: "Emma Liang"},
           { name: "Ethan Richard", imgUrl: "eatham1203" },
-          { name: "Jason Yan", imgUrl: "" },
-          { name: "John Wu", imgUrl: "" },          { name: "Olivianne Kho", imgUrl: "liivvyk" },
-          { name: "Sammi Cheung", imgUrl: "" },
+          { name: "Jason Yan"},
+          { name: "John Wu"},          { name: "Olivianne Kho", imgUrl: "liivvyk" },
+          { name: "Sammi Cheung"},
         ]
       },
       {
@@ -1177,12 +1177,12 @@ export const teamData: TeamData = {
           { name: "Bob Chen", imgUrl: "3bobchen" },
         ],
         subcommittee: [
-          { name: "Alisa Hsi", imgUrl: "" },
-          { name: "Arshia John", imgUrl: "" },
+          { name: "Alisa Hsi"},
+          { name: "Arshia John"},
           { name: "Aryan Rajnandan", imgUrl: "shonk7" },
           { name: "Justin Zaia", imgUrl: "justinz27" },
-          { name: "Nuren Alahee", imgUrl: "" },
-          { name: "Tina Dang", imgUrl: "" },
+          { name: "Nuren Alahee"},
+          { name: "Tina Dang"},
         ]
       },
     ]
@@ -1244,7 +1244,7 @@ export const teamData: TeamData = {
         name: "Warchest",
         directors: [
           { name: "Isaac Kim", imgUrl: "gyoumi" },
-          { name: "Kevin Jin", imgUrl: "" },
+          { name: "Kevin Jin"},
         ],
         subcommittee: []
       },
@@ -1259,8 +1259,8 @@ export const teamData: TeamData = {
       {
         name: "HR",
         directors: [
-          { name: "Jian Wang", imgUrl: "" },
-          { name: "Vansh Kalra", imgUrl: "" },
+          { name: "Jian Wang"},
+          { name: "Vansh Kalra"},
         ],
         subcommittee: []
       },
@@ -1268,7 +1268,7 @@ export const teamData: TeamData = {
         name: "Training\u00A0Program",
         directors: [
           { name: "Alyssa Cheong", imgUrl: "alyssacheong" },
-          { name: "Andy Atmadja", imgUrl: "" },
+          { name: "Andy Atmadja"},
           { name: "Sunny Chen", imgUrl: "sunnyyuqingchen" },
         ],
         subcommittee: []
@@ -1276,14 +1276,14 @@ export const teamData: TeamData = {
       {
         name: "Technical\u00A0Workshop",
         directors: [
-          { name: "Mourya Dave", imgUrl: "" },
+          { name: "Mourya Dave"},
         ],
         subcommittee: []
       },
       {
         name: "Events",
         directors: [
-          { name: "Arshia John", imgUrl: "" },
+          { name: "Arshia John"},
           { name: "Ricky Guan", imgUrl: "PotatoRicky" },
         ],
         subcommittee: []
@@ -1291,16 +1291,16 @@ export const teamData: TeamData = {
       {
         name: "Marketing",
         directors: [
-          { name: "Aadhi Senthil Kumar", imgUrl: "" },
-          { name: "Avani Jain", imgUrl: "" },
-          { name: "Shreya Verma", imgUrl: "" },
+          { name: "Aadhi Senthil Kumar"},
+          { name: "Avani Jain"},
+          { name: "Shreya Verma"},
         ],
         subcommittee: []
       },
       {
         name: "Sponsorships",
         directors: [
-          { name: "Mannan Zaveri", imgUrl: "" },
+          { name: "Mannan Zaveri"},
           { name: "Mark Quach", imgUrl: "markquach12" },
         ],
         subcommittee: []
