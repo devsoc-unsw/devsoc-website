@@ -1,11 +1,21 @@
-export interface EventsData {
-  eventUrl?: string;
-  eventId?: number;
+interface BaseEvent {
   url: string;
   blurb?: string;
 }
 
-export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
+type FacebookEvent = BaseEvent & {
+  eventId: number;
+  eventUrl?: never;
+};
+
+type CustomEvent = BaseEvent & {
+  eventId?: never;
+  eventUrl: string;
+};
+
+export type EventData = FacebookEvent | CustomEvent;
+
+export const eventsData: { [year: number]: { [key: string]: EventData[] } } = {
   2026: {
     t1: [
       {
