@@ -2,13 +2,7 @@
 import React from "react";
 import { Grid, Typography } from "@mui/joy";
 import Image from "next/image";
-import { eventsData } from "../../data/events";
-
-interface EventData {
-  eventId: number;
-  url: string;
-  blurb?: string;
-}
+import { eventsData, EventData } from "../../data/events";
 
 interface EventsByTerm {
   [term: string]: EventData[];
@@ -44,6 +38,7 @@ export default function CurEventsSection() {
                   component="div"
                   onClick={() =>
                     window.open(
+                      event.eventUrl ??
                       `https://www.facebook.com/events/${event.eventId}`,
                       "_blank"
                     )

@@ -1,10 +1,21 @@
-export interface EventsData {
-  eventId: number;
+interface BaseEvent {
   url: string;
   blurb?: string;
 }
 
-export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
+type FacebookEvent = BaseEvent & {
+  eventId: number;
+  eventUrl?: never;
+};
+
+type CustomEvent = BaseEvent & {
+  eventId?: never;
+  eventUrl: string;
+};
+
+export type EventData = FacebookEvent | CustomEvent;
+
+export const eventsData: { [year: number]: { [key: string]: EventData[] } } = {
   2026: {
     t1: [
       {
@@ -60,6 +71,10 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
       {
         eventId: 944876728432057,
         url: "/events/2026/t2/alumni-panel.jpg"
+      },
+      {
+        eventUrl: "https://www.instagram.com/p/DZCvAfkJXrQ/",
+        url: "/events/2026/t2/games-night.jpg"
       },
       {
         eventId: 960069010004399,
