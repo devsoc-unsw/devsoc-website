@@ -1,5 +1,6 @@
 export interface EventsData {
-  eventId: number;
+  eventUrl?: string;
+  eventId?: number;
   url: string;
   blurb?: string;
 }
@@ -60,6 +61,10 @@ export const eventsData: { [year: number]: { [key: string]: EventsData[] } } = {
       {
         eventId: 944876728432057,
         url: "/events/2026/t2/alumni-panel.jpg"
+      },
+      {
+        eventUrl: "https://www.instagram.com/p/DZCvAfkJXrQ/",
+        url: "/events/2026/t2/games-night.jpg"
       },
       {
         eventId: 960069010004399,

@@ -5,7 +5,8 @@ import Image from "next/image";
 import { eventsData } from "../../data/events";
 
 interface EventData {
-  eventId: number;
+  eventUrl?: string;
+  eventId?: number;
   url: string;
   blurb?: string;
 }
@@ -44,6 +45,7 @@ export default function CurEventsSection() {
                   component="div"
                   onClick={() =>
                     window.open(
+                      event.eventUrl ||
                       `https://www.facebook.com/events/${event.eventId}`,
                       "_blank"
                     )
