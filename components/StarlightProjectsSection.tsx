@@ -12,7 +12,7 @@ import {
 } from "../data/starlight";
 import { SponsorInfo } from "../data/supporters";
 
-const years = [2025, 2024];
+const years = [2026, 2025, 2024];
 
 function renderLogoRows(
   idx: number,
