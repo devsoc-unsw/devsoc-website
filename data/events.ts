@@ -23,6 +23,10 @@ export const eventsData: { [year: number]: { [key: string]: EventData[] } } = {
         url: "/events/2026/t1/o-week.jpg",
       },
       {
+       eventUrl: "https://www.instagram.com/devsoc_unsw/p/DUiKsFslJq1/",
+       url: "/events/2026/t1/director-meet-n-greet.jpg"
+      },
+      {
         eventId: 1698366548203318,
         url: "/events/2026/t1/subcom-recruitment.jpg",
       },
@@ -35,12 +39,36 @@ export const eventsData: { [year: number]: { [key: string]: EventData[] } } = {
         url: "/events/2026/t1/tradedesk-technical-interview.jpg",
       },
       {
+       eventUrl: "https://www.instagram.com/devsoc_unsw/p/DUaNs--k9Fn/",
+       url: "/events/2026/t1/women-in-trading.jpg"
+      },
+      {
+       eventUrl: "https://www.instagram.com/csesoc_unsw/p/DVMhVCME7WV/",
+       url: "/events/2026/t1/trade-desk-resume.jpg"
+      },
+      {
         eventId: 1283617113871723,
         url: "/events/2026/t1/unihack.jpg",
       },
       {
+       eventUrl: "https://www.instagram.com/csesoc_unsw/p/DV6zkJPExb7/",
+       url: "/events/2026/t1/hudson-river-trading-talk.jpg"
+      },
+      {
+       eventUrl: "https://www.instagram.com/devsoc_unsw/p/DWTeBlak-Qt/",
+       url: "/events/2026/t1/optiver-tradeathon.jpg"
+      },
+      {
+       eventUrl: "https://www.instagram.com/wit.unsw/p/DWSOYdHmERt/",
+       url: "/events/2026/t1/optiver-volatility-lab.jpg"
+      },
+      {
         eventId: 1995869311357596,
         url: "/events/2026/t1/web-development-workshop.jpg"
+      },
+      {
+       eventUrl: "https://www.instagram.com/devsoc_unsw/p/DWXgeCsk468/",
+       url: "/events/2026/t1/careers-fair.jpg"
       },
       {
         eventId: 969144819124030,
@@ -51,12 +79,16 @@ export const eventsData: { [year: number]: { [key: string]: EventData[] } } = {
         url: "/events/2026/t1/project-starter-workshop.jpg",
       },
       {
-        eventId: 3147724858766279,
-        url: "/events/2026/t1/training-recruitment.jpg",
+       eventUrl: "https://www.instagram.com/p/DWr4FXYE03j/",
+       url: "/events/2026/t1/atlassian-site-visit.jpg",
       },
       {
         eventId: 1204197194987597,
         url: "/events/2026/t1/halftime-hackathon.jpg",
+      },
+      {
+        eventId: 3147724858766279,
+        url: "/events/2026/t1/training-recruitment.jpg",
       },
     ],
     t2: [
@@ -71,6 +103,10 @@ export const eventsData: { [year: number]: { [key: string]: EventData[] } } = {
       {
         eventId: 944876728432057,
         url: "/events/2026/t2/alumni-panel.jpg"
+      },
+      {
+       eventUrl: "https://www.instagram.com/devsoc_unsw/p/DZUgErWTFmR/",
+       url: "/events/2026/t2/web-scraping-workshop.jpg"
       },
       {
         eventUrl: "https://www.instagram.com/p/DZCvAfkJXrQ/",
