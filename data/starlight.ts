@@ -1,15 +1,17 @@
 import { CardType } from "../components/ProjectCard";
 
-import janeStreet from "../assets/jane_street.svg";
-import imc from "../assets/imc.png";
-import sc from "../assets/sc.png";
 import cse from "../assets/CSE.jpeg";
 import unsw from "../assets/unsw.png";
 import arc from "../assets/arc.png";
-import tradedesk from "../assets/thetradedesk.png";
 import roundhouse from "../assets/roundhouse.png";
-import lyra from "../assets/lyra.svg";
 import arista from "../assets/arista.png";
+import atlassian from "../assets/atlassian.png";
+import tradedesk from "../assets/thetradedesk.png";
+import jancap from "../assets/januarycapital-light.png";
+import sc from "../assets/sc.png";
+import lyra from "../assets/lyra.svg";
+import imc from "../assets/imc.png";
+import janeStreet from "../assets/jane_street.svg";
 import createunsw from "../assets/createunsw.svg";
 import gmsoc2 from "../assets/gmsoc2.png";
 import ramsoc from "../assets/ramsoc.svg";
@@ -319,6 +321,9 @@ export const starlightProjectData: {
       thumbnailUrl: "/starlightProjects/2025/25_05_Yellowshirt.png",
     },
   ],
+  2026: [
+    
+  ],
 };
 
 export interface StarlightSupporterData {
@@ -446,6 +451,80 @@ export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
         logo: redback,
         url: "https://www.redbackracing.com/",
       },
+    ],
+  },
+  2026: {
+    supporterLogos: [
+      {
+        name: "Arc",
+        logo: arc,
+        url: "https://www.arc.unsw.edu.au/",
+      },
+      {
+        name: "CSE",
+        logo: cse,
+        url: "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering",
+      },
+      {
+        name: "Roundhouse",
+        logo: roundhouse,
+        url: "https://www.arc.unsw.edu.au/roundhouse",
+      },
+      {
+        name: "UNSW",
+        logo: unsw,
+        url: "https://www.unsw.edu.au/",
+      },
+    ],
+    industryLogos: [
+      {
+        name: "Arista",
+        logo: arista,
+        url: "https://www.arista.com/en/",
+      },
+      {
+        name: "Atlassian",
+        logo: atlassian,
+        url: "https://www.atlassian.com/",
+      },
+      // {
+      //   name: "January Capital",
+      //   logo: jancap,
+      //   url: "https://www.january.capital/",
+      // },
+      {
+        name: "The Trade Desk",
+        logo: tradedesk,
+        url: "https://careers.thetradedesk.com/",
+      },
+    ],
+    societyLogos: [
+      // {
+      //   name: "Bluesat",
+      //   logo: bluesat,
+      //   url: "https://bluesat.unsw.edu.au/",
+      // },
+      // {
+      //   name: "Create UNSW",
+      //   logo: createunsw,
+      //   url: "https://www.createunsw.com.au/",
+      // },
+      // {
+      //   name: "Game Makers Society",
+      //   logo: gmsoc2,
+      //   url: "https://www.arc.unsw.edu.au/get-involved/opportunity?name=Game%20Making%20Society",
+      // },
+      // {
+      //   name: "RAMSoc",
+      //   logo: ramsoc,
+      //   url: "https://ramsocunsw.org/",
+      // },
+
+      // {
+      //   name: "Redback Racing",
+      //   logo: redback,
+      //   url: "https://www.redbackracing.com/",
+      // },
     ],
   },
 };
