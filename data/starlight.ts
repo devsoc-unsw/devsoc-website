@@ -16,8 +16,8 @@ import gmsoc2 from "../assets/gmsoc2.png";
 import ramsoc from "../assets/ramsoc.svg";
 import redback from "../assets/redback.png";
 import bluesat from "../assets/bluesat.png";
-import linuxsoc from "../assets/linuxsoc.png"; // TODO: add image
-import sunswift from "../assets/sunswift.png"; // TODO: add image
+// import linuxsoc from "../assets/linuxsoc.png"; // TODO: add image
+// import sunswift from "../assets/sunswift.png"; // TODO: add image
 import { SponsorInfo } from "./supporters";
 
 export const starlightProjectData: {
@@ -439,7 +439,7 @@ export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
       {
         name: "Game Makers Society",
         logo: gmsoc2,
-        url: "https://www.arc.unsw.edu.au/get-involved/opportunity?name=Game%20Making%20Society",
+        url: "https://campus.hellorubric.com/?s=12549",
       },
       {
         name: "RAMSoc",
