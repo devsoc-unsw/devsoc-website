@@ -7,7 +7,6 @@ import roundhouse from "../assets/roundhouse.png";
 import arista from "../assets/arista.png";
 import atlassian from "../assets/atlassian.png";
 import tradedesk from "../assets/thetradedesk.png";
-import jancap from "../assets/januarycapital-light.png";
 import sc from "../assets/sc.png";
 import lyra from "../assets/lyra.svg";
 import imc from "../assets/imc.png";
@@ -17,6 +16,8 @@ import gmsoc2 from "../assets/gmsoc2.png";
 import ramsoc from "../assets/ramsoc.svg";
 import redback from "../assets/redback.png";
 import bluesat from "../assets/bluesat.png";
+import linuxsoc from "../assets/linuxsoc.png"; // TODO: add image
+import sunswift from "../assets/sunswift.png"; // TODO: add image
 import { SponsorInfo } from "./supporters";
 
 export const starlightProjectData: {
@@ -487,11 +488,6 @@ export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
         logo: atlassian,
         url: "https://www.atlassian.com/",
       },
-      // {
-      //   name: "January Capital",
-      //   logo: jancap,
-      //   url: "https://www.january.capital/",
-      // },
       {
         name: "The Trade Desk",
         logo: tradedesk,
@@ -499,31 +495,35 @@ export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
       },
     ],
     societyLogos: [
+      {
+        name: "Create UNSW",
+        logo: createunsw,
+        url: "https://www.createunsw.com.au/",
+      },
+      {
+        name: "Game Makers Society",
+        logo: gmsoc2,
+        url: "https://campus.hellorubric.com/?s=12549",
+      },
+      {
+        name: "RAMSoc",
+        logo: ramsoc,
+        url: "https://ramsocunsw.org/",
+      },
+      {
+        name: "Redback Racing",
+        logo: redback,
+        url: "https://www.redbackracing.com/",
+      },
       // {
-      //   name: "Bluesat",
-      //   logo: bluesat,
-      //   url: "https://bluesat.unsw.edu.au/",
+      //   name: "Linux Society",
+      //   logo: linuxsoc, 
+      //   url: "https://linuxunsw.org/",
       // },
       // {
-      //   name: "Create UNSW",
-      //   logo: createunsw,
-      //   url: "https://www.createunsw.com.au/",
-      // },
-      // {
-      //   name: "Game Makers Society",
-      //   logo: gmsoc2,
-      //   url: "https://www.arc.unsw.edu.au/get-involved/opportunity?name=Game%20Making%20Society",
-      // },
-      // {
-      //   name: "RAMSoc",
-      //   logo: ramsoc,
-      //   url: "https://ramsocunsw.org/",
-      // },
-
-      // {
-      //   name: "Redback Racing",
-      //   logo: redback,
-      //   url: "https://www.redbackracing.com/",
+      //   name: "Sunswift Racing",
+      //   logo: sunswift,
+      //   url: "https://www.sunswift.com/",
       // },
     ],
   },
