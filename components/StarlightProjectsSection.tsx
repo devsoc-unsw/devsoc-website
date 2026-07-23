@@ -48,7 +48,7 @@ function renderLogoRows(
 }
 
 export function StarlightProjectsSection() {
-  const [selectedYear, setSelectedYear] = useState<number>(2025);
+  const [selectedYear, setSelectedYear] = useState<number>(2026);
 
   const handleYearChange = (event: any, newValue: number | number[]) => {
     setSelectedYear(newValue as number);
