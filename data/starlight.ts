@@ -493,10 +493,15 @@ export const starlightSupporterData: { [n: number]: StarlightSupporterData } = {
       //   url: "https://www.january.capital/",
       // },
       {
-        name: "The Trade Desk",
-        logo: tradedesk,
-        url: "https://careers.thetradedesk.com/",
+        name: "Lyra Technologies",
+        logo: lyra,
+        url: "https://www.lyratechnologies.com.au/",
       },
+      // {
+      //   name: "The Trade Desk",
+      //   logo: tradedesk,
+      //   url: "https://careers.thetradedesk.com/",
+      // },
     ],
     societyLogos: [
       // {
