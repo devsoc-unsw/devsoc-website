@@ -428,7 +428,7 @@ export const starlightProjectData: {
     {
       name: "Autonomous Racing Droid",
       desc: "Create an Autonomous Lane Detection Car that races around a track. Applications of computer vision, colour masking and various algorithms can be applied to many modern day uses.",
-      projectUrl: "https://devsoc-starlight-2026.devpost.com/submissions/1075146-autonomous-racing-droid?_gl=1*mnsikx*_gcl_au*MjA4Njk2Mjc2My4xNzc4NTc2MTk3*_ga*MjAwNjU2NTU2MC4xNzc4NTc2MTk3*_ga_0YHJK3Y10M*czE3ODM5OTAyNDAkbzgkZzEkdDE3ODM5OTA5NzgkajQ4JGwwJGgw",
+      projectUrl: "https://devsoc-starlight-2026.devpost.com/submissions/1075146-autonomous-racing-droid/file_downloads/127374",
       thumbnailUrl: "/starlightProjects/2026/",
     },
     {
@@ -440,7 +440,7 @@ export const starlightProjectData: {
     {
       name: "Electronic Cheeseboard",
       desc: "Chess.com but real life and cheese",
-      projectUrl: "https://devsoc-starlight-2026.devpost.com/submissions/1074783-electronic-cheeseboard?_gl=1*1uh43dz*_gcl_au*MjA4Njk2Mjc2My4xNzc4NTc2MTk3*_ga*MjAwNjU2NTU2MC4xNzc4NTc2MTk3*_ga_0YHJK3Y10M*czE3ODM5OTAyNDAkbzgkZzEkdDE3ODM5OTQ3NjckajExJGwwJGgw",
+      projectUrl: "https://devsoc-starlight-2026.devpost.com/submissions/1074783-electronic-cheeseboard/file_downloads/127379",
       thumbnailUrl: "/starlightProjects/2026/",
     },
     {
@@ -464,7 +464,7 @@ export const starlightProjectData: {
     {
       name: "Runner",
       desc: "Inspired from the AT-ST Walker in Star Wars, Runner is a bipedal locomotion robot that has aspirations of being able to to run and potentially have capability of navigation and delivery.",
-      projectUrl: "https://devsoc-starlight-2026.devpost.com/submissions/1075094-runner?_gl=1*1hkt4d8*_gcl_au*MjA4Njk2Mjc2My4xNzc4NTc2MTk3*_ga*MjAwNjU2NTU2MC4xNzc4NTc2MTk3*_ga_0YHJK3Y10M*czE3ODM5OTAyNDAkbzgkZzEkdDE3ODM5OTQ4NjkkajE4JGwwJGgw",
+      projectUrl: "https://devsoc-starlight-2026.devpost.com/submissions/1075094-runner/file_downloads/127386",
       thumbnailUrl: "/starlightProjects/2026/",
     },
     {
@@ -476,7 +476,7 @@ export const starlightProjectData: {
     {
       name: "Jira Pets",
       desc: "A Jira Dashboard gadget to drive engagement and consistency with work.",
-      projectUrl: "https://devsoc-starlight-2026.devpost.com/submissions/1075619-jira-pets?_gl=1*awg85v*_gcl_au*MjA4Njk2Mjc2My4xNzc4NTc2MTk3*_ga*MjAwNjU2NTU2MC4xNzc4NTc2MTk3*_ga_0YHJK3Y10M*czE3ODM5OTAyNDAkbzgkZzEkdDE3ODM5OTU1NjgkajU1JGwwJGgw",
+      projectUrl: "https://devsoc-starlight-2026.devpost.com/submissions/1075619-jira-pets/file_downloads/127413",
       thumbnailUrl: "/starlightProjects/2026/",
     },
     {
