@@ -405,7 +405,7 @@ export const starlightProjectData: {
       name: "Food Compass",
       desc: "A free, centralised platform that tackles student food insecurity and campus food waste through real time access to free food opportunities.",
       projectUrl: "https://food-compass.org/",
-      thumbnailUrl: "/starlightProjects/2026/26_11_food compass.png",
+      thumbnailUrl: "/starlightProjects/2026/26_11_food_compass.png",
     },
     {
       name: "RoboFish",
