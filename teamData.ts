@@ -5,7 +5,7 @@ import {ExecProps} from "./components/PeopleSection";
 export const teamData: TeamData = {
   2018: {
     executives: [
-      { name: "Amri Chamela", title: "Projects Director", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
+      { name: "Amri Chamela", title: "Projects Director", imgUrl: "/people/placeholder.jpg" },
     ],
     subcommittees: []
   },
@@ -258,7 +258,7 @@ export const teamData: TeamData = {
       { name: "James Ji", title: "Projects Director", imgUrl: "/people/2022/1671790198748.jpeg" },
       { name: "Vicky Wu", title: "Projects Director", imgUrl: "/people/2022/1677625183062.jpeg" },
       { name: "Abiram Nadarajah", title: "Technical Director", imgUrl: "/people/2022/1619801785542.jpeg" },
-      { name: "Jared L", title: "Technical Director", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
+      { name: "Jared L", title: "Technical Director", imgUrl: "/people/placeholder.jpg" },
       { name: "Shrey Somaiya", title: "Projects Lead", imgUrl: "/people/2022/1653994970103.jpeg" },
     ],
     subcommittees: [
@@ -424,7 +424,7 @@ export const teamData: TeamData = {
     executives: [
       { name: "Angella Pham", title: "Vice President Development", imgUrl: "/people/2023/vpd1.jfif" },
       { name: "Hanyuan Li", title: "Vice President Development/Secretary", imgUrl: "/people/2023/vpd2.jfif" },
-      { name: "Jared L", title: "Chief Technology Officer", imgUrl: "https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" },
+      { name: "Jared L", title: "Chief Technology Officer", imgUrl: "/people/placeholder.jpg" },
       { name: "Winnie Zhang", title: "Treasurer/Arc Delegate/GEDI", imgUrl: "/people/2023/arcdel.jfif" },
       { name: "Max Xue", title: "Vice President", imgUrl: "/people/2023/vp.jpg" },
     ],
@@ -701,7 +701,7 @@ export const teamData: TeamData = {
         name: "Chaos",
         directors: [
           { name: "Kavika Palletenne", imgUrl: "KavikaPalletenne" },
-          { name: "Josh Lim", imgUrl: "JoshCLim " },
+          { name: "Josh Lim", imgUrl: "JoshCLim" },
           { name: "Peter Osborne", imgUrl: "PeterOsborne" },
         ],
         subcommittee: [

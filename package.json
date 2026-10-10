@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "fetch-pfps": "node scripts/fetch-pfps.mjs"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
