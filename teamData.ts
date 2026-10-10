@@ -1196,7 +1196,7 @@ export const teamData: TeamData = {
       { name: "Danny Zhang", title: "VP (Externals)", imgUrl: "/people/2026/vpe.png" },
       { name: "Tianming Tang", title: "VP (Projects)", imgUrl: "/people/2026/vpp1.png" },
       { name: "Kavika Palletenne", title: "VP (Projects)", imgUrl: "/people/2026/vpp2.png" },
-      { name: "Matthew Lim", title: "VP (Project Operations)", imgUrl: "/people/2026/vpo.png" },
+      { name: "Ethan Scott", title: "VP (Project Operations)", imgUrl: "/people/2026/vpo.jpg" },
     ],
     subcommittees: [
       {
