@@ -196,7 +196,6 @@ const SubcommitteeList: React.FC<{
             return (
               <TeamListItem
                 name={props.name}
-                imgUrl={props.imgUrl}
                 year={year}
                 title="Director"
                 key={props.name}
@@ -207,7 +206,6 @@ const SubcommitteeList: React.FC<{
             return (
               <TeamListItem
                 name={props.name}
-                imgUrl={props.imgUrl}
                 year={year}
                 title="Subcommittee"
                 key={props.name}
@@ -219,7 +217,6 @@ const SubcommitteeList: React.FC<{
               return people.map((props) => (
                 <TeamListItem
                   name={props.name}
-                  imgUrl={props.imgUrl}
                   year={year}
                   title={role}
                   key={props.name}
@@ -234,7 +231,6 @@ const SubcommitteeList: React.FC<{
 
 interface TeamListItemProps {
   name: string;
-  imgUrl: string | undefined;
   year: number;
   title: string;
 }
@@ -242,9 +238,7 @@ const TeamListItem = (props: TeamListItemProps) => {
   return (
     <ListItem>
       <ListItemDecorator>
-        <Avatar
-          src={props.imgUrl ? pfps[props.year]?.[props.imgUrl] : undefined}
-        />
+        <Avatar src={pfps[props.year]?.[props.name]} />
       </ListItemDecorator>
       <ListItemContent>
         <Typography level="title-sm">{props.name}</Typography>
