@@ -27,8 +27,8 @@ const rows = fs
   .filter((line) => line.trim())
   .map((line) => {
     const [name, portfolio, github = ""] = line.split(",").map((cell) => cell.trim());
-    // Accept profile links as well as usernames
-    return { name, portfolio, github: github.replace(/^.*github\.com\//, "").replace(/\/$/, "") };
+    // Accept profile or org member links as well as usernames
+    return { name, portfolio, github: github.replace(/\/$/, "").split("/").pop() ?? "" };
   });
 
 const teams = teamData[YEAR].subcommittees;

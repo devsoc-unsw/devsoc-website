@@ -641,7 +641,7 @@ export const teamData: TeamData = {
         ]
       },
       {
-        name: "Platform",
+        name: "Platforms",
         directors: [
           { name: "Sacha Korban" },
         ],
@@ -867,7 +867,7 @@ export const teamData: TeamData = {
         ]
       },
       {
-        name: "Platform",
+        name: "Platforms",
         directors: [
           { name: "Jared L" },
           { name: "Sacha Korban" },
@@ -1072,7 +1072,7 @@ export const teamData: TeamData = {
         ]
       },
       {
-        name: "Platform",
+        name: "Platforms",
         directors: [
           { name: "Ethan Scott" },
           { name: "Sacha Korban" },
@@ -1213,7 +1213,9 @@ export const teamData: TeamData = {
           { name: "Christian Martinez" },
           { name: "Azhad Haziq Kamarul Zaman" },
           { name: "Siya Yuan" },
-          { name: "Vladimir Viacheslavovich Pak" },
+          { name: "Vladimir Pak" },
+          { name: "William Setiawan" },
+          { name: "Kelly Huang" },
         ]
       },
       {
@@ -1224,11 +1226,11 @@ export const teamData: TeamData = {
         ],
         subcommittee: [
           { name: "Jeniffer Leong" },
-          { name: "Olivianne Tanya Kho" },
-          { name: "Jonathan Yuang Liu" },
+          { name: "Olivianne Kho" },
+          { name: "Jonathan Liu" },
           { name: "Aranchai Khanijow" },
           { name: "Woojae Lim" },
-          { name: "Kieran Kai Xiang Teh" },
+          { name: "Kieran Teh" },
           { name: "Luyan Chen" },
           { name: "Vivian Dai" },
         ]
@@ -1250,8 +1252,10 @@ export const teamData: TeamData = {
           { name: "Brian Wibawa Adi" },
           { name: "Gabriella Lianti" },
           { name: "Cormac Flahive" },
-          { name: "Shaun Jun Jie Tan" },
+          { name: "Shaun Tan" },
           { name: "Joshua Pozzolungo" },
+          { name: "Nguyen Nguyen" },
+          { name: "Christopher Liang" },
         ]
       },
       {
@@ -1259,15 +1263,18 @@ export const teamData: TeamData = {
         directors: [
           { name: "David Hua" },
           { name: "Lachlan Shoesmith" },
+          { name: "Lyn Duong" },
         ],
         subcommittee: [
           { name: "Kai Fox" },
           { name: "Lyn Duong" },
-          { name: "Jenny Mengzhen Liu" },
-          { name: "Samuel Lisheng Luo" },
-          { name: "Gurtej Singh Sambhy" },
-          { name: "John Yiming Teoh" },
-          { name: "Jingwei Chen" },
+          { name: "Jenny Liu" },
+          { name: "Samuel Luo" },
+          { name: "Gurtej Sambhy" },
+          { name: "John Teoh" },
+          { name: "Nathaniel Tan" },
+          { name: "Austin Ge" },
+          { name: "Emily Yan" },
         ]
       },
       {
@@ -1278,14 +1285,14 @@ export const teamData: TeamData = {
         ],
         subcommittee: [
           { name: "Sushma Viswanathan" },
-          { name: "Justin Philip Prasad" },
-          { name: "Aaron Ming Hong Yang" },
+          { name: "Justin Prasad" },
+          { name: "Aaron Yang" },
           { name: "Rohith Senthil Murugan" },
           { name: "Danar Abiyoga Prakosa" },
-          { name: "Felicia Octaviona Chang" },
-          { name: "Zoeb Karim" },
+          { name: "Felicia Chang" },
           { name: "Zack Zeng" },
           { name: "Andy Ruan" },
+          { name: "Andrew Chan" },
         ]
       },
       {
@@ -1295,14 +1302,14 @@ export const teamData: TeamData = {
           { name: "Kevin Jin"},
         ],
         subcommittee: [
-          { name: "Regan Zhao Benedetti" },
-          { name: "Xinyue Zhang (Meredith)" },
+          { name: "Regan Benedetti" },
+          { name: "Meredith Zhang" },
           { name: "Eugene Briones" },
           { name: "Menghan Zhao" },
           { name: "Tomi Chong" },
           { name: "Xianbin Chen" },
           { name: "Jordan Zeng" },
-          { name: "Laura Louise Ha" },
+          { name: "Laura Ha" },
           { name: "Hanwen Xiao" },
           { name: "Karyn Tjang" },
         ]
@@ -1312,9 +1319,10 @@ export const teamData: TeamData = {
         directors: [
           { name: "Ethan Scott" },
           { name: "Taku Kodama" },
+          { name: "Toby Smith" },
         ],
         subcommittee: [
-          { name: "Benjamin Richard Forster Quin" },
+          { name: "Ben Quin" },
           { name: "Toby Smith" },
           { name: "Tet Nay Lin" },
           { name: "Elaine Zhang" },
@@ -1328,8 +1336,8 @@ export const teamData: TeamData = {
           { name: "Vansh Kalra"},
         ],
         subcommittee: [
-          { name: "Frank Fenghao Wu" },
-          { name: "Mun Kei TEO" },
+          { name: "Frank Wu" },
+          { name: "Mun Kei Teo" },
           { name: "Harrison Guo" },
           { name: "Corinne Zhou" },
           { name: "Amulyaa Bhatnagar" },
@@ -1346,8 +1354,8 @@ export const teamData: TeamData = {
           { name: "Sunny Chen" },
         ],
         subcommittee: [
-          { name: "Caton Regan Tan" },
-          { name: "Edward Wenkai Liu" },
+          { name: "Caton Tan" },
+          { name: "Edward Liu" },
         ]
       },
       {
@@ -1360,8 +1368,8 @@ export const teamData: TeamData = {
           { name: "Humayra Iram" },
           { name: "Jun Wei Tay" },
           { name: "Jason Liu" },
-          { name: "Grace Rebecca Thomas" },
-          { name: "Leon Zhi Lin Sun" },
+          { name: "Grace Thomas" },
+          { name: "Leon Sun" },
           { name: "Ming Hao Pei" },
         ]
       },
@@ -1377,6 +1385,8 @@ export const teamData: TeamData = {
           { name: "Yolo Chai" },
           { name: "Kelly Huang" },
           { name: "Pranav Moorthy" },
+          { name: "Pranav Raja" },
+          { name: "Amrita Nag" },
         ]
       },
       {
@@ -1387,11 +1397,11 @@ export const teamData: TeamData = {
           { name: "Shreya Verma"},
         ],
         subcommittee: [
-          { name: "Zhihan Guo" },
-          { name: "Andrew Ferdinand Sumanto" },
-          { name: "Katelyn Marie Hui En Lau" },
-          { name: "Riddick Bowe Smith" },
-          { name: "Katherine Mei-Tsen Yeh" },
+          { name: "Helen Guo" },
+          { name: "Andrew Sumanto" },
+          { name: "Katelyn Lau" },
+          { name: "Riddick Smith" },
+          { name: "Katherine Yeh" },
           { name: "Junran Tian" },
         ]
       },
@@ -1403,9 +1413,9 @@ export const teamData: TeamData = {
         ],
         subcommittee: [
           { name: "Salome Blandon Cano" },
-          { name: "Conan Yu Hang Cheang" },
-          { name: "Bryan Stanley Rijanto" },
-          { name: "Meryl Shalon Sylvia Lobo" },
+          { name: "Conan Cheang" },
+          { name: "Bryan Rijanto" },
+          { name: "Meryl Lobo" },
           { name: "Austin Ge" },
         ]
       },

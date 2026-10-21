@@ -198,7 +198,7 @@ const SubcommitteeList: React.FC<{
                 name={props.name}
                 year={year}
                 title="Director"
-                key={props.name}
+                key={`Director-${props.name}`}
               />
             );
           })}
@@ -208,7 +208,7 @@ const SubcommitteeList: React.FC<{
                 name={props.name}
                 year={year}
                 title="Subcommittee"
-                key={props.name}
+                key={`Subcommittee-${props.name}`}
               />
             );
           })}
@@ -219,7 +219,7 @@ const SubcommitteeList: React.FC<{
                   name={props.name}
                   year={year}
                   title={role}
-                  key={props.name}
+                  key={`${role}-${props.name}`}
                 />
               ));
             })}
