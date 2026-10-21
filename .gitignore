@@ -37,3 +37,6 @@ next-env.d.ts
 # ide config
 .idea/
 .vscode/
+
+# GitHub usernames for scripts/fetch-pfps.mts
+scripts/pfps.csv
