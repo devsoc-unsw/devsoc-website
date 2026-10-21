@@ -1,31 +1,25 @@
 // Saves subcom GitHub pfps to public/people/<YEAR>/subcom/ and lists them in data/pfps.json
-// Takes a CSV of name,github with names matching teamData.ts exactly
-// Change YEAR below, then run: npm run fetch-pfps -- path/to/subcom.csv
-// Keep the CSV out of the repo, GitHub usernames shouldn't be committed
+// Reads scripts/pfps.csv with name,github rows and no header, see scripts/pfps.example.csv
+// Names must match teamData.ts exactly, leave github blank for no pfp
+// pfps.csv is gitignored, GitHub usernames shouldn't be committed
+// Change YEAR below, then run from repo root: npm run fetch-pfps
 // People already in data/pfps.json for that year are skipped
-// Run from repo root
 
 import fs from "node:fs";
-import ts from "typescript";
+import { teamData } from "../teamData.ts";
 
 const YEAR = 2026;
 
-const EXTENSIONS = { "image/png": "png", "image/jpeg": "jpg", "image/gif": "gif" };
+const CSV = "scripts/pfps.csv";
 const MANIFEST = "data/pfps.json";
+const EXTENSIONS: Record<string, string> = {
+  "image/png": "png",
+  "image/jpeg": "jpg",
+  "image/gif": "gif",
+};
 
-const csvPath = process.argv[2];
-if (!csvPath) {
-  console.error("Usage: npm run fetch-pfps -- path/to/subcom.csv");
-  process.exit(1);
-}
-
-const { outputText } = ts.transpileModule(fs.readFileSync("teamData.ts", "utf8"), {
-  compilerOptions: { module: ts.ModuleKind.CommonJS },
-});
-const teamExports = {};
-new Function("exports", outputText)(teamExports);
 const names = new Set(
-  teamExports.teamData[YEAR].subcommittees
+  teamData[YEAR].subcommittees
     .flatMap((s) => [
       ...s.directors,
       ...s.subcommittee,
@@ -35,13 +29,12 @@ const names = new Set(
 );
 
 const rows = fs
-  .readFileSync(csvPath, "utf8")
+  .readFileSync(CSV, "utf8")
   .split(/\r?\n/)
-  .slice(1)
   .filter((line) => line.trim())
   .map((line) => line.split(",").map((cell) => cell.trim()));
 
-const manifest = fs.existsSync(MANIFEST)
+const manifest: Record<string, Record<string, string>> = fs.existsSync(MANIFEST)
   ? JSON.parse(fs.readFileSync(MANIFEST, "utf8"))
   : {};
 const pfps = (manifest[YEAR] ??= {});
@@ -55,7 +48,7 @@ for (const [name, username] of rows) {
   if (pfps[name] || !username) continue;
 
   const res = await fetch(`https://github.com/${username}.png?size=160`);
-  const ext = EXTENSIONS[res.headers.get("content-type")];
+  const ext = EXTENSIONS[res.headers.get("content-type") ?? ""];
   if (!res.ok || !ext) {
     console.error(`Couldn't fetch ${name} (HTTP ${res.status})`);
     continue;

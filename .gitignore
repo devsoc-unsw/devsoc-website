@@ -38,5 +38,5 @@ next-env.d.ts
 .idea/
 .vscode/
 
-# GitHub username lists for scripts/fetch-pfps.mjs
-*.csv
+# GitHub usernames for scripts/fetch-pfps.mts
+scripts/pfps.csv

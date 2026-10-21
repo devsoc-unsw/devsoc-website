@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "fetch-pfps": "node scripts/fetch-pfps.mjs"
+    "fetch-pfps": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch-pfps.mts"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",

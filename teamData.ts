@@ -1,6 +1,6 @@
 // People displayed in the "Meet the Team" section of "About Us"
 // If no image set, an animated gray circle appears
-import {ExecProps} from "./components/PeopleSection";
+import type { ExecProps } from "./components/PeopleSection";
 
 export const teamData: TeamData = {
   2018: {
