@@ -1338,7 +1338,7 @@ export const teamData: TeamData = {
         ],
         subcommittee: [
           { name: "Frank Wu" },
-          { name: "Mun Kei Teo" },
+          { name: "Giselle Teo Mun Kei" },
           { name: "Harrison Guo" },
           { name: "Corinne Zhou" },
           { name: "Amulyaa Bhatnagar" },
