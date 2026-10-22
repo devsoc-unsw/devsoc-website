@@ -171,6 +171,8 @@ const Person: React.FC<ExecProps> = ({ name, title, imgUrl }) => {
   );
 };
 
+const byName = (a: PersonProps, b: PersonProps) => a.name.localeCompare(b.name);
+
 const SubcommitteeList: React.FC<{
   name: string;
   year: number;
@@ -192,34 +194,34 @@ const SubcommitteeList: React.FC<{
             gap: 1,
           }}
         >
-          {directors.map((props) => {
+          {[...directors].sort(byName).map((props) => {
             return (
               <TeamListItem
                 name={props.name}
                 year={year}
                 title="Director"
-                key={props.name}
+                key={`Director-${props.name}`}
               />
             );
           })}
-          {subcommittee.map((props) => {
+          {[...subcommittee].sort(byName).map((props) => {
             return (
               <TeamListItem
                 name={props.name}
                 year={year}
                 title="Subcommittee"
-                key={props.name}
+                key={`Subcommittee-${props.name}`}
               />
             );
           })}
           {other &&
             other.map(({ role, people }) => {
-              return people.map((props) => (
+              return [...people].sort(byName).map((props) => (
                 <TeamListItem
                   name={props.name}
                   year={year}
                   title={role}
-                  key={props.name}
+                  key={`${role}-${props.name}`}
                 />
               ));
             })}
