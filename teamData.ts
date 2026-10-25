@@ -1313,6 +1313,8 @@ export const teamData: TeamData = {
           { name: "Laura Ha" },
           { name: "Hanwen Xiao" },
           { name: "Karyn Tjang" },
+          { name: "Alex Varughese" },
+          { name: "Jason Widjaja" },
         ]
       },
       {
@@ -1355,8 +1357,11 @@ export const teamData: TeamData = {
           { name: "Sunny Chen" },
         ],
         subcommittee: [
-          { name: "Caton Tan" },
-          { name: "Edward Liu" },
+          { name: "Naman Lalwani" },
+          { name: "Jake Lee" },
+          { name: "Tashvi Arora" },
+          { name: "Aaron Siew" },
+          { name: "Tara Atashbar" },
         ]
       },
       {
